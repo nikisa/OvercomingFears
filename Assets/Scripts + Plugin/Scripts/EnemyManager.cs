@@ -42,7 +42,7 @@ public class EnemyManager : TurnManager {
 
     public void PlayTurn() {
         
-        if (m_isDead || isScared || isOff) {
+        if (m_isDead) {
             FinishTurn();
             return;
         }
@@ -58,7 +58,7 @@ public class EnemyManager : TurnManager {
 
             yield return new WaitForSeconds(0f);
 
-            if (m_enemySensor.FoundPlayer && isScared == false) {
+            if (m_enemySensor.FoundPlayer && isOff == false) {
                 //attack player
                 //notify the GM to lose the level
                 
@@ -183,8 +183,7 @@ public class EnemyManager : TurnManager {
         }
     }
 
-
-
+    
     public ItemData GetData() {
         ItemData itemData = new ItemData() {
             BoardPosition = transform.position,

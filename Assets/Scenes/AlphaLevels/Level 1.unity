@@ -431,7 +431,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -649,7 +650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -786,7 +788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -923,7 +926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -1576,7 +1580,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -1743,7 +1748,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -1972,7 +1978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -2573,7 +2580,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -3186,7 +3194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -3624,7 +3633,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -3931,7 +3941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -4068,7 +4079,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -4286,7 +4298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -4504,7 +4517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -4840,7 +4854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -5089,7 +5104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -5558,7 +5574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -5776,7 +5793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -6456,7 +6474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -6623,7 +6642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -7133,7 +7153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -7432,7 +7453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -7935,7 +7957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -8222,7 +8245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -8438,7 +8462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -8663,43 +8688,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114544985582539864, guid: b818e417ff537bd4a8801ddf986fa270,
-        type: 3}
-      propertyPath: gameInfo
-      value: 
-      objectReference: {fileID: 1279315224}
-    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.5772228
-      objectReference: {fileID: 0}
-    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.11597109
-      objectReference: {fileID: 0}
-    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.4438715
-      objectReference: {fileID: 0}
-    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
-        type: 3}
-      propertyPath: m_Center.x
-      value: -0.1665349
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363283338676550, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4662399004767612, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4367156525175720, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 23652544632051252, guid: b818e417ff537bd4a8801ddf986fa270,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8739,6 +8727,43 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[7]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544985582539864, guid: b818e417ff537bd4a8801ddf986fa270,
+        type: 3}
+      propertyPath: gameInfo
+      value: 
+      objectReference: {fileID: 1279315224}
+    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.5772228
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.11597109
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.4438715
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572771953177706, guid: b818e417ff537bd4a8801ddf986fa270,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.1665349
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363283338676550, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662399004767612, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367156525175720, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b818e417ff537bd4a8801ddf986fa270, type: 3}
@@ -9199,7 +9224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -9651,7 +9677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -10494,7 +10521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -11620,7 +11648,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -11838,7 +11867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -12379,7 +12409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -12516,7 +12547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
@@ -12734,7 +12766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
-  gatePrefab: {fileID: 100000, guid: 82db0263f760a7240ad1f164c279e591, type: 3}
+  gatePrefab: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+    type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}

@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
 
     Vector3 frontalDest;
 
-    List<EnemyManager> m_enemies;
+    public List<EnemyManager> m_enemies;
     List<EnemyMover> m_enemiesMovers;
     List<MovableObject> m_movableObjects;
     List<Armor> m_armors;
@@ -222,19 +222,22 @@ public class GameManager : MonoBehaviour {
             if (enemy != null && !enemy.isDead) {
                 enemy.IsTurnComplete = false;
 
-                if (enemy.isScared == false) {
-                    EnemyOnOff();
-                    enemy.PlayTurn();
-                }
-                else {
+                EnemyOnOff();
+                enemy.PlayTurn();
+                
 
-                    enemy.PushLeft();
-                    enemy.PushRight();
-                    enemy.PushUp();
-                    enemy.PushDown();
-                    enemy.PlayTurn();
-                    enemy.m_enemyMover.spottedDest = startPos + transform.TransformVector(directionToMove);
-                }
+                //if (enemy.isScared == false) {
+
+                //}
+                //else {
+
+                //    enemy.PushLeft();
+                //    enemy.PushRight();
+                //    enemy.PushUp();
+                //    enemy.PushDown();
+                //    enemy.PlayTurn();
+                //    enemy.m_enemyMover.spottedDest = startPos + transform.TransformVector(directionToMove);
+                //}
             }
         }
     }
@@ -267,13 +270,14 @@ public class GameManager : MonoBehaviour {
         // CheckSword();
         checkNodeForObstacles();
         LightBulbNode();
-        FearEnemies();
+        //FearEnemies();
         FlashLightNode();
+        
 
 
         foreach (var enemy in m_enemies) {
             if (enemy != null) {
-
+                
                 foreach (Sword sword in m_sword) {
                     if (sword != null) {
                         if (m_board.FindNodeAt(enemy.transform.position) == m_board.FindNodeAt(sword.transform.position) && sword.gameObject.activeInHierarchy) {
@@ -294,6 +298,8 @@ public class GameManager : MonoBehaviour {
 
         if (m_currentTurn == Turn.Player && m_player != null) {
 
+            
+
             foreach (var trap in m_board.AllTraps) {
                 trap.canShoot = true;
             }
@@ -309,14 +315,15 @@ public class GameManager : MonoBehaviour {
 
         else if (m_currentTurn == Turn.Enemy) {
 
+            
 
             if (IsEnemyTurnComplete()) {
                 crackNode();
                 PlayPlayerTurn();
-
+                NotMovingMovable();
             }
-            NotMovingMovable();
         }
+        
 
     }
 
@@ -344,10 +351,12 @@ public class GameManager : MonoBehaviour {
 
             //______M.O. ON CRACKNODE___________________
             foreach (MovableObject movableObject in movableObjects) {
+                Debug.Log(movableObject.hasMoved);
                 if (movableObject.hasMoved) {
 
                     node.UpdateCrackableState();
                     node.UpdateCrackableTexture();
+                   
                 }
 
 
@@ -603,4 +612,8 @@ public class GameManager : MonoBehaviour {
             movableObject.checkNodeForObstacle();
         }
     }
+
+
+    
+
 }

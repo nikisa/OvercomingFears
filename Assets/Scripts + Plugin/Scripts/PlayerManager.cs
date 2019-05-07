@@ -11,6 +11,8 @@ public class PlayerManager : TurnManager {
 
     static int i = 0; //indice provvisorio per il cambio della scena
 
+    public EnemyManager enemyManager;
+
     public PlayerMover playerMover;
     public PlayerInput playerInput;
 
@@ -32,6 +34,7 @@ public class PlayerManager : TurnManager {
 
         playerMover = GetComponent<PlayerMover>();
         playerInput = GetComponent<PlayerInput>();
+        enemyManager = GetComponent<EnemyManager>();
 
         m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
         m_gm = Object.FindObjectOfType<GameManager>().GetComponent<GameManager>();
@@ -46,6 +49,7 @@ public class PlayerManager : TurnManager {
         }
 
         playerInput.GetKeyInput();
+        enemyInGateDetection();
 
 
         if (Input.GetKeyDown(KeyCode.KeypadPlus)) {
@@ -366,6 +370,17 @@ public class PlayerManager : TurnManager {
             ItemType = ItemData.Type.Player,
         };
         return itemData;
+    }
+
+    public void enemyInGateDetection() {
+
+        foreach (var enemy in m_gameManager.m_enemies) {
+            if (enemy != null && m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen && enemy.GetEnemySensor.FoundPlayer) {
+                Debug.Log("LoseLevel");
+                m_gameManager.LoseLevel();
+            }
+        }
+
     }
 
 

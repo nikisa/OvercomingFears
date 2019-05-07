@@ -13,7 +13,9 @@ public class EnemySensor : MonoBehaviour {
 
     public Node PreviousEnemyNode { get { return m_previousEnemyNode; } set { m_previousEnemyNode = FindEnemyNode(); } }
 
+    [SerializeField]
     bool m_foundPlayer = false;
+
     public bool FoundPlayer { get { return m_foundPlayer; } }
 
 	void Awake() {
