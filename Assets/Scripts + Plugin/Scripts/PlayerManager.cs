@@ -18,7 +18,7 @@ public class PlayerManager : TurnManager {
 
     public LayerMask obstacleLayer;
 
-    public bool spottedPlayer = false;
+    //public bool spottedPlayer = false;
 
 
     public bool hasLightBulb = false;
@@ -324,12 +324,8 @@ public class PlayerManager : TurnManager {
             List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.playerNode);
             if (enemies.Count != 0) {
                 foreach (EnemyManager enemy in enemies) {
-                    if (enemy != null && enemy.GetMovementType() != MovementType.Chaser) {
+                    if (enemy != null) {
                         enemy.Die();
-                    }
-                    else if (enemy.GetMovementType() == MovementType.Chaser) {
-                        Debug.Log("DEATH");
-                        m_gm.LoseLevel();
                     }
                 }
             }

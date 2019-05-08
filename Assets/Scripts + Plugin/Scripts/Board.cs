@@ -216,10 +216,11 @@ public class Board : MonoBehaviour {
         return PreviousPlayerNode;
     }
 
-    public void UpdateTriggerToFalse() {    
-        PreviousPlayerNode.triggerState = false;
-        PreviousPlayerNode.UpdateGateToClose(PreviousPlayerNode.GetGateID());
-        PreviousPlayerNode.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
+    public void UpdateTriggerToFalse(Node n) {
+        n.triggerState = false;
+        n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
+        Debug.Log("CLOSE");
+        n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
     }
 
 

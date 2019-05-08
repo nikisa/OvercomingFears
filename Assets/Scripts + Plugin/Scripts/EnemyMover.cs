@@ -30,9 +30,11 @@ public class EnemyMover : Mover {
     [HideInInspector]public Vector3 firstDest;
     [HideInInspector]public Vector3 spottedDest;
 
-   [HideInInspector] public static int index;
+    [HideInInspector] public static int index;
 
     [HideInInspector] public bool firstChaserMove = false;
+
+    public bool spottedPlayer;
 
 	protected override void Awake() {
         base.Awake();
@@ -43,7 +45,7 @@ public class EnemyMover : Mover {
 
     protected override void Start(){
         base.Start();
-        
+        spottedPlayer = false;
     }
 
     public void MoveOneTurn() {
@@ -76,19 +78,19 @@ public class EnemyMover : Mover {
 
         spottedDest = startPos + transform.TransformVector(directionToMove * 2f);
 
-        if (m_board.playerNode == m_board.FindNodeAt(spottedDest) && !m_player.spottedPlayer && m_board.FindNodeAt(firstDest).LinkedNodes.Contains(m_board.FindNodeAt(spottedDest))) {
+        if (m_board.playerNode == m_board.FindNodeAt(spottedDest) && !spottedPlayer && m_board.FindNodeAt(firstDest).LinkedNodes.Contains(m_board.FindNodeAt(spottedDest))) {
 
             Debug.Log("Spotted!");
-            
+            m_player.clearPlayerPath();
             m_board.ChasingPreviousPlayerNode = m_board.playerNode; //Cambiare PreviousPlayerNode , qui o su Board
             //Move(firstDest , 0f);
-            m_player.spottedPlayer = true;
+            spottedPlayer = true;
 
             m_player.UpdatePlayerPath();
 
         }
 
-        else if (m_player.spottedPlayer) {
+        else if (spottedPlayer) {
 
             m_player.UpdatePlayerPath();
 
@@ -104,7 +106,7 @@ public class EnemyMover : Mover {
 
                 //Debug.Log(m_board.ChasingPreviousPlayerNode);
 
-                if (!m_player.hasLightBulb || m_player.transform.position != firstDest) {
+                if (m_player.transform.position != firstDest) {
 
                     Debug.Log(m_player.GetPlayerPath(index));
 
@@ -150,16 +152,11 @@ public class EnemyMover : Mover {
 
         //COntrollare il movimento
         
-
-        
-
         if (m_board != null) {
             Node newDestNode = m_board.FindNodeAt(newDest);
             Node nextDestNode = m_board.FindNodeAt(nextDest);
 
-            if (newDestNode == null || newDestNode.LinkedNodes.Contains(newDestNode) || m_board.FindMovableObjectsAt(newDestNode).Count != 0 || m_board.FindSwordsAt(newDestNode).Count != 0 || (m_board.playerNode == newDestNode && m_player.spottedPlayer)) {
-
-               
+            if (newDestNode == null || newDestNode.LinkedNodes.Contains(newDestNode) || m_board.FindMovableObjectsAt(newDestNode).Count != 0 || m_board.FindSwordsAt(newDestNode).Count != 0 || (m_board.playerNode == newDestNode && spottedPlayer)) {
 
                 Spin();
 
@@ -174,7 +171,7 @@ public class EnemyMover : Mover {
             }
 
 
-            if (nextDestNode == null || nextDestNode.LinkedNodes.Contains(nextDestNode) || m_board.FindMovableObjectsAt(nextDestNode).Count != 0 || m_board.FindSwordsAt(nextDestNode).Count != 0 || (m_board.playerNode == nextDestNode && m_player.spottedPlayer)) {
+            if (nextDestNode == null || nextDestNode.LinkedNodes.Contains(nextDestNode) || m_board.FindMovableObjectsAt(nextDestNode).Count != 0 || m_board.FindSwordsAt(nextDestNode).Count != 0 || (m_board.playerNode == nextDestNode && spottedPlayer)) {
 
                     //SPOSTARE MOVIMENTO QUI DENTRO ALTRIMENTI SI BLOCCA NELL ANGOLINO E NON SI GIRA
 
@@ -200,6 +197,7 @@ public class EnemyMover : Mover {
     public void Spin() {
         StartCoroutine(SpinRoutine());
     }
+
     IEnumerator SpinRoutine() {
         Vector3 localForward = new Vector3(0f, 0f , Board.spacing);
         destination = transform.TransformVector(localForward * -1f) + transform.position;

@@ -385,6 +385,9 @@ public class Node : MonoBehaviour {
         if (isAGate) {
 
             gateTemp = Instantiate(gatePrefab, transform.position, Quaternion.identity);
+            if (gateOpen) {
+                gateTemp.SetActive(false);
+            }
             
         }
 

@@ -36,7 +36,6 @@ public class Armor : MonoBehaviour {
 
         else if (isActive == false) {
             transform.GetChild(0).gameObject.SetActive(false);
-            Debug.Log(transform.GetChild(0).gameObject.activeSelf + " --- " + transform.GetChild(0).gameObject.activeSelf);
         }
 
         m_board.CheckSword();

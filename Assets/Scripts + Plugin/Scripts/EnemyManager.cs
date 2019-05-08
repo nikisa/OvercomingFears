@@ -108,82 +108,87 @@ public class EnemyManager : TurnManager {
         return m_enemyMover.firstMovementType;
     }
 
+    //(Old) pushEnemies with LightBulb
+    #region
 
-    public void PushLeft() {
-        if (m_player.hasLightBulb) {
-            
-            Node EnemyNode = m_board.FindNodeAt(transform.position);
+    //public void PushLeft() {
+    //    if (m_player.hasLightBulb) {
 
-            if (m_board.playerNode.transform.position.z == EnemyNode.transform.position.z && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x > EnemyNode.transform.position.x) {
-                Debug.Log("MoveLeft");
-                m_enemyMover.MoveLeft();
+    //        Node EnemyNode = m_board.FindNodeAt(transform.position);
 
-                m_enemyMover.destination = m_player.transform.position;
-                m_enemyMover.FaceDestination();
-                m_player.clearPlayerPath();
-                m_enemyMover.firstChaserMove = false;
-            }
-        }
-    }
+    //        if (m_board.playerNode.transform.position.z == EnemyNode.transform.position.z && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x > EnemyNode.transform.position.x) {
+    //            Debug.Log("MoveLeft");
+    //            m_enemyMover.MoveLeft();
 
-    public void PushRight() {
-        if (m_player.hasLightBulb) {
+    //            m_enemyMover.destination = m_player.transform.position;
+    //            m_enemyMover.FaceDestination();
+    //            m_player.clearPlayerPath();
+    //            m_enemyMover.firstChaserMove = false;
+    //        }
+    //    }
+    //}
 
-            Node EnemyNode = m_board.FindNodeAt(transform.position);
+    //public void PushRight() {
+    //    if (m_player.hasLightBulb) {
 
-            if (m_board.playerNode.transform.position.z == EnemyNode.transform.position.z && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < EnemyNode.transform.position.x) {
-                Debug.Log("MoveRight");
-                m_enemyMover.MoveRight();
+    //        Node EnemyNode = m_board.FindNodeAt(transform.position);
 
-                m_enemyMover.destination = m_player.transform.position;
-                m_enemyMover.FaceDestination();
-                m_player.clearPlayerPath();
-                m_enemyMover.firstChaserMove = false;
-            }
-        }
-    }
+    //        if (m_board.playerNode.transform.position.z == EnemyNode.transform.position.z && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < EnemyNode.transform.position.x) {
+    //            Debug.Log("MoveRight");
+    //            m_enemyMover.MoveRight();
 
-
-    //PUSH UP
-    public void PushUp() {
-        if (m_player.hasLightBulb) {
-
-            Node EnemyNode = m_board.FindNodeAt(transform.position);
-
-            if (m_board.playerNode.transform.position.x == EnemyNode.transform.position.x && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < EnemyNode.transform.position.z) {
-                Debug.Log("MoveUp");
-                m_enemyMover.MoveForward();
-
-                m_enemyMover.destination = m_player.transform.position;
-                m_enemyMover.FaceDestination();
-                m_player.clearPlayerPath();
-                m_enemyMover.firstChaserMove = false;
-            }
-        }
-    }
+    //            m_enemyMover.destination = m_player.transform.position;
+    //            m_enemyMover.FaceDestination();
+    //            m_player.clearPlayerPath();
+    //            m_enemyMover.firstChaserMove = false;
+    //        }
+    //    }
+    //}
 
 
+    ////PUSH UP
+    //public void PushUp() {
+    //    if (m_player.hasLightBulb) {
 
-    //PUSH DOWN
-    public void PushDown() {
-        if (m_player.hasLightBulb) {
+    //        Node EnemyNode = m_board.FindNodeAt(transform.position);
 
-            Node EnemyNode = m_board.FindNodeAt(transform.position);
+    //        if (m_board.playerNode.transform.position.x == EnemyNode.transform.position.x && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < EnemyNode.transform.position.z) {
+    //            Debug.Log("MoveUp");
+    //            m_enemyMover.MoveForward();
 
-            if (m_board.playerNode.transform.position.x == EnemyNode.transform.position.x && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > EnemyNode.transform.position.z) {
-                Debug.Log("MoveDown");
-                m_enemyMover.MoveBackward();
+    //            m_enemyMover.destination = m_player.transform.position;
+    //            m_enemyMover.FaceDestination();
+    //            m_player.clearPlayerPath();
+    //            m_enemyMover.firstChaserMove = false;
+    //        }
+    //    }
+    //}
 
-                m_enemyMover.destination = m_player.transform.position;
-                m_enemyMover.FaceDestination();
-                m_player.clearPlayerPath();
-                m_enemyMover.firstChaserMove = false;
 
-            }
-        }
-    }
 
-    
+    ////PUSH DOWN
+    //public void PushDown() {
+    //    if (m_player.hasLightBulb) {
+
+    //        Node EnemyNode = m_board.FindNodeAt(transform.position);
+
+    //        if (m_board.playerNode.transform.position.x == EnemyNode.transform.position.x && Vector3.Distance(EnemyNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > EnemyNode.transform.position.z) {
+    //            Debug.Log("MoveDown");
+    //            m_enemyMover.MoveBackward();
+
+    //            m_enemyMover.destination = m_player.transform.position;
+    //            m_enemyMover.FaceDestination();
+    //            m_player.clearPlayerPath();
+    //            m_enemyMover.firstChaserMove = false;
+
+    //        }
+    //    }
+    //}
+
+    #endregion
+
+
+
     public ItemData GetData() {
         ItemData itemData = new ItemData() {
             BoardPosition = transform.position,

@@ -266,13 +266,14 @@ public class GameManager : MonoBehaviour {
     }
 
     public void UpdateTurn() {
-
+        
         // CheckSword();
         checkNodeForObstacles();
         LightBulbNode();
         //FearEnemies();
         FlashLightNode();
-        
+        triggerNodeWithMovable();
+
 
 
         foreach (var enemy in m_enemies) {
@@ -286,8 +287,11 @@ public class GameManager : MonoBehaviour {
                     }
                 }
 
-                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count != 0) {
-                    enemy.SetMovementType(MovementType.Stationary);
+                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count != 0
+                    || (m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
+                    && !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen)) {
+                    //enemy.SetMovementType(MovementType.Stationary);
+                    enemy.m_enemyMover.spottedPlayer = false;
                 }
                 else {
                     enemy.SetMovementType(enemy.GetFirstMovementType());
@@ -310,6 +314,7 @@ public class GameManager : MonoBehaviour {
                 m_movableObjects = GetMovableObjects();
             }
             triggerNode();
+            
         }
 
 
@@ -323,8 +328,6 @@ public class GameManager : MonoBehaviour {
                 NotMovingMovable();
             }
         }
-        
-
     }
 
 
@@ -413,7 +416,7 @@ public class GameManager : MonoBehaviour {
             m_board.playerNode.UpdateTriggerToTrue();
         }
         else if (m_board.GetPreviousPlayerNode() != null && previousTempNode.isATrigger) {
-            m_board.UpdateTriggerToFalse();
+            m_board.UpdateTriggerToFalse(m_board.GetPreviousPlayerNode());
             Debug.Log("TRIGGER A FALSE");
             m_board.SetPreviousPlayerNode(null);
         }
@@ -424,7 +427,7 @@ public class GameManager : MonoBehaviour {
     public void triggerNode() {
 
         List<EnemyManager> enemies;
-        List<MovableObject> movableObjects;
+
         List<Armor> armors;
 
         foreach (var node in m_board.TriggerNodes) {
@@ -448,45 +451,54 @@ public class GameManager : MonoBehaviour {
                         enemy.GetEnemySensor.GetPreviousEnemyNode().triggerState = false;
                     }
                 }
-            }
 
+                if (enemies.Count == 0) {
+                    node.mover = null;
+                }
 
-            movableObjects = m_board.FindMovableObjectsAt(node);
-            foreach (MovableObject movableObject in movableObjects) {
-
-                if (node.mover != movableObject) {
-
-                    node.mover = movableObject;
-                    if (movableObject.FindMovableObjectNode().isATrigger) {
-                        movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
-                        movableObject.FindMovableObjectNode().UpdateTriggerToTrue();
+                armors = m_board.FindArmorsAt(node);
+                foreach (Armor armor in armors) {
+                    if (armor.FindSwordNode().isATrigger && armor.isActive) {
+                        Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * Board.spacing)));
+                        armor.FindSwordNode().UpdateTriggerToTrue(); //COSì NON FUNZIONA MADONNA PORCONA 
                     }
-                    else if (movableObject.GetPreviousMovableObjectNode() != null) {
-                        movableObject.GetPreviousMovableObjectNode().triggerState = false;
+                    else if (armor.FindSwordNode().isATrigger && !armor.isActive) {
+                        armor.FindSwordNode().triggerState = false;
                     }
                 }
-            }
 
-            if (enemies.Count == 0 && movableObjects.Count == 0) {
-                node.mover = null;
-            }
-
-            armors = m_board.FindArmorsAt(node);
-            foreach (Armor armor in armors) {
-                if (armor.FindSwordNode().isATrigger && armor.isActive) {
-                    Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * Board.spacing)));
-                    armor.FindSwordNode().UpdateTriggerToTrue(); //COSì NON FUNZIONA MADONNA PORCONA 
-                }
-                else if (armor.FindSwordNode().isATrigger && !armor.isActive) {
-                    armor.FindSwordNode().triggerState = false;
-                }
             }
 
         }
+
     }
 
+        public void triggerNodeWithMovable() {
 
+            List<MovableObject> movableObjects;
+            foreach (var node in m_board.TriggerNodes) {
+                movableObjects = m_board.FindMovableObjectsAt(node);
+                foreach (MovableObject movableObject in movableObjects) {
 
+                //if (node.mover != movableObject) {
+
+                //node.mover = movableObject;
+                if (movableObject.FindMovableObjectNode().isATrigger) {
+                    Debug.Log(movableObject.GetPreviousMovableObjectNode() + "NO");
+                    movableObject.FindMovableObjectNode().UpdateTriggerToTrue();
+                }
+                else{
+                Debug.Log(movableObject.GetPreviousMovableObjectNode() + "SI");
+                    UpdateTriggerToFalseForMO(node);       
+                }
+                       
+                Debug.Log(movableObject.GetPreviousMovableObjectNode() + " = " + node);
+                //}
+                    
+                }
+            }
+        }
+    
     public List<MovableObject> GetMovableObjects() {
         foreach (var movObj in m_board.AllMovableObjects) {
             foreach (var node in m_board.playerNode.LinkedNodes) {
@@ -519,36 +531,40 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    //Old FearEnemies
+    #region
+    //public void FearEnemies() {
 
-    public void FearEnemies() {
+    //    if (m_player.hasLightBulb) {
+    //        foreach (var enemy in m_enemies) {
 
-        if (m_player.hasLightBulb) {
-            foreach (var enemy in m_enemies) {
+    //            startPos = new Vector3(m_board.FindNodeAt(enemy.transform.position).Coordinate.x, 0f, m_board.FindNodeAt(enemy.transform.position).Coordinate.y);
 
-                startPos = new Vector3(m_board.FindNodeAt(enemy.transform.position).Coordinate.x, 0f, m_board.FindNodeAt(enemy.transform.position).Coordinate.y);
-
-                if (enemy.GetMovementType() == MovementType.Chaser) {
-                    Debug.Log(EnemyMover.index);
-                    frontalDest = m_player.GetPlayerPath(EnemyMover.index).transform.position;
-                }
-                else {
-                    frontalDest = startPos + enemy.transform.TransformVector(directionToMove);
-                }
+    //            if (enemy.GetMovementType() == MovementType.Chaser) {
+    //                Debug.Log(EnemyMover.index);
+    //                frontalDest = m_player.GetPlayerPath(EnemyMover.index).transform.position;
+    //            }
+    //            else {
+    //                frontalDest = startPos + enemy.transform.TransformVector(directionToMove);
+    //            }
 
 
-                if (enemy != null) {
-                    if (frontalDest == m_board.playerNode.transform.position) {
-                        enemy.isScared = true;
-                        enemy.wasScared = true;
-                    }
-                    else if (frontalDest != m_board.playerNode.transform.position) {
-                        enemy.isScared = false;
-                    }
-                }
+    //            if (enemy != null) {
+    //                if (frontalDest == m_board.playerNode.transform.position) {
+    //                    enemy.isScared = true;
+    //                    enemy.wasScared = true;
+    //                }
+    //                else if (frontalDest != m_board.playerNode.transform.position) {
+    //                    enemy.isScared = false;
+    //                }
+    //            }
 
-            }
-        }
-    }
+    //        }
+    //    }
+    //}
+
+    #endregion   
+
     public void EnemyOnOff() {
         foreach (var enemy in m_enemies) {
             if (enemy != null) {
@@ -614,6 +630,17 @@ public class GameManager : MonoBehaviour {
     }
 
 
-    
+    public void UpdateTriggerToFalseForMO(Node n) {
+
+        foreach (var movableObject in m_board.FindMovableObjectsAt(n)) {
+            n.triggerState = false;
+            n.UpdateGateToClose(movableObject.FindMovableObjectNode().GetGateID()); // era con movableObject.PreviousMovableObjectNode.GetGateID()
+            Debug.Log("CLOSE");
+            n.ArmorDeactivation(movableObject.FindMovableObjectNode().GetArmorID());//  era con movableObject.PreviousMovableObjectNode.GetArmorID()
+        }
+
+    }
+
+
 
 }
