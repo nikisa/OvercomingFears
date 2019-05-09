@@ -24,6 +24,9 @@ public class PlayerInput : MonoBehaviour {
     bool m_f;
     public bool F { get { return m_f; } }
 
+    bool m_e;
+    public bool ESC { get { return m_e; } }
+
 
     bool m_inputEnabled = false;
     public bool InputEnabled {
@@ -47,9 +50,8 @@ public class PlayerInput : MonoBehaviour {
             m_s = Input.GetKeyDown(KeyCode.Return);//???
             m_p = Input.GetKey(KeyCode.LeftShift);
             m_f = Input.GetKey(KeyCode.F);
-
-
-
+            m_e = Input.GetKey(KeyCode.Escape); 
+            
         }
         else {
             m_h = 0f;
@@ -57,6 +59,7 @@ public class PlayerInput : MonoBehaviour {
             m_s = false;
             m_p = false;
             m_f = false;
+            m_e = false;
         }
         
     }

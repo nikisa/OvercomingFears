@@ -84,6 +84,12 @@ public class PlayerManager : TurnManager {
                 }
             }
 
+
+            if (playerInput.ESC)
+            {
+
+            }
+
             if (playerInput.V == 0 && !playerInput.F) {
                 if (playerInput.H < 0) {
                     if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0) { //Aggiunto AND per evtiare di entrare nei MO facendo la pull verso di essi

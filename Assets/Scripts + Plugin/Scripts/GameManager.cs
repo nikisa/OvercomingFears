@@ -13,6 +13,13 @@ public enum Turn {
 
 public class GameManager : MonoBehaviour {
 
+    private static GameManager _instance;
+
+    public static GameManager Instance { get { return _instance; } }
+
+
+    Animator SMController;
+
     Board m_board;
     PlayerManager m_player;
 
@@ -46,34 +53,103 @@ public class GameManager : MonoBehaviour {
 
     public float delay  = 0;
 
-
+    #region UnityEvents
     public UnityEvent setupEvent;
     public UnityEvent startLevelEvent;
     public UnityEvent playLevelEvent;
     public UnityEvent endLevelEvent;
     public UnityEvent loseLevelEvent;
+    #endregion
+
+    #region Events
+
+    public delegate void OnClick();
+    public static OnClick stateMenu;
+    public static OnClick stateGameplay;
+
+
+     void OnEnable()
+    {
+        stateGameplay += SetGameplayTrigger;        
+    }
+
+
+    void SetGameplayTrigger()
+    {
+        if (stateGameplay != null)
+        {
+            SMController.SetTrigger("Gameplay");
+        }
+        else
+        {
+            Debug.Log("out");
+        }
+    }
+
+
+    private void OnDisable()
+    {
+        stateGameplay -= SetGameplayTrigger;
+    }
+
+    #endregion
 
     private void Awake() {
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
-        m_player = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
 
 
-        EnemyManager[] enemies = GameObject.FindObjectsOfType<EnemyManager>() as EnemyManager[];
-        m_enemies = enemies.ToList();
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
 
-        EnemyMover[] enemiesMovers = GameObject.FindObjectsOfType<EnemyMover>() as EnemyMover[];
-        m_enemiesMovers = enemiesMovers.ToList();
+        DontDestroyOnLoad(this);
 
-        MovableObject[] movableObjects = GameObject.FindObjectsOfType<MovableObject>() as MovableObject[];
-        m_movableObjects = movableObjects.ToList();
 
-        Armor[] armors = GameObject.FindObjectsOfType<Armor>() as Armor[];
-        m_armors = armors.ToList();
+        #region StateMachine and Initialization
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+        SMController = FindObjectOfType<Animator>().GetComponent<Animator>();
+                StateBehaviourBase.Context context = new StateBehaviourBase.Context()
+                {
+                    SetupDone = false,
+                    id = 1,
+                };
+                foreach (StateBehaviourBase state in SMController.GetBehaviours<StateBehaviourBase>())
+                {
+                    state.Setup(context);
+                }
+        }
+        else
+        {
+            
 
-        Sword[] swords = GameObject.FindObjectsOfType<Sword>() as Sword[];
-        m_sword = swords.ToList();
+            m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+            m_player = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
 
-        //directionToMove = new Vector3(0f, 0f, Board.spacing);
+
+            EnemyManager[] enemies = GameObject.FindObjectsOfType<EnemyManager>() as EnemyManager[];
+            m_enemies = enemies.ToList();
+
+            EnemyMover[] enemiesMovers = GameObject.FindObjectsOfType<EnemyMover>() as EnemyMover[];
+            m_enemiesMovers = enemiesMovers.ToList();
+
+            MovableObject[] movableObjects = GameObject.FindObjectsOfType<MovableObject>() as MovableObject[];
+            m_movableObjects = movableObjects.ToList();
+
+            Armor[] armors = GameObject.FindObjectsOfType<Armor>() as Armor[];
+            m_armors = armors.ToList();
+
+            Sword[] swords = GameObject.FindObjectsOfType<Sword>() as Sword[];
+            m_sword = swords.ToList();
+
+            //directionToMove = new Vector3(0f, 0f, Board.spacing);
+        }
+
+        #endregion
 
     }
 
