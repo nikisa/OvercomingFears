@@ -5,29 +5,57 @@ using UnityEngine;
 public class Trap : MonoBehaviour {
 
     public int trapID;
+    public LayerMask obstacleLayer;
 
-    public GameObject projectile;
+    public bool isShooting;
 
-    float speed = 100f;
-
-    [HideInInspector] public bool canShoot;
-
-
-	void Start () {
-        canShoot = true;
-	}
-	
     public int GetID() {
         return this.trapID;
     }
 
     public void Shoot() {
-        GameObject temp;
+        
+            RaycastHit hit;
+            if (Physics.Raycast(transform.GetChild(1).gameObject.transform.position, transform.GetChild(1).gameObject.transform.forward, out hit, 100, obstacleLayer)) {
+                Debug.Log("HIT");
+                Debug.DrawRay(GetComponent<Trap>().transform.GetChild(1).gameObject.transform.position, transform.GetChild(1).gameObject.transform.forward * hit.distance, Color.red);
+                
+                switch (hit.collider.tag) {
+                    case "Enemy":
+                        hit.collider.GetComponent<EnemyManager>().Die(); break;
+                    case "Mirror":
+                        int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
 
-        if (canShoot) {
-            temp = Instantiate(projectile, transform.forward + new Vector3(this.transform.position.x, 0.5f, transform.position.z), Quaternion.identity);
-            temp.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
-            canShoot = false;
-        }        
+                        switch (index) {
+
+                            case 0:
+                                hit.collider.GetComponent<Mirror>().MirrorShootRight();
+                                Debug.Log("case 0");
+                                break;
+
+                            case 1:
+                                hit.collider.GetComponent<Mirror>().MirrorShootLeft();
+                                Debug.Log("case 1");
+                                break;
+
+                            case 2:
+                                hit.collider.GetComponent<Mirror>().MirrorShootUp();
+                                Debug.Log("case 3");
+                                break;
+                            
+
+                            case 3:
+                                hit.collider.GetComponent<Mirror>().MirrorShootDown();
+                                Debug.Log("case 2");
+                                break;
+
+                    }
+                        break;
+                    case "Wall":
+                        break;
+                }
+        
+            }
+        
     }
 }

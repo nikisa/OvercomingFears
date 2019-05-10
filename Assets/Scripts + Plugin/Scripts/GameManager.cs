@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour {
     bool m_hasLevelFinished = false;
     public bool HasLevelFinished { get { return m_hasLevelFinished; } set { m_hasLevelFinished = value; } }
 
-    public float delay  = 0;
+    public float delay = 0;
 
     #region UnityEvents
     public UnityEvent setupEvent;
@@ -68,27 +68,22 @@ public class GameManager : MonoBehaviour {
     public static OnClick stateGameplay;
 
 
-     void OnEnable()
-    {
-        stateGameplay += SetGameplayTrigger;        
+    void OnEnable() {
+        stateGameplay += SetGameplayTrigger;
     }
 
 
-    void SetGameplayTrigger()
-    {
-        if (stateGameplay != null)
-        {
+    void SetGameplayTrigger() {
+        if (stateGameplay != null) {
             SMController.SetTrigger("Gameplay");
         }
-        else
-        {
+        else {
             Debug.Log("out");
         }
     }
 
 
-    private void OnDisable()
-    {
+    private void OnDisable() {
         stateGameplay -= SetGameplayTrigger;
     }
 
@@ -97,35 +92,29 @@ public class GameManager : MonoBehaviour {
     private void Awake() {
 
 
-        if (_instance != null && _instance != this)
-        {
+        if (_instance != null && _instance != this) {
             Destroy(this.gameObject);
         }
-        else
-        {
+        else {
             _instance = this;
         }
 
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
 
 
         #region StateMachine and Initialization
-        if (SceneManager.GetActiveScene().name == "Menu")
-        {
-        SMController = FindObjectOfType<Animator>().GetComponent<Animator>();
-                StateBehaviourBase.Context context = new StateBehaviourBase.Context()
-                {
-                    SetupDone = false,
-                    id = 1,
-                };
-                foreach (StateBehaviourBase state in SMController.GetBehaviours<StateBehaviourBase>())
-                {
-                    state.Setup(context);
-                }
+        if (SceneManager.GetActiveScene().name == "Menu") {
+            SMController = FindObjectOfType<Animator>().GetComponent<Animator>();
+            StateBehaviourBase.Context context = new StateBehaviourBase.Context() {
+                SetupDone = false,
+                id = 1,
+            };
+            foreach (StateBehaviourBase state in SMController.GetBehaviours<StateBehaviourBase>()) {
+                state.Setup(context);
+            }
         }
-        else
-        {
-            
+        else {
+
 
             m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
             m_player = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
@@ -300,7 +289,7 @@ public class GameManager : MonoBehaviour {
 
                 EnemyOnOff();
                 enemy.PlayTurn();
-                
+
 
                 //if (enemy.isScared == false) {
 
@@ -342,7 +331,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void UpdateTurn() {
-        
+
         // CheckSword();
         checkNodeForObstacles();
         LightBulbNode();
@@ -354,7 +343,7 @@ public class GameManager : MonoBehaviour {
 
         foreach (var enemy in m_enemies) {
             if (enemy != null) {
-                
+
                 foreach (Sword sword in m_sword) {
                     if (sword != null) {
                         if (m_board.FindNodeAt(enemy.transform.position) == m_board.FindNodeAt(sword.transform.position) && sword.gameObject.activeInHierarchy) {
@@ -363,26 +352,35 @@ public class GameManager : MonoBehaviour {
                     }
                 }
 
-                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count != 0
-                    || (m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
-                    && !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen)) {
+                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count == 1) {
                     //enemy.SetMovementType(MovementType.Stationary);
+                    Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count);
                     enemy.m_enemyMover.spottedPlayer = false;
                 }
                 else {
                     enemy.SetMovementType(enemy.GetFirstMovementType());
                 }
 
+
+                if (m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position) != null){
+                    if ((m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
+                    && !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen)) {
+                        //enemy.SetMovementType(MovementType.Stationary);
+                        Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count);
+                        enemy.m_enemyMover.spottedPlayer = false;
+                    }
+                    else {
+                        enemy.SetMovementType(enemy.GetFirstMovementType());
+                    }
+                }
+                
+
+
+
             }
         }
 
         if (m_currentTurn == Turn.Player && m_player != null) {
-
-            
-
-            foreach (var trap in m_board.AllTraps) {
-                trap.canShoot = true;
-            }
 
             triggerNodePlayerTurn();
             if (m_player.IsTurnComplete && !AreEnemiesAllDead()) {
@@ -396,7 +394,7 @@ public class GameManager : MonoBehaviour {
 
         else if (m_currentTurn == Turn.Enemy) {
 
-            
+
 
             if (IsEnemyTurnComplete()) {
                 crackNode();
@@ -435,7 +433,7 @@ public class GameManager : MonoBehaviour {
 
                     node.UpdateCrackableState();
                     node.UpdateCrackableTexture();
-                   
+
                 }
 
 
@@ -496,7 +494,7 @@ public class GameManager : MonoBehaviour {
             Debug.Log("TRIGGER A FALSE");
             m_board.SetPreviousPlayerNode(null);
         }
-        
+
 
     }
 
@@ -549,32 +547,37 @@ public class GameManager : MonoBehaviour {
 
     }
 
-        public void triggerNodeWithMovable() {
+    public void triggerNodeWithMovable() {
 
-            List<MovableObject> movableObjects;
-            foreach (var node in m_board.TriggerNodes) {
-                movableObjects = m_board.FindMovableObjectsAt(node);
-                foreach (MovableObject movableObject in movableObjects) {
-
+        List<MovableObject> movableObjects;
+        foreach (var node in m_board.TriggerNodes) {
+            movableObjects = m_board.FindMovableObjectsAt(node);
+            foreach (MovableObject movableObject in movableObjects) {
+                
                 //if (node.mover != movableObject) {
-
                 //node.mover = movableObject;
                 if (movableObject.FindMovableObjectNode().isATrigger) {
-                    Debug.Log(movableObject.GetPreviousMovableObjectNode() + "NO");
+                    //Debug.Log(movableObject.GetPreviousMovableObjectNode() + "NO");
+                    movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                     movableObject.FindMovableObjectNode().UpdateTriggerToTrue();
+                    }
+                    else if (movableObject.GetPreviousMovableObjectNode().isATrigger) {
+                        Debug.Log(movableObject.GetPreviousMovableObjectNode() + "SI");
+                        UpdateTriggerToFalseForMO(node);
+                        movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                 }
-                else{
-                Debug.Log(movableObject.GetPreviousMovableObjectNode() + "SI");
-                    UpdateTriggerToFalseForMO(node);       
-                }
-                       
-                Debug.Log(movableObject.GetPreviousMovableObjectNode() + " = " + node);
+                
+                
+
+                
+
+                //Debug.Log(movableObject.GetPreviousMovableObjectNode() + " = " + node);
                 //}
-                    
-                }
+
             }
         }
-    
+    }
+
     public List<MovableObject> GetMovableObjects() {
         foreach (var movObj in m_board.AllMovableObjects) {
             foreach (var node in m_board.playerNode.LinkedNodes) {
@@ -675,8 +678,17 @@ public class GameManager : MonoBehaviour {
     public void InitSword() {
         foreach (var armor in m_armors) {
             if (!armor.isActive) {
-                armor.transform.GetChild(0).gameObject.SetActive(false);
+                armor.transform.GetChild(3).gameObject.SetActive(false);
+                armor.AnimatorController.ResetTrigger("Down");
+                armor.AnimatorController.SetTrigger("Up");
+                armor.AnimatorController.Play("ArmorUP");
             }
+            //else{
+            //    armor.transform.GetChild(3).gameObject.SetActive(true);
+            //    armor.AnimatorController.ResetTrigger("Up");
+            //    armor.AnimatorController.SetTrigger("Down");
+            //    armor.AnimatorController.Play("ArmorDOWN");
+            //}
         }
     }
 

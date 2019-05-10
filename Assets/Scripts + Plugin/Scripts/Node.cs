@@ -298,6 +298,10 @@ public class Node : MonoBehaviour {
         return mirrorID;
     }
 
+    public int GetTrapID() {
+        return trapID;
+    }
+
 
     public void SetGateOpen() { //PROVA____________________________________________________________________________________________________________________________________
         gateOpen = !gateOpen;
@@ -331,7 +335,18 @@ public class Node : MonoBehaviour {
 
         foreach (var trap in m_board.AllTraps) {
             if (trap.GetID() == id) {
+                trap.isShooting = true;
                 trap.Shoot();
+            }
+        }
+    }
+
+    public void TrapDeactivation(int id) {
+
+        foreach (var trap in m_board.AllTraps) {
+            if (trap.GetID() == id) {
+                trap.isShooting = false;
+                
             }
         }
     }

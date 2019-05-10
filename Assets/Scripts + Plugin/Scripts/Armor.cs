@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Armor : MonoBehaviour {
 
+    [HideInInspector]
+    public Animator AnimatorController;
+
     Board m_board;
 
     public int armorID;
@@ -18,6 +21,7 @@ public class Armor : MonoBehaviour {
 
     private void Awake() {
         m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        AnimatorController = FindObjectOfType<Animator>().GetComponent<Animator>();
     }
 
     private void Start() {
@@ -31,11 +35,18 @@ public class Armor : MonoBehaviour {
     public void ActivateSword() {
         isActive = !isActive;
         if (!brokenSword && isActive == true) {
-            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(3).gameObject.SetActive(true);
+            AnimatorController.ResetTrigger("Up");
+            AnimatorController.SetTrigger("Down");
+            AnimatorController.Play("ArmorDOWN");
+
         }
 
         else if (isActive == false) {
-            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(3).gameObject.SetActive(false);
+            AnimatorController.ResetTrigger("Down");
+            AnimatorController.SetTrigger("Up");
+            AnimatorController.Play("ArmorUP");
         }
 
         m_board.CheckSword();
@@ -45,10 +56,10 @@ public class Armor : MonoBehaviour {
     public void DeactivateSword() {
         isActive = !isActive;
         if (isActive == false) {
-            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(3).gameObject.SetActive(false);
         }
         else if (isActive == true) {
-            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(3).gameObject.SetActive(true);
         }
     }
 

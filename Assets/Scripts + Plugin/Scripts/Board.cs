@@ -221,6 +221,7 @@ public class Board : MonoBehaviour {
         n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
         Debug.Log("CLOSE");
         n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
+        n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
     }
 
 
