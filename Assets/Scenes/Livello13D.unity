@@ -2860,18 +2860,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &444204734 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114038206111427688, guid: 0bc4ae4c54d23304895a0e6aa8215d2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 554566879}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7de39a2a52b960e4183c0ca0c3f3e06c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &449432434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,6 +3617,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1608033680441738, guid: 0bc4ae4c54d23304895a0e6aa8215d2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4392081872149790, guid: 0bc4ae4c54d23304895a0e6aa8215d2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7441,6 +7433,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1058611579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229032962324959032, guid: f86e2a7872e4ff24989b5d693a1f2940,
+    type: 3}
+  m_PrefabInstance: {fileID: 2229032961366431055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1058611582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058611579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de39a2a52b960e4183c0ca0c3f3e06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalPrefab: {fileID: 1303443211553314, guid: 32c0527c1a895c945bcb04f2c6c842ba, type: 3}
+  drawGoalTime: 2
+  drawGoalDelay: 2
+  drawGoalEaseType: 16
 --- !u!1 &1083911171
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,7 +8234,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2229032961366431055}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1058611579}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd5d7afb47f579d4f9b89209f2860b31, type: 3}
@@ -10891,6 +10905,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1587291627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1349243609, guid: 5ceecc9f07d5129418669ac976359f0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510561431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1592497331
 GameObject:
   m_ObjectHideFlags: 0
@@ -12498,7 +12518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2415237d4244ec54a8a1d4eb4dda5ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  character: {fileID: 1587291627}
   cameraHeight: 5
   cameraAngle: 2
 --- !u!1 &1815697312
@@ -14928,7 +14948,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playLevelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 444204734}
+      objectReference: {fileID: 1058611582}
     - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: playLevelEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -14938,7 +14958,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playLevelEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
-      objectReference: {fileID: 444204734}
+      objectReference: {fileID: 1058611582}
     - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: endLevelEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14984,6 +15004,16 @@ PrefabInstance:
       propertyPath: loseLevelEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 258843713}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: playLevelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DrawGoal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: playLevelEvent.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: InitBoard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f86e2a7872e4ff24989b5d693a1f2940, type: 3}
 --- !u!1001 &6985449074586147625

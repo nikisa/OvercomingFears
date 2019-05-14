@@ -125,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1349243609, guid: 5ceecc9f07d5129418669ac976359f0e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5536320936737257324, guid: 5ceecc9f07d5129418669ac976359f0e,
         type: 3}
@@ -14708,7 +14708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1189485176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24108,6 +24108,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3299009956679996396, guid: 63debb5cd55224a4bb6b4e2b1e190f87,
+        type: 3}
+      propertyPath: gatePrefab
+      value: 
+      objectReference: {fileID: 4840865243500435050, guid: 47a197cff84b94840a29a4acb6204204,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63debb5cd55224a4bb6b4e2b1e190f87, type: 3}
 --- !u!1 &1870023171

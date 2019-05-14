@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class StateGameplay : StateBehaviourBase
 {
 
+    private void OnSceneLoaded(Scene scene , LoadSceneMode mode) {
+        Debug.Log("STARTGAME");
+        GameManager.Instance.StartGameLoop();
+        GameManager.Instance.IsGameplay = true;
+    }
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        SceneManager.LoadScene("Test " + ctx.id);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.LoadScene("Level " + ctx.id);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -22,6 +29,8 @@ public class StateGameplay : StateBehaviourBase
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        GameManager.Instance.IsGameplay = false;
         SceneManager.LoadScene("Menu");
     }
 

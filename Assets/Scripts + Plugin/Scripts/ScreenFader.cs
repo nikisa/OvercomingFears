@@ -26,6 +26,11 @@ public class ScreenFader : MonoBehaviour {
     }
 
     public void FadeOff() {
+        if (this.name == "Title") {
+            Debug.Log("TITLE");
+        } else {
+            Debug.Log("NOT TITLE");
+        }
         iTween.ValueTo(gameObject, iTween.Hash(
             "from", solidColor,
             "to", clearColor,

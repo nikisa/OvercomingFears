@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get { return _instance; } }
 
+    private bool _isGameplay;
+    public bool IsGameplay { get { return _isGameplay; } set { _isGameplay = value; } }
 
     Animator SMController;
 
@@ -115,13 +117,32 @@ public class GameManager : MonoBehaviour
         GetBoardManager();
         GetPlayerManager();
         //GetUIManager();
+
+        EnemyManager[] enemies = GameObject.FindObjectsOfType<EnemyManager>() as EnemyManager[];
+        m_enemies = enemies.ToList();
+
+        EnemyMover[] enemiesMovers = GameObject.FindObjectsOfType<EnemyMover>() as EnemyMover[];
+        m_enemiesMovers = enemiesMovers.ToList();
+
+        MovableObject[] movableObjects = GameObject.FindObjectsOfType<MovableObject>() as MovableObject[];
+        m_movableObjects = movableObjects.ToList();
+
+        Armor[] armors = GameObject.FindObjectsOfType<Armor>() as Armor[];
+        m_armors = armors.ToList();
+
+        Sword[] swords = GameObject.FindObjectsOfType<Sword>() as Sword[];
+        m_sword = swords.ToList();
+
+        m_player.Setup();
+        m_board.Setup(m_player);
+        m_player.playerMover.Setup();
     }
 
     void GetBoardManager()
     {
         if (m_board == null)
         {
-            m_board = FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
+            m_board = FindObjectOfType<GameManager>().GetComponent<BoardManager>();
         }
     }
 
@@ -143,6 +164,10 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Init();
+
+
+
         #region StateMachine and Initialization
         if (SceneManager.GetActiveScene().name == "Menu")
         {
@@ -180,11 +205,13 @@ public class GameManager : MonoBehaviour
         }
 
         #endregion
+
+        _isGameplay = false;
     }
 
-    void Start()
+    public void StartGameLoop()
     {
-
+        Setup();
         if (m_player != null && m_board != null)
         {
             InitSword();
@@ -221,6 +248,8 @@ public class GameManager : MonoBehaviour
 
             yield return null;
         }
+
+       
 
         if (startLevelEvent != null)
         {
@@ -317,7 +346,8 @@ public class GameManager : MonoBehaviour
 
     public void PlayLevel()
     {
-        m_hasLevelStarted = true;
+        
+        this.m_hasLevelStarted = true;
     }
 
     bool IsWinner()

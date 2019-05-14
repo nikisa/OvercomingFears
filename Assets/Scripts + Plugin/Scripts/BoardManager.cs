@@ -84,8 +84,8 @@ public class BoardManager : MonoBehaviour {
     //public Color capturePositionIconColor = Color.blue;
     //---------------------------------------------------------------------
 
-    void Awake() {
-        m_player = Object.FindObjectOfType<PlayerMover>().GetComponent<PlayerMover>();
+    public void Setup(PlayerManager _playerMng) {
+        m_player = _playerMng.playerMover;
 
 
         m_AllMirrors = FindMirrors();
