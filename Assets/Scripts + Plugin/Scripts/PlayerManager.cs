@@ -11,7 +11,7 @@ public class PlayerManager : TurnManager {
 
     static int i = 0; //indice provvisorio per il cambio della scena
 
-    public EnemyManager enemyManager;
+    //public EnemyManager enemyManager;
 
     public PlayerMover playerMover;
     public PlayerInput playerInput;
@@ -24,7 +24,7 @@ public class PlayerManager : TurnManager {
     public bool hasLightBulb = false;
     public bool hasFlashLight = false;
 
-    Board m_board;
+    BoardManager m_board;
     GameManager m_gm;
 
     ArrayList playerPath;
@@ -34,9 +34,9 @@ public class PlayerManager : TurnManager {
 
         playerMover = GetComponent<PlayerMover>();
         playerInput = GetComponent<PlayerInput>();
-        enemyManager = GetComponent<EnemyManager>();
+        //enemyManager = GetComponent<EnemyManager>();
 
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
         m_gm = Object.FindObjectOfType<GameManager>().GetComponent<GameManager>();
 
         playerPath = new ArrayList();

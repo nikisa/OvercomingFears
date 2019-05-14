@@ -6,7 +6,7 @@ public class PlayerCompass : MonoBehaviour {
 
     Quaternion m_rotation;
 
-    Board m_board;
+    BoardManager m_board;
 
     public GameObject arrowPrefab;
 
@@ -23,7 +23,7 @@ public class PlayerCompass : MonoBehaviour {
 
     private void Awake() {
         m_rotation = transform.rotation;
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
         SetupArrows();
         //MoveArrows();
     }
@@ -39,7 +39,7 @@ public class PlayerCompass : MonoBehaviour {
             return;
         }
         
-        foreach (Vector2 dir in Board.directions) {
+        foreach (Vector2 dir in BoardManager.directions) {
             Vector3 dirVector = new Vector3(dir.normalized.x, 0f, dir.normalized.y);
             Quaternion rotation = Quaternion.LookRotation(dirVector);
             GameObject arrowInstance = Instantiate(arrowPrefab, transform.position + dirVector * startDistance, rotation);
@@ -71,13 +71,13 @@ public class PlayerCompass : MonoBehaviour {
             return;
         }
 
-        if (m_arrows == null || m_arrows.Count != Board.directions.Length) {
+        if (m_arrows == null || m_arrows.Count != BoardManager.directions.Length) {
             Debug.LogWarning("no Board found");
             return;
         }
         if (m_board.playerNode != null) {
-            for (int i = 0; i < Board.directions.Length; i++) {
-                Node neighbor = m_board.playerNode.FindNeighborAt(Board.directions[i]);
+            for (int i = 0; i < BoardManager.directions.Length; i++) {
+                Node neighbor = m_board.playerNode.FindNeighborAt(BoardManager.directions[i]);
 
                 if (neighbor == null || !state) {
                     m_arrows[i].SetActive(false);
@@ -93,10 +93,10 @@ public class PlayerCompass : MonoBehaviour {
     }
 
     void ResetArrows() {
-        for (int i = 0; i < Board.directions.Length; i++) {
+        for (int i = 0; i < BoardManager.directions.Length; i++) {
             iTween.Stop(m_arrows[i]);
-            Vector3 dirVector = new Vector3(Board.directions[i].normalized.x, 0f,
-                                            Board.directions[i].normalized.y);
+            Vector3 dirVector = new Vector3(BoardManager.directions[i].normalized.x, 0f,
+                                            BoardManager.directions[i].normalized.y);
 
             m_arrows[i].transform.position = transform.position + dirVector * startDistance;
         }

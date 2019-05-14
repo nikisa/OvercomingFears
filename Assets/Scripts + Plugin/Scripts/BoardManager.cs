@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Board : MonoBehaviour {
+public class BoardManager : MonoBehaviour {
 
     public static float spacing = 2f;
 

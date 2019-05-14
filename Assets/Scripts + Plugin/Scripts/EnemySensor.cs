@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnemySensor : MonoBehaviour {
 
-    public Vector3 directionToSearch = new Vector3(0f, 0f, Board.spacing);
+    public Vector3 directionToSearch = new Vector3(0f, 0f, BoardManager.spacing);
 
     Node m_nodeToSearch;
-    Board m_board;
+    BoardManager m_board;
     
     Node m_previousEnemyNode;
 
@@ -18,7 +18,7 @@ public class EnemySensor : MonoBehaviour {
     public bool FoundPlayer { get { return m_foundPlayer; } }
 
 	void Awake() {
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
 	}
 	
     public void UpdateSensor(Node enemyNode) {

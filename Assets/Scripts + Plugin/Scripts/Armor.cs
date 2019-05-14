@@ -7,7 +7,7 @@ public class Armor : MonoBehaviour {
     [HideInInspector]
     public Animator AnimatorController;
 
-    Board m_board;
+    BoardManager m_board;
 
     public int armorID;
 
@@ -20,7 +20,7 @@ public class Armor : MonoBehaviour {
     public Node CurrentNode { get { return m_currentNode; } }
 
     private void Awake() {
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
         AnimatorController = FindObjectOfType<Animator>().GetComponent<Animator>();
     }
 
@@ -74,6 +74,6 @@ public class Armor : MonoBehaviour {
 
     public Node FindSwordNode() {
         
-        return m_board.FindNodeAt(transform.position + (transform.forward * Board.spacing));
+        return m_board.FindNodeAt(transform.position + (transform.forward * BoardManager.spacing));
     }
 }

@@ -19,7 +19,7 @@ public class Mover : MonoBehaviour {
 
     public float iTweenDelay = 0f;
 
-    protected Board m_board;
+    protected BoardManager m_board;
 
     protected Node m_currentNode;
 
@@ -33,7 +33,7 @@ public class Mover : MonoBehaviour {
 
     // Use this for initialization
     protected virtual void Awake() {
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
         m_player = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
     }
 
@@ -117,22 +117,22 @@ public class Mover : MonoBehaviour {
     }
 
     public void MoveLeft() {
-        Vector3 newPosition = transform.position + new Vector3(-Board.spacing, 0, 0);
+        Vector3 newPosition = transform.position + new Vector3(-BoardManager.spacing, 0, 0);
         Move(newPosition, 0);
     }
 
     public void MoveRight() {
-        Vector3 newPosition = transform.position + new Vector3(Board.spacing, 0, 0);
+        Vector3 newPosition = transform.position + new Vector3(BoardManager.spacing, 0, 0);
         Move(newPosition, 0);
     }
 
     public void MoveForward() {
-        Vector3 newPosition = transform.position + new Vector3(0, 0, Board.spacing);
+        Vector3 newPosition = transform.position + new Vector3(0, 0, BoardManager.spacing);
         Move(newPosition, 0);
     }
 
     public void MoveBackward() {
-        Vector3 newPosition = transform.position + new Vector3(0, 0, -Board.spacing);
+        Vector3 newPosition = transform.position + new Vector3(0, 0, -BoardManager.spacing);
         Move(newPosition, 0);
     }
 

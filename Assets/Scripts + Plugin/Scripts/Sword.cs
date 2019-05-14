@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour {
 
-    Board m_board;
+    BoardManager m_board;
 
     protected Node m_currentNode;
     public Node CurrentNode { get { return m_currentNode; } }
 
     private void Awake() {
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
     }
 
     private void Start() {

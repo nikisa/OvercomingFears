@@ -14,7 +14,7 @@ public class Node : MonoBehaviour {
     public List<Node> LinkedNodes { get { return m_linkedNodes; } }
 
 
-    Board m_board;
+    BoardManager m_board;
 
     public GameObject switchPrefab;
     public GameObject gatePrefab;
@@ -86,7 +86,7 @@ public class Node : MonoBehaviour {
 
 
     private void Awake() {
-        m_board = Object.FindObjectOfType<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>();
         m_coordinate = new Vector2(transform.position.x, transform.position.z);
         UpdateCrackableTexture();
         m_nodePosition = new Vector3(1000f, 1000f, 1000f);
@@ -129,7 +129,7 @@ public class Node : MonoBehaviour {
 
         List<Node> n_List = new List<Node>();
 
-        foreach (Vector2 dir in Board.directions) {
+        foreach (Vector2 dir in BoardManager.directions) {
             Node foundNeighbor = FindNeighborAt(nodes, dir);
 
             if (foundNeighbor != null && !n_List.Contains(foundNeighbor)) {
@@ -202,7 +202,7 @@ public class Node : MonoBehaviour {
         Vector3 checkDirection = targetNode.transform.position - transform.position;
         RaycastHit raycastHit;
 
-        if (Physics.Raycast(transform.position, checkDirection, out raycastHit, Board.spacing + 0.1f, obstacleLayer)) {
+        if (Physics.Raycast(transform.position, checkDirection, out raycastHit, BoardManager.spacing + 0.1f, obstacleLayer)) {
             //Debug.Log("Node FindObstacle: Ha colpito un ostacolo da " + this.name + " a " + targetNode.name);
             return raycastHit.collider.GetComponent<Obstacle>();
         }

@@ -10,12 +10,12 @@ public class PushingWall : MonoBehaviour {
     /// </summary>
 
     public int pushingWallID;
-    Board m_board;
+    BoardManager m_board;
     Node TargetNode , PushedByNode;    
     PlayerMover m_player;
 
     void Awake() {
-        m_board = Object.FindObjectOfType<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>();
         m_player = Object.FindObjectOfType<PlayerMover>().GetComponent<PlayerMover>();
     }
 

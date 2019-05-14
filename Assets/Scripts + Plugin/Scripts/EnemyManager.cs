@@ -14,7 +14,7 @@ public class EnemyManager : TurnManager {
     public EnemySensor GetEnemySensor { get { return m_enemySensor; } }
 
     EnemyDeath m_enemyDeath;
-    Board m_board;
+    BoardManager m_board;
 
     PlayerManager m_player;
 
@@ -33,7 +33,7 @@ public class EnemyManager : TurnManager {
 
         base.Awake();
 
-        m_board = Object.FindObjectOfType<Board>().GetComponent<Board>();
+        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
         m_enemyMover = GetComponent<EnemyMover>();
         m_enemySensor = GetComponent<EnemySensor>();
         m_enemyDeath = GetComponent<EnemyDeath>();

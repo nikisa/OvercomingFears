@@ -6,7 +6,7 @@ public class EnemyDeath : MonoBehaviour {
 
     public Vector3 offscreenOffset = new Vector3(0f, 10f, 0f);
 
-    Board m_board;
+    BoardManager m_board;
 
     
     //public float deathDelay = 0f;
@@ -16,7 +16,7 @@ public class EnemyDeath : MonoBehaviour {
     //public float moveTime = 0.5f;
 
     void Awake() {
-        m_board = GetComponent<Board>();
+        m_board = GetComponent<BoardManager>();
     }
 
 

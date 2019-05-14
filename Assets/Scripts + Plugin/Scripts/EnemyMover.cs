@@ -17,7 +17,7 @@ public enum MovementType {
 
 public class EnemyMover : Mover {
     
-    public Vector3 directionToMove = new Vector3(0f , 0f , Board.spacing);
+    public Vector3 directionToMove = new Vector3(0f , 0f , BoardManager.spacing);
 
     public MovementType firstMovementType = MovementType.Stationary;
     public MovementType movementType = MovementType.Stationary;
@@ -199,7 +199,7 @@ public class EnemyMover : Mover {
     }
 
     IEnumerator SpinRoutine() {
-        Vector3 localForward = new Vector3(0f, 0f , Board.spacing);
+        Vector3 localForward = new Vector3(0f, 0f , BoardManager.spacing);
         destination = transform.TransformVector(localForward * -1f) + transform.position;
 
         FaceDestination();
