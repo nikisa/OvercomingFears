@@ -20,7 +20,7 @@ public class Armor : MonoBehaviour {
     public Node CurrentNode { get { return m_currentNode; } }
 
     private void Awake() {
-        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
+        m_board = Object.FindObjectOfType<GameManager>().GetComponent<BoardManager>();
         AnimatorController = FindObjectOfType<Animator>().GetComponent<Animator>();
     }
 

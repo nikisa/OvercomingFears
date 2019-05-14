@@ -10,7 +10,7 @@ public class Sword : MonoBehaviour {
     public Node CurrentNode { get { return m_currentNode; } }
 
     private void Awake() {
-        m_board = Object.FindObjectOfType<BoardManager>().GetComponent<BoardManager>();
+        m_board = Object.FindObjectOfType<GameManager>().GetComponent<BoardManager>();
     }
 
     private void Start() {
@@ -33,7 +33,9 @@ public class Sword : MonoBehaviour {
     public void CaptureEnemies() {
         if (m_board != null) {
             List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position));
+            //enemies è vuoto
             if (enemies.Count != 0) {
+                
                 foreach (EnemyManager enemy in enemies) {
                     if (enemy != null) {
                         enemy.Die();

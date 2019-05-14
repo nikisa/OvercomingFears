@@ -151,6 +151,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateMenu.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StaticCounter.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Sword.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\TestManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\TurnManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Utility.cs" />
