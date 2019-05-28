@@ -13,7 +13,7 @@ public class Mover : MonoBehaviour {
     public bool isMoving = false;
     public iTween.EaseType easeType = iTween.EaseType.easeInOutExpo;
 
-    public float moveSpeed = 1.5f;
+    public float moveTime = .5f;
 
     public float rotateTime = 0.5f;
 
@@ -124,7 +124,7 @@ public class Mover : MonoBehaviour {
             "z", destinationPos.z,
             "delay", iTweenDelay,
             "easetype", easeType,
-            "speed", moveSpeed
+            "time", moveTime
         ));
 
         while (Vector3.Distance(destinationPos, transform.position) > 0.01f) {

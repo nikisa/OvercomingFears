@@ -40,7 +40,7 @@ public class PlayerManager : TurnManager
     public void Setup()
     {
         base.Awake();
-
+        
         playerMover = GetComponent<PlayerMover>();
 
         playerInput = GetComponent<PlayerInput>();
@@ -73,6 +73,8 @@ public class PlayerManager : TurnManager
             {
                 return;
             }
+
+            
 
             playerInput.GetKeyInput();
 
@@ -831,6 +833,7 @@ public class PlayerManager : TurnManager
                                         break;
                                     case "Wall":
                                         break;
+
                                     case "Sword":
                                         break;
                                 }

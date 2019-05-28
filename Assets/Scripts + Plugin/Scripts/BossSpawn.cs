@@ -12,6 +12,7 @@ public class BossSpawn : MonoBehaviour
         if (other.tag == "Player")
         {
             Boss.transform.GetChild(0).gameObject.SetActive(true);
+            Boss.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
 }

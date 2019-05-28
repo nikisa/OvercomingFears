@@ -178,6 +178,7 @@
     <Compile Include="Assets\Scenes\Sample\SampleInfo.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Armor.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\BoardManager.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\BossAttack.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\BossSpawn.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\BossTrigger.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\cameraFollow.cs" />

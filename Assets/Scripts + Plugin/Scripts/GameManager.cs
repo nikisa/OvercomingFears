@@ -317,7 +317,6 @@ public class GameManager : MonoBehaviour
     public void LoseLevel()
     {
         StartCoroutine(LoseLevelRoutine());
-       
     }
 
     IEnumerator LoseLevelRoutine()
@@ -373,7 +372,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayLevel()
     {
-
+        Cursor.visible = false;
         this.m_hasLevelStarted = true;
     }
 
