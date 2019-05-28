@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 10feebb7a20e660468b9123e9d237573
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _c_COG_ctrl
+    100002: _c_COG_grp
+    100004: _c_pelvis_grp
+    100006: _c_pelvis_jnt
+    100008: _l_earEnd_ctrl
+    100010: _l_earEnd_grp
+    100012: _l_earEnd_jnt
+    100014: _l_earMiddle_grp
+    100016: _l_earMiddle_jnt
+    100018: _l_earStart_ctrl
+    100020: _l_earStart_grp
+    100022: _l_earStart_grp 1
+    100024: _l_earStart_jnt
+    100026: _l_wheel_ctrl
+    100028: _l_wheel_grp
+    100030: _l_wheelEnd_jnt
+    100032: _l_wheelStart_grp
+    100034: _l_wheelStart_jnt
+    100036: _r_ealEnd_ctrl
+    100038: _r_ealEnd_grp
+    100040: _r_ealStart_ctrl
+    100042: _r_ealStart_grp
+    100044: _r_earEnd_jnt
+    100046: _r_earMiddle_grp
+    100048: _r_earMiddle_jnt
+    100050: _r_earStart_grp
+    100052: _r_earStart_jnt
+    100054: _r_wheel_ctrl
+    100056: _r_wheel_grp
+    100058: _r_wheelEnd_jnt
+    100060: _r_wheelStart_grp
+    100062: _r_wheelStart_jnt
+    100064: //RootNode
+    100066: ControlSystem
+    100068: JointSystem
+    100070: SM_Chaser
+    400000: _c_COG_ctrl
+    400002: _c_COG_grp
+    400004: _c_pelvis_grp
+    400006: _c_pelvis_jnt
+    400008: _l_earEnd_ctrl
+    400010: _l_earEnd_grp
+    400012: _l_earEnd_jnt
+    400014: _l_earMiddle_grp
+    400016: _l_earMiddle_jnt
+    400018: _l_earStart_ctrl
+    400020: _l_earStart_grp
+    400022: _l_earStart_grp 1
+    400024: _l_earStart_jnt
+    400026: _l_wheel_ctrl
+    400028: _l_wheel_grp
+    400030: _l_wheelEnd_jnt
+    400032: _l_wheelStart_grp
+    400034: _l_wheelStart_jnt
+    400036: _r_ealEnd_ctrl
+    400038: _r_ealEnd_grp
+    400040: _r_ealStart_ctrl
+    400042: _r_ealStart_grp
+    400044: _r_earEnd_jnt
+    400046: _r_earMiddle_grp
+    400048: _r_earMiddle_jnt
+    400050: _r_earStart_grp
+    400052: _r_earStart_jnt
+    400054: _r_wheel_ctrl
+    400056: _r_wheel_grp
+    400058: _r_wheelEnd_jnt
+    400060: _r_wheelStart_grp
+    400062: _r_wheelStart_jnt
+    400064: //RootNode
+    400066: ControlSystem
+    400068: JointSystem
+    400070: SM_Chaser
+    2100000: lambert1
+    4300000: SM_Chaser
+    7400000: Death
+    9500000: //RootNode
+    13700000: SM_Chaser
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
