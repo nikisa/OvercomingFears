@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/AlphaLevels/Level 4.unity
-  isLoaded: 1
-  isActive: 1
