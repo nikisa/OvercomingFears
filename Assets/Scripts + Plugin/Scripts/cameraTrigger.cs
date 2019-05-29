@@ -10,20 +10,25 @@ public class cameraTrigger : MonoBehaviour
     Camera m_mainCamera;
     public GameObject cameraDolly;
 
+    [SerializeField]
+    private int _cameraID;
+    public int CameraID { get { return _cameraID; } }
+
     private CameraPathPosition m_cameraPathPosition;
 
     List<LocalCamera> m_LocalCameras;
 
-    public float nearPlane;
-
+    
     public float dollyEaseTime;
     public Ease dollyEaseType;
+
+    public float AngleEaseTime;
+    public Ease angleEaseType;
 
     public float zoomEaseTime;
     public Ease zoomEaseType;
 
-
-
+    
     private void Awake() {
 
         m_mainCamera = Object.FindObjectOfType<Camera>().GetComponent<Camera>();
@@ -45,9 +50,7 @@ public class cameraTrigger : MonoBehaviour
         Debug.Log(m_LocalCameras);
     }
 
-    [SerializeField]
-    private int _cameraID;
-    public int CameraID { get { return _cameraID; }}
+    
 
     [SerializeField]
     private Vector3 _offset;
@@ -68,6 +71,11 @@ public class cameraTrigger : MonoBehaviour
     [SerializeField]
     private float _localFOV;
     public float LocalFOV { get { return _localFOV; } }
+
+    public float nearPlane;
+    public float nearPlaneEaseTime;
+    public Ease nearPlaneEaseType;
+    
 
     private void OnTriggerEnter(Collider other) {
 
@@ -103,9 +111,11 @@ public class cameraTrigger : MonoBehaviour
                 m_cameraPathPosition.cameraBond = false;
                 m_cameraPathPosition.easeType = dollyEaseType;
                 m_cameraPathPosition.easeTime = dollyEaseTime;
+                m_cameraPathPosition.angleEaseType = angleEaseType;
+
                 localCamera.onAir = true;
                 
-                yield return new WaitForSeconds(m_cameraPathPosition.delay + dollyEaseTime);
+                yield return new WaitForSeconds(Mathf.Max(Mathf.Max(dollyEaseTime,AngleEaseTime), zoomEaseTime));
                 m_cameraPathPosition.cameraBond = true;
             }
             
@@ -118,8 +128,7 @@ public class cameraTrigger : MonoBehaviour
 
     public void SetNearPlane()
     {
-        m_mainCamera.nearClipPlane = nearPlane;
+        m_mainCamera.DONearClipPlane(nearPlane, nearPlaneEaseTime).SetEase(nearPlaneEaseType);
     }
     
-
 }

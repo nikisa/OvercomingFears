@@ -208,7 +208,47 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: nearPlane
-      value: 3
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: dollyEaseTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: zoomEaseTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: dollyEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -2305,7 +2345,7 @@ PrefabInstance:
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.8707905
+      value: 7.8517904
       objectReference: {fileID: 0}
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
@@ -2315,7 +2355,7 @@ PrefabInstance:
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.520948
+      value: 14.52495
       objectReference: {fileID: 0}
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
@@ -2372,6 +2412,11 @@ PrefabInstance:
       propertyPath: localCameraID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2140973574305666813, guid: 2f93ef513016ea04e9eb350212666c5e,
+        type: 3}
+      propertyPath: lerpValue
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f93ef513016ea04e9eb350212666c5e, type: 3}
 --- !u!1001 &414249488
@@ -2389,7 +2434,7 @@ PrefabInstance:
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.8707905
+      value: 7.8497906
       objectReference: {fileID: 0}
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
@@ -2399,7 +2444,7 @@ PrefabInstance:
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.520948
+      value: 14.543949
       objectReference: {fileID: 0}
     - target: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
@@ -2450,6 +2495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: localCameraID
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140973574305666813, guid: 2f93ef513016ea04e9eb350212666c5e,
+        type: 3}
+      propertyPath: lerpValue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f93ef513016ea04e9eb350212666c5e, type: 3}
@@ -3608,16 +3658,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 109959340039508819, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: lr
-      value: 
-      objectReference: {fileID: 1496052165}
     - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: Boss
       value: 
       objectReference: {fileID: 1478527830}
+    - target: {fileID: 109959340039508819, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: lr
+      value: 
+      objectReference: {fileID: 1496052165}
     - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_IsActive
@@ -5927,6 +5977,11 @@ PrefabInstance:
     - target: {fileID: 2140973574305666813, guid: 2f93ef513016ea04e9eb350212666c5e,
         type: 3}
       propertyPath: localCameraID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140973574305666813, guid: 2f93ef513016ea04e9eb350212666c5e,
+        type: 3}
+      propertyPath: lerpValue
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10177,6 +10232,36 @@ PrefabInstance:
       propertyPath: _localFOV
       value: 63
       objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: dollyEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: zoomEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}
     - {fileID: 1363652769, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -10456,27 +10541,77 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _cameraID
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _offset.x
-      value: -1.1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _offset.y
-      value: -2.5
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _offset.z
-      value: -13.2
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _localFOV
-      value: 117
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: dollyEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: zoomEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: _rotationX
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: _rotationY
+      value: -160
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: _rotationZ
+      value: -55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlane
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -11420,37 +11555,77 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _offset.x
-      value: -1.1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _offset.y
-      value: -2.5
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _offset.z
-      value: -13.2
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _rotationX
-      value: 20
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _rotationY
-      value: -145
+      value: -179
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _rotationZ
-      value: -7
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: _localFOV
-      value: 40
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: dollyEaseTime
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: zoomEaseTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: zoomEaseType
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlane
+      value: 33.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}

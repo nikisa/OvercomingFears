@@ -217,12 +217,12 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -232,11 +232,31 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6156,6 +6176,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 570770096752591498, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
@@ -6234,11 +6259,6 @@ PrefabInstance:
     - target: {fileID: 570770096752591498, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_Positions.Array.data[1].y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7585,26 +7605,46 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseType
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10934,21 +10974,6 @@ PrefabInstance:
       propertyPath: isActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_TagString
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401513, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -11027,6 +11052,21 @@ PrefabInstance:
     - target: {fileID: 2775251454287485324, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 145960786372401513, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -18379,12 +18419,12 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -18394,11 +18434,31 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -18738,12 +18798,12 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -18753,6 +18813,31 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: zoomEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -22511,26 +22596,46 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseType
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []

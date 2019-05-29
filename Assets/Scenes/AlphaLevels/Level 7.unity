@@ -5804,7 +5804,7 @@ MonoBehaviour:
   faceDestination: 0
   isMoving: 0
   easeType: 17
-  moveSpeed: 1.5
+  moveTime: 0.5
   rotateTime: 0.5
   iTweenDelay: 0
   finishMovementEvent:
@@ -8974,7 +8974,7 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
@@ -8984,11 +8984,31 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -9309,7 +9329,7 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
@@ -9319,11 +9339,31 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -11773,7 +11813,7 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -11783,11 +11823,31 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16012,7 +16072,7 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
@@ -16022,11 +16082,31 @@ PrefabInstance:
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:

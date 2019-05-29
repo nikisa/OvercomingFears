@@ -17,7 +17,11 @@ public class CameraPathPosition : MonoBehaviour
     [HideInInspector]
     public Ease easeType = Ease.OutQuint;
 
+    [HideInInspector]
+    public Ease angleEaseType = Ease.OutQuint;
+
     public float easeTime;
+
     public float easeTimeZoom;
 
 
@@ -54,7 +58,7 @@ public class CameraPathPosition : MonoBehaviour
     }
 
     public void CameraRotate() {
-        transform.DORotate(cameraDolly.transform.rotation.eulerAngles , easeTime).SetEase(easeType);
+        transform.DORotate(cameraDolly.transform.rotation.eulerAngles , easeTime).SetEase(angleEaseType);
     }
 
     

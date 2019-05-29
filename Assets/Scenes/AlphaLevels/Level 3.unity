@@ -6313,32 +6313,32 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _offset.x
-      value: -5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _offset.y
-      value: -12
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _offset.z
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _rotationX
-      value: 64
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _rotationY
-      value: -56
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _rotationZ
-      value: 35
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -6348,27 +6348,47 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseType
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc6c9ceeb4ecc4449ab026e50d0c34df, type: 3}
@@ -7081,7 +7101,7 @@ MonoBehaviour:
   faceDestination: 0
   isMoving: 0
   easeType: 17
-  moveSpeed: 1.5
+  moveTime: 0.5
   rotateTime: 0.5
   iTweenDelay: 0
   finishMovementEvent:
@@ -11316,22 +11336,22 @@ PrefabInstance:
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3265142
+      value: 0.30997524
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5204051
+      value: -0.6355434
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.46243066
+      value: 0.2534044
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.639316
+      value: 0.66014105
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
@@ -11341,17 +11361,17 @@ PrefabInstance:
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 64
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -56
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312361, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 35
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312360, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
@@ -11361,17 +11381,17 @@ PrefabInstance:
     - target: {fileID: 2834821291019312360, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: offset.x
-      value: -5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312360, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: offset.y
-      value: -12
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2834821291019312360, guid: 8c6e54e3b52edbe428ce022704153212,
         type: 3}
       propertyPath: offset.z
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c6e54e3b52edbe428ce022704153212, type: 3}
@@ -14294,7 +14314,7 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _offset.z
-      value: 4
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -14304,27 +14324,27 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _rotationX
-      value: 52
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: _rotationY
-      value: -78
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: nearPlane
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: dollyEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseTime
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
@@ -14334,6 +14354,31 @@ PrefabInstance:
     - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
         type: 3}
       propertyPath: zoomEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: AngleEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: angleEaseType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: _rotationZ
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317797204823172891, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
+        type: 3}
+      propertyPath: nearPlaneEaseType
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
