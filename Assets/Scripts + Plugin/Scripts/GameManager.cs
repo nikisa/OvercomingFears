@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     private bool _isGameplay;
     public bool IsGameplay { get { return _isGameplay; } set { _isGameplay = value; } }
 
-    Animator SMController;
+    public Animator SMController;
 
     BoardManager m_board;
     PlayerManager m_player;
@@ -189,7 +189,7 @@ public class GameManager : MonoBehaviour
         #region StateMachine and Initialization
         if (SceneManager.GetActiveScene().name == "Menu")
         {
-            SMController = FindObjectOfType<Animator>().GetComponent<Animator>();
+            
             StateBehaviourBase.Context context = new StateBehaviourBase.Context()
             {
                 SetupDone = false,

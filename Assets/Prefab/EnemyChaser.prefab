@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7656459650545659021}
   - component: {fileID: 7656459650545659020}
   - component: {fileID: 7656459650545659011}
+  - component: {fileID: 8602423159324038098}
   m_Layer: 0
   m_Name: EnemyChaser
   m_TagString: Enemy
@@ -98,7 +99,7 @@ MonoBehaviour:
   faceDestination: 1
   isMoving: 0
   easeType: 10
-  moveSpeed: 10
+  moveTime: 0.5
   rotateTime: 0.7
   iTweenDelay: 0
   finishMovementEvent:
@@ -123,6 +124,7 @@ MonoBehaviour:
   standTime: 1
   firstDest: {x: 0, y: 0, z: 0}
   spottedDest: {x: 0, y: 0, z: 0}
+  index: 0
   firstChaserMove: 0
   spottedPlayer: 0
   TEMP: 0
@@ -139,9 +141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyMover: {fileID: 0}
+  m_enemySensor: {fileID: 0}
   isScared: 0
   wasScared: 0
   isOff: 0
+  EnemyAnimatorController: {fileID: 8602423159324038098}
   deathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -171,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionToSearch: {x: 0, y: 0, z: 2}
+  m_foundPlayer: 0
 --- !u!114 &7656459650545659020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,3 +202,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2914095, y: 2.1804771, z: 0.6852874}
   m_Center: {x: 0.000010788443, y: 1.0815327, z: 0.09004835}
+--- !u!95 &8602423159324038098
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7656459650545659010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: cfc3984e0150dcd4792d44f3cb0d7354, type: 3}
+  m_Controller: {fileID: 9100000, guid: 00c84ab31db93ae46ad3a0ef2991036d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

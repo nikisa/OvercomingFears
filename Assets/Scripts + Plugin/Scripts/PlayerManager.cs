@@ -21,6 +21,8 @@ public class PlayerManager : TurnManager
 
     public LayerMask obstacleLayer;
 
+    public Animator PlayerAnimatorController;
+
     //public bool spottedPlayer = false;
 
 
@@ -34,8 +36,11 @@ public class PlayerManager : TurnManager
 
     ArrayList playerPath;
 
+    public float killDelay = 1f; //Maggiore è il valore , più tardi parte l'animazion e uccisione
 
     public LineRenderer lr;
+
+
 
     public void Setup()
     {
@@ -66,7 +71,9 @@ public class PlayerManager : TurnManager
 
     void Update()
     {
-        
+
+        CaptureEnemies();
+
         if (GameManager.Instance.IsGameplay)
         {
             if (playerMover.isMoving || m_gameManager.CurrentTurn != Turn.Player)
@@ -102,6 +109,7 @@ public class PlayerManager : TurnManager
                 if (m_board.playerNode.isASwitch && playerInput.S)
                 {
                     Debug.Log("S");
+                    PlayerAnimatorController.SetInteger("PlayerState",2);
                     bool switchState = m_board.playerNode.GetSwitchState();
                     if (switchState)
                     {
@@ -109,27 +117,7 @@ public class PlayerManager : TurnManager
                         m_gm.CurrentTurn = Turn.Enemy;
                         m_gm.CurrentTurn = Turn.Player;
 
-
-
-                        //if (SceneManager.GetActiveScene().buildIndex == 3)
-                        //{
-                        //    foreach (EnemyManager enemy in m_gm.m_enemies)
-                        //    {
-                        //        if (enemy.isOff )
-                        //        {
-                        //            enemy.isOff = false;
-                        //        }
-
-                        //        if (enemy.m_enemySensor.FoundPlayer && enemy.isOff == false && m_board.FindNodeAt(enemy.transform.position).gateOpen == true)
-                        //        {
-                        //            //attack player
-                        //            //notify the GM to lose the level
-                        //            Debug.Log(this.name + "MORTE");
-                        //            m_gameManager.LoseLevel();
-                        //        }
-                        //    }
-                        //}
-
+                        PlayerAnimatorController.SetInteger("PlayerState", 0);
                     }
                     else
                     {
@@ -526,6 +514,7 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.PullLeft();
+
                                 }
                             }
                             else
@@ -853,17 +842,20 @@ public class PlayerManager : TurnManager
     {
         if (m_board != null)
         {
-            List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.playerNode);
+            List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position + transform.forward * (BoardManager.spacing - killDelay) ));
+
+            //PlayerAnimatorController.SetInteger("PlayerState" , 1);
             if (enemies.Count != 0)
             {
                 foreach (EnemyManager enemy in enemies)
                 {
-                    if (enemy != null)
+                    if (enemy != null && m_board.m_player.isMoving)
                     {
                         enemy.Die();
                     }
                 }
             }
+            //PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
@@ -890,7 +882,7 @@ public class PlayerManager : TurnManager
 
     public override void FinishTurn()
     {
-        CaptureEnemies();
+        
         base.FinishTurn();
     }
 

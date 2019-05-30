@@ -27,6 +27,8 @@ public class EnemyManager : TurnManager {
 
     public bool isDead { get { return m_isDead; } }
 
+    public Animator EnemyAnimatorController;
+    
     public UnityEvent deathEvent;
 
     protected override void Awake() {

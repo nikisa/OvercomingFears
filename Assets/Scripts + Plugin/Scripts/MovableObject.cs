@@ -37,6 +37,9 @@ public class MovableObject : Mover {
 
     public void PushRight() {
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
@@ -46,11 +49,16 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
     public void PushLeft() {
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) <= 2f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
@@ -60,11 +68,16 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
     public void PushForward() {
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
@@ -74,11 +87,15 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
     public void PushBackward() {
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
@@ -88,6 +105,7 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }  
     }
 
@@ -96,6 +114,9 @@ public class MovableObject : Mover {
     public void PullLeft() {
 
         if (m_board != null || inScene){
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x) {
@@ -105,12 +126,16 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
     public void PullRight() {
 
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x) {
@@ -120,12 +145,16 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
     public void PullBackward() {
 
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z) {
@@ -135,12 +164,16 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
     public void PullForward() {
 
         if (m_board != null || inScene) {
+
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
             if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z) {
@@ -150,6 +183,7 @@ public class MovableObject : Mover {
                 hasMoved = true;
                 hasStopped = false;
             }
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
     

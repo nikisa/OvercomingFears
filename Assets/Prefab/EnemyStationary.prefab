@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 114295402586766340}
   - component: {fileID: 65559019812378994}
   - component: {fileID: 4869319028806553049}
+  - component: {fileID: 5295634933008522047}
   m_Layer: 10
   m_Name: EnemyStationary
   m_TagString: Enemy
@@ -103,7 +104,7 @@ MonoBehaviour:
   faceDestination: 1
   isMoving: 0
   easeType: 13
-  moveSpeed: 4
+  moveTime: 0.5
   rotateTime: 0.3
   iTweenDelay: 0
   finishMovementEvent:
@@ -128,6 +129,7 @@ MonoBehaviour:
   standTime: 0.1
   firstDest: {x: 0, y: 0, z: 0}
   spottedDest: {x: 0, y: 0, z: 0}
+  index: 0
   firstChaserMove: 0
   spottedPlayer: 0
   TEMP: 0
@@ -144,9 +146,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyMover: {fileID: 0}
+  m_enemySensor: {fileID: 0}
   isScared: 0
   wasScared: 0
   isOff: 0
+  EnemyAnimatorController: {fileID: 5295634933008522047}
   deathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -176,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionToSearch: {x: 0, y: 0, z: 2}
+  m_foundPlayer: 0
 --- !u!114 &114295402586766340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +223,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &5295634933008522047
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474127026450234}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
+  m_Controller: {fileID: 9100000, guid: 00c84ab31db93ae46ad3a0ef2991036d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
