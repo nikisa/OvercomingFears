@@ -28,6 +28,7 @@ public class cameraTrigger : MonoBehaviour
     public float zoomEaseTime;
     public Ease zoomEaseType;
 
+    public bool autoAngle = false;
     
     private void Awake() {
 
@@ -86,7 +87,8 @@ public class cameraTrigger : MonoBehaviour
                     cameraDolly.GetComponent<cameraFollow>().offset = Offset;
                     CameraZoom();
                     SetNearPlane();
-                    cameraDolly.GetComponent<cameraFollow>().transform.rotation = Quaternion.Euler(RotationX , RotationY , RotationZ); 
+                    cameraDolly.GetComponent<cameraFollow>().transform.rotation = Quaternion.Euler(RotationX , RotationY , RotationZ);
+                    m_cameraPathPosition.autoAngle = autoAngle;
                     //m_mainCamera.transform.rotation = Quaternion.Euler(RotationX, RotationY, RotationZ);
                 }
             }

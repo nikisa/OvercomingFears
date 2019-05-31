@@ -11602,6 +11602,11 @@ PrefabInstance:
       propertyPath: nearPlaneEaseType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7939899121845724843, guid: 29154ffa976975741bdad39040dac65e,
+        type: 3}
+      propertyPath: autoAngle
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}
     - {fileID: 1363652769, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -14705,11 +14710,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 357891303664417828, guid: 5765647c9b307344abbd39e663e7aad3,
-        type: 3}
-      propertyPath: cameraPostProcess
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 357891304791556458, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14828,6 +14828,11 @@ PrefabInstance:
     - target: {fileID: 357891304528815906, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 357891303664417828, guid: 5765647c9b307344abbd39e663e7aad3,
+        type: 3}
+      propertyPath: cameraPostProcess
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []

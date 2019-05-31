@@ -6,6 +6,8 @@ public class Sword : MonoBehaviour {
 
     BoardManager m_board;
 
+    public float WaitTimeSwordKill = 0.5f;
+
     protected Node m_currentNode;
     public Node CurrentNode { get { return m_currentNode; } }
 
@@ -50,9 +52,14 @@ public class Sword : MonoBehaviour {
             {
                 m_board.UpdateTriggerToFalseLevel3(m_board.FindNodeAt(other.transform.position));
             }
-            other.GetComponent<EnemyManager>().Die();
+            StartCoroutine(SwordKillWaitTime(other));
             
         }
+    }
+
+    IEnumerator SwordKillWaitTime(Collider other) {
+        yield return new WaitForSeconds(WaitTimeSwordKill);
+        other.GetComponent<EnemyManager>().Die();
     }
 
 

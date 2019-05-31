@@ -42,8 +42,8 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
+            if (m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+                //m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveRight();
                 hasMoved = true;
@@ -61,8 +61,8 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) <= 2f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
+            if (m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) <= 2f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+                //m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveLeft();
                 hasMoved = true;
@@ -80,8 +80,8 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
+            if (m_player.playerInput.P && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+                //m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveForward();
                 hasMoved = true;
@@ -98,8 +98,8 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
+            if (m_player.playerInput.P && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+                //m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveBackward();
                 hasMoved = true;
@@ -119,7 +119,7 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x) {
+            if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x  && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2,0,0)))) {
                 m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveLeft();
@@ -138,7 +138,7 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x) {
+            if (m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0)))) {
                 m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveRight();
@@ -157,7 +157,7 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z) {
+            if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, -2)))) {
                 m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveBackward();
@@ -176,7 +176,7 @@ public class MovableObject : Mover {
 
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z) {
+            if (m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, 2)))) {
                 m_player.transform.GetChild(2).gameObject.SetActive(false);
                 m_player.hasLightBulb = false;
                 this.MoveForward();

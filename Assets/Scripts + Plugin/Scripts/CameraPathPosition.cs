@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
 
-public class CameraPathPosition : MonoBehaviour
-{
+public class CameraPathPosition : MonoBehaviour {
 
     [HideInInspector]
     public bool cameraBond;
@@ -29,17 +28,28 @@ public class CameraPathPosition : MonoBehaviour
 
     public float LerpTime;
 
+    public bool autoAngle = false;
 
-    void Start()
-    {
-        
+    #region autoangle variables
+
+    float offsetX;
+    float offsetY;
+    float offsetZ;
+
+    Quaternion rotationX;
+    Quaternion rotationY;
+    float rotationZ;
+
+    #endregion
+
+    void Start() {
+
         transform.position = cameraDolly.transform.position;
         cameraBond = true;
     }
 
-    void Update()
-    {
-        
+    void Update() {
+
         if (cameraBond) {
             transform.position = cameraDolly.transform.position;
             transform.rotation = cameraDolly.transform.rotation;
@@ -47,21 +57,36 @@ public class CameraPathPosition : MonoBehaviour
         else {
 
             CameraMove();
+
             CameraRotate();
         }
 
     }
-    
+
 
     public void CameraMove() {
         transform.DOMove(cameraDolly.transform.position, easeTime).SetEase(easeType);
     }
 
     public void CameraRotate() {
-        transform.DORotate(cameraDolly.transform.rotation.eulerAngles , easeTime).SetEase(angleEaseType);
+        if (autoAngle) {
+            transform.LookAt(cameraDolly.GetComponent<cameraFollow>().followAt);
+            #region autoangle calculation
+
+            //rotationX.eulerAngles = new Vector3(1 / (Mathf.Tan(offsetY / Mathf.Abs(offsetZ))), transform.rotation.y, transform.rotation.z);
+            //rotationY.eulerAngles = new Vector3(transform.rotation.x, 0 - (1 / (Mathf.Tan(offsetX / Mathf.Abs(offsetZ)))), transform.rotation.z);
+
+            //offsetX = cameraDolly.GetComponent<cameraFollow>().followAt.transform.position.x - transform.position.x;
+            //offsetY = cameraDolly.GetComponent<cameraFollow>().followAt.transform.position.y - transform.position.y;
+            //offsetZ = cameraDolly.GetComponent<cameraFollow>().followAt.transform.position.z - transform.position.z;
+
+            //transform.rotation = new Vector3(rotationX, rotationY, transform.position.z);
+
+            #endregion
+        }
+        else {
+            transform.DORotate(cameraDolly.transform.rotation.eulerAngles, easeTime).SetEase(angleEaseType);
+        }
+
     }
-
-    
-
-    
 }

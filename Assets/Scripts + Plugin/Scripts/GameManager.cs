@@ -466,7 +466,9 @@ public class GameManager : MonoBehaviour
         //LightBulbNode();
         //FearEnemies();
         FlashLightNode();
-        
+        PlayerInGate();
+
+
 
         foreach (var enemy in m_enemies)
         {
@@ -937,6 +939,14 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void PlayerInGate() {
+        if (m_board.playerNode.isAGate && !m_board.playerNode.gateOpen) {
+            m_player.lr.transform.gameObject.SetActive(true);
+            LoseLevel();
+        }
+    }
+    
 
     public void NextLevel() {
         Debug.Log("NEXTLEVEL");

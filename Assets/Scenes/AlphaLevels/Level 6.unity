@@ -3206,9 +3206,11 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 1024
+  PlayerAnimatorController: {fileID: 0}
   hasLightBulb: 0
   hasFlashLight: 0
   m_gm: {fileID: 0}
+  killDelay: 1
   lr: {fileID: 0}
 --- !u!114 &353177821
 MonoBehaviour:
@@ -10155,6 +10157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5d7afb47f579d4f9b89209f2860b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SMController: {fileID: 0}
   Boss: {fileID: 0}
   directionToMove: {x: 0, y: 0, z: 0}
   m_enemies: []
@@ -15389,11 +15392,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 357891305194315532, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5536320937842057688, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15403,6 +15401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 357891305194315532, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2070751479011939559, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}

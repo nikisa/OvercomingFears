@@ -166,7 +166,7 @@ public class PlayerManager : TurnManager
                             }
                             else
                             {
-                                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0)))[0].leftBlocked)
+                                if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0)))[0].leftBlocked)
                                 { //Se alla nostra Sx c'è un M.O e non è bloccato
 
                                     foreach (var movableObject in m_gm.GetMovableObjects())
@@ -206,7 +206,7 @@ public class PlayerManager : TurnManager
                             }
                             else
                             {
-                                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)))[0].rightBlocked)
+                                if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)))[0].rightBlocked)
                                 { //Se alla nostra Dx c'è un M.O e non è bloccato
                                     playerMover.MoveRight();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
@@ -242,7 +242,7 @@ public class PlayerManager : TurnManager
                             }
                             else
                             {
-                                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f)))[0].downBlocked)
+                                if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f)))[0].downBlocked)
                                 { //Se sotto non c'è un M.O e non è bloccato
                                     playerMover.MoveBackward();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
@@ -273,13 +273,15 @@ public class PlayerManager : TurnManager
                             }
                             else
                             {
-                                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f)))[0].upBlocked)
+                                if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f)))[0].upBlocked)
                                 { //Se sopra non c'è un M.O e non è bloccato
-                                    playerMover.MoveForward();
+                                    
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.PushForward();
                                     }
+
+                                    
                                 }
                                 else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0)
                                 { //Se non c'è nulla muovi solo il pg
@@ -843,13 +845,13 @@ public class PlayerManager : TurnManager
         if (m_board != null)
         {
             List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position + transform.forward * (BoardManager.spacing - killDelay) ));
-
+            
             //PlayerAnimatorController.SetInteger("PlayerState" , 1);
             if (enemies.Count != 0)
             {
                 foreach (EnemyManager enemy in enemies)
                 {
-                    if (enemy != null && m_board.m_player.isMoving)
+                    if (enemy != null && enemy.GetMovementType() != MovementType.Boss)
                     {
                         enemy.Die();
                     }

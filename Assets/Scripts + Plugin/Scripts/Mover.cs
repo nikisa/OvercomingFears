@@ -29,6 +29,8 @@ public class Mover : MonoBehaviour {
 
     protected PlayerManager m_player;
 
+    private MovableObject MO;
+
 
 
     // Use this for initialization
@@ -54,7 +56,7 @@ public class Mover : MonoBehaviour {
             {
                 if (targetNode != null && m_currentNode != null && m_currentNode.LinkedNodes.Contains(targetNode))
                 {
-                    if ((targetNode.isAGate && targetNode.GetGateState() == true) || !targetNode.isAGate)
+                    if (((targetNode.isAGate && targetNode.GetGateState() == true) || !targetNode.isAGate) && (m_board.FindMovableObjectsAt(targetNode).Count == 0 || (m_board.FindMovableObjectsAt(targetNode).Count > 0 && m_board.FindMovableObjectsAt(targetNode)[0].isMoving)))
                     {
                         StartCoroutine(MoveRoutine(destinationPos, delayTime));
                     }

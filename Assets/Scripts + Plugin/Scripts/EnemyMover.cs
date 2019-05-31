@@ -79,7 +79,7 @@ public class EnemyMover : Mover
                 Boss();
                 break;
             default:
-                Debug.Log("retard non hai messo il MoventType");
+                Debug.Log("dumbass non hai messo il MoventType");
                 break;
         }
     }
