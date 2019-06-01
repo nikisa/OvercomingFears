@@ -35,6 +35,7 @@ public class Node : MonoBehaviour
     [HideInInspector]
     public GameObject triggerTemp;
 
+     
 
     public GameObject geometry;
 
@@ -95,6 +96,7 @@ public class Node : MonoBehaviour
 
     public Sprite[] sprites;
 
+    public Animator SwitchAnimator;
 
     private void Awake()
     {
@@ -332,9 +334,10 @@ public class Node : MonoBehaviour
     public bool UpdateSwitchToTrue()
     {
 
-        
 
-        switchTemp.transform.localScale = new Vector3(this.transform.localScale.x * -30, this.transform.localScale.y * 30, this.transform.localScale.z * 30);
+
+        // switchTemp.transform.localScale = new Vector3(this.transform.localScale.x * -30, this.transform.localScale.y * 30, this.transform.localScale.z * 30);
+        SwitchAnimator.SetInteger("SwitchState" , 1);
         UpdateGateToOpen(gateID);
         ArmorActivation(armorID);
 
@@ -357,8 +360,9 @@ public class Node : MonoBehaviour
 
     public bool UpdateSwitchToFalse()
     {
-        
-        switchTemp.transform.localScale = new Vector3(this.transform.localScale.x * 30, this.transform.localScale.y * 30, this.transform.localScale.z * 30);
+
+        //   switchTemp.transform.localScale = new Vector3(this.transform.localScale.x * 30, this.transform.localScale.y * 30, this.transform.localScale.z * 30);
+        SwitchAnimator.SetInteger("SwitchState", 0);
         UpdateGateToClose(gateID);
         ArmorDeactivation(armorID);
 
@@ -543,15 +547,15 @@ public class Node : MonoBehaviour
 
             if (armorID <= 6 && armorID >= 1)
             {
-                switchTemp.GetComponent<Renderer>().material = materials[armorID - 1];
+                switchTemp.transform.GetChild(2).GetComponent<Renderer>().material = materials[armorID - 1];
             }
             else if (trapID <= 6 && trapID >= 1)
             {
-                switchTemp.GetComponent<Renderer>().material = materials[trapID - 1];
+                switchTemp.transform.GetChild(2).GetComponent<Renderer>().material = materials[trapID - 1];
             }
             else if (gateID <= 6 && gateID >= 1)
             {
-                switchTemp.GetComponent<Renderer>().material = materials[gateID - 1];
+                switchTemp.transform.GetChild(2).GetComponent<Renderer>().material = materials[gateID - 1];
 
             }
 

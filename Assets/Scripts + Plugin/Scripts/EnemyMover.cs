@@ -42,6 +42,8 @@ public class EnemyMover : Mover
 
     ArrayList playerPositions;
 
+    public Animator EnemyAnimatorController;
+
 
     protected override void Awake()
     {
@@ -118,7 +120,9 @@ public class EnemyMover : Mover
 
             if (firstChaserMove == false)
             { // && CASELLA SUCCESSIVA NON è OCCUPATA (post armature)
+                EnemyAnimatorController.SetInteger("ChaserState", 3);
                 Move(firstDest, 0f);
+                
                 firstChaserMove = true;
             }
             else
@@ -134,8 +138,9 @@ public class EnemyMover : Mover
                 {
 
                     //Debug.Log(m_player.GetPlayerPath(index));
-
+                    EnemyAnimatorController.SetInteger("ChaserState", 3);
                     Move(GetPlayerPath(index).transform.position, 0f);
+                    
 
                     yield return new WaitForSeconds(0.6f);
 
@@ -144,9 +149,10 @@ public class EnemyMover : Mover
 
 
                 }
-
+                
                 index++;
             }
+      
         }
 
 
@@ -154,6 +160,7 @@ public class EnemyMover : Mover
 
         while (isMoving)
         {
+            
             yield return null;
         }
 
@@ -289,6 +296,7 @@ public class EnemyMover : Mover
     IEnumerator StandRoutine()
     {
         yield return new WaitForSeconds(standTime);
+     
         base.finishMovementEvent.Invoke();
     }
 

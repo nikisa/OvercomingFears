@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : TurnManager
 {
-
+    
     static int i = 0; //indice provvisorio per il cambio della scena
 
     //public EnemyManager enemyManager;
@@ -40,8 +40,7 @@ public class PlayerManager : TurnManager
 
     public LineRenderer lr;
 
-
-
+    
     public void Setup()
     {
         base.Awake();
@@ -49,6 +48,8 @@ public class PlayerManager : TurnManager
         playerMover = GetComponent<PlayerMover>();
 
         playerInput = GetComponent<PlayerInput>();
+
+       
 
         //lr = Object.FindObjectOfType<LineRenderer>().GetComponent<LineRenderer>();
         lr.gameObject.SetActive(false);
@@ -68,6 +69,17 @@ public class PlayerManager : TurnManager
         lr.gameObject.SetActive(false);
 
     }
+    public void EnemyAnimationReset()
+    {
+        foreach (EnemyManager enemy in m_gm.m_enemies)
+        {
+            if (enemy != null)
+            {
+                enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 0);
+            }
+        }
+       
+    }
 
     void Update()
     {
@@ -77,7 +89,7 @@ public class PlayerManager : TurnManager
         if (GameManager.Instance.IsGameplay)
         {
             if (playerMover.isMoving || m_gameManager.CurrentTurn != Turn.Player)
-            {
+            {                
                 return;
             }
 
@@ -99,9 +111,7 @@ public class PlayerManager : TurnManager
                 lr.transform.gameObject.SetActive(true);
                 m_gm.PreviousLevel();
             }
-
-
-
+            
 
             if (m_board.playerNode != null)
             {
@@ -111,6 +121,8 @@ public class PlayerManager : TurnManager
                     Debug.Log("S");
                     PlayerAnimatorController.SetInteger("PlayerState",2);
                     bool switchState = m_board.playerNode.GetSwitchState();
+   
+                    
                     if (switchState)
                     {
                         m_board.playerNode.UpdateSwitchToFalse();
@@ -150,7 +162,7 @@ public class PlayerManager : TurnManager
                         
                         if (playerInput.H < 0)
                         {
-
+                            EnemyAnimationReset();
 
                             foreach (EnemyManager enemy in m_gm.m_enemies) {
                                 enemy.m_enemySensor.m_foundPlayer = false;
@@ -191,7 +203,7 @@ public class PlayerManager : TurnManager
                         }
                         else if (playerInput.H > 0)
                         {
-                            
+                            EnemyAnimationReset();
                             foreach (EnemyManager enemy in m_gm.m_enemies) {
                                 enemy.m_enemySensor.m_foundPlayer = false;
                             }
@@ -227,7 +239,7 @@ public class PlayerManager : TurnManager
                     {
                         if (playerInput.V < 0)
                         {
-                            
+                            EnemyAnimationReset();
                             foreach (EnemyManager enemy in m_gm.m_enemies) {
                                 enemy.m_enemySensor.m_foundPlayer = false;
                             }
@@ -258,7 +270,7 @@ public class PlayerManager : TurnManager
                         }
                         else if (playerInput.V > 0)
                         {
-                            
+                            EnemyAnimationReset();
                             foreach (EnemyManager enemy in m_gm.m_enemies) {
                                 enemy.m_enemySensor.m_foundPlayer = false;
                             }

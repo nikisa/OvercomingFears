@@ -11,6 +11,9 @@ public class EnemySensor : MonoBehaviour {
     
     Node m_previousEnemyNode;
 
+    EnemyMover m_enemyMover;
+
+
     public Node PreviousEnemyNode { get { return m_previousEnemyNode; } set { m_previousEnemyNode = FindEnemyNode(); } }
 
     [SerializeField]
@@ -19,6 +22,7 @@ public class EnemySensor : MonoBehaviour {
     public bool FoundPlayer { get { return m_foundPlayer; } set { m_foundPlayer = value; } }
 
 	void Awake() {
+        m_enemyMover = GetComponent<EnemyMover>();
         m_board = Object.FindObjectOfType<GameManager>().GetComponent<BoardManager>();
 	}
 	
@@ -34,6 +38,17 @@ public class EnemySensor : MonoBehaviour {
             }
 
             if (m_nodeToSearch == m_board.playerNode) {
+
+                if (m_enemyMover.movementType == MovementType.Stationary)
+                {
+                    m_enemyMover.EnemyAnimatorController.SetInteger("StationaryState" , 2);
+                }
+                else if (m_enemyMover.movementType == MovementType.Chaser)
+                {
+                    m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState" , 2);
+                }
+
+                
                 m_foundPlayer = true;
             }
             else

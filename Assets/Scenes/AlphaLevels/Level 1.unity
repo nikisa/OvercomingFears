@@ -484,7 +484,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -527,6 +527,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &121177706
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +649,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -690,6 +692,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &123284506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -873,7 +877,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -916,6 +920,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &133470526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1485,7 +1491,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -1528,6 +1534,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &217756416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1959,7 +1967,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -2002,6 +2010,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &282319812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,7 +2132,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -2165,6 +2175,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &288074182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,7 +2861,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -2892,6 +2904,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &429454401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,7 +3399,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -3428,6 +3442,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &528473808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,7 +4178,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -4205,6 +4221,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &611526526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4325,7 +4343,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -4368,6 +4386,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &616177987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4569,7 +4589,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -4612,6 +4632,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!4 &636309657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2140973574305666814, guid: 2f93ef513016ea04e9eb350212666c5e,
@@ -4819,7 +4841,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -4862,6 +4884,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &665354315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5212,7 +5236,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -5255,6 +5279,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &720121206
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,7 +5988,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -6005,6 +6031,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &844098133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6953,7 +6981,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -6996,6 +7024,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1007214747
 GameObject:
   m_ObjectHideFlags: 0
@@ -7116,7 +7146,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -7159,6 +7189,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1011984692
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,7 +7630,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -7641,6 +7673,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1108871875
 GameObject:
   m_ObjectHideFlags: 0
@@ -8131,7 +8165,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -8174,6 +8208,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1143214879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9191,7 +9227,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -9234,6 +9270,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1241691442
 GameObject:
   m_ObjectHideFlags: 0
@@ -9435,7 +9473,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -9478,6 +9516,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1278447192
 GameObject:
   m_ObjectHideFlags: 0
@@ -9598,7 +9638,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -9641,6 +9681,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1283733342
 GameObject:
   m_ObjectHideFlags: 0
@@ -10582,7 +10624,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -10625,6 +10667,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1489078729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11780,7 +11824,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -11823,6 +11867,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1675870182
 GameObject:
   m_ObjectHideFlags: 0
@@ -12827,7 +12873,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -12870,6 +12916,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1808183911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13197,7 +13245,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -13240,6 +13288,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1864491193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13802,7 +13852,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -13845,6 +13895,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!4 &1945884027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7939899121845724842, guid: 29154ffa976975741bdad39040dac65e,
@@ -14052,7 +14104,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -14095,6 +14147,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!4 &1958467492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7939899121845724842, guid: 29154ffa976975741bdad39040dac65e,
@@ -14302,7 +14356,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   shadows: []
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
     type: 3}
@@ -14345,6 +14399,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6ffbfc9a27cb844fabdc6c331027d62, type: 3}
   - {fileID: 21300000, guid: e5f5b88821dd5f94f8fea71fcbb4b13d, type: 3}
   - {fileID: 21300000, guid: db16eb65b260db94bb3c4ae1539a9e7a, type: 3}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1969950209
 GameObject:
   m_ObjectHideFlags: 0
@@ -15565,6 +15621,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 357891303664417828, guid: 5765647c9b307344abbd39e663e7aad3,
+        type: 3}
+      propertyPath: cameraPostProcess
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 357891304791556458, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15683,11 +15744,6 @@ PrefabInstance:
     - target: {fileID: 357891304528815906, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 357891303664417828, guid: 5765647c9b307344abbd39e663e7aad3,
-        type: 3}
-      propertyPath: cameraPostProcess
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
