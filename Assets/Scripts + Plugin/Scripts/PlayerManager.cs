@@ -40,7 +40,12 @@ public class PlayerManager : TurnManager
 
     public LineRenderer lr;
 
-    
+
+    Ray rayFront;
+    Ray rayLeft;
+    Ray rayRight;
+    Ray rayBack;
+
     public void Setup()
     {
         base.Awake();
@@ -49,7 +54,7 @@ public class PlayerManager : TurnManager
 
         playerInput = GetComponent<PlayerInput>();
 
-       
+        
 
         //lr = Object.FindObjectOfType<LineRenderer>().GetComponent<LineRenderer>();
         lr.gameObject.SetActive(false);
@@ -86,6 +91,8 @@ public class PlayerManager : TurnManager
     void Update()
     {
 
+        enemyDetection();
+
         CaptureEnemies();
 
         if (GameManager.Instance.IsGameplay)
@@ -107,13 +114,13 @@ public class PlayerManager : TurnManager
             {
                 lr.transform.gameObject.SetActive(true);
                 m_gm.NextLevel();
-            }
+            } //Switch livello successivo
             else if (Input.GetKeyDown(KeyCode.KeypadMinus))
             {
                 lr.transform.gameObject.SetActive(true);
                 m_gm.PreviousLevel();
-            }
-            
+            } //Switch livello precedente
+
 
             if (m_board.playerNode != null)
             {
@@ -307,16 +314,19 @@ public class PlayerManager : TurnManager
                         }
                     }
 
+                    
+
                     if (hasFlashLight)
                     {
+                        
                         if (playerInput.F && playerInput.V > 0)
                         {//sparo in alto
 
-                            lr.gameObject.SetActive(true);
+                            
                             RaycastHit hit;
                             
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(1000, 1000, 1000));
 
                             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100, obstacleLayer))
                             {
@@ -327,11 +337,21 @@ public class PlayerManager : TurnManager
                                 {
                                     case "Enemy":
                                         hit.collider.GetComponent<EnemyManager>().Die();
+                                        lr.gameObject.SetActive(true);
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
+
                                         break;
                                     case "Mirror":
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
+                                        lr.gameObject.SetActive(true);
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
+
                                         switch (index)
                                         {
 
@@ -354,8 +374,7 @@ public class PlayerManager : TurnManager
 
 
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -379,11 +398,18 @@ public class PlayerManager : TurnManager
                                     case "Enemy":
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
+
                                         break;
                                     case "Mirror":
 
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
 
                                         switch (index)
                                         {
@@ -404,8 +430,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -429,11 +454,18 @@ public class PlayerManager : TurnManager
                                     case "Enemy":
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
+
                                         break;
                                     case "Mirror":
 
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
 
                                         switch (index)
                                         {
@@ -454,8 +486,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -479,11 +510,18 @@ public class PlayerManager : TurnManager
                                     case "Enemy":
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
+
                                         break;
                                     case "Mirror":
 
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
 
                                         switch (index)
                                         {
@@ -508,8 +546,7 @@ public class PlayerManager : TurnManager
                                         break;
 
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -875,14 +912,63 @@ public class PlayerManager : TurnManager
             }
             //PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
-    }
+    }//Uccisione che avviene quando il player va ad occupare la casella del nemico
+
+    void enemyDetection() {
+
+        
+
+        rayFront = new Ray(transform.position, Vector3.forward);
+        rayBack = new Ray(transform.position, Vector3.back);
+        rayLeft = new Ray(transform.position, Vector3.left);
+        rayRight = new Ray(transform.position, Vector3.right);
+
+        RaycastHit hit;
+
+        if (hasFlashLight) {
+            if (Physics.Raycast(rayFront, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.up * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Enemy") {
+                    hit.collider.GetComponent<EnemyManager>().isDetected = true;
+                }
+            }
+
+            if (Physics.Raycast(rayLeft, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.left * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Enemy") {
+                    hit.collider.GetComponent<EnemyManager>().isDetected = true;
+                }
+            }
+
+            if (Physics.Raycast(rayRight, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.right * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Enemy") {
+                    hit.collider.GetComponent<EnemyManager>().isDetected = true;
+                }
+            }
+
+            if (Physics.Raycast(rayBack, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.down * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Enemy") {
+                    hit.collider.GetComponent<EnemyManager>().isDetected = true;
+                }
+            }
+        }
+
+        
+
+    }//Setta il nemico a isDetected quando si trova in una delle nostre 4 direzioni
 
 
-    public void UpdatePlayerPath()
+        public void UpdatePlayerPath()
     {
         playerPath.Add(m_board.playerNode);
 
-    }
+    }//Aggiornamento path del player per permettere al chaser di seguirlo
 
     public Node GetPlayerPath(int i)
     {
@@ -934,7 +1020,7 @@ public class PlayerManager : TurnManager
             }
         }
 
-    }
+    }//Se l'enemy è in una shadow allora non può ucciderci ma attivera un'animazione di "danger"
 
     #region sceneChanger
 

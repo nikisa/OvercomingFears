@@ -938,6 +938,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -953,6 +954,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &89314328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1426,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -1439,6 +1442,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &139647473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +1949,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -1960,6 +1965,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &186838595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2137,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -2146,6 +2153,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!212 &189156392
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2373,6 +2381,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -2388,6 +2397,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &206873889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,6 +2536,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -2541,6 +2552,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &208954010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,6 +3382,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -3385,6 +3398,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &288585614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4462,6 +4476,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -4477,6 +4492,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &359009124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4799,6 +4815,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -4814,6 +4831,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &377363656
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,6 +4970,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -4967,6 +4986,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &380293898
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,6 +5125,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -5120,6 +5141,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &385136429
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,6 +5966,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -5959,6 +5982,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &449432434
 GameObject:
   m_ObjectHideFlags: 0
@@ -6717,6 +6741,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -6732,6 +6757,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &532257982
 GameObject:
   m_ObjectHideFlags: 0
@@ -7211,6 +7237,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -7226,6 +7253,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1001 &596735755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7757,6 +7785,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -7772,6 +7801,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &620424545
 GameObject:
   m_ObjectHideFlags: 0
@@ -7910,6 +7940,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -7925,6 +7956,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &628354751
 GameObject:
   m_ObjectHideFlags: 0
@@ -8217,6 +8249,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -8232,6 +8265,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &654221646
 GameObject:
   m_ObjectHideFlags: 0
@@ -8616,6 +8650,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -8631,6 +8666,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &722296887
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,6 +9217,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -9196,6 +9233,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &787788724
 GameObject:
   m_ObjectHideFlags: 0
@@ -9426,6 +9464,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -9441,6 +9480,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &809893213
 GameObject:
   m_ObjectHideFlags: 0
@@ -9579,6 +9619,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -9594,6 +9635,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &816544009
 GameObject:
   m_ObjectHideFlags: 0
@@ -9824,6 +9866,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -9839,6 +9882,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!4 &828745776
 Transform:
   m_ObjectHideFlags: 0
@@ -10341,6 +10385,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 1
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -10356,6 +10401,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &857841947
 GameObject:
   m_ObjectHideFlags: 0
@@ -10648,6 +10694,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -10663,6 +10710,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &886965654
 GameObject:
   m_ObjectHideFlags: 0
@@ -10985,6 +11033,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -11000,6 +11049,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &904020828
 GameObject:
   m_ObjectHideFlags: 0
@@ -11722,6 +11772,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -11737,6 +11788,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &997638867
 GameObject:
   m_ObjectHideFlags: 0
@@ -11875,6 +11927,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -11890,6 +11943,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!4 &1003515373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4519520851303354, guid: f0f94d3297ac7764895e4627d76bca18,
@@ -12232,6 +12286,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -12247,6 +12302,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!212 &1037966830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12525,6 +12581,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -12540,6 +12597,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1053708734
 GameObject:
   m_ObjectHideFlags: 0
@@ -12616,6 +12674,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -12631,6 +12690,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!212 &1053708736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13338,6 +13398,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -13353,6 +13414,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1135925724
 GameObject:
   m_ObjectHideFlags: 0
@@ -13895,6 +13957,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -13910,6 +13973,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1188548316
 GameObject:
   m_ObjectHideFlags: 0
@@ -15750,6 +15814,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -15765,6 +15830,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1359379224
 GameObject:
   m_ObjectHideFlags: 0
@@ -15903,6 +15969,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -15918,6 +15985,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!4 &1381201222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4519520851303354, guid: f0f94d3297ac7764895e4627d76bca18,
@@ -16062,6 +16130,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -16077,6 +16146,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1388635553
 GameObject:
   m_ObjectHideFlags: 0
@@ -16215,6 +16285,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -16230,6 +16301,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1390943216
 GameObject:
   m_ObjectHideFlags: 0
@@ -16513,6 +16585,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -16528,6 +16601,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1417916878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2834821291019312151, guid: 8c6e54e3b52edbe428ce022704153212,
@@ -16830,6 +16904,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -16845,6 +16920,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!4 &1462101960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4519520851303354, guid: f0f94d3297ac7764895e4627d76bca18,
@@ -17001,6 +17077,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -17016,6 +17093,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1001 &1502978099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17498,6 +17576,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -17513,6 +17592,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1001 &1544688637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17716,7 +17796,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 1
-  triggerState: 0
+  triggerState: 1
+  triggerWithEnemy: 1
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -17732,6 +17813,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1560113600
 GameObject:
   m_ObjectHideFlags: 0
@@ -17808,6 +17890,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -17823,6 +17906,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!212 &1560113602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18787,6 +18871,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -18802,6 +18887,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1600404614
 GameObject:
   m_ObjectHideFlags: 0
@@ -19092,6 +19178,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -19107,6 +19194,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1611953444
 GameObject:
   m_ObjectHideFlags: 0
@@ -19333,11 +19421,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 357891305194315532, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5536320937842057688, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19347,6 +19430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 357891305194315532, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2070751479011939559, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
@@ -19493,6 +19581,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -19508,6 +19597,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1626471938
 GameObject:
   m_ObjectHideFlags: 0
@@ -19646,6 +19736,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -19661,6 +19752,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1634834859
 GameObject:
   m_ObjectHideFlags: 0
@@ -20149,6 +20241,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -20164,6 +20257,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1674999173
 GameObject:
   m_ObjectHideFlags: 0
@@ -20381,6 +20475,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -20396,6 +20491,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1679340049
 GameObject:
   m_ObjectHideFlags: 0
@@ -20626,6 +20722,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -20641,6 +20738,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1001 &1684908858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21239,6 +21337,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -21254,6 +21353,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1750990845
 GameObject:
   m_ObjectHideFlags: 0
@@ -21489,6 +21589,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -21504,6 +21605,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1781580826
 GameObject:
   m_ObjectHideFlags: 0
@@ -22084,6 +22186,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -22099,6 +22202,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &1807298271
 GameObject:
   m_ObjectHideFlags: 0
@@ -23400,6 +23504,11 @@ PrefabInstance:
       propertyPath: armorID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: isActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225bc310c4af8934c9c819ebc7bc8d07, type: 3}
 --- !u!4 &1986022596 stripped
@@ -23612,6 +23721,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -23627,6 +23737,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &2022405642
 GameObject:
   m_ObjectHideFlags: 0
@@ -24193,6 +24304,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -24208,6 +24320,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &2063613977
 GameObject:
   m_ObjectHideFlags: 0
@@ -24907,6 +25020,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -24922,6 +25036,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!1 &2146267589
 GameObject:
   m_ObjectHideFlags: 0
@@ -25075,6 +25190,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -25090,6 +25206,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
+  SwitchAnimator: {fileID: 0}
 --- !u!212 &2147039439
 SpriteRenderer:
   m_ObjectHideFlags: 0

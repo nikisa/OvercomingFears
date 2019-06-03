@@ -70,6 +70,8 @@ public class Node : MonoBehaviour
 
     public bool triggerState = false;
 
+    public bool triggerWithEnemy = false; //triggerWithEnemy va messo a true nell'inspector solo se lo static viene ucciso dal player (no flashlight o armor)
+
     public bool isASwitch = false;
 
     public bool switchState = false;
@@ -336,7 +338,7 @@ public class Node : MonoBehaviour
 
 
 
-        // switchTemp.transform.localScale = new Vector3(this.transform.localScale.x * -30, this.transform.localScale.y * 30, this.transform.localScale.z * 30);
+        switchTemp.transform.localScale = new Vector3(this.transform.localScale.x  , this.transform.localScale.y , this.transform.localScale.z * -1);
         SwitchAnimator.SetInteger("SwitchState" , 1);
         UpdateGateToOpen(gateID);
         ArmorActivation(armorID);
@@ -361,7 +363,7 @@ public class Node : MonoBehaviour
     public bool UpdateSwitchToFalse()
     {
 
-        //   switchTemp.transform.localScale = new Vector3(this.transform.localScale.x * 30, this.transform.localScale.y * 30, this.transform.localScale.z * 30);
+        switchTemp.transform.localScale = new Vector3(this.transform.localScale.x , this.transform.localScale.y , this.transform.localScale.z * 1);
         SwitchAnimator.SetInteger("SwitchState", 0);
         UpdateGateToClose(gateID);
         ArmorDeactivation(armorID);

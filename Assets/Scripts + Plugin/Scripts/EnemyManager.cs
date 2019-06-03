@@ -29,7 +29,8 @@ public class EnemyManager : TurnManager {
 
     public bool isDead { get { return m_isDead; } }
 
-   
+    //[HideInInspector]
+    public bool isDetected = false;
     
     public UnityEvent deathEvent;
 
@@ -105,11 +106,6 @@ public class EnemyManager : TurnManager {
             m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 666);
         }
 
-        if (m_board.FindNodeAt(transform.position).isATrigger) {
-            m_board.FindNodeAt(transform.position).UpdateTriggerToTrue();
-            m_board.FindNodeAt(transform.position).triggerState = false;
-        }
-
         if (m_isDead)
         {
             return;
@@ -119,6 +115,20 @@ public class EnemyManager : TurnManager {
 
         StartCoroutine(WaitTimeForKill());
 
+        StartCoroutine(TriggerOffAfterEnemyDeath());
+    }
+
+
+    IEnumerator TriggerOffAfterEnemyDeath() {
+        
+        if (m_board.FindNodeAt(transform.position).isATrigger && !m_board.FindNodeAt(transform.position).triggerWithEnemy) { //triggerWithEnemy va messo a true nell'inspector solo se lo static viene ucciso dal player (no flashlight o armor)            
+            m_board.FindNodeAt(transform.position).UpdateTriggerToTrue();
+            m_board.FindNodeAt(transform.position).triggerState = !m_board.FindNodeAt(transform.position).triggerState; //Prima era false
+        }
+
+        yield return new WaitForSeconds(0.3f);
+
+        m_board.FindNodeAt(transform.position).triggerWithEnemy = false;
     }
 
     IEnumerator BlinkEnemyEffect() {

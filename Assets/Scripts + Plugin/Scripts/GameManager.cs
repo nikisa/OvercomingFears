@@ -472,6 +472,9 @@ public class GameManager : MonoBehaviour
 
         foreach (var enemy in m_enemies)
         {
+
+            enemy.isDetected = false;
+
             if (enemy != null)
             {
 
@@ -645,10 +648,14 @@ public class GameManager : MonoBehaviour
 
         Node previousTempNode = m_board.GetPreviousPlayerNode(); //serve per vedere se il previous è un trigger altrimenti mette a false ad ogni turno
 
-        if (m_board.playerNode.isATrigger)
+        if (m_board.playerNode.isATrigger) 
         {
             m_board.SetPreviousPlayerNode(m_board.playerNode);
-            m_board.playerNode.UpdateTriggerToTrue();
+
+            if (!m_board.playerNode.triggerWithEnemy) {
+                m_board.playerNode.UpdateTriggerToTrue();
+            }
+            
         }
         else if (m_board.GetPreviousPlayerNode() != null && previousTempNode.isATrigger)
         {
@@ -657,7 +664,7 @@ public class GameManager : MonoBehaviour
             m_board.SetPreviousPlayerNode(null);
         }
 
-
+        
     }
 
     public void triggerNode()

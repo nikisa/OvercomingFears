@@ -10,8 +10,8 @@ public class Level2Patch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
-            Destroy(FuckingMonkey1);
-            Destroy(FuckingMonkey2);
+            FuckingMonkey1.GetComponent<EnemyManager>().Die();
+            FuckingMonkey2.GetComponent<EnemyManager>().Die();
         }
     }
 }
