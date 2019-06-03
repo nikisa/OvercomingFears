@@ -104,6 +104,11 @@ public class EnemyMover : Mover
         {
 
             Debug.Log("Spotted!");
+            EnemyAnimatorController.SetInteger("ChaserState", 1);
+
+            EnemyAnimatorController.SetInteger("ChaserState", 2);//CALL EVENT POST ACTRIVATION
+
+
             clearPlayerPath();
             m_board.ChasingPreviousPlayerNode = m_board.playerNode; //Cambiare PreviousPlayerNode , qui o su Board
             //Move(firstDest , 0f);
@@ -124,6 +129,9 @@ public class EnemyMover : Mover
                 Move(firstDest, 0f);
                 
                 firstChaserMove = true;
+
+                yield return new WaitForSeconds(0.6f);
+                EnemyAnimatorController.SetInteger("ChaserState", 2);
             }
             else
             { // && CASELLA SUCCESSIVA NON è OCCUPATA (post armature)
@@ -147,6 +155,7 @@ public class EnemyMover : Mover
                     destination = GetPlayerPath(index + 1).transform.position;
                     FaceDestination();
 
+                    EnemyAnimatorController.SetInteger("ChaserState", 2);
 
                 }
                 

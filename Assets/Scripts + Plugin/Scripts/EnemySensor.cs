@@ -45,7 +45,7 @@ public class EnemySensor : MonoBehaviour {
                 }
                 else if (m_enemyMover.movementType == MovementType.Chaser)
                 {
-                    m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState" , 2);
+                    m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState" , 5);
                 }
 
                 

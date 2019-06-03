@@ -20,6 +20,7 @@ public class EnemyManager : TurnManager {
     PlayerManager m_player;
 
     public float delay;
+    public float blinkDelay;
 
     bool m_isDead = false;
     public bool isScared = false;
@@ -73,8 +74,9 @@ public class EnemyManager : TurnManager {
                 //attack player
                 //notify the GM to lose the level
                 //lr.transform.gameObject.SetActive(true);
-                Debug.Log(this.name + "MORTE");
+                
                 m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+                m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 5);
                 m_gameManager.LoseLevel();
                 
             }
@@ -85,10 +87,7 @@ public class EnemyManager : TurnManager {
                 {
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 1);
                 }
-
-
                 
-
             }
         }        
     }
@@ -103,7 +102,7 @@ public class EnemyManager : TurnManager {
         }
         else if (gameObject != null && m_enemyMover.movementType == MovementType.Chaser)
         {
-            m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 4);
+            m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 666);
         }
 
         if (m_board.FindNodeAt(transform.position).isATrigger) {
@@ -122,10 +121,40 @@ public class EnemyManager : TurnManager {
 
     }
 
+    IEnumerator BlinkEnemyEffect() {
+
+        if (m_enemyMover.movementType == MovementType.Chaser) {
+            transform.GetChild(0).gameObject.transform.GetChild(2).GetComponent<Renderer>().enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            transform.GetChild(0).gameObject.transform.GetChild(2).GetComponent<Renderer>().enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            transform.GetChild(0).gameObject.transform.GetChild(2).GetComponent<Renderer>().enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            transform.GetChild(0).gameObject.transform.GetChild(2).GetComponent<Renderer>().enabled = true;
+        }
+        else if(m_enemyMover.movementType == MovementType.Stationary) {
+            transform.GetChild(0).gameObject.transform.GetChild(1).transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            transform.GetChild(0).gameObject.transform.GetChild(1).transform.GetChild(0).GetComponent<Renderer>().enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            transform.GetChild(0).gameObject.transform.GetChild(1).transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            transform.GetChild(0).gameObject.transform.GetChild(1).transform.GetChild(0).GetComponent<Renderer>().enabled = true;
+        }
+
+        
+    }
+
     IEnumerator WaitTimeForKill()
     {
-        yield return new WaitForSeconds(delay);
         
+
+        yield return new WaitForSeconds(delay);
+
+        StartCoroutine(BlinkEnemyEffect());
+
+        yield return new WaitForSeconds(blinkDelay);
+
         if (deathEvent != null)
         {
             deathEvent.Invoke();

@@ -54,7 +54,7 @@ MonoBehaviour:
   easeType: 10
   moveTime: 0.5
   rotateTime: 0.7
-  iTweenDelay: 0
+  iTweenDelay: 0.3
   finishMovementEvent:
     m_PersistentCalls:
       m_Calls:
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_enemyMover: {fileID: 0}
   m_enemySensor: {fileID: 0}
   delay: 0.7
+  blinkDelay: 0
   isScared: 0
   wasScared: 0
   isOff: 0

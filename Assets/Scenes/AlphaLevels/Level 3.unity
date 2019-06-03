@@ -471,7 +471,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -514,7 +514,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &42756723
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +991,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -1033,7 +1034,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!4 &76991880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4519520851303354, guid: f0f94d3297ac7764895e4627d76bca18,
@@ -1445,6 +1447,11 @@ PrefabInstance:
       propertyPath: isActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 311896293637756904, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b491d7536f937e419027dd0c4eefc1a, type: 2}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -1515,11 +1522,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bf76322a60413a945a08176eae12bc11, type: 3}
-    - target: {fileID: 311896293637756904, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7b491d7536f937e419027dd0c4eefc1a, type: 2}
     - target: {fileID: 2775251454287485324, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: armorID
@@ -2228,7 +2230,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -2271,7 +2273,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &192384191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2735,7 +2738,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -2778,7 +2781,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &258843712
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,7 +3305,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -3344,7 +3348,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &300374688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,7 +3564,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -3602,7 +3607,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!4 &324237636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4519520851303354, guid: f0f94d3297ac7764895e4627d76bca18,
@@ -4031,6 +4037,11 @@ PrefabInstance:
       propertyPath: armorID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 311896293637756904, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b491d7536f937e419027dd0c4eefc1a, type: 2}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -4101,11 +4112,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bf76322a60413a945a08176eae12bc11, type: 3}
-    - target: {fileID: 311896293637756904, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7b491d7536f937e419027dd0c4eefc1a, type: 2}
     - target: {fileID: 2775251454287485324, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: armorID
@@ -4425,7 +4431,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -4468,7 +4474,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &428398017
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,7 +5215,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -5251,7 +5258,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &481380205
 GameObject:
   m_ObjectHideFlags: 0
@@ -6589,7 +6597,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -6632,7 +6640,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &609410631
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,7 +7493,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -7527,7 +7536,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &763358756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7717,7 +7727,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -7760,7 +7770,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &770976501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7908,7 +7919,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -7951,7 +7962,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &786459157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8360,7 +8372,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -8403,7 +8415,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &873280162
 GameObject:
   m_ObjectHideFlags: 0
@@ -8710,7 +8723,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -8753,7 +8766,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &911335920
 GameObject:
   m_ObjectHideFlags: 0
@@ -8876,7 +8890,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -8919,7 +8933,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &917726882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9765,7 +9780,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -9808,7 +9823,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1037966830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9979,7 +9995,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -10022,7 +10038,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1056069700
 GameObject:
   m_ObjectHideFlags: 0
@@ -10420,7 +10437,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -10463,7 +10480,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!4 &1138055770
 Transform:
   m_ObjectHideFlags: 0
@@ -12303,7 +12321,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -12346,7 +12364,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1265228254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12871,7 +12890,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -12914,7 +12933,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1308816123
 GameObject:
   m_ObjectHideFlags: 0
@@ -13175,7 +13195,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -13218,7 +13238,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1309054155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13462,7 +13483,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -13505,7 +13526,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1312240816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13614,7 +13636,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -13657,7 +13679,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1314848884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14534,7 +14557,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -14577,7 +14600,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1362343073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15105,7 +15129,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -15148,7 +15172,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1407842299
 GameObject:
   m_ObjectHideFlags: 0
@@ -15271,7 +15296,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -15314,7 +15339,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1407904362
 GameObject:
   m_ObjectHideFlags: 0
@@ -15514,7 +15540,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -15557,7 +15583,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1428301723
 GameObject:
   m_ObjectHideFlags: 0
@@ -15680,7 +15707,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -15723,7 +15750,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1443932595
 GameObject:
   m_ObjectHideFlags: 0
@@ -16285,7 +16313,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -16328,7 +16356,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1560113602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16896,7 +16925,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -16939,7 +16968,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1616636015
 GameObject:
   m_ObjectHideFlags: 0
@@ -17845,7 +17875,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -17888,7 +17918,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!212 &1685761902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18406,7 +18437,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -18449,7 +18480,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1729435190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19200,7 +19232,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -19243,7 +19275,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1803563964
 GameObject:
   m_ObjectHideFlags: 0
@@ -19366,7 +19399,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -19409,7 +19442,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1806227786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19615,7 +19649,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -19658,7 +19692,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1821675287
 GameObject:
   m_ObjectHideFlags: 0
@@ -19960,7 +19995,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -20003,7 +20038,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1846690455
 GameObject:
   m_ObjectHideFlags: 0
@@ -20126,7 +20162,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -20169,7 +20205,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &1848915718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20417,7 +20454,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -20460,7 +20497,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &1856176580
 GameObject:
   m_ObjectHideFlags: 0
@@ -22000,7 +22038,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -22043,7 +22081,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1001 &2058489271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22793,7 +22832,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -22836,7 +22875,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &2112667299
 GameObject:
   m_ObjectHideFlags: 0
@@ -22959,7 +22999,7 @@ MonoBehaviour:
   - {fileID: 2167666319127063447, guid: 4e33062efb3a74c46a7738888d16b028, type: 3}
   - {fileID: 3694561189559408451, guid: c90cb42e7542a7245a59bff886c032ee, type: 3}
   - {fileID: 7955094424790992389, guid: ad3ce8d954033dd468d229bec32dd947, type: 3}
-  switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
+  switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
@@ -23002,7 +23042,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
-  SwitchAnimator: {fileID: 0}
+  SwitchAnimator: {fileID: 1721546714922745761, guid: 9638041070f44df40ab6af8905985486,
+    type: 3}
 --- !u!1 &2124131196
 GameObject:
   m_ObjectHideFlags: 0

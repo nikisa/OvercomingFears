@@ -81,6 +81,8 @@ public class PlayerManager : TurnManager
        
     }
 
+    
+
     void Update()
     {
 
@@ -129,13 +131,15 @@ public class PlayerManager : TurnManager
                         m_gm.CurrentTurn = Turn.Enemy;
                         m_gm.CurrentTurn = Turn.Player;
 
-                        PlayerAnimatorController.SetInteger("PlayerState", 0);
+                        
                     }
                     else
                     {
                         m_board.playerNode.UpdateSwitchToTrue();
                         m_gm.CurrentTurn = Turn.Enemy;
                         m_gm.CurrentTurn = Turn.Player;
+
+                        
                     }
                 }
 

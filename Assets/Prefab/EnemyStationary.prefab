@@ -177,6 +177,7 @@ MonoBehaviour:
   m_enemyMover: {fileID: 0}
   m_enemySensor: {fileID: 0}
   delay: 0.8
+  blinkDelay: 0.2
   isScared: 0
   wasScared: 0
   isOff: 0
@@ -262,6 +263,10 @@ PrefabInstance:
     - target: {fileID: 100056, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
       propertyPath: m_Name
       value: SK_Static_Anim_Idle_Danger
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400056, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
       propertyPath: m_LocalPosition.x
@@ -367,6 +372,10 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 1770608748}
+    - target: {fileID: 13700000, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
 --- !u!1 &1770964002 stripped
