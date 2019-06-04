@@ -75,11 +75,16 @@ public class GameManager : MonoBehaviour
     public delegate void OnClick();
     public static OnClick stateMenu;
     public static OnClick stateGameplay;
+    public static OnClick stateOption;
+    public static OnClick stateLevelSelection;
 
 
     void OnEnable()
     {
         stateGameplay += SetGameplayTrigger;
+        stateMenu += SetMenuTrigger;
+        stateOption += SetOptionTrigger;
+        stateLevelSelection += SetLevelSelectionTrigger;
     }
 
 
@@ -94,11 +99,31 @@ public class GameManager : MonoBehaviour
             Debug.Log("out");
         }
     }
+    public void SetOptionTrigger()
+    {
+        SMController.SetTrigger("Option");
+    }
+    public void SetLevelSelectionTrigger()
+    {
+        SMController.SetTrigger("LevelSelection");
+    }
+    void SetMenuTrigger()
+    {
+        if (stateMenu != null)
+        {
+            SMController.SetTrigger("Menu");
+        }
+        else
+        {
+            Debug.Log("out");
+        }
+    }
 
 
     private void OnDisable()
     {
         stateGameplay -= SetGameplayTrigger;
+        stateMenu -= SetMenuTrigger;
     }
 
     #endregion

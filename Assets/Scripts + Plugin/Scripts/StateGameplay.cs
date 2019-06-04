@@ -30,8 +30,8 @@ public class StateGameplay : StateBehaviourBase
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        GameManager.Instance.IsGameplay = false;
-        SceneManager.LoadScene("Menu");
+        //GameManager.Instance.IsGameplay = false;
+        //SceneManager.LoadScene("Menu");
     }
 
 }

@@ -29,5 +29,9 @@ public class Menu : MonoBehaviour
     {
         Debug.Log("EXIT");
     }
+    public void BackToMenu()
+    {
+        GameManager.stateMenu();
+    }
 
 }

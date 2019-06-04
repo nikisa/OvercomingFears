@@ -23,6 +23,8 @@ public class PlayerManager : TurnManager
 
     public Animator PlayerAnimatorController;
 
+    public Canvas PauseCanvas;
+
     //public bool spottedPlayer = false;
 
 
@@ -153,6 +155,14 @@ public class PlayerManager : TurnManager
 
                 if (playerInput.ESC)
                 {
+                    if (PauseCanvas.gameObject.activeSelf)
+                    {
+                        PauseCanvas.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        PauseCanvas.gameObject.SetActive(true);
+                    }
 
                 }
 
@@ -684,10 +694,8 @@ public class PlayerManager : TurnManager
 
                     if (hasFlashLight) {
                         if (playerInput.F && playerInput.H < 0) {//sparo in alto
-
-                            lr.gameObject.SetActive(true);
+                            
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
                             
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0 , 1 , 0));
                             
@@ -697,9 +705,11 @@ public class PlayerManager : TurnManager
 
                                 switch (hit.collider.tag) {
                                     case "Enemy":
+                                        lr.gameObject.SetActive(true);
                                         lr.SetPosition(1, hit.point + new Vector3(0,1,1));
                                         hit.collider.GetComponent<EnemyManager>().Die(); break;
                                     case "Mirror":
+                                        lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         switch (index) {
@@ -732,9 +742,9 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.H > 0)
                         {//sparo in basso
 
-                            lr.gameObject.SetActive(true);
+                            
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
+                            
 
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
@@ -746,11 +756,12 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lr.gameObject.SetActive(true);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         break;
                                     case "Mirror":
-
+                                        lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         switch (index)
@@ -781,11 +792,8 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.V > 0)
                         {//sparo a destra
 
-
-                            lr.gameObject.SetActive(true);
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
-
+                
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
                             if (Physics.Raycast(transform.position, Vector3.right, out hit, 100, obstacleLayer))
@@ -796,11 +804,12 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lr.gameObject.SetActive(true);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         break;
                                     case "Mirror":
-
+                                        lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
 
@@ -832,10 +841,7 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.V < 0)
                         {//sparo a sinistra
 
-
-                            lr.gameObject.SetActive(true);
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
 
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
@@ -848,13 +854,14 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lr.gameObject.SetActive(true);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
 
                                         break;
 
                                     case "Mirror":
-
+                                        lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
 
