@@ -19,6 +19,11 @@ public class EnemyManager : TurnManager {
 
     PlayerManager m_player;
 
+    public float fadeDelay;
+
+    public float delayStaticKill;
+    public float delayChaserKill;
+
     public float delay;
     public float blinkDelay;
 
@@ -75,9 +80,22 @@ public class EnemyManager : TurnManager {
                 //attack player
                 //notify the GM to lose the level
                 //lr.transform.gameObject.SetActive(true);
-                
-                m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
-                m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 5);
+
+                if (m_enemyMover.movementType == MovementType.Stationary) {
+                    m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+                    yield return new WaitForSeconds(delayStaticKill);
+                    m_player.PlayerAnimatorController.SetInteger("PlayerState" , 7);
+
+                }
+
+                else if(m_enemyMover.movementType == MovementType.Chaser) {
+                    m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 5);
+                    yield return new WaitForSeconds(delayChaserKill);
+                    m_player.PlayerAnimatorController.SetInteger("PlayerState", 7);
+                }
+
+                yield return new WaitForSeconds(fadeDelay);
+
                 m_gameManager.LoseLevel();
                 
             }

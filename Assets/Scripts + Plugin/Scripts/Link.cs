@@ -8,7 +8,7 @@ public class Link : MonoBehaviour {
 
     public float lineThickness = 0.5f;
 
-    public float scaleTime = 0.25f;
+    public float scaleTime = 0.1f;
 
     public float delay = 0.1f;
 

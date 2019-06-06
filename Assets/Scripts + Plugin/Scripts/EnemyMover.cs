@@ -106,7 +106,7 @@ public class EnemyMover : Mover
             Debug.Log("Spotted!");
             EnemyAnimatorController.SetInteger("ChaserState", 1);
 
-            EnemyAnimatorController.SetInteger("ChaserState", 2);//CALL EVENT POST ACTRIVATION
+            EnemyAnimatorController.SetInteger("ChaserState", 2);//CALL EVENT POST ACTIVATION
 
 
             clearPlayerPath();
@@ -125,8 +125,10 @@ public class EnemyMover : Mover
 
             if (firstChaserMove == false)
             { // && CASELLA SUCCESSIVA NON è OCCUPATA (post armature)
-                EnemyAnimatorController.SetInteger("ChaserState", 3);
                 Move(firstDest, 0f);
+                yield return new WaitForSeconds(0.3f);
+                EnemyAnimatorController.SetInteger("ChaserState", 3);
+                
                 
                 firstChaserMove = true;
 
@@ -146,14 +148,19 @@ public class EnemyMover : Mover
                 {
 
                     //Debug.Log(m_player.GetPlayerPath(index));
-                    EnemyAnimatorController.SetInteger("ChaserState", 3);
-                    Move(GetPlayerPath(index).transform.position, 0f);
                     
+                    Move(GetPlayerPath(index).transform.position, 0f);
+
+                    yield return new WaitForSeconds(0.3f);
+                    EnemyAnimatorController.SetInteger("ChaserState", 3);
+
+                    destination = GetPlayerPath(index + 1).transform.position;
 
                     yield return new WaitForSeconds(0.6f);
 
-                    destination = GetPlayerPath(index + 1).transform.position;
                     FaceDestination();
+
+                    
 
                     EnemyAnimatorController.SetInteger("ChaserState", 2);
 

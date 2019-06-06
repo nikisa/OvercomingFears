@@ -236,13 +236,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1321305549}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -257,6 +257,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -397,13 +398,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2056718645}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -418,6 +419,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 1
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -558,13 +560,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 293974265}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -579,6 +581,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -885,13 +888,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1434723053}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -906,6 +909,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 1
@@ -1046,13 +1050,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 883191000}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -1067,6 +1071,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -1376,13 +1381,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 973151427}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -1397,6 +1402,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 1
   switchState: 0
   isAGate: 0
@@ -2472,13 +2478,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1038190118}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -2493,6 +2499,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -2968,13 +2975,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 932910736}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -2989,6 +2996,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -3342,6 +3350,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &449432434
@@ -3945,6 +3958,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1001 &519523028
@@ -4510,13 +4528,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1725989277}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -4531,6 +4549,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -5682,13 +5701,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1487687369}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -5703,6 +5722,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -5884,11 +5904,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 357891305194315532, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5536320937842057688, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -5898,6 +5913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 357891305194315532, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 302105709, guid: f86e2a7872e4ff24989b5d693a1f2940, type: 3}
       propertyPath: m_IsActive
@@ -6101,6 +6121,10 @@ PrefabInstance:
       propertyPath: standTime
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1770964002, guid: f0f94d3297ac7764895e4627d76bca18, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 65559019812378994, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
       propertyPath: m_Size.x
@@ -6115,10 +6139,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0.09004834
-      objectReference: {fileID: 0}
-    - target: {fileID: 1770964002, guid: f0f94d3297ac7764895e4627d76bca18, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
@@ -6309,6 +6329,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &775000229
@@ -6464,13 +6489,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 533928287}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -6485,6 +6510,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -7807,13 +7833,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 561173388}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -7828,6 +7854,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -8198,6 +8225,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &995148900
@@ -8415,13 +8447,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 626895715}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -8436,6 +8468,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -8576,13 +8609,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 255711728}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -8597,6 +8630,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -8675,13 +8709,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2030802487}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -8696,6 +8730,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -9188,13 +9223,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1716174127}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -9209,6 +9244,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 1
@@ -9548,13 +9584,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 498516253}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -9569,6 +9605,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -9910,13 +9947,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2117963387}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -9931,6 +9968,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -10165,6 +10203,10 @@ MonoBehaviour:
   Boss: {fileID: 0}
   directionToMove: {x: 0, y: 0, z: 0}
   m_enemies: []
+  TutorialsKeyboard: []
+  TutorialsController: []
+  popup: {fileID: 0}
+  playerPopupID: 0
   delay: 0
   setupEvent:
     m_PersistentCalls:
@@ -10753,13 +10795,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 655891852}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -10774,6 +10816,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -10967,6 +11010,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &1256456179
@@ -11347,13 +11395,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 798465214}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -11368,6 +11416,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -11494,13 +11543,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1382126310}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -11515,6 +11564,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -12209,13 +12259,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 528863989}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -12230,6 +12280,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -12527,13 +12578,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1329316180}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -12548,6 +12599,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 1
   switchState: 0
   isAGate: 0
@@ -12769,13 +12821,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 385890028}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -12790,6 +12842,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -13004,13 +13057,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 704219685}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -13025,6 +13078,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 1
   switchState: 0
   isAGate: 0
@@ -13560,13 +13614,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1673719845}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -13581,6 +13635,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -13707,13 +13762,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2002629059}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -13728,6 +13783,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -14156,13 +14212,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 341943364}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -14177,6 +14233,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -14531,6 +14588,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &1636440398
@@ -14962,6 +15024,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1001 &1705524743
@@ -15574,13 +15641,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2051987298}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -15595,6 +15662,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -15827,13 +15895,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1537025522}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -15848,6 +15916,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 1
@@ -16366,6 +16435,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1355867647944638, guid: e139ec626f77d4c40a7900640d999495,
         type: 3}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &1861001823
@@ -16491,13 +16565,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 82926787}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -16512,6 +16586,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -16881,13 +16956,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1626002000}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -16902,6 +16977,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -17406,13 +17482,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1441142155}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -17427,6 +17503,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -18358,13 +18435,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 235738727}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -18379,6 +18456,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -18813,13 +18891,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 344550998}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -18834,6 +18912,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -20533,13 +20612,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1711149354}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -20554,6 +20633,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -21146,13 +21226,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2050057447}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -21167,6 +21247,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 1
@@ -21383,13 +21464,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1937317572}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -21404,6 +21485,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0
@@ -21544,13 +21626,13 @@ MonoBehaviour:
   triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
     type: 3}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: dc44692f7de7a554d9fa4d0154ea9ceb, type: 3}
+  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 813297309}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.25
+  delay: 0.1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -21565,6 +21647,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2489b41d0415f9f4096e89a6f15b8a8d, type: 3}
   isATrigger: 0
   triggerState: 0
+  triggerWithEnemy: 0
   isASwitch: 0
   switchState: 0
   isAGate: 0

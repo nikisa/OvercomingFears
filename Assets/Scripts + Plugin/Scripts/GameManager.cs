@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.UI;
+using DG.Tweening;
 
 [System.Serializable]
 public enum Turn
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
 
     public Animator SMController;
 
+    
+
     BoardManager m_board;
     PlayerManager m_player;
 
@@ -41,7 +45,16 @@ public class GameManager : MonoBehaviour
     List<Armor> m_armors;
     List<Sword> m_sword;
 
-    
+    public GameObject[] TutorialsKeyboard;
+    public GameObject[] TutorialsController;
+
+    [HideInInspector]
+    public GameObject popup;
+
+    //[HideInInspector]
+    public int playerPopupID;
+
+
 
     Turn m_currentTurn = Turn.Player;
     public Turn CurrentTurn { get { return m_currentTurn; }  set { m_currentTurn = value; } }
@@ -144,6 +157,7 @@ public class GameManager : MonoBehaviour
 
     void Setup()
     {
+        playerPopupID = 1;
 
         m_currentTurn = Turn.Player;
         GetBoardManager();
@@ -276,6 +290,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartLevelRoutine()
     {
+
+        transform.GetChild(2).gameObject.SetActive(false);
+
         Debug.Log("SETUP LEVEL");
         if (setupEvent != null)
         {
@@ -305,6 +322,15 @@ public class GameManager : MonoBehaviour
     {
 
         Debug.Log("PLAY LEVEL");
+
+        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+
+        //if che sceglie se pad o keyboard
+
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            popup = Instantiate(TutorialsKeyboard[0]);
+            popup.transform.GetChild(0).GetComponent<ScreenFader>().FadeOn();
+        }
 
         //foreach (Node node in m_board.playerNode.NeighborNodes) {
         //    Debug.Log("ESKEREEE");
@@ -341,6 +367,7 @@ public class GameManager : MonoBehaviour
 
     public void LoseLevel()
     {
+        
         StartCoroutine(LoseLevelRoutine());
     }
 
@@ -348,7 +375,7 @@ public class GameManager : MonoBehaviour
     {
         m_isGameOver = true;
         m_player.playerInput.InputEnabled = false;
-
+        
         if (loseLevelEvent != null)
         {
             loseLevelEvent.Invoke();
@@ -875,8 +902,7 @@ public class GameManager : MonoBehaviour
                 else if (m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen)
                 {
                     enemy.isOff = false;
-
-
+                    
                 }
             }
         }
@@ -1046,4 +1072,7 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+
+
 }

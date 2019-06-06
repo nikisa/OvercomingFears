@@ -50,16 +50,20 @@ public class Sword : MonoBehaviour {
         if (other.tag == "Enemy") {
             if (m_board.FindNodeAt(other.transform.position).isATrigger)
             {
-                m_board.UpdateTriggerToFalseLevel3(m_board.FindNodeAt(other.transform.position));
+                StartCoroutine(WaitTriggerToFalse(other));
             }
-            StartCoroutine(SwordKillWaitTime(other));
-            
+            StartCoroutine(SwordKillWaitTime(other));            
         }
     }
 
     IEnumerator SwordKillWaitTime(Collider other) {
         yield return new WaitForSeconds(WaitTimeSwordKill);
         other.GetComponent<EnemyManager>().Die();
+    }
+
+    IEnumerator WaitTriggerToFalse(Collider other) {
+        yield return new WaitForSeconds(WaitTimeSwordKill + .65f);
+        m_board.UpdateTriggerToFalseLevel3(m_board.FindNodeAt(other.transform.position));
     }
 
 

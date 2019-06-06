@@ -1008,6 +1008,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -2.9423802
       objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302836, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: WaitTimeSwordKill
+      value: 0.23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1404f9064753c74e8b8330d851b71a4, type: 3}
 --- !u!4 &145960786372401519 stripped

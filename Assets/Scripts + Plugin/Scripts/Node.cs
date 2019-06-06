@@ -23,6 +23,7 @@ public class Node : MonoBehaviour
 
 
     BoardManager m_board;
+    PlayerManager m_player;
 
     public GameObject switchPrefab;
     public GameObject gatePrefab;
@@ -103,6 +104,7 @@ public class Node : MonoBehaviour
     private void Awake()
     {
         m_board = Object.FindObjectOfType<GameManager>().GetComponent<BoardManager>();
+        m_player = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
         m_coordinate = new Vector2(transform.position.x, transform.position.z);
         UpdateCrackableTexture();
         m_nodePosition = new Vector3(1000f, 1000f, 1000f);
@@ -368,23 +370,23 @@ public class Node : MonoBehaviour
         UpdateGateToClose(gateID);
         ArmorDeactivation(armorID);
 
-        if (SceneManager.GetActiveScene().buildIndex == 3) {
-            foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
+        //if (SceneManager.GetActiveScene().buildIndex == 3) {
+        //    foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
 
-                if (enemy.isOff) {
-                    enemy.isOff = false;
-                }
+        //        if (enemy.isOff) {
+        //            enemy.isOff = false;
+        //        }
 
                 
 
-                if (enemy.m_enemySensor.FoundPlayer && enemy.isOff == false && m_board.FindNodeAt(enemy.transform.position).gateOpen == true) {
-                    //attack player
-                    //notify the GM to lose the level
-                    Debug.Log(this.name + "MORTE");
-                    m_board.m_gm.LoseLevel();
-                }
-            }
-        }
+        //        if (enemy.m_enemySensor.FoundPlayer && enemy.isOff == false && m_board.FindNodeAt(enemy.transform.position).gateOpen == true) {
+        //            //attack player
+        //            //notify the GM to lose the level
+        //            Debug.Log(this.name + "MORTE");
+        //            m_board.m_gm.LoseLevel();
+        //        }
+        //    }
+        //}
 
         if (mirrorID != 0)
         {
@@ -424,6 +426,7 @@ public class Node : MonoBehaviour
     {
         return trapID;
     }
+
 
 
     public void SetGateOpen()
@@ -622,7 +625,7 @@ public class Node : MonoBehaviour
         {
             GameObject flashliteTemp;
             flashliteTemp = Instantiate(flashlitePrefab, transform.position, Quaternion.identity);
-            flashliteTemp.transform.position += new Vector3(0, -1.8f, 0);
+            flashliteTemp.transform.position += new Vector3(0, -0.8f, 0);
             flashliteTemp.transform.parent = transform;
 
         }
@@ -664,6 +667,18 @@ public class Node : MonoBehaviour
         return ris;
     }
 
+    IEnumerator Death() {
+
+        
+
+        yield return new WaitForSeconds(.35f);
+
+        m_player.PlayerAnimatorController.SetInteger("PlayerState", 7);
+
+        yield return new WaitForSeconds(.2f);
+        m_board.m_gm.LoseLevel();
+    }
+
 
     void Level3Patch() {
         if (SceneManager.GetActiveScene().buildIndex == 3) {
@@ -673,14 +688,15 @@ public class Node : MonoBehaviour
                     enemy.isOff = false;
 
                     if (enemy.isOff == false && enemy.m_enemySensor.FoundPlayer) {
-                        m_board.m_gm.LoseLevel();
+                        enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState" , 2);
+                        StartCoroutine(Death()); 
                     }
 
                     enemy.m_enemySensor.m_foundPlayer = false;
                 }
             }
 
-
+            
 
 
             //foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {

@@ -96,7 +96,6 @@ public class BoardManager : MonoBehaviour
 
         m_player = _playerMng.playerMover;
 
-
         m_AllMirrors = FindMirrors();
         m_AllmovableObjects = FindMovableObjects();
         m_AllTraps = FindTraps();

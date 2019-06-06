@@ -88,7 +88,9 @@ public class PlayerManager : TurnManager
        
     }
 
-    
+    IEnumerator waitTest() {
+        yield return new WaitForSeconds(1);
+    }
 
     void Update()
     {
@@ -152,6 +154,7 @@ public class PlayerManager : TurnManager
                     }
                 }
 
+                
 
                 if (playerInput.ESC)
                 {
@@ -1021,7 +1024,6 @@ public class PlayerManager : TurnManager
             Debug.Log(m_board.FindNodeAt(enemy.transform.position).gateOpen);
             if (enemy != null && m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen && enemy.GetEnemySensor.FoundPlayer)
             {
-
                 Debug.Log("LoseLevel");
                 m_gameManager.LoseLevel();
             }
