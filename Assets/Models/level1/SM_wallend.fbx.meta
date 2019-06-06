@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 0be4706c9a1c78a43ad24839a6e3bb9f
+guid: 112e64e4a46c464419d783b280ae6211
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: mat_palette
+    2100000: blinn2
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface132
+    4300000: SM_Wallend
   externalObjects: {}
   materials:
     importMaterials: 1

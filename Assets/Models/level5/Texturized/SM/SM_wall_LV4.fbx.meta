@@ -3,12 +3,26 @@ guid: 6767b1eda303439478f69414d4bd3505
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: mat_palette
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube4
+    100000: pCube4
+    100002: polySurface1
+    100004: polySurface2
+    100006: polySurface2 1
+    100008: //RootNode
+    100010: transform1
+    100012: transform2
+    100014: transform3
+    400000: pCube4
+    400002: polySurface1
+    400004: polySurface2
+    400006: polySurface2 1
+    400008: //RootNode
+    400010: transform1
+    400012: transform2
+    400014: transform3
+    2100000: blinn1
+    2300000: polySurface2
+    3300000: polySurface2
+    4300000: polySurface2
   externalObjects: {}
   materials:
     importMaterials: 1
