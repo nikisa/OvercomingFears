@@ -57,7 +57,7 @@ public class PlayerInput : MonoBehaviour
             m_s = Input.GetKeyDown(KeyCode.Space);
             m_p = Input.GetKey(KeyCode.LeftShift);
             m_f = Input.GetKey(KeyCode.LeftControl);
-            m_e = Input.GetKey(KeyCode.Escape);
+            m_e = Input.GetKeyDown(KeyCode.Escape);
             m_r = Input.GetKey(KeyCode.R);
 
         }

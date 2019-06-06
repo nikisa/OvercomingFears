@@ -14,7 +14,7 @@ public class StateMenu : StateBehaviourBase
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menu");        
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

@@ -195,6 +195,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EnemyMover.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EnemySensor.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\FlickeringManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\FloorData.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\GameManager.cs" />
@@ -225,6 +226,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateBehaviourBase.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateGameplay.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateLevelSelection.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\StateMainMenu.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateMenu.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateOptions.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StaticCounter.cs" />
@@ -292,31 +294,31 @@
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
     <Reference Include="Unity.ProGrids">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -520,16 +522,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/nikisa/Documents/OvercomingFears/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Student/Documents/OvercomingFears/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

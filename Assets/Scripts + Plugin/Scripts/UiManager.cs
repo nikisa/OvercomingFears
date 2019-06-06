@@ -9,14 +9,12 @@ public class UiManager : MonoBehaviour
     public UiBase MainMenu;
 
     
-
- 
-
+    
     public void ChangeMenu(MenuType _menuType)
     {
         switch (_menuType)
         {
-            case MenuType.mainmenu:
+            case MenuType.MainMenu:
                 MainMenu.Setup();
                 break;
             case MenuType.LevelSelection:
@@ -35,7 +33,7 @@ public class UiManager : MonoBehaviour
     {
         switch (_menuType)
         {
-            case MenuType.mainmenu:
+            case MenuType.MainMenu:
                 MainMenu.Disable();
                 break;
             case MenuType.LevelSelection:
@@ -58,10 +56,15 @@ public class UiManager : MonoBehaviour
     {
         GameManager.stateLevelSelection();
     }
+
+    public void BackToMainMenu()
+    {
+        GameManager.stateMainMenu();
+    }
 }
 
 public enum MenuType
-{   mainmenu,
+{   MainMenu,
     LevelSelection,
     nullo,
     Option

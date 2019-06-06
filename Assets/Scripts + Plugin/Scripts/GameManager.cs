@@ -26,7 +26,9 @@ public class GameManager : MonoBehaviour
 
     public Animator SMController;
 
-    
+    public Animator UIController;
+
+
 
     BoardManager m_board;
     PlayerManager m_player;
@@ -90,6 +92,7 @@ public class GameManager : MonoBehaviour
     public static OnClick stateGameplay;
     public static OnClick stateOption;
     public static OnClick stateLevelSelection;
+    public static OnClick stateMainMenu;
 
 
     void OnEnable()
@@ -98,6 +101,7 @@ public class GameManager : MonoBehaviour
         stateMenu += SetMenuTrigger;
         stateOption += SetOptionTrigger;
         stateLevelSelection += SetLevelSelectionTrigger;
+        stateMainMenu += SetMainMenuTrigger;
     }
 
 
@@ -114,12 +118,18 @@ public class GameManager : MonoBehaviour
     }
     public void SetOptionTrigger()
     {
-        SMController.SetTrigger("Option");
+        UIController.SetTrigger("Option");
     }
     public void SetLevelSelectionTrigger()
     {
-        SMController.SetTrigger("LevelSelection");
+        UIController.SetTrigger("LevelSelection");
     }
+    public void SetMainMenuTrigger()
+    {
+        UIController.SetTrigger("MainMenu");
+    }
+
+
     void SetMenuTrigger()
     {
         if (stateMenu != null)
@@ -137,6 +147,10 @@ public class GameManager : MonoBehaviour
     {
         stateGameplay -= SetGameplayTrigger;
         stateMenu -= SetMenuTrigger;
+        stateOption -= SetOptionTrigger;
+        stateLevelSelection -= SetLevelSelectionTrigger;
+        stateMainMenu -= SetMainMenuTrigger;
+
     }
 
     #endregion
