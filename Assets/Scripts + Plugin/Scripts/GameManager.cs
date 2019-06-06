@@ -304,9 +304,13 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartLevelRoutine()
     {
+<<<<<<< HEAD
 
         transform.GetChild(2).gameObject.SetActive(false);
 
+=======
+		transform.GetChild(2).gameObject.SetActive(false);
+>>>>>>> ae41f77e736d001261afb7878fbee817cd8c2f3c
         Debug.Log("SETUP LEVEL");
         if (setupEvent != null)
         {
