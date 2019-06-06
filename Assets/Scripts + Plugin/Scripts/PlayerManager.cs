@@ -554,8 +554,10 @@ public class PlayerManager : TurnManager
 
                                         break;
                                     case "Wall":
+                                        Debug.Log("Wall");
                                         break;
                                     case "Sword":
+                                        Debug.Log("SWORD");                                        
                                         break;
 
                                 }
@@ -736,8 +738,7 @@ public class PlayerManager : TurnManager
                                     case "Sword":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -786,8 +787,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -835,8 +835,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -891,8 +890,7 @@ public class PlayerManager : TurnManager
                                     case "Sword":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
