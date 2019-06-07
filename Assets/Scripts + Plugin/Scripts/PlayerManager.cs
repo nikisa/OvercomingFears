@@ -554,8 +554,10 @@ public class PlayerManager : TurnManager
 
                                         break;
                                     case "Wall":
+                                        Debug.Log("Wall");
                                         break;
                                     case "Sword":
+                                        Debug.Log("SWORD");                                        
                                         break;
 
                                 }
