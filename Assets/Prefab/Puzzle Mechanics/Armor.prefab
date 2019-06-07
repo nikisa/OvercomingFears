@@ -903,21 +903,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311896293651580642}
     m_Modifications:
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Name
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Sword
-      objectReference: {fileID: 0}
     - target: {fileID: 455596425652302837, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -973,6 +958,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 455596425652302834, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_Enabled
@@ -981,7 +981,7 @@ PrefabInstance:
     - target: {fileID: 455596425652302835, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_Size.x
-      value: 273.8728
+      value: 439.65314
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302835, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
@@ -996,17 +996,17 @@ PrefabInstance:
     - target: {fileID: 455596425652302835, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_Center.x
-      value: -85.99171
+      value: -3.1013017
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302835, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_Center.y
-      value: -0.31619048
+      value: -0.31620336
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302835, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_Center.z
-      value: -2.9423802
+      value: -2.9424
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302836, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}

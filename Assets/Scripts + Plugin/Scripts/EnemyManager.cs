@@ -37,6 +37,7 @@ public class EnemyManager : TurnManager {
     //[HideInInspector]
     public bool isDetected = false;
     
+    
     public UnityEvent deathEvent;
 
     protected override void Awake() {

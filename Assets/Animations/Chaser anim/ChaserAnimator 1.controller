@@ -411,7 +411,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ChaserIdleSleep
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101036201463666496}
@@ -425,7 +425,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 7ede3d6c09691cd40bafbd0953644057, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -564,7 +564,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 68f0e56a3b8bb484d845c17317f1015f, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -698,7 +698,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0dae6511b4e6a2346bd1f6b78425c27c, type: 3}
+  m_Motion: {fileID: 7400000, guid: 66eb68831ca7fe34d964c749c30afd05, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -750,7 +750,7 @@ AnimatorStateMachine:
     m_Position: {x: 144, y: 384, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102819312631628956}
-    m_Position: {x: -300, y: 228, z: 0}
+    m_Position: {x: -312, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102620421551663964}
     m_Position: {x: -276, y: 384, z: 0}
@@ -772,4 +772,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 168, y: 84, z: 0}
   m_ExitPosition: {x: 276, y: 24, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102166879894215956}
+  m_DefaultState: {fileID: 1102022774070738250}

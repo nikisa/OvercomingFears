@@ -711,10 +711,14 @@ public class PlayerManager : TurnManager
                                         lr.gameObject.SetActive(true);
                                         lr.SetPosition(1, hit.point + new Vector3(0,1,1));
                                         hit.collider.GetComponent<EnemyManager>().Die(); break;
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                     case "Mirror":
                                         lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         switch (index) {
 
                                             case 0:
@@ -736,8 +740,7 @@ public class PlayerManager : TurnManager
                                     case "Sword":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -762,11 +765,15 @@ public class PlayerManager : TurnManager
                                         lr.gameObject.SetActive(true);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         break;
                                     case "Mirror":
                                         lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         switch (index)
                                         {
 
@@ -786,8 +793,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -810,12 +816,15 @@ public class PlayerManager : TurnManager
                                         lr.gameObject.SetActive(true);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         break;
                                     case "Mirror":
                                         lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         switch (index)
                                         {
 
@@ -835,8 +844,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -860,14 +868,16 @@ public class PlayerManager : TurnManager
                                         lr.gameObject.SetActive(true);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         break;
 
                                     case "Mirror":
                                         lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
+                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        hasFlashLight = false;
                                         switch (index)
                                         {
 
@@ -891,8 +901,7 @@ public class PlayerManager : TurnManager
                                     case "Sword":
                                         break;
                                 }
-                                transform.GetChild(3).gameObject.SetActive(false);
-                                hasFlashLight = false;
+                                
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }

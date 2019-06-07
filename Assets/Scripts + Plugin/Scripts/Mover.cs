@@ -11,7 +11,8 @@ public class Mover : MonoBehaviour {
     public bool faceDestination = false;
 
     public bool isMoving = false;
-    public iTween.EaseType easeType = iTween.EaseType.easeInOutExpo;
+    public iTween.EaseType movementEaseType = iTween.EaseType.easeInOutExpo;
+    public iTween.EaseType rotationEaseType = iTween.EaseType.easeInOutExpo;
 
     public float moveTime = .5f;
 
@@ -125,7 +126,7 @@ public class Mover : MonoBehaviour {
             "y", destinationPos.y,
             "z", destinationPos.z,
             "delay", iTweenDelay,
-            "easetype", easeType,
+            "easetype", movementEaseType,
             "time", moveTime
         ));
 
@@ -172,10 +173,14 @@ public class Mover : MonoBehaviour {
         Quaternion newRotation = Quaternion.LookRotation(relativePosition, Vector3.up);
         float newY = newRotation.eulerAngles.y;
 
+
+        Debug.Log("Gradi: " + newRotation);
+        Debug.Log(newY);
+
         iTween.RotateTo(gameObject, iTween.Hash(
             "y", newY,
             "delay", 0f,
-            "easetype", easeType,
+            "easetype", rotationEaseType,
             "time", rotateTime
             ));
     }

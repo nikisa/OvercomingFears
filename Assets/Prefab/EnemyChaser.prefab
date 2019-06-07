@@ -51,10 +51,11 @@ MonoBehaviour:
   destination: {x: 0, y: 0, z: 0}
   faceDestination: 1
   isMoving: 0
-  easeType: 10
+  movementEaseType: 4
+  rotationEaseType: 21
   moveTime: 0.5
-  rotateTime: 0.7
-  iTweenDelay: 0.3
+  rotateTime: 0.25
+  iTweenDelay: 0
   finishMovementEvent:
     m_PersistentCalls:
       m_Calls:
@@ -75,6 +76,7 @@ MonoBehaviour:
   firstMovementType: 3
   movementType: 3
   standTime: 0
+  chaserWaitRotation: 0.05
   firstDest: {x: 0, y: 0, z: 0}
   spottedDest: {x: 0, y: 0, z: 0}
   index: 0
@@ -96,11 +98,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemyMover: {fileID: 0}
   m_enemySensor: {fileID: 0}
+  fadeDelay: 0
+  delayStaticKill: 0
+  delayChaserKill: 0
   delay: 0.7
   blinkDelay: 0
   isScared: 0
   wasScared: 0
   isOff: 0
+  isDetected: 0
   deathEvent:
     m_PersistentCalls:
       m_Calls:
