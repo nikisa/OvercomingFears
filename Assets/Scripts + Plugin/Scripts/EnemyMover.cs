@@ -90,11 +90,29 @@ public class EnemyMover : Mover
 
     void Chase()
     {
-        StartCoroutine(ChaseRoutine());
+        if (m_player.speedUp)
+        {
+            StartCoroutine(ChaseRoutine(0));
+        }
+        else
+        {
+            StartCoroutine(ChaseRoutine(.5f));
+        }
+        
     }
 
-    IEnumerator ChaseRoutine()
+    IEnumerator ChaseRoutine(float n)
     {
+
+        moveTime = n;
+
+        if (n == .5f)
+        {
+            rotateTime = n - .3f;
+        }
+        
+        
+
 
         Vector3 startPos = new Vector3(m_currentNode.Coordinate.x, 0f, m_currentNode.Coordinate.y);
 
@@ -138,7 +156,7 @@ public class EnemyMover : Mover
                                 
                 firstChaserMove = true;
 
-                yield return new WaitForSeconds(0.6f);
+                yield return new WaitForSeconds(chaserWaitRotation + moveTime);
                 EnemyAnimatorController.SetInteger("ChaserState", 2);
             }
             else
@@ -165,7 +183,7 @@ public class EnemyMover : Mover
 
                     
 
-                    yield return new WaitForSeconds(chaserWaitRotation + moveTime);
+                    yield return new WaitForSeconds(chaserWaitRotation + moveTime); //
 
 
                     FaceDestination();
@@ -184,20 +202,20 @@ public class EnemyMover : Mover
 
         if (!spottedPlayer) {
             
-            yield return new WaitForSeconds(0.3f);
+            //yield return new WaitForSeconds(0.3f);
             Debug.Log("Chasing stopped");
             EnemyAnimatorController.SetInteger("ChaserState", 4);
-            yield return new WaitForSeconds(0.3f);
+            //yield return new WaitForSeconds(0.3f);
             EnemyAnimatorController.SetInteger("ChaserState", 0);
         }
 
 
 
-        while (isMoving)
-        {
+        //while (isMoving)
+        //{
             
-            yield return null;
-        }
+        //    yield return null;
+        //}
 
         base.finishMovementEvent.Invoke();
     }

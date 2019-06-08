@@ -280,6 +280,10 @@ public class Node : MonoBehaviour
     {
         if (this.isCrackable)
         {
+            if (crackableState < 0)
+            {
+                crackableState = 0;
+            }
             transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = sprites[crackableState];
         }
         else

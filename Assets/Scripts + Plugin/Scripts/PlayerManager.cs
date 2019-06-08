@@ -31,6 +31,11 @@ public class PlayerManager : TurnManager
     public bool hasLightBulb = false;
     public bool hasFlashLight = false;
 
+    public bool reset = false;
+
+    float m_timer;
+    public bool speedUp;
+
     BoardManager m_board;
 
     [HideInInspector]
@@ -95,6 +100,8 @@ public class PlayerManager : TurnManager
     void Update()
     {
 
+        m_timer += Time.deltaTime;
+
         enemyDetection();
 
         CaptureEnemies();
@@ -102,15 +109,39 @@ public class PlayerManager : TurnManager
         if (GameManager.Instance.IsGameplay)
         {
             if (playerMover.isMoving || m_gameManager.CurrentTurn != Turn.Player)
-            {                
-                return;
+            {
+                if (!reset)
+                {
+                    reset = true;
+                    Debug.Log("TUA padre");
+                    if (m_timer < 3)
+                    {
+                        Debug.Log("<3        " + m_timer);
+                        speedUp = true;
+                    }
+                    else
+                    {
+                        Debug.Log(">3       " + m_timer);
+                        speedUp = false;
+                    }
+                    m_timer = 0;
+                    return;
+                }
+                
+            }
+            else
+            {
+                reset = false;
             }
 
-            
 
             playerInput.GetKeyInput();
 
 
+            
+
+
+            
             //enemyInGateDetection();
 
 
