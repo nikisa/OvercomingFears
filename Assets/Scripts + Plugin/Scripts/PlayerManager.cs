@@ -76,9 +76,11 @@ public class PlayerManager : TurnManager
     }
 
     IEnumerator DisableLineRenderer() {
+        lr.SetPosition(0 , transform.position);
         yield return new WaitForSeconds(.5f);
         lr.gameObject.SetActive(false);
-        lr.gameObject.SetActive(false);
+        lr.SetPosition(0, transform.position);
+        lr.SetPosition(1, transform.position);
 
     }
     public void EnemyAnimationReset()

@@ -177,6 +177,7 @@ public class GameManager : MonoBehaviour
         GetBoardManager();
         GetPlayerManager();
         PositionPlayerSetup();
+        SoundManager.Initialize();
         //GetUIManager();
 
         m_player.Setup();

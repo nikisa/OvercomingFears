@@ -141,8 +141,9 @@ public class EnemyManager : TurnManager {
     IEnumerator TriggerOffAfterEnemyDeath() {
         
         if (m_board.FindNodeAt(transform.position).isATrigger && !m_board.FindNodeAt(transform.position).triggerWithEnemy) { //triggerWithEnemy va messo a true nell'inspector solo se lo static viene ucciso dal player (no flashlight o armor)            
-            m_board.FindNodeAt(transform.position).UpdateTriggerToTrue();
             m_board.FindNodeAt(transform.position).triggerState = !m_board.FindNodeAt(transform.position).triggerState; //Prima era false
+            m_board.FindNodeAt(transform.position).UpdateTriggerToTrue();
+            
         }
 
         yield return new WaitForSeconds(0.3f);

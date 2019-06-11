@@ -296,7 +296,7 @@ public class Node : MonoBehaviour
     {
         if (isATrigger && TriggerOrLogic() == false)
         {
-            triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(true);
+            triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(triggerState);
 
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
