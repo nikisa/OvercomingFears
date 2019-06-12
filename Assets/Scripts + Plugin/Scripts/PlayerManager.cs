@@ -743,9 +743,10 @@ public class PlayerManager : TurnManager
                                     case "Enemy":
                                         lr.gameObject.SetActive(true);
                                         lr.SetPosition(1, hit.point + new Vector3(0,1,1));
-                                        hit.collider.GetComponent<EnemyManager>().Die(); break;
+                                        hit.collider.GetComponent<EnemyManager>().Die();
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
+                                        break;
                                     case "Mirror":
                                         lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
