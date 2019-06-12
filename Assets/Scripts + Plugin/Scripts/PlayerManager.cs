@@ -115,7 +115,7 @@ public class PlayerManager : TurnManager
                 if (!reset)
                 {
                     reset = true;
-                    Debug.Log("TUA padre");
+                    
                     if (m_timer < 3)
                     {
                         Debug.Log("<3        " + m_timer);
@@ -149,11 +149,17 @@ public class PlayerManager : TurnManager
 
             if (Input.GetKeyDown(KeyCode.KeypadPlus))
             {
+                transform.GetChild(3).gameObject.SetActive(false);
+                hasFlashLight = false;
+
                 lr.transform.gameObject.SetActive(true);
                 m_gm.NextLevel();
             } //Switch livello successivo
             else if (Input.GetKeyDown(KeyCode.KeypadMinus))
             {
+                transform.GetChild(3).gameObject.SetActive(false);
+                hasFlashLight = false;
+
                 lr.transform.gameObject.SetActive(true);
                 m_gm.PreviousLevel();
             } //Switch livello precedente

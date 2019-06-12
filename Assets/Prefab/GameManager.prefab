@@ -98,9 +98,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5d7afb47f579d4f9b89209f2860b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SMController: {fileID: 0}
+  UIController: {fileID: 0}
   Boss: {fileID: 7524194430387027398, guid: 19e604c9b8d12d64cb1a111ef6954604, type: 3}
   directionToMove: {x: 0, y: 0, z: 0}
   m_enemies: []
+  TutorialsKeyboard: []
+  TutorialsController: []
+  popup: {fileID: 0}
+  playerPopupID: 0
   delay: 0
   setupEvent:
     m_PersistentCalls:
@@ -712,7 +718,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 15}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -807,11 +813,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 357891304791556458, guid: 5765647c9b307344abbd39e663e7aad3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2229032962324959031}
     - target: {fileID: 357891304989423259, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -917,6 +918,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 357891304791556458, guid: 5765647c9b307344abbd39e663e7aad3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2229032962324959031}
+    - target: {fileID: 357891304528815906, guid: 5765647c9b307344abbd39e663e7aad3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2229032962324959031}
     - target: {fileID: 357891304528815907, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -927,11 +938,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 99.70706
       objectReference: {fileID: 0}
-    - target: {fileID: 357891304528815906, guid: 5765647c9b307344abbd39e663e7aad3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2229032962324959031}
     - target: {fileID: 357891305113705182, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_Color.r
@@ -1249,15 +1255,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6681687076212702016, guid: 5ceecc9f07d5129418669ac976359f0e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7902521787163022725, guid: 5ceecc9f07d5129418669ac976359f0e,
         type: 3}
       propertyPath: moveSpeed
       value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681687076212702016, guid: 5ceecc9f07d5129418669ac976359f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2070751480124867155, guid: 5ceecc9f07d5129418669ac976359f0e,
         type: 3}
