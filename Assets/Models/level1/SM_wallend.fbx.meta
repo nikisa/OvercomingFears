@@ -5,13 +5,13 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: mat_palette
+    2100000: blinn2
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface132
+    4300000: SM_Wallend
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

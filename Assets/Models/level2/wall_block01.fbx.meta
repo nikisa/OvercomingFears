@@ -7,13 +7,13 @@ ModelImporter:
     100002: //RootNode
     400000: polySurface72
     400002: //RootNode
-    2100000: Mat_palette
+    2100000: blinn2
     2300000: polySurface72
     3300000: polySurface72
     4300000: polySurface72
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
