@@ -252,15 +252,15 @@ public class BoardManager : MonoBehaviour
 
     public void UpdateTriggerToFalse(Node n)
     {
-
-        n.triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
+        
         n.triggerState = false;
-
+        
         if (PreviousPlayerNode != null && n.TriggerOrLogic() == false)
         {
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
+            n.StopTriggerRotation(n.triggerState);
         }
         Debug.Log("CLOSE");
     }
@@ -268,7 +268,7 @@ public class BoardManager : MonoBehaviour
     public void UpdateTriggerToFalseLevel3(Node n)
     {
 
-        n.triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
+        //n.triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
         n.triggerState = false;
 
         if (n.TriggerOrLogic() == true)
@@ -276,6 +276,7 @@ public class BoardManager : MonoBehaviour
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
+            n.StopTriggerRotation(n.triggerState);
         }
         Debug.Log("CLOSE");
     }

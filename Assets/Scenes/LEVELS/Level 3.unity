@@ -464,6 +464,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -475,8 +481,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -985,6 +990,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -996,8 +1007,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -1228,75 +1238,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &87926670
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7815306209415557829, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_Name
-      value: level 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 747218986269019556, guid: 0a7956f798fcb5d489b78d82e0eb91ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0a7956f798fcb5d489b78d82e0eb91ea, type: 3}
 --- !u!1 &95046708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,7 +1463,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7b491d7536f937e419027dd0c4eefc1a, type: 2}
+      objectReference: {fileID: 2100000, guid: 221ca3f24911d2b45b4309731566fb0f, type: 2}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -2231,6 +2172,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -2242,8 +2189,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -2740,6 +2686,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -2751,8 +2703,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -3239,6 +3190,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -3250,8 +3207,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -3499,6 +3455,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -3510,8 +3472,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -4149,6 +4110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
       propertyPath: autoRun
       value: 0
       objectReference: {fileID: 0}
@@ -4383,6 +4349,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -4394,8 +4366,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -4678,6 +4649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowOffMaterials.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -5173,6 +5149,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -5184,8 +5166,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -5813,7 +5794,7 @@ Transform:
   - {fileID: 156964167}
   - {fileID: 543540329}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543540329 stripped
 Transform:
@@ -6556,6 +6537,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -6567,8 +6554,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -7455,6 +7441,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -7466,8 +7458,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -7690,6 +7681,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -7701,8 +7698,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -7796,6 +7792,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -7807,8 +7809,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -8034,7 +8035,7 @@ PrefabInstance:
     - target: {fileID: 747218986269019556, guid: f27ed69fe5b88a54989eea1b66e6848d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 747218986269019556, guid: f27ed69fe5b88a54989eea1b66e6848d,
         type: 3}
@@ -8319,6 +8320,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -8330,8 +8337,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -8671,6 +8677,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -8682,8 +8694,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -8839,6 +8850,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -8850,8 +8867,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -9256,6 +9272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
       propertyPath: autoRun
       value: 0
       objectReference: {fileID: 0}
@@ -9648,6 +9669,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -9659,8 +9686,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -9864,6 +9890,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -9875,8 +9907,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -10225,6 +10256,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -10236,8 +10273,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -11382,6 +11418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
       propertyPath: autoRun
       value: 0
       objectReference: {fileID: 0}
@@ -12051,6 +12092,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -12062,8 +12109,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -12621,6 +12667,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -12632,8 +12684,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -12927,6 +12978,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -12938,8 +12995,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -13216,6 +13272,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -13227,8 +13289,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -13370,6 +13431,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -13381,8 +13448,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -14200,6 +14266,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -14211,8 +14283,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -14368,6 +14439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowOffMaterials.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -14778,6 +14854,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -14789,8 +14871,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -14946,6 +15027,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -14957,8 +15044,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -15191,6 +15277,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -15202,8 +15294,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -15359,6 +15450,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -15370,8 +15467,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -15879,6 +15975,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -15890,8 +15992,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -16492,6 +16593,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -16503,8 +16610,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -16689,6 +16795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowOffMaterials.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -17448,6 +17559,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -17459,8 +17576,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -17616,6 +17732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowOffMaterials.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -18016,6 +18137,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -18027,8 +18154,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -18618,7 +18744,7 @@ Transform:
   - {fileID: 1372409264}
   - {fileID: 666794121}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781974587
 GameObject:
@@ -18812,6 +18938,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -18823,8 +18955,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -18980,6 +19111,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -18991,8 +19128,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -19148,6 +19284,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -19159,8 +19301,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -19408,6 +19549,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -19419,8 +19566,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -19576,6 +19722,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -19587,8 +19739,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -19874,6 +20025,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -19885,8 +20042,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -20163,6 +20319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowOffMaterials.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -21395,6 +21556,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -21406,8 +21573,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -22195,6 +22361,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -22206,8 +22378,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}
@@ -22363,6 +22534,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c3a41c11bcf3425419a1cfea6fc2dd61, type: 2}
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
+  triggers:
+  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
+  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
+  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
+  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
   shadows:
   - {fileID: 4252018928235009870, guid: d41d52d3496cf1b45bf19f6754b6c669, type: 3}
   - {fileID: 354643953365232794, guid: 38db26e2cfff7ef449ac3ebded3a3439, type: 3}
@@ -22374,8 +22551,7 @@ MonoBehaviour:
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
     type: 3}
-  triggerPrefab: {fileID: 763554444851984403, guid: 128ec1869a314ba45b0488e88bda0f71,
-    type: 3}
+  triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
   triggerTemp: {fileID: 0}

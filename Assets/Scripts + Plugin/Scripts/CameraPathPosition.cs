@@ -65,7 +65,7 @@ public class CameraPathPosition : MonoBehaviour {
 
 
     public void CameraMove() {
-        transform.DOMove(cameraDolly.transform.position, easeTime).SetEase(easeType);
+        transform.DOMove(cameraDolly.transform.position, easeTime).SetEase(easeType).OnComplete(() => CameraMove());
     }
 
     public void CameraRotate() {
@@ -85,7 +85,7 @@ public class CameraPathPosition : MonoBehaviour {
             #endregion
         }
         else {
-            transform.DORotate(cameraDolly.transform.rotation.eulerAngles, easeTime).SetEase(angleEaseType);
+            transform.DORotate(cameraDolly.transform.rotation.eulerAngles, easeTime).SetEase(angleEaseType).OnComplete(()=>CameraRotate());
         }
 
     }

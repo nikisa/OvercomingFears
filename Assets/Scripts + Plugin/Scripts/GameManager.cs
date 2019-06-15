@@ -177,6 +177,7 @@ public class GameManager : MonoBehaviour
         GetBoardManager();
         GetPlayerManager();
         PositionPlayerSetup();
+        
         SoundManager.Initialize();
         //GetUIManager();
 
@@ -324,7 +325,7 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-
+        
 
         if (startLevelEvent != null)
         {
@@ -340,6 +341,7 @@ public class GameManager : MonoBehaviour
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
 
+        triggerSetup();
         //if che sceglie se pad o keyboard
 
         if (SceneManager.GetActiveScene().buildIndex == 1) {
@@ -429,6 +431,15 @@ public class GameManager : MonoBehaviour
     //    RestartLevel();
 
     //}
+
+    void triggerSetup() {
+        foreach (Node triggerNode in m_board.TriggerNodes) {
+            Debug.Log("SUGO");
+            if (triggerNode != null) {
+                triggerNode.StopTriggerRotation(triggerNode.triggerState);
+            }
+        }
+    }
 
     void RestartLevel()
     {
@@ -534,8 +545,7 @@ public class GameManager : MonoBehaviour
         //FearEnemies();
         FlashLightNode();
         PlayerInGate();
-
-
+        
 
         foreach (var enemy in m_enemies)
         {

@@ -3411,7 +3411,7 @@ PrefabInstance:
     - target: {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}
       propertyPath: AnimatorController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1497572634}
     m_RemovedComponents:
     - {fileID: 1363652769, guid: 29154ffa976975741bdad39040dac65e, type: 3}
     - {fileID: 1710669074, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -3497,7 +3497,7 @@ PrefabInstance:
     - target: {fileID: 1363652769, guid: 29154ffa976975741bdad39040dac65e, type: 3}
       propertyPath: AnimatorController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1497572634}
     m_RemovedComponents:
     - {fileID: 15915571, guid: 29154ffa976975741bdad39040dac65e, type: 3}
     - {fileID: 1710669074, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -8312,6 +8312,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 16693ee116c0e9740a0865de4bd96621, type: 2}
+    - target: {fileID: 311896293651580654, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0164729
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293651580654, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00016904665
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225bc310c4af8934c9c819ebc7bc8d07, type: 3}
 --- !u!1 &1361484197
@@ -9153,6 +9163,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1497572633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7961389085498266035, guid: 6ac522a0dab533e4081d6413164c45cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1372926243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1497572634
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497572633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7320683ee95e01341a6b513b0a0ccad5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1512862561
 GameObject:
   m_ObjectHideFlags: 0
@@ -10198,6 +10233,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 820237288}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1720531895
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720531893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 229ae935cecd9994ea5d5c5a6d653a28, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1741441120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10985,7 +11039,7 @@ PrefabInstance:
     - target: {fileID: 1958467498, guid: 29154ffa976975741bdad39040dac65e, type: 3}
       propertyPath: AnimatorController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1497572634}
     m_RemovedComponents:
     - {fileID: 1363652769, guid: 29154ffa976975741bdad39040dac65e, type: 3}
     - {fileID: 1710669074, guid: 29154ffa976975741bdad39040dac65e, type: 3}
@@ -11402,7 +11456,7 @@ PrefabInstance:
     - target: {fileID: 1710669074, guid: 29154ffa976975741bdad39040dac65e, type: 3}
       propertyPath: AnimatorController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1497572634}
     m_RemovedComponents:
     - {fileID: 1958467498, guid: 29154ffa976975741bdad39040dac65e, type: 3}
     - {fileID: 1363652769, guid: 29154ffa976975741bdad39040dac65e, type: 3}

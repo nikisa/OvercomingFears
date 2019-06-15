@@ -135,6 +135,7 @@ public class EnemyManager : TurnManager {
         StartCoroutine(WaitTimeForKill());
 
         StartCoroutine(TriggerOffAfterEnemyDeath());
+        
     }
 
 
@@ -143,7 +144,9 @@ public class EnemyManager : TurnManager {
         if (m_board.FindNodeAt(transform.position).isATrigger && !m_board.FindNodeAt(transform.position).triggerWithEnemy) { //triggerWithEnemy va messo a true nell'inspector solo se lo static viene ucciso dal player (no flashlight o armor)            
             m_board.FindNodeAt(transform.position).triggerState = !m_board.FindNodeAt(transform.position).triggerState; //Prima era false
             m_board.FindNodeAt(transform.position).UpdateTriggerToTrue();
-            
+
+
+            m_board.FindNodeAt(transform.position).StopTriggerRotation(false);
         }
 
         yield return new WaitForSeconds(0.3f);

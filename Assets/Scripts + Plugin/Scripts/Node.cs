@@ -10,6 +10,8 @@ public class Node : MonoBehaviour
     public Material[] shadowMaterials;
     public Material[] shadowOffMaterials;
 
+    public GameObject[] triggers;
+
     public GameObject[] shadows;
 
     Vector2 m_coordinate;
@@ -296,11 +298,12 @@ public class Node : MonoBehaviour
     {
         if (isATrigger && TriggerOrLogic() == false)
         {
-            triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(triggerState);
+            
 
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
             TrapActivation(trapID);
+            StopTriggerRotation(true);
             //PushingWallActivation(pushingWallID);
 
             
@@ -312,6 +315,25 @@ public class Node : MonoBehaviour
     }//UpdateTriggerToFalse --> in Board
 
 
+    public void StopTriggerRotation(bool value) {
+
+        if (!value) {
+            for (int i = 1; i < 3; i++) {
+                var rotation = triggerTemp.transform.GetChild(i).GetComponent<ParticleSystem>();
+                rotation.Pause();
+
+            }
+        }
+        else {
+            for (int i = 1; i < 3; i++) {
+                var rotation = triggerTemp.transform.GetChild(i).GetComponent<ParticleSystem>();
+                rotation.Play();
+
+            }
+
+        }
+    }
+
     public bool UpdateTriggerToFalse()
     {
         if (isATrigger)
@@ -321,17 +343,17 @@ public class Node : MonoBehaviour
                 if (!TriggerOrLogic())
                 {
                     Debug.Log("OR: " + TriggerOrLogic());
-                    triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
+                    //triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
                     ArmorDeactivation(armorID);
                     UpdateGateToOpen(gateID);
                     TrapActivation(trapID);
                 }
-
-
             }
+           
         }
 
         return triggerState = false;
+
     }
 
     public bool GetSwitchState()
@@ -341,16 +363,12 @@ public class Node : MonoBehaviour
 
     public bool UpdateSwitchToTrue()
     {
-
-
-
+        
         switchTemp.transform.localScale = new Vector3(this.transform.localScale.x  , this.transform.localScale.y , this.transform.localScale.z * -1);
         SwitchAnimator.SetInteger("SwitchState" , 1);
         UpdateGateToOpen(gateID);
         ArmorActivation(armorID);
-
         
-
         //PushingWallActivation(pushingWallID);
 
         if (mirrorID != 0)
@@ -573,25 +591,36 @@ public class Node : MonoBehaviour
         if (isATrigger)
         {
 
-            triggerTemp = Instantiate(triggerPrefab, transform.position, Quaternion.identity);
-            triggerTemp.transform.Rotate(-90, 0, 0);
+            //triggerTemp = Instantiate(triggerPrefab, transform.position, Quaternion.identity);
+            //triggerTemp.transform.Rotate(-90, 0, 0);
 
             if (armorID <= 6 && armorID >= 1)
             {
-                triggerTemp.GetComponent<Renderer>().material = materials[armorID - 1];
-                triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[armorID - 1];
+
+                triggerTemp = Instantiate(triggers[armorID - 1], transform.position , Quaternion.identity);
+
+
+                //triggerTemp.GetComponent<Renderer>().material = materials[armorID - 1];
+                //triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[armorID - 1];
             }
             else if (trapID <= 6 && trapID >= 1)
             {
-                triggerTemp.GetComponent<Renderer>().material = materials[trapID - 1];
-                triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[trapID - 1];
+
+                triggerTemp = Instantiate(triggers[trapID - 1], transform.position, Quaternion.identity);
+
+                //triggerTemp.GetComponent<Renderer>().material = materials[trapID - 1];
+                //triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[trapID - 1];
             }
             else if (gateID <= 6 && gateID >= 1)
             {
-                triggerTemp.GetComponent<Renderer>().material = materials[gateID - 1];
-                triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[gateID - 1];
+
+                triggerTemp = Instantiate(triggers[gateID - 1], transform.position, Quaternion.identity);
+
+                //triggerTemp.GetComponent<Renderer>().material = materials[gateID - 1];
+                //triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[gateID - 1];
             }
 
+            
         }
 
         if (isAGate)
@@ -672,9 +701,7 @@ public class Node : MonoBehaviour
     }
 
     IEnumerator Death() {
-
         
-
         yield return new WaitForSeconds(.35f);
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 7);

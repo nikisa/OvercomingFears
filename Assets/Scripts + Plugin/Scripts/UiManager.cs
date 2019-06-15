@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour
 {
@@ -59,6 +60,11 @@ public class UiManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        GameManager.stateMainMenu();
+    }
+
+    public void LoadMainMenu() {
+        SceneManager.LoadScene(0);
         GameManager.stateMainMenu();
     }
 }
