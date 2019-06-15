@@ -8,9 +8,10 @@ public class UiManager : MonoBehaviour
     public UiBase LevelSelectionState;
     public UiBase OptionState;
     public UiBase MainMenu;
+    public UiBase VideoSettingsState;
 
-    
-    
+
+
     public void ChangeMenu(MenuType _menuType)
     {
         switch (_menuType)
@@ -25,6 +26,9 @@ public class UiManager : MonoBehaviour
                 break;
             case MenuType.Option:
                 OptionState.Setup();
+                break;
+            case MenuType.VideoSettingsType:
+                VideoSettingsState.Setup();
                 break;
             default:
                 break;
@@ -44,6 +48,9 @@ public class UiManager : MonoBehaviour
                 break;
             case MenuType.Option:
                 OptionState.Disable();
+                break;
+            case MenuType.VideoSettingsType:
+                VideoSettingsState.Disable();
                 break;
             default:
                 break;
@@ -67,11 +74,16 @@ public class UiManager : MonoBehaviour
         SceneManager.LoadScene(0);
         GameManager.stateMainMenu();
     }
+    public void VideoSettings()
+    {
+        GameManager.stateVideoSettings();
+    }
 }
 
 public enum MenuType
 {   MainMenu,
     LevelSelection,
     nullo,
-    Option
+    Option,
+    VideoSettingsType
 }

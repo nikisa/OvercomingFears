@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
     public static OnClick stateOption;
     public static OnClick stateLevelSelection;
     public static OnClick stateMainMenu;
+    public static OnClick stateVideoSettings;
 
 
     void OnEnable()
@@ -102,6 +103,7 @@ public class GameManager : MonoBehaviour
         stateOption += SetOptionTrigger;
         stateLevelSelection += SetLevelSelectionTrigger;
         stateMainMenu += SetMainMenuTrigger;
+        stateVideoSettings += SetVideoTrigger;
     }
 
 
@@ -142,6 +144,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void SetVideoTrigger()
+    {
+        if (stateVideoSettings != null)
+        {
+            UIController.SetTrigger("VideoSettings");
+        }
+    }
+
 
     private void OnDisable()
     {
@@ -150,6 +160,7 @@ public class GameManager : MonoBehaviour
         stateOption -= SetOptionTrigger;
         stateLevelSelection -= SetLevelSelectionTrigger;
         stateMainMenu -= SetMainMenuTrigger;
+        stateVideoSettings -= SetVideoTrigger;
 
     }
 
@@ -598,10 +609,11 @@ public class GameManager : MonoBehaviour
 
             }
         }
+       
 
         if (m_currentTurn == Turn.Player && m_player != null)
         {
-
+            
             triggerNodePlayerTurn();
             triggerNode();
             triggerNodeWithMovable();
@@ -610,6 +622,10 @@ public class GameManager : MonoBehaviour
             {
                 m_movableObjects = GetMovableObjects();
                 PlayEnemyTurn();
+            }
+            else if (AreEnemiesAllDead())
+            {
+                m_board.m_gm.crackNode();
             }
 
 
