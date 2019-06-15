@@ -594,10 +594,22 @@ public class Node : MonoBehaviour
             //triggerTemp = Instantiate(triggerPrefab, transform.position, Quaternion.identity);
             //triggerTemp.transform.Rotate(-90, 0, 0);
 
+
+            Vector3 position;
+
+            if (SceneManager.GetActiveScene().buildIndex != 2)
+            {
+                position = transform.position;
+            }
+            else
+            {
+                position = new Vector3(transform.position.x , (transform.position.y + .1f) , transform.position.z);
+            }
+
             if (armorID <= 6 && armorID >= 1)
             {
 
-                triggerTemp = Instantiate(triggers[armorID - 1], transform.position , Quaternion.identity);
+                triggerTemp = Instantiate(triggers[armorID - 1], position, Quaternion.identity);
 
 
                 //triggerTemp.GetComponent<Renderer>().material = materials[armorID - 1];
@@ -606,7 +618,7 @@ public class Node : MonoBehaviour
             else if (trapID <= 6 && trapID >= 1)
             {
 
-                triggerTemp = Instantiate(triggers[trapID - 1], transform.position, Quaternion.identity);
+                triggerTemp = Instantiate(triggers[trapID - 1], position, Quaternion.identity);
 
                 //triggerTemp.GetComponent<Renderer>().material = materials[trapID - 1];
                 //triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[trapID - 1];
@@ -614,12 +626,11 @@ public class Node : MonoBehaviour
             else if (gateID <= 6 && gateID >= 1)
             {
 
-                triggerTemp = Instantiate(triggers[gateID - 1], transform.position, Quaternion.identity);
+                triggerTemp = Instantiate(triggers[gateID - 1], position, Quaternion.identity);
 
                 //triggerTemp.GetComponent<Renderer>().material = materials[gateID - 1];
                 //triggerTemp.transform.GetChild(0).GetComponent<Renderer>().material = materials[gateID - 1];
             }
-
             
         }
 

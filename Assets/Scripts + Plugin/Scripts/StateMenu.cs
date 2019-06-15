@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StateMenu : StateBehaviourBase
 {
+
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Menu");
@@ -14,7 +16,10 @@ public class StateMenu : StateBehaviourBase
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        SceneManager.LoadScene("Menu");        
+        SceneManager.LoadScene("Menu");
+
+        GameManager.Instance.transform.GetChild(2).gameObject.SetActive(true);
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.MainMenu);
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

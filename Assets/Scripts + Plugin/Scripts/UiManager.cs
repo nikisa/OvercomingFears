@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class UiManager : MonoBehaviour
     public UiBase MainMenu;
     public UiBase VideoSettingsState;
 
-
+    bool value = false;
 
     public void ChangeMenu(MenuType _menuType)
     {
@@ -72,12 +73,39 @@ public class UiManager : MonoBehaviour
 
     public void LoadMainMenu() {
         SceneManager.LoadScene(0);
+        GameManager.stateMenu();
         GameManager.stateMainMenu();
+
     }
     public void VideoSettings()
     {
         GameManager.stateVideoSettings();
     }
+    public void GameplayUI()
+    {
+        GameManager.stateGameplayUI();
+    }
+
+    public void SoundSlider()
+    {
+       
+
+        if (value)
+        {
+            Debug.Log("true");
+            GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>().interactable = false;
+            GameObject.FindGameObjectWithTag("Slider").transform.localScale = new Vector3(0, 0, 0);
+
+            value = false;
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>().interactable = true;
+            GameObject.FindGameObjectWithTag("Slider").transform.localScale = new Vector3(3, 3, 3);
+            value = true;
+        }
+    }
+
 }
 
 public enum MenuType
@@ -85,5 +113,8 @@ public enum MenuType
     LevelSelection,
     nullo,
     Option,
-    VideoSettingsType
+    VideoSettingsType,
+
 }
+
+

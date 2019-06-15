@@ -94,6 +94,7 @@ public class GameManager : MonoBehaviour
     public static OnClick stateLevelSelection;
     public static OnClick stateMainMenu;
     public static OnClick stateVideoSettings;
+    public static OnClick stateGameplayUI;
 
 
     void OnEnable()
@@ -104,6 +105,7 @@ public class GameManager : MonoBehaviour
         stateLevelSelection += SetLevelSelectionTrigger;
         stateMainMenu += SetMainMenuTrigger;
         stateVideoSettings += SetVideoTrigger;
+        stateGameplayUI += SetGameplayUITrigger;
     }
 
 
@@ -152,6 +154,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void SetGameplayUITrigger()
+    {
+        if (stateGameplayUI != null)
+        {
+            UIController.SetTrigger("Gameplay");
+        }
+    }
+
 
     private void OnDisable()
     {
@@ -161,6 +171,7 @@ public class GameManager : MonoBehaviour
         stateLevelSelection -= SetLevelSelectionTrigger;
         stateMainMenu -= SetMainMenuTrigger;
         stateVideoSettings -= SetVideoTrigger;
+        stateGameplayUI -= SetGameplayUITrigger;
 
     }
 
@@ -188,6 +199,7 @@ public class GameManager : MonoBehaviour
         GetBoardManager();
         GetPlayerManager();
         PositionPlayerSetup();
+        TriggerInit();
         
         SoundManager.Initialize();
         //GetUIManager();
@@ -220,6 +232,25 @@ public class GameManager : MonoBehaviour
         foreach (MovableObject movable in m_movableObjects)
         {
             movable.UpdateCurrentNode();
+        }
+
+    }
+
+    void TriggerInit()
+    {
+        foreach (Node triggerNode in m_board.TriggerNodes)
+        {
+            if (triggerNode != null)
+            {
+                if (triggerNode.triggerState)
+                {
+                    triggerNode.StopTriggerRotation(triggerNode.triggerState);
+                }
+                else
+                {
+                    triggerNode.StopTriggerRotation(triggerNode.triggerState);
+                }
+            }
         }
 
     }

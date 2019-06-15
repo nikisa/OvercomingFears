@@ -16,6 +16,7 @@ public class StateGameplay : StateBehaviourBase
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        GameManager.Instance.transform.GetChild(1).gameObject.SetActive(false);
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene("Level " + (ctx.id));
     }

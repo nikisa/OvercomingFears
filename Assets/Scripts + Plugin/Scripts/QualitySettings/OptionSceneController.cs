@@ -35,12 +35,12 @@ public class OptionSceneController : MonoBehaviour
         int qual = quality.value;
 
         GameSettings.Instance.SaveSettings(qual, res.width, res.height, fullScreen);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 
     public void Cancel_Clicked()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 
 	// Use this for initialization
