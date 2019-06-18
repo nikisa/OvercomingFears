@@ -21,9 +21,17 @@ public class PlayerInput : MonoBehaviour {
     bool m_pJ;
     public bool P { get { return m_p | m_pJ; } }
 
+    bool m_p_up;
+    bool m_pJ_up;
+    public bool P_up { get { return m_p_up | m_pJ_up; } }
+
     bool m_f;
     bool m_fJ;
     public bool F { get { return m_f | m_fJ; } }
+
+    bool m_f_up;
+    bool m_fJ_up;
+    public bool F_up { get { return m_f_up | m_fJ_up;} }
 
     bool m_e;
     bool m_eJ;
@@ -60,8 +68,14 @@ public class PlayerInput : MonoBehaviour {
             m_p = Input.GetKey(KeyCode.LeftShift);
             m_pJ = Input.GetKey(KeyCode.Joystick1Button2);
 
+            m_p_up = Input.GetKeyUp(KeyCode.LeftShift);
+            m_pJ_up = Input.GetKeyUp(KeyCode.Joystick1Button2);
+
             m_f = Input.GetKey(KeyCode.LeftControl);
             m_fJ = Input.GetKey(KeyCode.Joystick1Button1);
+
+            m_f_up = Input.GetKeyUp(KeyCode.LeftControl);
+            m_fJ_up = Input.GetKeyUp(KeyCode.Joystick1Button1);
 
             m_e = Input.GetKeyDown(KeyCode.Escape);
             m_eJ = Input.GetKeyDown(KeyCode.Joystick1Button7);
@@ -80,7 +94,5 @@ public class PlayerInput : MonoBehaviour {
             m_r = false;
         }
 
-    }
-
-
+    }    
 }

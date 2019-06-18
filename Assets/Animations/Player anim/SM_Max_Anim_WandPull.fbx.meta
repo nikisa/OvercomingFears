@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: d277fa85f221f7a409a8ce92978209f2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _c_chest_ctrl
+    100002: _c_chest_grp
+    100004: _c_chest_grp 1
+    100006: _c_chest_jnt
+    100008: _c_COG_ctrl
+    100010: _c_COG_ctrl 1
+    100012: _c_head_bff
+    100014: _c_head_bff 1
+    100016: _c_head_ctrl
+    100018: _c_head_jnt
+    100020: _c_neck_jnt
+    100022: _c_pelvis_jnt
+    100024: _c_rigMaster_grp
+    100026: _c_tail1_bff
+    100028: _c_tail1_bff 1
+    100030: _c_tail1_ctrl
+    100032: _c_tail1_jnt
+    100034: _c_tail2_bff
+    100036: _c_tail2_bff 1
+    100038: _c_tail2_ctrl
+    100040: _c_tail2_jnt
+    100042: _c_tail3_bff
+    100044: _c_tail3_bff 1
+    100046: _c_tail3_ctrl
+    100048: _c_tail3_jnt
+    100050: _c_tail4_jnt
+    100052: _l_elbow_jnt
+    100054: _l_elbowAim_grp
+    100056: _l_elbowAim_loc
+    100058: _l_eye_bff
+    100060: _l_eye_bff 1
+    100062: _l_eye_ctrl
+    100064: _l_eye_jnt
+    100066: _l_eyeEnd_jnt
+    100068: _l_fingers_jnt
+    100070: _l_hand_bff
+    100072: _l_hand_bff 1
+    100074: _l_hand_ctrl
+    100076: _l_hand_jnt
+    100078: _l_IKArm_bff
+    100080: _l_IKArm_ikh
+    100082: _l_shoulder_jnt
+    100084: _r_elbow_jnt
+    100086: _r_elbowAim_grp
+    100088: _r_elbowAim_loc
+    100090: _r_eye_bff
+    100092: _r_eye_bff 1
+    100094: _r_eye_ctrl
+    100096: _r_eye_jnt
+    100098: _r_eyeEnd_jnt
+    100100: _r_fingers_jnt
+    100102: _r_hand_bff
+    100104: _r_hand_bff 1
+    100106: _r_hand_ctrl
+    100108: _r_hand_jnt
+    100110: _r_IKArm_bff
+    100112: _r_IKArm_ikh
+    100114: _r_shoulder_jnt
+    100116: Control_System
+    100118: Geo_System
+    100120: Joint_System
+    100122: SK_Max
+    100124: //RootNode
+    100126: transform12
+    400000: _c_chest_ctrl
+    400002: _c_chest_grp
+    400004: _c_chest_grp 1
+    400006: _c_chest_jnt
+    400008: _c_COG_ctrl
+    400010: _c_COG_ctrl 1
+    400012: _c_head_bff
+    400014: _c_head_bff 1
+    400016: _c_head_ctrl
+    400018: _c_head_jnt
+    400020: _c_neck_jnt
+    400022: _c_pelvis_jnt
+    400024: _c_rigMaster_grp
+    400026: _c_tail1_bff
+    400028: _c_tail1_bff 1
+    400030: _c_tail1_ctrl
+    400032: _c_tail1_jnt
+    400034: _c_tail2_bff
+    400036: _c_tail2_bff 1
+    400038: _c_tail2_ctrl
+    400040: _c_tail2_jnt
+    400042: _c_tail3_bff
+    400044: _c_tail3_bff 1
+    400046: _c_tail3_ctrl
+    400048: _c_tail3_jnt
+    400050: _c_tail4_jnt
+    400052: _l_elbow_jnt
+    400054: _l_elbowAim_grp
+    400056: _l_elbowAim_loc
+    400058: _l_eye_bff
+    400060: _l_eye_bff 1
+    400062: _l_eye_ctrl
+    400064: _l_eye_jnt
+    400066: _l_eyeEnd_jnt
+    400068: _l_fingers_jnt
+    400070: _l_hand_bff
+    400072: _l_hand_bff 1
+    400074: _l_hand_ctrl
+    400076: _l_hand_jnt
+    400078: _l_IKArm_bff
+    400080: _l_IKArm_ikh
+    400082: _l_shoulder_jnt
+    400084: _r_elbow_jnt
+    400086: _r_elbowAim_grp
+    400088: _r_elbowAim_loc
+    400090: _r_eye_bff
+    400092: _r_eye_bff 1
+    400094: _r_eye_ctrl
+    400096: _r_eye_jnt
+    400098: _r_eyeEnd_jnt
+    400100: _r_fingers_jnt
+    400102: _r_hand_bff
+    400104: _r_hand_bff 1
+    400106: _r_hand_ctrl
+    400108: _r_hand_jnt
+    400110: _r_IKArm_bff
+    400112: _r_IKArm_ikh
+    400114: _r_shoulder_jnt
+    400116: Control_System
+    400118: Geo_System
+    400120: Joint_System
+    400122: SK_Max
+    400124: //RootNode
+    400126: transform12
+    2100000: Max_Mat
+    2100002: blinn2
+    4300000: SK_Max
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: SK_Max
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

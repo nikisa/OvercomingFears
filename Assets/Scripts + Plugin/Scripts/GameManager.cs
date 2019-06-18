@@ -201,6 +201,7 @@ public class GameManager : MonoBehaviour
         PositionPlayerSetup();
         TriggerInit();
         
+
         SoundManager.Initialize();
         //GetUIManager();
 
@@ -358,7 +359,7 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("START LEVEL");
-
+        
         m_player.playerInput.InputEnabled = false;
         while (!m_hasLevelStarted)
         {
@@ -378,7 +379,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayLevelRoutine()
     {
-
+        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         Debug.Log("PLAY LEVEL");
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
@@ -762,8 +763,15 @@ public class GameManager : MonoBehaviour
 
         if (m_board.playerNode.GetCrackableState() == 0)
         {
-            LoseLevel();
+            StartCoroutine(PlayerDeathByCrackable());
         }
+    }
+
+    IEnumerator PlayerDeathByCrackable()
+    {
+        m_player.PlayerAnimatorController.SetInteger("PlayerState", 8);
+        yield return new WaitForSeconds(.2f);
+        LoseLevel();
     }
 
 
