@@ -761,7 +761,7 @@ public class GameManager : MonoBehaviour
             m_board.playerNode.UpdateCrackableTexture();
         }
 
-        if (m_board.playerNode.GetCrackableState() == 0)
+        if (m_board.playerNode.GetCrackableState() == 2)
         {
             StartCoroutine(PlayerDeathByCrackable());
         }

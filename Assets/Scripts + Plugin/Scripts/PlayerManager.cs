@@ -43,6 +43,7 @@ public class PlayerManager : TurnManager
     ArrayList playerPath;
 
     public float killDelay = 1f; //Maggiore è il valore , più tardi parte l'animazion e uccisione
+    public float attackDelay = .7f;
 
     public LineRenderer lr;
 
@@ -143,7 +144,8 @@ public class PlayerManager : TurnManager
         enemyDetection();
 
         CaptureEnemies();
-        
+
+        StartCoroutine(PlayAttackAnimation());
 
         if (GameManager.Instance.IsGameplay)
         {
@@ -1024,20 +1026,33 @@ public class PlayerManager : TurnManager
 
     }
 
+    IEnumerator PlayAttackAnimation() {
+        if (m_board != null) {
+
+            List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position + transform.forward * (BoardManager.spacing - attackDelay)));
+            
+            //PlayerAnimatorController.SetInteger("PlayerState" , 1);
+            if (enemies.Count != 0) {
+                foreach (EnemyManager enemy in enemies) {
+                    if (enemy != null && enemy.GetMovementType() != MovementType.Boss) {
+                        PlayerAnimatorController.SetInteger("PlayerState", 1);
+                    }
+                }
+                yield return new WaitForSeconds(.28f);//.28 seconds --> durata dell'animazione d'attacco
+                PlayerAnimatorController.SetInteger("PlayerState", 0);
+            }
+            //PlayerAnimatorController.SetInteger("PlayerState", 0);
+        }
+    }
+
     void CaptureEnemies()
     {
         if (m_board != null)
         {
-
+            
+            List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position + transform.forward * (BoardManager.spacing - killDelay)));
             
 
-            List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position + transform.forward * (BoardManager.spacing - killDelay)));
-
-
-            if (transform.position == m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position + transform.forward * (BoardManager.spacing - killDelay)))[0].transform.position) //modificare killDelay con AnimationDelay
-            {
-
-            }
 
             //PlayerAnimatorController.SetInteger("PlayerState" , 1);
             if (enemies.Count != 0)
@@ -1046,6 +1061,7 @@ public class PlayerManager : TurnManager
                 {
                     if (enemy != null && enemy.GetMovementType() != MovementType.Boss)
                     {
+                        
                         enemy.Die();
                     }
                 }

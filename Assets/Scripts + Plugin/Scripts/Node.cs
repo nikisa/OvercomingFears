@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Node : MonoBehaviour
 {
-
+    
     public Material[] materials;
     public Material[] shadowMaterials;
     public Material[] shadowOffMaterials;
@@ -23,7 +23,6 @@ public class Node : MonoBehaviour
     List<Node> m_linkedNodes = new List<Node>();
     public List<Node> LinkedNodes { get { return m_linkedNodes; } }
 
-
     BoardManager m_board;
     PlayerManager m_player;
 
@@ -33,13 +32,15 @@ public class Node : MonoBehaviour
     public GameObject lightBulbPrefab;
     public GameObject flashlitePrefab;
 
+    public GameObject crackablePrefab;
+
     GameObject gateTemp;
     GameObject switchTemp;
+    GameObject crackableTemp;
+    
     [HideInInspector]
     public GameObject triggerTemp;
-
-     
-
+    
     public GameObject geometry;
 
     public GameObject linkPrefab;
@@ -65,7 +66,7 @@ public class Node : MonoBehaviour
 
     public bool isCrackable = false;
 
-    public int crackableState = 2;
+    public int crackableState = 0;
 
     public Sprite[] currentTexture = new Sprite[3];
 
@@ -108,7 +109,7 @@ public class Node : MonoBehaviour
         m_board = Object.FindObjectOfType<GameManager>().GetComponent<BoardManager>();
         m_player = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
         m_coordinate = new Vector2(transform.position.x, transform.position.z);
-        UpdateCrackableTexture();
+        //UpdateCrackableTexture();
         m_nodePosition = new Vector3(1000f, 1000f, 1000f);
     }
 
@@ -264,7 +265,7 @@ public class Node : MonoBehaviour
 
     public void UpdateCrackableState()
     {
-        this.crackableState--;
+        this.crackableState++;
     }
 
     public void DestroyCrackableInOneHit()
@@ -274,24 +275,32 @@ public class Node : MonoBehaviour
 
     public void FromCrackableToNormal()
     {
-        this.crackableState = 100;
+        this.crackableState = 3;
     }
 
 
     public void UpdateCrackableTexture()
     {
-        if (this.isCrackable)
-        {
-            if (crackableState < 0)
-            {
-                crackableState = 0;
+        //if (this.isCrackable) {
+        //    if (crackableState < 0) {
+        //        crackableState = 0;
+        //    }
+        //    transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = sprites[crackableState];
+        //}
+        //else {
+        //    transform.GetChild(1).gameObject.SetActive(false);
+        //}
+
+        if (isCrackable) {
+
+            if (crackableState > 3) {
+                crackableState = 3;
             }
-            transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = sprites[crackableState];
+
+            transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableState);
+            //crackableTemp.GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState", crackableState);
         }
-        else
-        {
-            transform.GetChild(1).gameObject.SetActive(false);
-        }
+
     }
 
     public bool UpdateTriggerToTrue()
@@ -299,15 +308,12 @@ public class Node : MonoBehaviour
         if (isATrigger && TriggerOrLogic() == false)
         {
             
-
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
             TrapActivation(trapID);
             StopTriggerRotation(true);
             //PushingWallActivation(pushingWallID);
-
             
-
         }
 
         return triggerState = true;
@@ -639,6 +645,7 @@ public class Node : MonoBehaviour
 
             gateTemp = Instantiate(gatePrefab, transform.position, Quaternion.identity);
             
+            
             if (gateID <= 6 && gateID >= 1)
             {
                 gateTemp.transform.GetChild(0).gameObject.GetComponent<Renderer>().material = shadowOffMaterials[gateID - 1];
@@ -675,8 +682,12 @@ public class Node : MonoBehaviour
         }
         if (isCrackable)
         {
-            transform.GetChild(1).gameObject.transform.Rotate(90, 0, 0);
-            transform.GetChild(1).gameObject.transform.position += new Vector3(0, 0.1f, 0);
+            //transform.GetChild(1).gameObject.transform.Rotate(90, 0, 0);
+            //transform.GetChild(1).gameObject.transform.position += new Vector3(0, 0.1f, 0);
+
+            crackableTemp = Instantiate(crackablePrefab , transform.position + new Vector3(0, .3f , 0) , Quaternion.identity);
+            crackableTemp.transform.parent = transform;
+            
         }
     }
 
