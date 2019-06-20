@@ -242,6 +242,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1321305549}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -255,7 +257,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 1
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -409,6 +411,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2056718645}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -422,7 +426,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -696,6 +700,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 293974265}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -709,7 +715,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -1029,6 +1035,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1434723053}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1042,7 +1050,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -1196,6 +1204,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 883191000}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1209,7 +1219,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -1532,6 +1542,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 973151427}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1545,7 +1557,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -1917,7 +1929,7 @@ PrefabInstance:
     - target: {fileID: 114066926092187266, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
@@ -2670,6 +2682,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1038190118}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -2683,7 +2697,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -3172,6 +3186,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 932910736}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -3185,7 +3201,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -3555,6 +3571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: delay
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
@@ -4100,6 +4121,11 @@ PrefabInstance:
       propertyPath: delay
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1001 &519523028
@@ -4192,7 +4218,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -4360,7 +4386,7 @@ PrefabInstance:
     - target: {fileID: 114066926092187266, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
@@ -4671,6 +4697,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1725989277}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -4684,7 +4712,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -5804,6 +5832,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1487687369}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -5817,7 +5847,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -6222,7 +6252,7 @@ PrefabInstance:
     - target: {fileID: 114066926092187266, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1770964002, guid: f0f94d3297ac7764895e4627d76bca18, type: 3}
       propertyPath: m_IsActive
@@ -6442,6 +6472,11 @@ PrefabInstance:
       propertyPath: delay
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &775000229
@@ -6603,6 +6638,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 533928287}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -6616,7 +6653,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -6951,6 +6988,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
+        type: 3}
+      propertyPath: standTime
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604d3cc7a00599342b404bcef7f1e7e5, type: 3}
@@ -7392,7 +7434,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -7883,6 +7925,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 561173388}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -7896,7 +7940,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 1
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -8089,7 +8133,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -8283,6 +8327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: delay
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
@@ -8507,6 +8556,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 626895715}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -8520,7 +8571,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -8674,6 +8725,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 255711728}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -8687,7 +8740,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -8779,6 +8832,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2030802487}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -8792,7 +8847,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -9304,6 +9359,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1716174127}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -9317,7 +9374,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -9676,6 +9733,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 498516253}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -9689,7 +9748,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -10044,6 +10103,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2117963387}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10057,7 +10118,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -10904,6 +10965,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 655891852}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10917,7 +10980,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -11023,7 +11086,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: crackableState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -11514,6 +11577,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 798465214}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -11527,7 +11592,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -11667,6 +11732,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1382126310}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -11680,7 +11747,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -12434,6 +12501,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 528863989}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12447,7 +12516,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -12610,7 +12679,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -12758,6 +12827,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1329316180}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12771,7 +12842,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -13006,6 +13077,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 385890028}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13019,7 +13092,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -13253,6 +13326,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 704219685}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13266,7 +13341,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -13815,6 +13890,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1673719845}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13828,7 +13905,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 1
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -13968,6 +14045,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2002629059}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13981,7 +14060,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -14423,6 +14502,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 341943364}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14436,7 +14517,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -14807,6 +14888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: delay
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
@@ -15248,6 +15334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: delay
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
@@ -15873,6 +15964,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2051987298}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -15886,7 +15979,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 1
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -16132,6 +16225,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1537025522}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16145,7 +16240,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -16618,6 +16713,11 @@ PrefabInstance:
       propertyPath: delay
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: crackableState
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
 --- !u!1 &1861001823
@@ -16749,6 +16849,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 82926787}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16762,7 +16864,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -17145,6 +17247,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1626002000}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17158,7 +17262,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -17249,6 +17353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
+        type: 3}
+      propertyPath: standTime
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604d3cc7a00599342b404bcef7f1e7e5, type: 3}
@@ -17682,6 +17791,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1441142155}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17695,7 +17806,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -18679,6 +18790,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 235738727}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -18692,7 +18805,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -19140,6 +19253,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 344550998}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -19153,7 +19268,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -19506,6 +19621,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1711149354}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -19519,7 +19636,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -20125,6 +20242,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2050057447}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20138,7 +20257,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -20368,6 +20487,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1937317572}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20381,7 +20502,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}
@@ -20535,6 +20656,8 @@ MonoBehaviour:
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+    type: 3}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 813297309}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20548,7 +20671,7 @@ MonoBehaviour:
   mover: {fileID: 0}
   isLevelGoal: 0
   isCrackable: 0
-  crackableState: 2
+  crackableState: 0
   currentTexture:
   - {fileID: 21300000, guid: 3a62a914a110d4642b7d798e12db88c8, type: 3}
   - {fileID: 21300000, guid: cd143043185ec234d8b59e1642bca881, type: 3}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 [RequireComponent(typeof(PlayerMover))]
 [RequireComponent(typeof(PlayerInput))]
@@ -434,15 +435,15 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.V > 0)
                         {//sparo in alto
 
+                            transform.DORotate(Vector3.forward, 0);
 
                             RaycastHit hit;
-
-
                             //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(1000, 1000, 1000));
 
                             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100, obstacleLayer))
                             {
                                 Debug.Log("Shoot up");
+                                
                                 Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.up * hit.distance, Color.red);
                                 PlayerAnimatorController.SetInteger("PlayerState", 9);
                                 switch (hit.collider.tag)
@@ -493,6 +494,8 @@ public class PlayerManager : TurnManager
 
                         if (playerInput.F && playerInput.V < 0)
                         {//sparo in basso
+
+                            transform.DORotate(Vector3.back , 0);
 
                             lr.gameObject.SetActive(true);
                             RaycastHit hit;
@@ -550,6 +553,8 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.H > 0)
                         {//sparo a destra
 
+                            transform.DORotate(Vector3.right, 0);
+
                             lr.gameObject.SetActive(true);
                             RaycastHit hit;
                             lr.gameObject.SetActive(true);
@@ -605,6 +610,8 @@ public class PlayerManager : TurnManager
 
                         if (playerInput.F && playerInput.H < 0)
                         {//sparo a sinistra
+
+                            transform.DORotate(Vector3.left, 0);
 
                             lr.gameObject.SetActive(true);
                             RaycastHit hit;
@@ -806,6 +813,9 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.H < 0)
                         {//sparo in alto
 
+
+                            transform.DORotate(Vector3.forward, 0);
+
                             RaycastHit hit;
 
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
@@ -860,6 +870,7 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.H > 0)
                         {//sparo in basso
 
+                            transform.DORotate(Vector3.back, 0);
 
                             RaycastHit hit;
 
@@ -913,6 +924,8 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.V > 0)
                         {//sparo a destra
 
+                            transform.DORotate(Vector3.right, 0);
+
                             RaycastHit hit;
 
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
@@ -963,7 +976,9 @@ public class PlayerManager : TurnManager
 
                         if (playerInput.F && playerInput.V < 0)
                         {//sparo a sinistra
-
+                            
+                            transform.DORotate(Vector3.left, 0);
+                            
                             RaycastHit hit;
 
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));

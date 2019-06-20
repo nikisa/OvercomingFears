@@ -195,6 +195,7 @@ public class GameManager : MonoBehaviour
     {
         playerPopupID = 1;
 
+
         m_currentTurn = Turn.Player;
         GetBoardManager();
         GetPlayerManager();
@@ -332,6 +333,7 @@ public class GameManager : MonoBehaviour
         {
             InitSword();
             InitBoss();
+            
             StartCoroutine("RunGameLoop");
         }
         else
@@ -349,7 +351,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartLevelRoutine()
     {
-
+        
         transform.GetChild(2).gameObject.SetActive(false);
 
         Debug.Log("SETUP LEVEL");
@@ -358,33 +360,37 @@ public class GameManager : MonoBehaviour
             setupEvent.Invoke();
         }
 
+
         Debug.Log("START LEVEL");
         
         m_player.playerInput.InputEnabled = false;
         while (!m_hasLevelStarted)
         {
-
-
             yield return null;
         }
 
         
-
         if (startLevelEvent != null)
         {
             startLevelEvent.Invoke();
         }
-
+        
     }
 
     IEnumerator PlayLevelRoutine()
     {
+
+        triggerSetup();
+
+        
+        //crackableSetup(); --> FUNZIONA MA DA NULL REFERENCE E NON CREA I NODI
+
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         Debug.Log("PLAY LEVEL");
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
 
-        triggerSetup();
+        
         //if che sceglie se pad o keyboard
 
         if (SceneManager.GetActiveScene().buildIndex == 1) {
@@ -408,10 +414,8 @@ public class GameManager : MonoBehaviour
 
         while (!m_isGameOver)
         {
-
             yield return null;
             //todo: Check win(end reached)/lose(player dead)
-
             m_isGameOver = IsWinner();
 
 
@@ -427,7 +431,6 @@ public class GameManager : MonoBehaviour
 
     public void LoseLevel()
     {
-        
         StartCoroutine(LoseLevelRoutine());
     }
 
@@ -474,6 +477,17 @@ public class GameManager : MonoBehaviour
     //    RestartLevel();
 
     //}
+
+    void crackableSetup()
+    {
+        foreach (Node crackableNode in m_board.CrackableNodes)
+        {
+            if (crackableNode != null)
+            {
+                crackableNode.transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableNode.crackableState);
+            }
+        }
+    }
 
     void triggerSetup() {
         foreach (Node triggerNode in m_board.TriggerNodes) {
@@ -700,9 +714,10 @@ public class GameManager : MonoBehaviour
                 node.UpdateCrackableState();
                 node.UpdateCrackableTexture();
                 //node.GetComponentInChildren<CrackableTexture>().UpdateCrackableTexture();
-                if (node.GetCrackableState() == 0)
+                if (node.GetCrackableState() == 2)
                 {
                     enemy.Die();
+                    node.crackableState = 2;
                 }
             }
 
@@ -719,7 +734,7 @@ public class GameManager : MonoBehaviour
                 }
 
 
-                if (node.GetCrackableState() == 0)
+                if (node.GetCrackableState() == 2)
                 {
                     m_board.AllMovableObjects.Remove(movableObject);
                     m_movableObjects.Remove(movableObject);
@@ -730,7 +745,7 @@ public class GameManager : MonoBehaviour
                     movableObject.GetComponent<Collider>().gameObject.SetActive(false);
 
 
-                    node.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = null;
+                    //node.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = null;
                     node.FromCrackableToNormal();
                     node.isCrackable = false;
                 }

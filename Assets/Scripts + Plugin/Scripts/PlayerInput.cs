@@ -59,9 +59,10 @@ public class PlayerInput : MonoBehaviour {
     public void GetKeyInput() {
 
         if (m_inputEnabled) {
+            
             m_h = Input.GetAxisRaw("Vertical");
             m_v = Input.GetAxisRaw("Horizontal");
-
+            
             m_s = Input.GetKeyDown(KeyCode.Space);
             m_sJ = Input.GetKeyDown(KeyCode.Joystick1Button0);
 

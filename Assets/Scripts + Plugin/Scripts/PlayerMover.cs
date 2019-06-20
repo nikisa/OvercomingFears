@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMover : Mover {
 
-    float playerMovementDelay = 0.1f;
+    public float playerMovementDelay = 0.1f;
 
     PlayerCompass m_playerCompass;
 
@@ -31,6 +31,8 @@ public class PlayerMover : Mover {
         if (m_playerCompass != null) {
             m_playerCompass.ShowArrows(false);
         }
+
+        m_player.PlayerAnimatorController.SetInteger("PlayerState" , 0);
 
         //run the parent class MoveRoutine
         yield return StartCoroutine(base.MoveRoutine(destinationPos, playerMovementDelay));

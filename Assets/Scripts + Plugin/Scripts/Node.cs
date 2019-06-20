@@ -275,7 +275,8 @@ public class Node : MonoBehaviour
 
     public void FromCrackableToNormal()
     {
-        this.crackableState = 3;
+        this.crackableState = -1;
+        transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableState);
     }
 
 
@@ -293,8 +294,8 @@ public class Node : MonoBehaviour
 
         if (isCrackable) {
 
-            if (crackableState > 3) {
-                crackableState = 3;
+            if (crackableState > 2) {
+                crackableState = 2;
             }
 
             transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableState);
@@ -334,9 +335,7 @@ public class Node : MonoBehaviour
             for (int i = 1; i < 3; i++) {
                 var rotation = triggerTemp.transform.GetChild(i).GetComponent<ParticleSystem>();
                 rotation.Play();
-
             }
-
         }
     }
 
