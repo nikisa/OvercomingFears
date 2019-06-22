@@ -241,7 +241,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -410,7 +411,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -501,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 6332597158000969230, guid: feaa8aa3390624a479b327efe9cb3e2d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6332597158000969230, guid: feaa8aa3390624a479b327efe9cb3e2d,
         type: 3}
@@ -699,7 +701,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -847,7 +850,7 @@ Transform:
   - {fileID: 1816178781}
   - {fileID: 522218473}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &55693233
 GameObject:
@@ -1034,7 +1037,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -1203,7 +1207,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -1541,7 +1546,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -2681,7 +2687,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -3185,7 +3192,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -3830,7 +3838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &496119502
 Transform:
@@ -4696,7 +4704,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -5311,7 +5320,7 @@ PrefabInstance:
     - target: {fileID: 4811291590540658689, guid: 83388840f3e98ec47bd3989a246f0044,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4811291590540658689, guid: 83388840f3e98ec47bd3989a246f0044,
         type: 3}
@@ -5831,7 +5840,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -6019,7 +6029,7 @@ PrefabInstance:
     - target: {fileID: 2229032962324959030, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2229032962324959030, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
@@ -6068,136 +6078,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 519523028}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &738387378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 738387383}
-  - component: {fileID: 738387381}
-  - component: {fileID: 738387380}
-  - component: {fileID: 738387379}
-  - component: {fileID: 738387382}
-  m_Layer: 10
-  m_Name: MovableObject
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &738387379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738387378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e16cf0107d764f44ea2a3e76155bef02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destination: {x: 0, y: 0, z: 0}
-  faceDestination: 0
-  isMoving: 0
-  movementEaseType: 17
-  rotationEaseType: 17
-  moveTime: 0.5
-  rotateTime: 0.5
-  iTweenDelay: 0
-  finishMovementEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  inScene: 1
-  hasMoved: 0
-  hasStopped: 0
-  upBlocked: 0
-  downBlocked: 0
-  leftBlocked: 0
-  rightBlocked: 0
---- !u!23 &738387380
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738387378}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &738387381
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738387378}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &738387382
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738387378}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.7819862, z: 1}
-  m_Center: {x: 0, y: 0.8909931, z: 0}
---- !u!4 &738387383
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738387378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1336744262}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &742388036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6637,7 +6517,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -7924,7 +7805,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -8555,7 +8437,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -8724,7 +8607,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -8831,7 +8715,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -9358,7 +9243,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -9732,7 +9618,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -10102,7 +9989,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -10235,6 +10123,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1184122034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2754069329950553011, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_Name
+      value: MovableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754069329950553014, guid: 68ba0405cc73ee6429848b5ac96fdfa5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68ba0405cc73ee6429848b5ac96fdfa5, type: 3}
 --- !u!1 &1184841610
 GameObject:
   m_ObjectHideFlags: 0
@@ -10733,7 +10690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1201199557
 PrefabInstance:
@@ -10964,7 +10921,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -11302,7 +11260,7 @@ Transform:
   - {fileID: 1910485827}
   - {fileID: 787959913}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1304183000 stripped
 Transform:
@@ -11576,7 +11534,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -11731,7 +11690,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -11931,7 +11891,7 @@ Transform:
   - {fileID: 334151124}
   - {fileID: 270015979}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321305549
 GameObject:
@@ -12236,83 +12196,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329316180}
   m_Mesh: {fileID: 4300000, guid: 0e51fdc9dea0de24b89e258a538740c8, type: 3}
---- !u!1 &1336744261
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1336744262}
-  - component: {fileID: 1336744264}
-  - component: {fileID: 1336744263}
-  m_Layer: 10
-  m_Name: Column
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1336744262
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336744261}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 30}
-  m_Children: []
-  m_Father: {fileID: 738387383}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1336744263
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336744261}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7b491d7536f937e419027dd0c4eefc1a, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1336744264
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336744261}
-  m_Mesh: {fileID: 4300000, guid: b04703cc27b9e6a4d8bf84cbc28f5140, type: 3}
 --- !u!1001 &1348632546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12432,7 +12315,7 @@ Transform:
   - {fileID: 1765383503}
   - {fileID: 1095785963}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362343071
 GameObject:
@@ -12500,7 +12383,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -12826,7 +12710,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -13076,7 +12961,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -13325,7 +13211,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -13889,7 +13776,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -14044,7 +13932,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -14501,7 +14390,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -14597,7 +14487,7 @@ PrefabInstance:
     - target: {fileID: 2102388507984177049, guid: 04e3816629b870943a44ced9dd958b93,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2102388507984177049, guid: 04e3816629b870943a44ced9dd958b93,
         type: 3}
@@ -15397,7 +15287,7 @@ PrefabInstance:
     - target: {fileID: 3299009956679996394, guid: 63debb5cd55224a4bb6b4e2b1e190f87,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3299009956679996394, guid: 63debb5cd55224a4bb6b4e2b1e190f87,
         type: 3}
@@ -15963,7 +15853,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -16224,7 +16115,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -16848,7 +16740,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -17246,7 +17139,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -17655,7 +17549,7 @@ RectTransform:
   - {fileID: 1083911172}
   - {fileID: 55693234}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17790,7 +17684,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -18789,7 +18684,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -19252,7 +19148,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -19620,7 +19517,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -19881,7 +19779,7 @@ PrefabInstance:
     - target: {fileID: 5536320936737257324, guid: 5ceecc9f07d5129418669ac976359f0e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5536320936737257324, guid: 5ceecc9f07d5129418669ac976359f0e,
         type: 3}
@@ -20241,7 +20139,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -20486,7 +20385,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}
@@ -20655,7 +20555,8 @@ MonoBehaviour:
     type: 3}
   triggerPrefab: {fileID: 0}
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
-  flashlitePrefab: {fileID: 100000, guid: f1f4234691a770843bfca72ac5f2678d, type: 3}
+  flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
+    type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
   triggerTemp: {fileID: 0}

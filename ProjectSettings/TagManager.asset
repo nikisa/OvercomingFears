@@ -9,6 +9,7 @@ TagManager:
   - Mirror
   - Sword
   - Slider
+  - Crackable
   layers:
   - Default
   - TransparentFX

@@ -716,7 +716,7 @@ public class GameManager : MonoBehaviour
                 //node.GetComponentInChildren<CrackableTexture>().UpdateCrackableTexture();
                 if (node.GetCrackableState() == 2)
                 {
-                    enemy.Die();
+                    enemy.DieOnCrackable();
                     node.crackableState = 2;
                 }
             }
@@ -944,7 +944,14 @@ public class GameManager : MonoBehaviour
         if (m_board.playerNode.hasFlashLight)
         {
             m_board.playerNode.hasFlashLight = false;
-            m_board.playerNode.transform.GetChild(2).gameObject.SetActive(false);
+
+            if (m_board.playerNode.isCrackable) {
+                m_board.playerNode.transform.GetChild(3).gameObject.SetActive(false);
+            }
+            else if (!m_board.playerNode.isCrackable) {
+                m_board.playerNode.transform.GetChild(2).gameObject.SetActive(false);
+            }
+            
             m_player.transform.GetChild(3).gameObject.SetActive(true);
             m_player.hasFlashLight = true;
         }
@@ -1119,6 +1126,7 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(m_index);
     }
+    
 
     public void PositionPlayerSetup()
     {

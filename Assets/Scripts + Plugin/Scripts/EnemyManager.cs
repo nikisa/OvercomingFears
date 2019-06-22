@@ -122,7 +122,7 @@ public class EnemyManager : TurnManager {
         }
         else if (gameObject != null && m_enemyMover.movementType == MovementType.Chaser)
         {
-            m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 666);
+            m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 666);            
         }
 
         if (m_isDead)
@@ -136,6 +136,13 @@ public class EnemyManager : TurnManager {
 
         StartCoroutine(TriggerOffAfterEnemyDeath());
         
+    }
+
+    public void DieOnCrackable() {
+        if (gameObject != null && m_enemyMover.movementType == MovementType.Chaser) {
+            m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 911);
+        }
+
     }
 
 

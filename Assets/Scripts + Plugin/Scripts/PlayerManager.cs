@@ -54,6 +54,13 @@ public class PlayerManager : TurnManager
     Ray rayRight;
     Ray rayBack;
 
+    enum m_inputType {
+        Controller,
+        Keyboard
+    };
+
+    
+
     public void Setup()
     {
         base.Awake();
@@ -62,7 +69,7 @@ public class PlayerManager : TurnManager
 
         playerInput = GetComponent<PlayerInput>();
 
-
+        m_inputType inputDevice = m_inputType.Controller;
 
         //lr = Object.FindObjectOfType<LineRenderer>().GetComponent<LineRenderer>();
         lr.gameObject.SetActive(false);
@@ -73,6 +80,10 @@ public class PlayerManager : TurnManager
         m_gm = Object.FindObjectOfType<GameManager>().GetComponent<GameManager>();
 
         playerPath = new ArrayList();
+
+        if(SceneManager.GetActiveScene().buildIndex > 1) {
+            //show the porcodio wand
+        }
 
     }
 
@@ -97,10 +108,7 @@ public class PlayerManager : TurnManager
 
     }
 
-    IEnumerator waitTest()
-    {
-        yield return new WaitForSeconds(1);
-    }
+   
 
     IEnumerable InputDelay()
     {
@@ -114,11 +122,16 @@ public class PlayerManager : TurnManager
         if (playerInput.F && hasFlashLight)
         {
             PlayerAnimatorController.SetInteger("PlayerState", 6);
-            //flashlight set active sulla mano
+            transform.GetChild(0).transform.GetChild(3).gameObject.SetActive(true);
+            transform.GetChild(3).gameObject.SetActive(false);
         }
         else if (playerInput.F_up)
         {
             PlayerAnimatorController.SetInteger("PlayerState", 0);
+            transform.GetChild(0).transform.GetChild(3).gameObject.SetActive(false);
+            if (hasFlashLight) {
+                transform.GetChild(3).gameObject.SetActive(true);
+            }
         }
     }
 
@@ -139,9 +152,16 @@ public class PlayerManager : TurnManager
     void Update()
     {
 
+        if (isKeyboardInput() && !isControllerInput()) {
+            Debug.Log("STO USANDO UNA PORCODIO DI TASTIERA");
+        }
+        else if (!isKeyboardInput() && isControllerInput()) {
+            Debug.Log("STO USANDO UN PORCODIO DI CONTROLLER");
+        }
+
+
         m_timer += Time.deltaTime;
-
-
+        
         enemyDetection();
 
         CaptureEnemies();
@@ -235,8 +255,6 @@ public class PlayerManager : TurnManager
                         m_board.playerNode.UpdateSwitchToTrue();
                         m_gm.CurrentTurn = Turn.Enemy;
                         m_gm.CurrentTurn = Turn.Player;
-
-
                     }
                 }
 
@@ -263,9 +281,7 @@ public class PlayerManager : TurnManager
                     m_gameManager.LoseLevel();
                 }
 
-
-
-
+                
                 #region Setup input levels 1 , 2 , 3 , 10
                 if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 10)
                 {
@@ -303,7 +319,6 @@ public class PlayerManager : TurnManager
 
                                     if (m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
                                     {
-
                                         playerMover.MoveLeft();
                                     }
 
@@ -426,9 +441,7 @@ public class PlayerManager : TurnManager
                             }
                         }
                     }
-
-
-
+                    
                     if (hasFlashLight)
                     {
 
@@ -480,11 +493,9 @@ public class PlayerManager : TurnManager
 
                                         }
 
-
                                         break;
                                     case "Wall":
                                         break;
-
 
                                 }
 
@@ -862,7 +873,7 @@ public class PlayerManager : TurnManager
                                     case "Sword":
                                         break;
                                 }
-
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -916,7 +927,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -924,7 +935,7 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.V > 0)
                         {//sparo a destra
 
-                            transform.DORotate(Vector3.right, 0);
+                            transform.DORotate(Vector3.forward + new Vector3(0, 90, 0), 0);
 
                             RaycastHit hit;
 
@@ -969,7 +980,7 @@ public class PlayerManager : TurnManager
                                     case "Wall":
                                         break;
                                 }
-
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -977,7 +988,7 @@ public class PlayerManager : TurnManager
                         if (playerInput.F && playerInput.V < 0)
                         {//sparo a sinistra
                             
-                            transform.DORotate(Vector3.left, 0);
+                            transform.DORotate(Vector3.forward - new Vector3(0,90,0) , 0);
                             
                             RaycastHit hit;
 
@@ -1029,7 +1040,7 @@ public class PlayerManager : TurnManager
                                     case "Sword":
                                         break;
                                 }
-
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
                                 StartCoroutine(DisableLineRenderer());
                             }
                         }
@@ -1051,10 +1062,16 @@ public class PlayerManager : TurnManager
                 foreach (EnemyManager enemy in enemies) {
                     if (enemy != null && enemy.GetMovementType() != MovementType.Boss) {
                         PlayerAnimatorController.SetInteger("PlayerState", 1);
+                        //WAND SETACTIVE FALSE
+                        //HANDWAND SETACTIVE TRUE
                     }
                 }
                 yield return new WaitForSeconds(.28f);//.28 seconds --> durata dell'animazione d'attacco
                 PlayerAnimatorController.SetInteger("PlayerState", 0);
+
+                //WAND SETACTIVE TRUE
+                //HANDWAND SETACTIVE FALSE
+
             }
             //PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
@@ -1087,9 +1104,7 @@ public class PlayerManager : TurnManager
 
     void enemyDetection()
     {
-
-
-
+        
         rayFront = new Ray(transform.position, Vector3.forward);
         rayBack = new Ray(transform.position, Vector3.back);
         rayLeft = new Ray(transform.position, Vector3.left);
@@ -1201,6 +1216,50 @@ public class PlayerManager : TurnManager
         }
 
     }//Se l'enemy è in una shadow allora non può ucciderci ma attivera un'animazione di "danger"
+
+
+    bool isKeyboardInput() {
+        if (Input.anyKeyDown) {
+            return true;
+        }
+        return false;
+    }
+
+    bool isControllerInput(){
+        
+        if (Input.GetKey(KeyCode.Joystick1Button0) ||
+            Input.GetKey(KeyCode.Joystick1Button1) ||
+            Input.GetKey(KeyCode.Joystick1Button2) ||
+            Input.GetKey(KeyCode.Joystick1Button3) ||
+            Input.GetKey(KeyCode.Joystick1Button4) ||
+            Input.GetKey(KeyCode.Joystick1Button5) ||
+            Input.GetKey(KeyCode.Joystick1Button6) ||
+            Input.GetKey(KeyCode.Joystick1Button7) ||
+            Input.GetKey(KeyCode.Joystick1Button8) ||
+            Input.GetKey(KeyCode.Joystick1Button9) ||
+            Input.GetKey(KeyCode.Joystick1Button10) ||
+            Input.GetKey(KeyCode.Joystick1Button11) ||
+            Input.GetKey(KeyCode.Joystick1Button12) ||
+            Input.GetKey(KeyCode.Joystick1Button13) ||
+            Input.GetKey(KeyCode.Joystick1Button14) ||
+            Input.GetKey(KeyCode.Joystick1Button15) ||
+            Input.GetKey(KeyCode.Joystick1Button16) ||
+            Input.GetKey(KeyCode.Joystick1Button17) ||
+            Input.GetKey(KeyCode.Joystick1Button18) ||
+            Input.GetKey(KeyCode.Joystick1Button19)){
+            return true;
+        }
+
+        if (Input.GetAxisRaw("VerticalJ") > 0 || Input.GetAxisRaw("VerticalJ") < 0) {
+            return true;
+        }
+
+        if (Input.GetAxisRaw("HorizontalJ") > 0 || Input.GetAxisRaw("HorizontalJ") < 0) {
+            return true;
+        }
+
+        return false;
+    }
 
     #region sceneChanger
 

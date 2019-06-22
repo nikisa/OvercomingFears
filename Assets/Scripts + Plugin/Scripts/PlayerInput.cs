@@ -7,10 +7,12 @@ public class PlayerInput : MonoBehaviour {
 
 
     float m_h;
-    public float H { get { return m_h; } }
+    float m_hJ;
+    public float H { get { return m_h + m_hJ; } }
 
     float m_v;
-    public float V { get { return m_v; } }
+    float m_vJ;
+    public float V { get { return m_v + m_vJ ; } }
 
 
     bool m_s;
@@ -61,8 +63,11 @@ public class PlayerInput : MonoBehaviour {
         if (m_inputEnabled) {
             
             m_h = Input.GetAxisRaw("Vertical");
+            m_hJ = Input.GetAxisRaw("VerticalJ");
+
             m_v = Input.GetAxisRaw("Horizontal");
-            
+            m_vJ = Input.GetAxisRaw("HorizontalJ");
+
             m_s = Input.GetKeyDown(KeyCode.Space);
             m_sJ = Input.GetKeyDown(KeyCode.Joystick1Button0);
 
@@ -88,6 +93,8 @@ public class PlayerInput : MonoBehaviour {
         else {
             m_h = 0f;
             m_v = 0f;
+            m_hJ = 0f;
+            m_vJ = 0f;
             m_s = false;
             m_p = false;
             m_f = false;

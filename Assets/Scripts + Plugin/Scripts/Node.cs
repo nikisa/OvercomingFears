@@ -297,8 +297,9 @@ public class Node : MonoBehaviour
             if (crackableState > 2) {
                 crackableState = 2;
             }
-
-            transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableState);
+            
+            transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState", crackableState);
+            
             //crackableTemp.GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState", crackableState);
         }
 
@@ -671,6 +672,15 @@ public class Node : MonoBehaviour
             lightBulbTemp.transform.parent = transform;
         }
 
+        if (isCrackable) {
+            //transform.GetChild(1).gameObject.transform.Rotate(90, 0, 0);
+            //transform.GetChild(1).gameObject.transform.position += new Vector3(0, 0.1f, 0);
+
+            crackableTemp = Instantiate(crackablePrefab, transform.position + new Vector3(0, .3f, 0), Quaternion.identity);
+            crackableTemp.transform.parent = transform;
+
+        }
+
         if (hasFlashLight)
         {
             GameObject flashliteTemp;
@@ -679,15 +689,7 @@ public class Node : MonoBehaviour
             flashliteTemp.transform.parent = transform;
 
         }
-        if (isCrackable)
-        {
-            //transform.GetChild(1).gameObject.transform.Rotate(90, 0, 0);
-            //transform.GetChild(1).gameObject.transform.position += new Vector3(0, 0.1f, 0);
-
-            crackableTemp = Instantiate(crackablePrefab , transform.position + new Vector3(0, .3f , 0) , Quaternion.identity);
-            crackableTemp.transform.parent = transform;
-            
-        }
+        
     }
 
     public bool TriggerOrLogic()
