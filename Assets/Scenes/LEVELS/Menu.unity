@@ -5177,7 +5177,7 @@ PrefabInstance:
     - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: TutorialsController.Array.size
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
@@ -5236,6 +5236,48 @@ PrefabInstance:
       propertyPath: UIController
       value: 
       objectReference: {fileID: 1904729087}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[0]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: 0749c333e1c10f2458d55763d510c532,
+        type: 3}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[1]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: d8c15ba3c6f7df74abadccf389fc50bd,
+        type: 3}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[2]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: 49987797022a0304f8d952fc2377dba4,
+        type: 3}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[3]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: c17ed14f9dfd81e48ae1c08ad2a00f6d,
+        type: 3}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[4]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: 90e89e6971c1e5647958c416f465449f,
+        type: 3}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[5]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: ab8d0a9e49569144281c945582b6357b,
+        type: 3}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: TutorialsController.Array.data[6]
+      value: 
+      objectReference: {fileID: 9208286082330851371, guid: 6b49f6ce7bf8ee749a9749683cbe4a92,
+        type: 3}
     - target: {fileID: 357891303535853124, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_Name

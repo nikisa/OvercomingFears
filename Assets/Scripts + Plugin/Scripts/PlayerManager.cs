@@ -36,6 +36,8 @@ public class PlayerManager : TurnManager
     float m_timer;
     public bool speedUp;
 
+    public bool usingController;
+
     BoardManager m_board;
 
     [HideInInspector]
@@ -64,6 +66,8 @@ public class PlayerManager : TurnManager
     public void Setup()
     {
         base.Awake();
+
+        usingController = false;
 
         playerMover = GetComponent<PlayerMover>();
 
@@ -154,9 +158,11 @@ public class PlayerManager : TurnManager
 
         if (isKeyboardInput() && !isControllerInput()) {
             Debug.Log("STO USANDO UNA PORCODIO DI TASTIERA");
+            usingController = false;
         }
         else if (!isKeyboardInput() && isControllerInput()) {
             Debug.Log("STO USANDO UN PORCODIO DI CONTROLLER");
+            usingController = true;
         }
 
 

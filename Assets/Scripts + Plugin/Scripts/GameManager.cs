@@ -394,7 +394,12 @@ public class GameManager : MonoBehaviour
         //if che sceglie se pad o keyboard
 
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            popup = Instantiate(TutorialsKeyboard[0]);
+            if (!m_player.usingController) {
+                popup = Instantiate(TutorialsKeyboard[0]);
+            }
+            else {
+                popup = Instantiate(TutorialsController[0]);
+            }
             popup.transform.GetChild(0).GetComponent<ScreenFader>().FadeOn();
         }
 

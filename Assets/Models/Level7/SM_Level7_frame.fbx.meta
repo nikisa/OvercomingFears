@@ -3,15 +3,11 @@ guid: 75ab099a4a09bd340a9cf2d578507b4e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: polySurface5
-    100002: //RootNode
-    100004: transform1
-    400000: polySurface5
-    400002: //RootNode
-    400004: transform1
-    2100000: mat_palette
-    2300000: polySurface5
-    3300000: polySurface5
+    100000: //RootNode
+    400000: //RootNode
+    2100000: mat_palette10
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: polySurface5
   externalObjects: {}
   materials:

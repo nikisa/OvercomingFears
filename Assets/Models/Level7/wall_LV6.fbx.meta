@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 1a6ae3661765b80408aef6e9046a4c8e
+guid: 9a79afbba95e8c6498b0fb9cb24e16d3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: mat_palette
+    2100000: mat_palette2
     2300000: //RootNode
     3300000: //RootNode
     4300000: Tile93
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

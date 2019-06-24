@@ -7,6 +7,7 @@ public class TutorialManager : MonoBehaviour {
     public int tutorialId;
 
     GameManager m_gm;
+    PlayerManager m_player;
 
     ScreenFader deletePopup;
 
@@ -14,6 +15,7 @@ public class TutorialManager : MonoBehaviour {
 
     private void Awake() {
         m_gm = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+        m_player = FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
         m_gm.playerPopupID = 1;
     }
 
@@ -34,7 +36,12 @@ public class TutorialManager : MonoBehaviour {
 
                 case 2:
                     if (m_gm.playerPopupID == tutorialId) {
-                        popup = Instantiate(m_gm.TutorialsKeyboard[1]);
+                        if (!m_player.usingController) {
+                            popup = Instantiate(m_gm.TutorialsKeyboard[1]);
+                        }
+                        else {
+                            popup = Instantiate(m_gm.TutorialsController[1]);
+                        }
                         popup.transform.GetChild(0).gameObject.GetComponent<ScreenFader>().FadeOn();
                         m_gm.playerPopupID++;
                     }
@@ -59,7 +66,12 @@ public class TutorialManager : MonoBehaviour {
             switch (tutorialId) {
                 case 1:
                     if (m_gm.playerPopupID == tutorialId) {
-                        popup = Instantiate(m_gm.TutorialsKeyboard[2]);
+                        if (!m_player.usingController) {
+                            popup = Instantiate(m_gm.TutorialsKeyboard[2]);
+                        }
+                        else {
+                            popup = Instantiate(m_gm.TutorialsController[2]);
+                        }
                         popup.transform.GetChild(0).gameObject.GetComponent<ScreenFader>().FadeOn();
                         StartCoroutine(nextTutorial(3));
                         m_gm.playerPopupID++;
@@ -75,7 +87,12 @@ public class TutorialManager : MonoBehaviour {
             switch (tutorialId) {
                 case 1:
                     if (m_gm.playerPopupID == tutorialId) {
-                        popup = Instantiate(m_gm.TutorialsKeyboard[4]);
+                        if (!m_player.usingController) {
+                            popup = Instantiate(m_gm.TutorialsKeyboard[4]);
+                        }
+                        else {
+                            popup = Instantiate(m_gm.TutorialsController[4]);
+                        }
                         popup.transform.GetChild(0).gameObject.GetComponent<ScreenFader>().FadeOn();
                         m_gm.playerPopupID++;
                         StartCoroutine(nextTutorial(4));
@@ -104,7 +121,12 @@ public class TutorialManager : MonoBehaviour {
 
         yield return new WaitForSeconds(2f);
 
-        popup = Instantiate(m_gm.TutorialsKeyboard[i]);
+        if (!m_player.usingController) {
+            popup = Instantiate(m_gm.TutorialsKeyboard[i]);
+        }
+        else {
+            popup = Instantiate(m_gm.TutorialsController[i]);
+        }
         popup.transform.GetChild(0).gameObject.GetComponent<ScreenFader>().FadeOn();
 
         yield return new WaitForSeconds(2f);
@@ -117,7 +139,12 @@ public class TutorialManager : MonoBehaviour {
     IEnumerator nextTutorialLvl6(int i) {
         yield return new WaitForSeconds(2f);
 
-        popup = Instantiate(m_gm.TutorialsKeyboard[i]);
+        if (!m_player.usingController) {
+            popup = Instantiate(m_gm.TutorialsKeyboard[i]);
+        }
+        else {
+            popup = Instantiate(m_gm.TutorialsController[i]);
+        }
         popup.transform.GetChild(0).gameObject.GetComponent<ScreenFader>().FadeOn();
 
         yield return new WaitForSeconds(2f);

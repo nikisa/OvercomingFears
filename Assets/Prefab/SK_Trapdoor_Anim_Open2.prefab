@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: _c_COG_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: _l_door_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177700}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: _l_mouth_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177702}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: _r_door_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177704}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: _r_mouth_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GeoSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498580010427177708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: JointSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498580010427177710}
   - component: {fileID: 1498580010440870848}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SK_tradoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 1498580010427177712}
   - component: {fileID: 1498580010436769024}
   - component: {fileID: 1061337727003305564}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SK_Trapdoor_Anim_Open2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
