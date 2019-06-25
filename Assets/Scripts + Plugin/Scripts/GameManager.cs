@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 
 [System.Serializable]
 public enum Turn
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
-
+    
     private bool _isGameplay;
     public bool IsGameplay { get { return _isGameplay; } set { _isGameplay = value; } }
 
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     public Animator UIController;
 
-
+    
 
     BoardManager m_board;
     PlayerManager m_player;
@@ -72,6 +73,9 @@ public class GameManager : MonoBehaviour
 
     bool m_hasLevelFinished = false;
     public bool HasLevelFinished { get { return m_hasLevelFinished; } set { m_hasLevelFinished = value; } }
+
+    LevelManager m_levelManager;
+
 
     public float delay = 0;
 
@@ -199,6 +203,7 @@ public class GameManager : MonoBehaviour
         m_currentTurn = Turn.Player;
         GetBoardManager();
         GetPlayerManager();
+        GetLevelManager();
         PositionPlayerSetup();
         TriggerInit();
         
@@ -235,7 +240,6 @@ public class GameManager : MonoBehaviour
         {
             movable.UpdateCurrentNode();
         }
-
     }
 
     void TriggerInit()
@@ -270,6 +274,12 @@ public class GameManager : MonoBehaviour
         if (m_player == null)
         {
             m_player = FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
+        }
+    }
+
+    void GetLevelManager() {
+        if (m_levelManager == null) {
+            m_levelManager = FindObjectOfType<LevelManager>().GetComponent<LevelManager>();
         }
     }
 
@@ -422,12 +432,12 @@ public class GameManager : MonoBehaviour
             yield return null;
             //todo: Check win(end reached)/lose(player dead)
             m_isGameOver = IsWinner();
-
-
+            
         }
 
         m_isGameOver = false;
         m_player.lr.transform.gameObject.SetActive(true);
+        m_levelManager.SaveLevel();
         NextLevel();
         
 
@@ -1181,6 +1191,14 @@ public class GameManager : MonoBehaviour
 
     }
 
+    #region LevelSelection
 
+    public void startLevel() {
+        GameManager.stateGameplay();
+        SceneManager.LoadScene(EventSystem.current.currentSelectedGameObject.name);
+    }
+    
+
+    #endregion
 
 }

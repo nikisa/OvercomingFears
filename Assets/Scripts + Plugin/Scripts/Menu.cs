@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Menu : MonoBehaviour
     public void NewGame()
     {
         Debug.Log("NEW GAME");
+        SceneManager.LoadScene("Level 1");
         GameManager.stateGameplay(); //Chiamata evento 
         
     }

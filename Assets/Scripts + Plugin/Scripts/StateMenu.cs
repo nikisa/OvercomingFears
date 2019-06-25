@@ -20,6 +20,11 @@ public class StateMenu : StateBehaviourBase
 
         GameManager.Instance.transform.GetChild(2).gameObject.SetActive(true);
         Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.MainMenu);
+
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.LevelSelection);
+
+        Object.FindObjectOfType<LevelManager>().GetComponent<LevelManager>().LevelSelectionDisable();
+        Object.FindObjectOfType<LevelManager>().GetComponent<LevelManager>().LevelSelectionSetup();
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -33,5 +38,7 @@ public class StateMenu : StateBehaviourBase
     {
 
     }
+
+
     
 }

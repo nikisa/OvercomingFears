@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StateGameplay : StateBehaviourBase
-{
-
+{  
+ 
+    
     private void OnSceneLoaded(Scene scene , LoadSceneMode mode) {
         Debug.Log("STARTGAME");
         GameManager.Instance.StartGameLoop();
@@ -18,7 +19,7 @@ public class StateGameplay : StateBehaviourBase
     {
         GameManager.Instance.transform.GetChild(1).gameObject.SetActive(false);
         SceneManager.sceneLoaded += OnSceneLoaded;
-        SceneManager.LoadScene("Level " + (ctx.id));
+        //SceneManager.LoadScene("Level " + (ctx.id));
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

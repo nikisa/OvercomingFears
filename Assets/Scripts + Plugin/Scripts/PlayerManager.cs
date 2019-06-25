@@ -157,11 +157,9 @@ public class PlayerManager : TurnManager
     {
 
         if (isKeyboardInput() && !isControllerInput()) {
-            Debug.Log("STO USANDO UNA PORCODIO DI TASTIERA");
             usingController = false;
         }
         else if (!isKeyboardInput() && isControllerInput()) {
-            Debug.Log("STO USANDO UN PORCODIO DI CONTROLLER");
             usingController = true;
         }
 
