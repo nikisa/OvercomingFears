@@ -16097,10 +16097,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_invisible
       objectReference: {fileID: 0}
+    - target: {fileID: 6899069894549035188, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6899069894703172819, guid: 870b7b7895820b54e8af2b785f2d931e,
         type: 3}
       propertyPath: m_Name
       value: wall_invisible
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899069894703172819, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870b7b7895820b54e8af2b785f2d931e, type: 3}
@@ -21608,7 +21618,7 @@ Transform:
   - {fileID: 1560446676}
   - {fileID: 76805072}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2065201473
 PrefabInstance:

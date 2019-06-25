@@ -11888,12 +11888,22 @@ PrefabInstance:
     - target: {fileID: 842421641288875349, guid: db12fefa83c1f33499d3ceff63f3870b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 842421641288875349, guid: db12fefa83c1f33499d3ceff63f3870b,
         type: 3}
       propertyPath: m_Name
       value: wall_invisible
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137209690617630157, guid: db12fefa83c1f33499d3ceff63f3870b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e348dd53390268f4594f45d1e707b80f, type: 2}
+    - target: {fileID: 8833298313676841026, guid: db12fefa83c1f33499d3ceff63f3870b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db12fefa83c1f33499d3ceff63f3870b, type: 3}
