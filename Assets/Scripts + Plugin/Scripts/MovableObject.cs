@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MovableObject : Mover {
 
+    public enum direction { right , left , back , forward}
+
     public bool inScene = true;
     public bool hasMoved = false;
     public bool hasStopped = false;
@@ -34,158 +36,326 @@ public class MovableObject : Mover {
         return PreviousMovableObjectNode;
     }
 
+    //public void pushDirection(Direction)
 
-    public void PushRight() {
-        if (m_board != null || inScene) {
+        //_______________________NEW_________________________________
+
+        public void Push(direction _direction)
+        {
+
+        if (m_board != null || inScene)
+        {
 
             m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
-
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                //m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveRight();
-                hasMoved = true;
-                hasStopped = false;
+            switch (_direction)
+            {
+                case direction.right:
+                    if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode))
+                    {
+                        //m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveRight();
+                        
+                    }
+                    break;
+                case direction.left:
+                    if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) <= 2f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode))
+                    {
+                        //m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveLeft();
+                        
+                    }
+                    break;
+                case direction.back:
+                    if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode))
+                    {
+                        //m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveBackward();
+                        
+                    }
+                    break;
+                case direction.forward:
+                    if (movableObjectNode != null && m_player.playerInput && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode))
+                    {
+                        //m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveForward();
+                        
+                    }
+                    break;
+                default:
+                    break;
             }
+            hasMoved = true;
+            hasStopped = false;
 
             m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
-    public void PushLeft() {
-        if (m_board != null || inScene) {
+    //_______________________NEW_________________________________
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+    //public void PushRight() {
+    //    if (m_board != null || inScene) {
 
-            Node movableObjectNode = m_board.FindNodeAt(transform.position);
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
 
-            if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) <= 2f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                //m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveLeft();
-                hasMoved = true;
-                hasStopped = false;
-            }
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        }
-    }
+    //        if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+    //            //m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveRight();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
 
-    public void PushForward() {
-        if (m_board != null || inScene) {
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+    
+    //public void test(aa _t) {
+    //    switch (_t)
+    //    {
+    //        case aa.a:
+    //            break;
+    //        case aa.b:
+    //            break;
+           
+    //    }
+    //    hasMoved = true;
+    //    hasStopped = false;
+    //}
 
-            Node movableObjectNode = m_board.FindNodeAt(transform.position);
+    //public void PushLeft() {
+    //    if (m_board != null || inScene) {
 
-            if (movableObjectNode != null && m_player.playerInput && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                //m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveForward();
-                hasMoved = true;
-                hasStopped = false;
-            }
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        }
-    }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
 
-    public void PushBackward() {
-        if (m_board != null || inScene) {
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+    //        if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) <= 2f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+    //            //m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveLeft();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
 
-            Node movableObjectNode = m_board.FindNodeAt(transform.position);
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
 
-            if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
-                //m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveBackward();
-                hasMoved = true;
-                hasStopped = false;
-            }
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        }  
-    }
+    //public void PushForward() {
+    //    if (m_board != null || inScene) {
+
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
+
+    //        if (movableObjectNode != null && m_player.playerInput && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+    //            //m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveForward();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
+
+    //public void PushBackward() {
+    //    if (m_board != null || inScene) {
+
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
+
+    //        if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode)) {
+    //            //m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveBackward();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }  
+    //}
 
     //PUSH___________________________________________
 
-    public void PullLeft() {
+    //_______________________NEW_________________________________
 
-        if (m_board != null || inScene){
+    public void Pull(direction _direction)
+    {
+
+        if (m_board != null || inScene)
+        {
 
             m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
-
             Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-            if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x  && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2,0,0)))) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveLeft();
-                hasMoved = true;
-                hasStopped = false;
+            switch (_direction)
+            {
+                case direction.right:
+                    if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
+                        Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x &&
+                        //(m_board.FindNodeAt(m_player.transform.position + Vector3.right) != null && m_board.FindNodeAt(m_player.transform.position + Vector3.right).gateOpen == false) &&
+                        m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0))))
+                    {
+                        m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveRight();
+
+                    }
+                    break;
+                case direction.left:
+                    if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
+                        Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
+                        m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x &&
+                        m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2, 0, 0))))
+                    {
+                        m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveLeft();
+
+                    }
+                    break;
+                case direction.back:
+                    if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x &&
+                        Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        //(m_board.FindNodeAt(m_player.transform.position)!=null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) && 
+                        m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z &&
+                        m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, -2))))
+                    {
+                        m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveBackward();
+
+                    }
+                    break;
+                case direction.forward:
+                    if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x &&
+                        Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
+                        m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z &&
+                        m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, 2))))
+                    {
+                        m_player.transform.GetChild(2).gameObject.SetActive(false);
+                        m_player.hasLightBulb = false;
+                        this.MoveForward();
+                    }
+                    break;
+                default:
+                    break;
             }
+            hasMoved = true;
+            hasStopped = false;
+
             m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
     }
 
-    public void PullRight() {
+    //_______________________NEW_________________________________
 
-        if (m_board != null || inScene) {
+    //public void PullLeft() {
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+    //    if (m_board != null || inScene){
 
-            Node movableObjectNode = m_board.FindNodeAt(transform.position);
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
 
-            if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0)))) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveRight();
-                hasMoved = true;
-                hasStopped = false;
-            }
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        }
-    }
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-    public void PullBackward() {
+    //        if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
+    //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+    //            //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
+    //            m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x  &&
+    //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2,0,0)))) {
+    //            m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveLeft();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
 
-        if (m_board != null || inScene) {
+    //public void PullRight() {
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+    //    if (m_board != null || inScene) {
 
-            Node movableObjectNode = m_board.FindNodeAt(transform.position);
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
 
-            if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, -2)))) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveBackward();
-                hasMoved = true;
-                hasStopped = false;
-            }
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        }
-    }
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-    public void PullForward() {
+    //        if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && 
+    //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && 
+    //            m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x &&
+    //            //(m_board.FindNodeAt(m_player.transform.position + Vector3.right) != null && m_board.FindNodeAt(m_player.transform.position + Vector3.right).gateOpen == false) &&
+    //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0)))) {
+    //            m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveRight();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
 
-        if (m_board != null || inScene) {
+    //public void PullBackward() {
 
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+    //    if (m_board != null || inScene) {
 
-            Node movableObjectNode = m_board.FindNodeAt(transform.position);
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
 
-            if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, 2)))) {
-                m_player.transform.GetChild(2).gameObject.SetActive(false);
-                m_player.hasLightBulb = false;
-                this.MoveForward();
-                hasMoved = true;
-                hasStopped = false;
-            }
-            m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        }
-    }
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
+
+    //        if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x &&
+    //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+    //            //(m_board.FindNodeAt(m_player.transform.position)!=null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) && 
+    //            m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z &&
+    //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, -2)))) {
+    //            m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveBackward();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
+
+    //public void PullForward() {
+
+    //    if (m_board != null || inScene) {
+
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
+
+    //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
+
+    //        if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x &&
+    //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+    //            //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
+    //            m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z && 
+    //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, 2)))) {
+    //            m_player.transform.GetChild(2).gameObject.SetActive(false);
+    //            m_player.hasLightBulb = false;
+    //            this.MoveForward();
+    //            hasMoved = true;
+    //            hasStopped = false;
+    //        }
+    //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    //    }
+    //}
     
     //PULL___________________________________________
 
@@ -201,9 +371,14 @@ public class MovableObject : Mover {
 
 
             Node nextMovableObjectNodeLeft = m_board.FindNodeAt(transform.position + new Vector3(-2f, 0, 0));
+
             Node nextMovableObjectNodeRight = m_board.FindNodeAt(transform.position + new Vector3(2f, 0, 0));
+
+
             Node nextMovableObjectNodeUp = m_board.FindNodeAt(transform.position + new Vector3(0, 0, 2f));
+
             Node nextMovableObjectNodeDown = m_board.FindNodeAt(transform.position + new Vector3(0, 0, -2f));
+
 
             if ((nextMovableObjectNodeLeft == null || m_board.FindMovableObjectsAt(nextMovableObjectNodeLeft).Count != 0 || m_board.FindEnemiesAt(nextMovableObjectNodeLeft).Count != 0 || !m_board.FindNodeAt(this.transform.position).LinkedNodes.Contains(nextMovableObjectNodeLeft) || (nextMovableObjectNodeLeft.isAGate && nextMovableObjectNodeLeft.GetGateState() == false)) && m_board.playerNode.transform.position == transform.position + new Vector3(2f, 0, 0)) {
                 leftBlocked = true;

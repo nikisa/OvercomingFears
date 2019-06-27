@@ -44,7 +44,7 @@ public class LevelManager : MonoBehaviour {
 
     public void LevelSelectionDisable() {        
 
-        if (PlayerPrefs.GetInt("LevelsID") == 0) {
+        if (PlayerPrefs.GetInt("LevelID") == 0) {
             LevelSelectionButton.GetComponent<Button>().interactable = false;
         }
         

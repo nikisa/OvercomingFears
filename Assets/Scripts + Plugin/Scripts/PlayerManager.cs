@@ -249,7 +249,10 @@ public class PlayerManager : TurnManager
                     if (switchState)
                     {
                         m_board.playerNode.UpdateSwitchToFalse();
-                        m_gm.CurrentTurn = Turn.Enemy;
+                        if (SceneManager.GetActiveScene().buildIndex == 3)
+                        {
+                            m_gm.CurrentTurn = Turn.Enemy;
+                        }                        
                         m_gm.CurrentTurn = Turn.Player;
 
 
@@ -257,7 +260,10 @@ public class PlayerManager : TurnManager
                     else
                     {
                         m_board.playerNode.UpdateSwitchToTrue();
-                        m_gm.CurrentTurn = Turn.Enemy;
+                        if (SceneManager.GetActiveScene().buildIndex == 3)
+                        {
+                            m_gm.CurrentTurn = Turn.Enemy;
+                        }
                         m_gm.CurrentTurn = Turn.Player;
                     }
                 }
@@ -306,7 +312,7 @@ public class PlayerManager : TurnManager
                                 playerMover.MoveLeft();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullLeft();
+                                    movableObject.Pull(MovableObject.direction.left);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -317,7 +323,7 @@ public class PlayerManager : TurnManager
 
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushLeft();
+                                        movableObject.Push(MovableObject.direction.left);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
 
@@ -343,12 +349,12 @@ public class PlayerManager : TurnManager
                                 enemy.m_enemySensor.m_foundPlayer = false;
                             }
 
-                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
+                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
                             {
                                 playerMover.MoveRight();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullRight();
+                                    movableObject.Pull(MovableObject.direction.right);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -359,7 +365,7 @@ public class PlayerManager : TurnManager
                                     playerMover.MoveRight();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushRight();
+                                        movableObject.Push(MovableObject.direction.right);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
                                 }
@@ -387,7 +393,7 @@ public class PlayerManager : TurnManager
                                 playerMover.MoveBackward();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullBackward();
+                                    movableObject.Pull(MovableObject.direction.back);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -398,7 +404,7 @@ public class PlayerManager : TurnManager
                                     playerMover.MoveBackward();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushBackward();
+                                        movableObject.Push(MovableObject.direction.back);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
                                 }
@@ -421,7 +427,7 @@ public class PlayerManager : TurnManager
                                 playerMover.MoveForward();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullForward();
+                                    movableObject.Pull(MovableObject.direction.forward);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -432,7 +438,7 @@ public class PlayerManager : TurnManager
 
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushForward();
+                                        movableObject.Push(MovableObject.direction.forward);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
 
@@ -702,7 +708,7 @@ public class PlayerManager : TurnManager
                                 playerMover.MoveLeft();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullLeft();
+                                    movableObject.Pull(MovableObject.direction.left);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -713,7 +719,7 @@ public class PlayerManager : TurnManager
 
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushLeft();
+                                        movableObject.Push(MovableObject.direction.left);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
 
@@ -734,12 +740,12 @@ public class PlayerManager : TurnManager
                         }
                         else if (playerInput.V > 0)
                         {
-                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
+                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
                             {
                                 playerMover.MoveRight();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullRight();
+                                    movableObject.Pull(MovableObject.direction.right);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -750,7 +756,7 @@ public class PlayerManager : TurnManager
                                     playerMover.MoveRight();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushRight();
+                                        movableObject.Push(MovableObject.direction.right);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
                                 }
@@ -772,7 +778,7 @@ public class PlayerManager : TurnManager
                                 playerMover.MoveBackward();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullBackward();
+                                    movableObject.Pull(MovableObject.direction.back);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -783,7 +789,7 @@ public class PlayerManager : TurnManager
                                     playerMover.MoveBackward();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushBackward();
+                                        movableObject.Push(MovableObject.direction.back);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
                                 }
@@ -800,7 +806,7 @@ public class PlayerManager : TurnManager
                                 playerMover.MoveForward();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
-                                    movableObject.PullForward();
+                                    movableObject.Pull(MovableObject.direction.forward);
                                     PlayerAnimatorController.SetInteger("PlayerState", 5);
                                 }
                             }
@@ -811,7 +817,7 @@ public class PlayerManager : TurnManager
                                     playerMover.MoveForward();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.PushForward();
+                                        movableObject.Push(MovableObject.direction.forward);
                                         PlayerAnimatorController.SetInteger("PlayerState", 4);
                                     }
                                 }
