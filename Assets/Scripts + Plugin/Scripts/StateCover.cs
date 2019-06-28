@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class StateCover : StateMachineBehaviour
+{    
 
-public class StateLevelSelection : StateMachineBehaviour
-{
-   
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.LevelSelection);
+
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.Cover);
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.LevelSelection);
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.PlayMenu);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -21,7 +23,7 @@ public class StateLevelSelection : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.LevelSelection);
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.Cover);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

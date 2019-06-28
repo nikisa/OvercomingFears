@@ -25,6 +25,8 @@ public class PlayerManager : TurnManager
 
     public Canvas PauseCanvas;
 
+    public UiManager UiManager;
+
     //public bool spottedPlayer = false;
 
 
@@ -72,6 +74,8 @@ public class PlayerManager : TurnManager
         playerMover = GetComponent<PlayerMover>();
 
         playerInput = GetComponent<PlayerInput>();
+
+        
 
         m_inputType inputDevice = m_inputType.Controller;
 
@@ -155,6 +159,13 @@ public class PlayerManager : TurnManager
 
     void Update()
     {
+
+        if (UiManager.isCover && Input.anyKeyDown) {
+            Debug.Log("ANY BUTTON");
+            GameManager.stateMainMenu();
+        }
+
+
 
         if (isKeyboardInput() && !isControllerInput()) {
             usingController = false;
@@ -275,10 +286,12 @@ public class PlayerManager : TurnManager
                     if (PauseCanvas.gameObject.activeSelf)
                     {
                         PauseCanvas.gameObject.SetActive(false);
+                        GameManager.stateGameplay();
                     }
                     else
                     {
                         PauseCanvas.gameObject.SetActive(true);
+                        GameManager.statePause();
                     }
 
                 }

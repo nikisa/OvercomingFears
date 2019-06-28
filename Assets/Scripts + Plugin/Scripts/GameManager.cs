@@ -92,9 +92,12 @@ public class GameManager : MonoBehaviour
     #region Events
 
     public delegate void OnClick();
+    public static OnClick stateCover;
     public static OnClick stateMenu;
+    public static OnClick statePause;
     public static OnClick stateGameplay;
     public static OnClick stateOption;
+    public static OnClick statePlayMenu;
     public static OnClick stateLevelSelection;
     public static OnClick stateMainMenu;
     public static OnClick stateVideoSettings;
@@ -103,7 +106,10 @@ public class GameManager : MonoBehaviour
 
     void OnEnable()
     {
+        statePlayMenu += SetPlayMenuTrigger;
+        stateCover += SetCoverTrigger;
         stateGameplay += SetGameplayTrigger;
+        statePause += SetPauseTrigger; 
         stateMenu += SetMenuTrigger;
         stateOption += SetOptionTrigger;
         stateLevelSelection += SetLevelSelectionTrigger;
@@ -111,6 +117,8 @@ public class GameManager : MonoBehaviour
         stateVideoSettings += SetVideoTrigger;
         stateGameplayUI += SetGameplayUITrigger;
     }
+
+    
 
 
     void SetGameplayTrigger()
@@ -124,6 +132,17 @@ public class GameManager : MonoBehaviour
             Debug.Log("out");
         }
     }
+
+    void SetPauseTrigger() {
+        if (statePause != null) {
+            SMController.SetTrigger("Pause");
+        }
+        else {
+            Debug.Log("out");
+        }
+    }
+
+
     public void SetOptionTrigger()
     {
         UIController.SetTrigger("Option");
@@ -135,6 +154,25 @@ public class GameManager : MonoBehaviour
     public void SetMainMenuTrigger()
     {
         UIController.SetTrigger("MainMenu");
+    }
+
+    void SetCoverTrigger() {
+        if (stateCover != null) {
+            SMController.SetTrigger("Cover");
+        }
+        else {
+            Debug.Log("out");
+        }
+    }
+
+    void SetPlayMenuTrigger() {
+        if (statePlayMenu != null) {
+            Debug.Log("PlayMenu");
+            UIController.SetTrigger("Play");
+        }
+        else {
+            Debug.Log("out");
+        }
     }
 
 
@@ -169,14 +207,16 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
+        statePlayMenu -= SetPlayMenuTrigger;
+        stateCover -= SetCoverTrigger;
         stateGameplay -= SetGameplayTrigger;
+        statePause -= SetPauseTrigger;
         stateMenu -= SetMenuTrigger;
         stateOption -= SetOptionTrigger;
         stateLevelSelection -= SetLevelSelectionTrigger;
         stateMainMenu -= SetMainMenuTrigger;
         stateVideoSettings -= SetVideoTrigger;
         stateGameplayUI -= SetGameplayUITrigger;
-
     }
 
     #endregion

@@ -43,8 +43,9 @@ public class PlayerInput : MonoBehaviour {
     bool m_rJ;
     public bool R { get { return m_r | m_rJ; } }
 
-
+    [SerializeField]
     bool m_inputEnabled = false;
+
     public bool InputEnabled {
         get {
             return m_inputEnabled;
@@ -82,10 +83,7 @@ public class PlayerInput : MonoBehaviour {
 
             m_f_up = Input.GetKeyUp(KeyCode.LeftControl);
             m_fJ_up = Input.GetKeyUp(KeyCode.Joystick1Button1);
-
-            m_e = Input.GetKeyDown(KeyCode.Escape);
-            m_eJ = Input.GetKeyDown(KeyCode.Joystick1Button7);
-
+            
             m_r = Input.GetKeyDown(KeyCode.R);
             m_rJ = Input.GetKeyDown(KeyCode.Joystick1Button3);
 
@@ -101,6 +99,9 @@ public class PlayerInput : MonoBehaviour {
             m_e = false;
             m_r = false;
         }
+
+        m_e = Input.GetKeyDown(KeyCode.Escape);
+        m_eJ = Input.GetKeyDown(KeyCode.Joystick1Button7);
 
     }    
 }

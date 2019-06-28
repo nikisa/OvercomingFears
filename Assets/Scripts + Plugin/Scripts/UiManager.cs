@@ -4,21 +4,33 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class UiManager : MonoBehaviour
 {
     public UiBase LevelSelectionState;
     public UiBase OptionState;
     public UiBase MainMenu;
     public UiBase VideoSettingsState;
+    public UiBase StateCover;
+    public UiBase PlayMenu;
 
     bool value = false;
+
+    public bool isCover;
 
     public void ChangeMenu(MenuType _menuType)
     {
         switch (_menuType)
         {
+            case MenuType.Cover:
+                isCover = true;
+                StateCover.Setup();
+                break;
             case MenuType.MainMenu:
                 MainMenu.Setup();
+                break;
+            case MenuType.PlayMenu:
+                PlayMenu.Setup();
                 break;
             case MenuType.LevelSelection:
                 LevelSelectionState.Setup();
@@ -39,8 +51,15 @@ public class UiManager : MonoBehaviour
     {
         switch (_menuType)
         {
+            case MenuType.Cover:
+                isCover = false;
+                StateCover.Disable();
+                break;
             case MenuType.MainMenu:
                 MainMenu.Disable();
+                break;
+            case MenuType.PlayMenu:
+                PlayMenu.Disable();
                 break;
             case MenuType.LevelSelection:
                 LevelSelectionState.Disable();
@@ -57,6 +76,8 @@ public class UiManager : MonoBehaviour
                 break;
         }
     }
+
+    
     public void Option()
     {
         GameManager.stateOption();
@@ -64,6 +85,11 @@ public class UiManager : MonoBehaviour
     public void LevelSelection()
     {
         GameManager.stateLevelSelection();
+    }
+
+    public void PlayGame() {
+        Debug.Log("PLAY GAME");
+        GameManager.statePlayMenu();
     }
 
     public void BackToMainMenu()
@@ -109,7 +135,9 @@ public class UiManager : MonoBehaviour
 }
 
 public enum MenuType
-{   MainMenu,
+{   Cover,
+    MainMenu,
+    PlayMenu,
     LevelSelection,
     nullo,
     Option,
