@@ -10274,7 +10274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed5a36a9b436de4590dbc1b8214c925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
 --- !u!212 &1765024269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13392,11 +13391,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 357891303664417828, guid: 5765647c9b307344abbd39e663e7aad3,
-        type: 3}
-      propertyPath: cameraPostProcess
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 357891304791556458, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13410,6 +13404,11 @@ PrefabInstance:
     - target: {fileID: 357891304528815906, guid: 5765647c9b307344abbd39e663e7aad3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 357891303664417828, guid: 5765647c9b307344abbd39e663e7aad3,
+        type: 3}
+      propertyPath: cameraPostProcess
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []

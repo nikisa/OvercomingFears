@@ -81,6 +81,7 @@ public class EnemyManager : TurnManager {
                 //attack player
                 //notify the GM to lose the level
                 //lr.transform.gameObject.SetActive(true);
+                m_player.playerInput.InputEnabled = false;
 
                 if (m_enemyMover.movementType == MovementType.Stationary) {
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
@@ -142,6 +143,14 @@ public class EnemyManager : TurnManager {
         if (gameObject != null && m_enemyMover.movementType == MovementType.Chaser) {
             m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 911);
         }
+        if (m_isDead)
+        {
+            return;
+        }
+        m_isDead = true;
+
+
+        StartCoroutine(WaitTimeForKill());
 
     }
 
@@ -153,7 +162,7 @@ public class EnemyManager : TurnManager {
             m_board.FindNodeAt(transform.position).UpdateTriggerToTrue();
 
 
-            m_board.FindNodeAt(transform.position).StopTriggerRotation(false);
+            m_board.FindNodeAt(transform.position).triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
         }
 
         yield return new WaitForSeconds(0.3f);

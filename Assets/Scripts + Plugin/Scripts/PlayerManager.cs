@@ -27,6 +27,8 @@ public class PlayerManager : TurnManager
 
     public UiManager UiManager;
 
+    public LightShaft lightShaft;
+
     //public bool spottedPlayer = false;
 
 
@@ -103,6 +105,13 @@ public class PlayerManager : TurnManager
         lr.SetPosition(0, transform.position);
         lr.SetPosition(1, transform.position);
 
+    }
+
+    IEnumerator DisableLightShaft()
+    {
+        yield return new WaitForSeconds(.5f);
+        lightShaft.gameObject.SetActive(false);
+        lightShaft.transform.localScale = new Vector3(1,1,1);
     }
     public void EnemyAnimationReset()
     {
@@ -221,7 +230,7 @@ public class PlayerManager : TurnManager
 
             if (m_board.playerNode.isATrigger)
             {
-                m_board.playerNode.StopTriggerRotation(true);
+                m_board.playerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
             }
 
 
@@ -304,7 +313,8 @@ public class PlayerManager : TurnManager
                     m_gameManager.LoseLevel();
                 }
 
-                
+                //su 1, 2 ,3 , 10 MANCA L?AGGIORNAMETO DEL FLASH NUOVO DELLA TORCIA PER QUANDO SI SPARA(c'è ancora line renderer anziché la mesh)
+
                 #region Setup input levels 1 , 2 , 3 , 10
                 if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 10)
                 {
@@ -315,10 +325,10 @@ public class PlayerManager : TurnManager
                         {
                             EnemyAnimationReset();
 
-                            foreach (EnemyManager enemy in m_gm.m_enemies)
-                            {
-                                enemy.m_enemySensor.m_foundPlayer = false;
-                            }
+                            //foreach (EnemyManager enemy in m_gm.m_enemies)
+                            //{
+                            //    enemy.m_enemySensor.m_foundPlayer = false;
+                            //}
 
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
                             { //Aggiunto AND per evtiare di entrare nei MO facendo la pull verso di essi
@@ -357,10 +367,10 @@ public class PlayerManager : TurnManager
                         else if (playerInput.H > 0)
                         {
                             EnemyAnimationReset();
-                            foreach (EnemyManager enemy in m_gm.m_enemies)
-                            {
-                                enemy.m_enemySensor.m_foundPlayer = false;
-                            }
+                            //foreach (EnemyManager enemy in m_gm.m_enemies)
+                            //{
+                            //    enemy.m_enemySensor.m_foundPlayer = false;
+                            //}
 
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
                             {
@@ -396,10 +406,10 @@ public class PlayerManager : TurnManager
                         if (playerInput.V < 0)
                         {
                             EnemyAnimationReset();
-                            foreach (EnemyManager enemy in m_gm.m_enemies)
-                            {
-                                enemy.m_enemySensor.m_foundPlayer = false;
-                            }
+                            //foreach (EnemyManager enemy in m_gm.m_enemies)
+                            //{
+                            //    enemy.m_enemySensor.m_foundPlayer = false;
+                            //}
 
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0)
                             {
@@ -430,10 +440,10 @@ public class PlayerManager : TurnManager
                         else if (playerInput.V > 0)
                         {
                             EnemyAnimationReset();
-                            foreach (EnemyManager enemy in m_gm.m_enemies)
-                            {
-                                enemy.m_enemySensor.m_foundPlayer = false;
-                            }
+                            //foreach (EnemyManager enemy in m_gm.m_enemies)
+                            //{
+                            //    enemy.m_enemySensor.m_foundPlayer = false;
+                            //}
 
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0)
                             {
@@ -707,8 +717,7 @@ public class PlayerManager : TurnManager
 
                 }//if
 
-                #endregion
-
+                #endregion 
                 #region Setup input levels 4 , 5 , 6 , 7 , 8, 9
                 else if (SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7 || SceneManager.GetActiveScene().buildIndex == 8 || SceneManager.GetActiveScene().buildIndex == 9)
                 {
@@ -716,6 +725,7 @@ public class PlayerManager : TurnManager
                     {
                         if (playerInput.V < 0)
                         {
+                            EnemyAnimationReset();
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
                             { //Aggiunto AND per evtiare di entrare nei MO facendo la pull verso di essi
                                 playerMover.MoveLeft();
@@ -753,6 +763,7 @@ public class PlayerManager : TurnManager
                         }
                         else if (playerInput.V > 0)
                         {
+                            EnemyAnimationReset();
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
                             {
                                 playerMover.MoveRight();
@@ -786,6 +797,7 @@ public class PlayerManager : TurnManager
                     {
                         if (playerInput.H > 0)
                         {
+                            EnemyAnimationReset();
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0)
                             {
                                 playerMover.MoveBackward();
@@ -814,6 +826,7 @@ public class PlayerManager : TurnManager
                         }
                         else if (playerInput.H < 0)
                         {
+                            EnemyAnimationReset();
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0)
                             {
                                 playerMover.MoveForward();
@@ -853,6 +866,7 @@ public class PlayerManager : TurnManager
                             RaycastHit hit;
 
                             lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            
 
                             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100, obstacleLayer))
                             {
@@ -862,8 +876,10 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
-                                        lr.gameObject.SetActive(true);
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z)/2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
@@ -897,7 +913,8 @@ public class PlayerManager : TurnManager
                                         break;
                                 }
                                 PlayerAnimatorController.SetInteger("PlayerState", 0);
-                                StartCoroutine(DisableLineRenderer());
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
 
@@ -919,9 +936,12 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
@@ -951,7 +971,8 @@ public class PlayerManager : TurnManager
                                         break;
                                 }
                                 PlayerAnimatorController.SetInteger("PlayerState", 0);
-                                StartCoroutine(DisableLineRenderer());
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
 
@@ -972,7 +993,10 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         transform.GetChild(3).gameObject.SetActive(false);
@@ -1004,7 +1028,8 @@ public class PlayerManager : TurnManager
                                         break;
                                 }
                                 PlayerAnimatorController.SetInteger("PlayerState", 0);
-                                StartCoroutine(DisableLineRenderer());
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
 
@@ -1027,7 +1052,10 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         transform.GetChild(3).gameObject.SetActive(false);
@@ -1064,7 +1092,8 @@ public class PlayerManager : TurnManager
                                         break;
                                 }
                                 PlayerAnimatorController.SetInteger("PlayerState", 0);
-                                StartCoroutine(DisableLineRenderer());
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
                     }

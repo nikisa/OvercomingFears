@@ -1028,6 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1050,12 +1051,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -1197,6 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1219,12 +1232,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -1449,6 +1473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1471,12 +1496,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -1695,6 +1731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1717,12 +1754,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -2053,6 +2101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -2075,12 +2124,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -3443,6 +3503,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
       propertyPath: autoRun
       value: 0
       objectReference: {fileID: 0}
@@ -3722,6 +3792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -3744,12 +3815,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -4051,6 +4133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -4073,12 +4156,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -4372,6 +4466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -4394,12 +4489,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -5121,6 +5227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -5143,12 +5250,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -5290,6 +5408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -5312,12 +5431,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -6082,6 +6212,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2229032962324959030, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6215,11 +6350,6 @@ PrefabInstance:
     - target: {fileID: 570770096752591498, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_Positions.Array.data[1].y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6743,6 +6873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -6765,12 +6896,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -7073,6 +7215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -7095,12 +7238,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -7242,6 +7396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -7264,12 +7419,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -7710,6 +7876,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
       propertyPath: autoRun
       value: 0
       objectReference: {fileID: 0}
@@ -8090,6 +8266,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -8488,6 +8674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -8510,12 +8697,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -9265,6 +9463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -9287,12 +9486,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -9504,6 +9714,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -9899,6 +10119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -9921,12 +10142,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -10190,6 +10422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -10212,12 +10445,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -10443,6 +10687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -10465,12 +10710,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -10669,6 +10925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -10691,12 +10948,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -10838,6 +11106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -10860,12 +11129,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -11005,21 +11285,6 @@ PrefabInstance:
       propertyPath: isActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_TagString
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401513, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -11098,6 +11363,21 @@ PrefabInstance:
     - target: {fileID: 2775251454287485324, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 145960786372401516, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 145960786372401513, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11445,6 +11725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -11467,12 +11748,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -11770,6 +12062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -11792,12 +12085,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12003,6 +12307,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -12214,6 +12528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -12236,12 +12551,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12521,6 +12847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -12543,12 +12870,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12676,6 +13014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -12698,12 +13037,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12923,6 +13273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -12945,12 +13296,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -13654,6 +14016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -13676,12 +14039,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -13992,6 +14366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -14014,12 +14389,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -14253,6 +14639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -14275,12 +14662,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -14360,6 +14758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -14382,12 +14781,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -14626,6 +15036,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -15281,6 +15701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -15303,12 +15724,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -15940,6 +16372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -15962,12 +16395,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -16157,6 +16601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -16179,12 +16624,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -16472,6 +16928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -16494,12 +16951,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -16579,6 +17047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -16601,12 +17070,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -16811,6 +17291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -16833,12 +17314,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -17028,6 +17520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -17050,12 +17543,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -17529,6 +18033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -17551,12 +18056,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -17670,6 +18186,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -17901,6 +18427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -17923,12 +18450,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -18817,6 +19355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -18839,12 +19378,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -19006,6 +19556,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -19546,6 +20106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -19568,12 +20129,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -19886,6 +20458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -19908,12 +20481,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -20307,6 +20891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -20329,12 +20914,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -20448,6 +21044,16 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: triggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: shadows.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: offShadows.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
@@ -21315,6 +21921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -21337,12 +21944,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -22094,6 +22712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -22116,12 +22735,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -22809,6 +23439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -22831,12 +23462,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -23436,6 +24078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -23458,12 +24101,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -23543,6 +24197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -23565,12 +24220,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers:
-  - {fileID: 7801168415238382547, guid: 1f0ff0804e0e5a641b0b624cb7800bd2, type: 3}
-  - {fileID: 7801168415238382547, guid: d555f4665a5a18841bbaa756c6e74008, type: 3}
-  - {fileID: 7801168415238382547, guid: 021be7205df910c4b81530ad7c5771aa, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8904c04ab7d7a43bfc151e5edc5fee, type: 3}
-  - {fileID: 7801168415238382547, guid: 8d8dccb5f0685a64b855644d3610bf18, type: 3}
-  shadows: []
+  - {fileID: 3761025923289247476, guid: ba173a01725623340af9b452bfa8855c, type: 3}
+  - {fileID: 3761025923289247476, guid: e065ae9ac3119a646be9fc92eca81383, type: 3}
+  - {fileID: 3761025923289247476, guid: da625b2656fb33344819398041ad740e, type: 3}
+  - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
+  - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 4073245715936455555, guid: b10285dbd8c7bad409597f45ec3d61f9, type: 3}
+  - {fileID: 4073245715936455555, guid: dbf66d8295a82fa4baf7707e2b799e32, type: 3}
+  - {fileID: 4073245715936455555, guid: fa4218ce8a0dc3e40827c30274145b58, type: 3}
+  - {fileID: 4073245715936455555, guid: 4c73f4ef8377fd64a8982ffa55a349f2, type: 3}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 4073245715936455555, guid: 366893ebfd5b82744ace337534c0ef44, type: 3}
+  - {fileID: 4073245715936455555, guid: 552b3eefe93331c4b97b883787e09074, type: 3}
+  - {fileID: 4073245715936455555, guid: 2daf2e1bbc9587349a55e70cfe4206ca, type: 3}
+  - {fileID: 4073245715936455555, guid: 7e113e0efbce08246ac5ecb4edd4e944, type: 3}
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,

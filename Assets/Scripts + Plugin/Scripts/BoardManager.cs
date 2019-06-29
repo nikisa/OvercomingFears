@@ -260,7 +260,7 @@ public class BoardManager : MonoBehaviour
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
-            n.StopTriggerRotation(n.triggerState);
+            n.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(n.triggerState);
         }
         Debug.Log("CLOSE");
     }
@@ -276,7 +276,7 @@ public class BoardManager : MonoBehaviour
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
-            n.StopTriggerRotation(n.triggerState);
+            n.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(n.triggerState);
         }
         Debug.Log("CLOSE");
     }

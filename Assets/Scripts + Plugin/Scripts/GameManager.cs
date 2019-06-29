@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
     public Animator UIController;
 
     
-
     BoardManager m_board;
     PlayerManager m_player;
 
@@ -290,11 +289,11 @@ public class GameManager : MonoBehaviour
             {
                 if (triggerNode.triggerState)
                 {
-                    triggerNode.StopTriggerRotation(triggerNode.triggerState);
+                    triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
                 }
                 else
                 {
-                    triggerNode.StopTriggerRotation(triggerNode.triggerState);
+                    triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
                 }
             }
         }
@@ -546,9 +545,8 @@ public class GameManager : MonoBehaviour
 
     void triggerSetup() {
         foreach (Node triggerNode in m_board.TriggerNodes) {
-            Debug.Log("SUGO");
             if (triggerNode != null) {
-                triggerNode.StopTriggerRotation(triggerNode.triggerState);
+                triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
             }
         }
     }

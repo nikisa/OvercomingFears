@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Node : MonoBehaviour
 {
-    
+    public Animator TriggerController;
+
     public Material[] materials;
     public Material[] shadowMaterials;
     public Material[] shadowOffMaterials;
@@ -13,6 +14,7 @@ public class Node : MonoBehaviour
     public GameObject[] triggers;
 
     public GameObject[] shadows;
+    public GameObject[] offShadows;
 
     Vector2 m_coordinate;
     public Vector2 Coordinate { get { return Utility.Vector2Round(m_coordinate); } }
@@ -313,7 +315,7 @@ public class Node : MonoBehaviour
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
             TrapActivation(trapID);
-            StopTriggerRotation(true);
+            triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
             //PushingWallActivation(pushingWallID);
             
         }
@@ -323,22 +325,7 @@ public class Node : MonoBehaviour
     }//UpdateTriggerToFalse --> in Board
 
 
-    public void StopTriggerRotation(bool value) {
-
-        if (!value) {
-            for (int i = 1; i < 3; i++) {
-                var rotation = triggerTemp.transform.GetChild(i).GetComponent<ParticleSystem>();
-                rotation.Pause();
-
-            }
-        }
-        else {
-            for (int i = 1; i < 3; i++) {
-                var rotation = triggerTemp.transform.GetChild(i).GetComponent<ParticleSystem>();
-                rotation.Play();
-            }
-        }
-    }
+   
 
     public bool UpdateTriggerToFalse()
     {
@@ -353,6 +340,7 @@ public class Node : MonoBehaviour
                     ArmorDeactivation(armorID);
                     UpdateGateToOpen(gateID);
                     TrapActivation(trapID);
+                    triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
                 }
             }
            
@@ -374,7 +362,8 @@ public class Node : MonoBehaviour
         SwitchAnimator.SetInteger("SwitchState" , 1);
         UpdateGateToOpen(gateID);
         ArmorActivation(armorID);
-        
+       
+
         //PushingWallActivation(pushingWallID);
 
         if (mirrorID != 0)
@@ -397,7 +386,7 @@ public class Node : MonoBehaviour
         SwitchAnimator.SetInteger("SwitchState", 0);
         UpdateGateToClose(gateID);
         ArmorDeactivation(armorID);
-
+        
         //if (SceneManager.GetActiveScene().buildIndex == 3) {
         //    foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
 
@@ -405,7 +394,7 @@ public class Node : MonoBehaviour
         //            enemy.isOff = false;
         //        }
 
-                
+
 
         //        if (enemy.m_enemySensor.FoundPlayer && enemy.isOff == false && m_board.FindNodeAt(enemy.transform.position).gateOpen == true) {
         //            //attack player
@@ -462,9 +451,19 @@ public class Node : MonoBehaviour
         gateOpen = !gateOpen;
         if (gateTemp != null)
         {
-            gateTemp.transform.GetChild(0).gameObject.SetActive(gateOpen);
-            gateTemp.transform.GetChild(1).gameObject.SetActive(!gateOpen);
+            Destroy(gateTemp);
+            if (gateOpen)
+            {
+                gateTemp = Instantiate(offShadows[gateID - 1], transform.position, Quaternion.identity);
+            }
+            else
+            {
+                gateTemp = Instantiate(shadows[gateID - 1], transform.position, Quaternion.identity);
+            }
+            
+
         }
+
         Level3Patch();
     }
 
@@ -473,8 +472,16 @@ public class Node : MonoBehaviour
         gateOpen = !gateOpen;
         if (gateTemp != null)
         {
-            gateTemp.transform.GetChild(0).gameObject.SetActive(gateOpen);
-            gateTemp.transform.GetChild(1).gameObject.SetActive(!gateOpen);
+            Destroy(gateTemp);
+            if (gateOpen)
+            {
+                gateTemp = Instantiate(offShadows[gateID - 1], transform.position, Quaternion.identity);
+            }
+            else
+            {
+                gateTemp = Instantiate(shadows[gateID - 1], transform.position, Quaternion.identity);
+            }
+
         }
         Level3Patch();
     }
@@ -643,25 +650,23 @@ public class Node : MonoBehaviour
         if (isAGate)
         {
 
-            gateTemp = Instantiate(gatePrefab, transform.position, Quaternion.identity);
+            //gateTemp = Instantiate(gatePrefab, transform.position, Quaternion.identity);
             
-            
+
             if (gateID <= 6 && gateID >= 1)
             {
-                gateTemp.transform.GetChild(0).gameObject.GetComponent<Renderer>().material = shadowOffMaterials[gateID - 1];
-                gateTemp.transform.GetChild(1).gameObject.GetComponent<Renderer>().material = shadowMaterials[gateID - 1];
-            }
+                //gateTemp.transform.GetChild(0).gameObject.GetComponent<Renderer>().material = shadowOffMaterials[gateID - 1];
+                //gateTemp.transform.GetChild(1).gameObject.GetComponent<Renderer>().material = shadowMaterials[gateID - 1];
 
-            if (gateOpen)
-            {
-                gateTemp.transform.GetChild(0).gameObject.SetActive(true);
-                gateTemp.transform.GetChild(1).gameObject.SetActive(false);
+                if (gateOpen)
+                {
+                    gateTemp = Instantiate(offShadows[gateID - 1], transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    gateTemp = Instantiate(shadows[gateID - 1], transform.position, Quaternion.identity);
+                }
             }
-            else {
-                gateTemp.transform.GetChild(0).gameObject.SetActive(false);
-                gateTemp.transform.GetChild(1).gameObject.SetActive(true);
-            }
-
         }
 
         if (hasLightBulb)
