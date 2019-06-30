@@ -311,7 +311,6 @@ public class Node : MonoBehaviour
     {
         if (isATrigger && TriggerOrLogic() == false)
         {
-            
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
             TrapActivation(trapID);

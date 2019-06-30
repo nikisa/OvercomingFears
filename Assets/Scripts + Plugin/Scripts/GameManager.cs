@@ -289,11 +289,11 @@ public class GameManager : MonoBehaviour
             {
                 if (triggerNode.triggerState)
                 {
-                    triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
+                    triggerNode.triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
                 }
                 else
                 {
-                    triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
+                    triggerNode.triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
         }
@@ -579,7 +579,10 @@ public class GameManager : MonoBehaviour
 
         m_currentTurn = Turn.Player;
 
-        StartCoroutine(CheckSpottedPosition());
+        if (SceneManager.GetActiveScene().buildIndex != 6) {
+            StartCoroutine(CheckSpottedPosition());
+        }
+        
 
 
         m_player.IsTurnComplete = false;
@@ -589,6 +592,12 @@ public class GameManager : MonoBehaviour
     void PlayEnemyTurn()
     {
         m_currentTurn = Turn.Enemy;
+        m_player.hasWand = false;
+
+        foreach (MovableObject movable in m_board.AllMovableObjects) {
+            movable.resetAnimation();
+            movable.transform.GetChild(1).gameObject.SetActive(false);
+        }
 
         foreach (EnemyManager enemy in m_enemies)
         { //play each enemy's turn
@@ -779,7 +788,7 @@ public class GameManager : MonoBehaviour
             {
                 if (movableObject.hasMoved)
                 {
-
+                    
                     node.UpdateCrackableState();
                     Debug.Log(movableObjects.Count);
                     node.UpdateCrackableTexture();
@@ -928,7 +937,7 @@ public class GameManager : MonoBehaviour
     {
 
         List<MovableObject> movableObjects;
-        foreach (var node in m_board.AllNodes)
+        foreach (Node node in m_board.AllNodes)
         {
             movableObjects = m_board.FindMovableObjectsAt(node);
             foreach (MovableObject movableObject in movableObjects)
@@ -965,9 +974,9 @@ public class GameManager : MonoBehaviour
 
     public List<MovableObject> GetMovableObjects()
     {
-        foreach (var movObj in m_board.AllMovableObjects)
+        foreach (MovableObject movObj in m_board.AllMovableObjects)
         {
-            foreach (var node in m_board.playerNode.LinkedNodes)
+            foreach (Node node in m_board.playerNode.LinkedNodes)
             {
                 if (movObj.transform.position == node.transform.position)
                 {

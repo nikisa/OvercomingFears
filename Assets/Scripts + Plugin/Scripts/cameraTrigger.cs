@@ -126,6 +126,7 @@ public class cameraTrigger : MonoBehaviour
 
     public void CameraZoom() {
         m_mainCamera.DOFieldOfView(LocalFOV, zoomEaseTime).SetEase(zoomEaseType);
+        cameraDolly.GetComponent<cameraFollow>().FOV = LocalFOV;
     }
 
     public void SetNearPlane()

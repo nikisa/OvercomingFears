@@ -6129,6 +6129,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2229032962324959032, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2229032962324959030, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6679,11 +6689,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -12.681001
       objectReference: {fileID: 0}
-    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
+    - target: {fileID: 2720602084205620274, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.763
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720602084205620274, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720602084205620274, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.37100223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720602084205719570, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2720602084209011730, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 03320766ff0dcb441a8ce6900a6184de, type: 3}
+    - target: {fileID: 2720602084207914706, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06e5b4143ef52d245a837be677dbc037, type: 2}
     m_RemovedComponents:
     - {fileID: 1306094876461508575, guid: f86e2a7872e4ff24989b5d693a1f2940, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f86e2a7872e4ff24989b5d693a1f2940, type: 3}

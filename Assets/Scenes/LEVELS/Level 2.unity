@@ -309,6 +309,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -498,6 +499,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -1250,6 +1252,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -1595,7 +1598,7 @@ PrefabInstance:
     - target: {fileID: 6780807609708471648, guid: 17544816135c45c4b8c9925c286af979,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6780807609708471648, guid: 17544816135c45c4b8c9925c286af979,
         type: 3}
@@ -1738,6 +1741,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -2067,6 +2071,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -4928,6 +4933,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -5117,6 +5123,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -6239,6 +6246,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -6428,6 +6436,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -6806,6 +6815,7 @@ MonoBehaviour:
   downBlocked: 0
   leftBlocked: 0
   rightBlocked: 0
+  MovableObjectController: {fileID: 0}
 --- !u!23 &738387380
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7554,6 +7564,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
   gatePrefab: {fileID: 1812688872391036, guid: b90fa82560adaad4e8b641fde29a0ce3, type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
@@ -8487,6 +8498,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -8676,6 +8688,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -9116,6 +9129,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -9523,6 +9537,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -10707,6 +10722,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -10899,6 +10915,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12307,6 +12324,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12496,6 +12514,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12762,6 +12781,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -12951,6 +12971,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -13388,6 +13409,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -13577,6 +13599,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -13982,6 +14005,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
   gatePrefab: {fileID: 1812688872391036, guid: b90fa82560adaad4e8b641fde29a0ce3, type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
@@ -14409,6 +14433,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -14536,6 +14561,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
   gatePrefab: {fileID: 1812688872391036, guid: b90fa82560adaad4e8b641fde29a0ce3, type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
@@ -15116,6 +15142,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -15382,6 +15409,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -15985,6 +16013,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
   gatePrefab: {fileID: 1812688872391036, guid: b90fa82560adaad4e8b641fde29a0ce3, type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
@@ -16313,6 +16342,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
   gatePrefab: {fileID: 1812688872391036, guid: b90fa82560adaad4e8b641fde29a0ce3, type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}
@@ -16501,11 +16531,6 @@ PrefabInstance:
       propertyPath: armorID
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 311896293637756904, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 221ca3f24911d2b45b4309731566fb0f, type: 2}
     - target: {fileID: 311896293651421830, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16556,11 +16581,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 145960786372401512, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
     - target: {fileID: 311896293651421920, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16631,6 +16651,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 311896293637756904, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 221ca3f24911d2b45b4309731566fb0f, type: 2}
+    - target: {fileID: 145960786372401512, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225bc310c4af8934c9c819ebc7bc8d07, type: 3}
 --- !u!4 &1584020213 stripped
@@ -16726,6 +16756,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8729337032926419927, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.9225
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729337032926419927, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.9225
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729337032926419927, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.709
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729337032926185463, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729337033664478497, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729337032922995703, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 9b98eaae64b95e04bb72decb09d7f2f4, type: 3}
+    - target: {fileID: 8729337032923994423, guid: 870b7b7895820b54e8af2b785f2d931e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42ff60e65d8df9c49a36f7e509489ef3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870b7b7895820b54e8af2b785f2d931e, type: 3}
 --- !u!1001 &1591428163
@@ -17255,6 +17320,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -17628,6 +17694,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -18261,6 +18328,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -20048,6 +20116,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -20846,6 +20915,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -21112,6 +21182,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -21268,6 +21339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset.y
       value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834821291019312360, guid: 8c6e54e3b52edbe428ce022704153212,
+        type: 3}
+      propertyPath: FOV
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c6e54e3b52edbe428ce022704153212, type: 3}
@@ -21579,6 +21655,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -21958,6 +22035,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -22697,6 +22775,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 1087311963635345820, guid: 0c0f0a51d38f8e844854fa4c3a7e90af,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -23274,6 +23353,7 @@ MonoBehaviour:
   - {fileID: 3761025923289247476, guid: 1190c60c3d1fa5d48a198f0a5a599c6f, type: 3}
   - {fileID: 3761025923289247476, guid: c215b3edc3883884792ca3233455eff2, type: 3}
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 100002, guid: 1b937454eb0ed974d9ba2aa30e2c6b54, type: 3}
   gatePrefab: {fileID: 1812688872391036, guid: b90fa82560adaad4e8b641fde29a0ce3, type: 3}
   triggerPrefab: {fileID: 100000, guid: ec407f9876fe28647ad92f978c39068d, type: 3}

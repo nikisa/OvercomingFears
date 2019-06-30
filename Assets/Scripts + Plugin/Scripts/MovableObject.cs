@@ -11,10 +11,11 @@ public class MovableObject : Mover {
     public bool hasStopped = false;
 
     public bool upBlocked = false;
-     public bool downBlocked = false;
-     public bool leftBlocked = false;
-     public bool rightBlocked = false;
+    public bool downBlocked = false;
+    public bool leftBlocked = false;
+    public bool rightBlocked = false;
 
+    public Animator MovableObjectController;
 
     private Node m_previousMovableObjectNode;
     public Node PreviousMovableObjectNode { get { return m_previousMovableObjectNode; } set { m_previousMovableObjectNode = FindMovableObjectNode(); } }
@@ -57,7 +58,8 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveRight();
-                        
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 case direction.left:
@@ -66,7 +68,8 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveLeft();
-                        
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 case direction.back:
@@ -75,7 +78,8 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveBackward();
-                        
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 case direction.forward:
@@ -84,14 +88,14 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveForward();
-                        
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 default:
                     break;
             }
-            hasMoved = true;
-            hasStopped = false;
+            
 
             m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
@@ -212,7 +216,8 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveRight();
-
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 case direction.left:
@@ -225,7 +230,8 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveLeft();
-
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 case direction.back:
@@ -238,7 +244,8 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveBackward();
-
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 case direction.forward:
@@ -251,13 +258,14 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveForward();
+                        hasMoved = true;
+                        hasStopped = false;
                     }
                     break;
                 default:
                     break;
             }
-            hasMoved = true;
-            hasStopped = false;
+            
 
             m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
         }
@@ -359,6 +367,19 @@ public class MovableObject : Mover {
     
     //PULL___________________________________________
 
+
+    public void floatingAnimation() {
+        MovableObjectController.SetBool("floating" , true);
+    }
+
+    public void fallingAnimation() {
+        MovableObjectController.SetBool("falling", true);
+    }
+
+    public void resetAnimation() {
+        MovableObjectController.SetBool("floating", false);
+        MovableObjectController.SetBool("falling", false);
+    }
 
     public void checkNodeForObstacle() { //Restituisce 2 se la via è libera , altrimenti 1
 

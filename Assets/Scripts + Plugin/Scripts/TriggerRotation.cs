@@ -12,11 +12,12 @@ public class TriggerRotation : MonoBehaviour
         if (!value)
         {
             TriggerController.SetBool("Rotation", value);
-
+            transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(value);
         }
         else
         {
             TriggerController.SetBool("Rotation", value);
+            transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(value);
         }
     }
 }

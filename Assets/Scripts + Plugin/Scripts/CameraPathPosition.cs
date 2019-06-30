@@ -53,6 +53,7 @@ public class CameraPathPosition : MonoBehaviour {
         if (cameraBond) {
             transform.position = cameraDolly.transform.position;
             transform.rotation = cameraDolly.transform.rotation;
+            CameraFOV();
         }
         else {
 
@@ -87,6 +88,9 @@ public class CameraPathPosition : MonoBehaviour {
         else {
             transform.DORotate(cameraDolly.transform.rotation.eulerAngles, easeTime).SetEase(angleEaseType).OnComplete(()=>CameraRotate());
         }
+    }
 
+    public void CameraFOV() {
+        transform.GetComponent<Camera>().fieldOfView = cameraDolly.GetComponent<cameraFollow>().FOV;
     }
 }

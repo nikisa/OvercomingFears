@@ -273,6 +273,7 @@ public class BoardManager : MonoBehaviour
 
         if (n.TriggerOrLogic() == true)
         {
+            
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());

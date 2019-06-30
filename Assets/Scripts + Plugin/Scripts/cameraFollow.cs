@@ -10,6 +10,9 @@ public class cameraFollow : MonoBehaviour
     public Transform followAt;
     public Vector3 offset;
 
+    [Range(0.1f,179)]
+    public float FOV;
+
 
     private void Awake() {
         _localCamera = Object.FindObjectOfType<LocalCamera>().GetComponent<LocalCamera>();

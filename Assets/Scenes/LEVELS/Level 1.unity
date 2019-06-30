@@ -412,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -435,6 +436,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -580,6 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -603,6 +606,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -754,6 +758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -777,6 +782,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -1188,6 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1211,6 +1218,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -1480,6 +1488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1503,6 +1512,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -1648,6 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -1671,6 +1682,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -2374,6 +2386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -2397,6 +2410,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -2915,6 +2929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -2938,6 +2953,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -3290,6 +3306,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2229032962324959030, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3355,11 +3376,6 @@ PrefabInstance:
       propertyPath: lr
       value: 
       objectReference: {fileID: 1496052165}
-    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f86e2a7872e4ff24989b5d693a1f2940, type: 3}
 --- !u!1001 &581274575
@@ -3632,6 +3648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -3655,6 +3672,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -3800,6 +3818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -3823,6 +3842,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -3968,6 +3988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -3990,7 +4011,18 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3e1875e1e2dd9a74683e07047374c33b, type: 2}
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
-  shadows: []
+  shadows:
+  - {fileID: 4073245715936455555, guid: 6172ee8fbe0b41b4abc5c8dc9e5183b7, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  offShadows:
+  - {fileID: 4073245715936455555, guid: e62b2b0cbbd0214438ed6a83bb05a367, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 4776947986079720999, guid: cefa0b4aa9b753d47b59f98a28ddef19,
@@ -4392,6 +4424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -4415,6 +4448,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -5021,6 +5055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -5044,6 +5079,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -5846,6 +5882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -5869,6 +5906,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -6014,6 +6052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -6037,6 +6076,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -6501,6 +6541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -6524,6 +6565,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -6908,6 +6950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -6931,6 +6974,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -7490,6 +7534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -7513,6 +7558,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -7739,6 +7785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -7762,6 +7809,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -7907,6 +7955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -7930,6 +7979,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -8748,6 +8798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -8771,6 +8822,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -9768,6 +9820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -9791,6 +9844,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -10870,6 +10924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -10893,6 +10948,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -11119,6 +11175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -11142,6 +11199,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -11538,6 +11596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -11561,6 +11620,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -11712,6 +11772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -11735,6 +11796,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -12197,6 +12259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -12220,6 +12283,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -12631,6 +12695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
   - {fileID: 2100000, guid: 4feab2fbcda9e44429f704ecb4e9b198, type: 2}
@@ -12654,6 +12719,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 28e00db84c024ca458c5e2a2fbe8711a, type: 2}
   triggers: []
   shadows: []
+  offShadows: []
   switchPrefab: {fileID: 7487489486328860005, guid: 9638041070f44df40ab6af8905985486,
     type: 3}
   gatePrefab: {fileID: 2361515817370558043, guid: 95f80237187ae5149b8bd75e368e1c86,
@@ -13657,6 +13723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset.z
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834821291019312360, guid: 8c6e54e3b52edbe428ce022704153212,
+        type: 3}
+      propertyPath: FOV
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c6e54e3b52edbe428ce022704153212, type: 3}

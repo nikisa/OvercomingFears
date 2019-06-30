@@ -34,6 +34,7 @@ public class PlayerManager : TurnManager
 
     public bool hasLightBulb = false;
     public bool hasFlashLight = false;
+    public bool hasWand = false;
 
     public bool reset = false;
 
@@ -157,11 +158,13 @@ public class PlayerManager : TurnManager
         if (playerInput.P && SceneManager.GetActiveScene().buildIndex >= 6) 
         {
             PlayerAnimatorController.SetInteger("PlayerState", 3);
-            //Bacchetta set active sulla mano
-        }
+            hasWand = true;
+    //Bacchetta set active sulla mano
+}
         else if (playerInput.P_up)
         {
             PlayerAnimatorController.SetInteger("PlayerState", 0);
+            hasWand = false;
         }
     }
  
@@ -187,6 +190,7 @@ public class PlayerManager : TurnManager
         m_timer += Time.deltaTime;
         
         enemyDetection();
+        movableFloating();
 
         CaptureEnemies();
 
@@ -313,7 +317,6 @@ public class PlayerManager : TurnManager
                     m_gameManager.LoseLevel();
                 }
 
-                //su 1, 2 ,3 , 10 MANCA L?AGGIORNAMETO DEL FLASH NUOVO DELLA TORCIA PER QUANDO SI SPARA(c'è ancora line renderer anziché la mesh)
 
                 #region Setup input levels 1 , 2 , 3 , 10
                 if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 10)
@@ -336,8 +339,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.left);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -347,8 +351,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.left);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
 
                                     if (m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
                                     {
@@ -378,8 +383,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.right);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -389,8 +395,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.right);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
                                 }
                                 else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
                                 { //Se non c'è nulla muovi solo il pg
@@ -417,8 +424,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.back);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -428,8 +436,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.back);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
                                 }
                                 else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0)
                                 { //Se non c'è nulla muovi solo il pg
@@ -451,8 +460,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.forward);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -462,8 +472,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.forward);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
 
 
                                 }
@@ -495,19 +506,22 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.gameObject.SetActive(true);
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
-
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
                                         break;
                                     case "Mirror":
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.gameObject.SetActive(true);
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
-
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
+                                        hit.collider.GetComponent<EnemyManager>().Die();
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
@@ -532,7 +546,9 @@ public class PlayerManager : TurnManager
 
                                 }
 
-                                StartCoroutine(DisableLineRenderer());
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
 
@@ -555,18 +571,21 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z + transform.position.z) / 4);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
 
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
-
                                         break;
                                     case "Mirror":
-
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
@@ -590,7 +609,9 @@ public class PlayerManager : TurnManager
                                         break;
                                 }
 
-                                StartCoroutine(DisableLineRenderer());
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
 
@@ -613,18 +634,20 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
-
                                         break;
                                     case "Mirror":
-
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
@@ -648,7 +671,9 @@ public class PlayerManager : TurnManager
                                         break;
                                 }
 
-                                StartCoroutine(DisableLineRenderer());
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
 
@@ -671,18 +696,19 @@ public class PlayerManager : TurnManager
                                 switch (hit.collider.tag)
                                 {
                                     case "Enemy":
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
-
                                         break;
                                     case "Mirror":
-
+                                        lightShaft.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
@@ -710,7 +736,9 @@ public class PlayerManager : TurnManager
 
                                 }
 
-                                StartCoroutine(DisableLineRenderer());
+                                PlayerAnimatorController.SetInteger("PlayerState", 0);
+                                //StartCoroutine(DisableLineRenderer());
+                                StartCoroutine(DisableLightShaft());
                             }
                         }
                     }
@@ -718,6 +746,8 @@ public class PlayerManager : TurnManager
                 }//if
 
                 #endregion 
+
+
                 #region Setup input levels 4 , 5 , 6 , 7 , 8, 9
                 else if (SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7 || SceneManager.GetActiveScene().buildIndex == 8 || SceneManager.GetActiveScene().buildIndex == 9)
                 {
@@ -732,8 +762,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.left);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -743,8 +774,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.left);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
 
                                     if (m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
                                     {
@@ -770,8 +802,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.right);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -781,8 +814,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.right);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
                                 }
                                 else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
                                 { //Se non c'è nulla muovi solo il pg
@@ -804,8 +838,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.back);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -815,8 +850,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.back);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
                                 }
                                 else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2f))).Count == 0)
                                 { //Se non c'è nulla muovi solo il pg
@@ -833,8 +869,9 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.forward);
-                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                    
                                 }
+                                PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
                             else
                             {
@@ -844,8 +881,9 @@ public class PlayerManager : TurnManager
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.forward);
-                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                        
                                     }
+                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
                                 }
                                 else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count == 0)
                                 { //Se non c'è nulla muovi solo il pg
@@ -885,9 +923,12 @@ public class PlayerManager : TurnManager
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
+                                        hit.collider.GetComponent<EnemyManager>().Die();
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
@@ -939,16 +980,16 @@ public class PlayerManager : TurnManager
                                         lightShaft.gameObject.SetActive(true);
                                         //lr.gameObject.SetActive(true);
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
-                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
-                                        hit.collider.GetComponent<EnemyManager>().Die();
-                                        
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z + transform.position.z) / 4);                                        
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);                                        
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
@@ -996,16 +1037,17 @@ public class PlayerManager : TurnManager
                                         lightShaft.gameObject.SetActive(true);
                                         //lr.gameObject.SetActive(true);
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
-                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
@@ -1055,17 +1097,18 @@ public class PlayerManager : TurnManager
                                         lightShaft.gameObject.SetActive(true);
                                         //lr.gameObject.SetActive(true);
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
-                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
 
                                     case "Mirror":
-                                        lr.gameObject.SetActive(true);
+                                        lightShaft.gameObject.SetActive(true);
+                                        //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
-                                        lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);    
                                         transform.GetChild(3).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
@@ -1083,7 +1126,7 @@ public class PlayerManager : TurnManager
 
                                         }
 
-
+                                        
                                         break;
                                     case "Wall":
                                         break;
@@ -1210,6 +1253,94 @@ public class PlayerManager : TurnManager
 
 
     }//Setta il nemico a isDetected quando si trova in una delle nostre 4 direzioni
+
+    void movableFloating() {
+
+        rayFront = new Ray(transform.position, Vector3.forward);
+        rayBack = new Ray(transform.position, Vector3.back);
+        rayLeft = new Ray(transform.position, Vector3.left);
+        rayRight = new Ray(transform.position, Vector3.right);
+
+        RaycastHit hit;
+
+        if (hasWand) {
+            if (Physics.Raycast(rayFront, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.up * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position , transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().floatingAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(true);
+                }
+            }
+            
+
+            if (Physics.Raycast(rayLeft, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.left * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().floatingAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(true);
+                }
+            }
+
+            if (Physics.Raycast(rayRight, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.right * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().floatingAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(true);
+                }
+            }
+
+            if (Physics.Raycast(rayBack, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.down * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().floatingAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(true);
+                }
+            }
+        }
+        else if (!hasWand && SceneManager.GetActiveScene().buildIndex >= 6) {
+            if (Physics.Raycast(rayFront, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.up * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().resetAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(false);
+                }
+            }
+
+            if (Physics.Raycast(rayLeft, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.left * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().resetAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(false);
+                }
+            }
+
+            if (Physics.Raycast(rayRight, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.right * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().resetAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(false);
+                }
+            }
+
+            if (Physics.Raycast(rayBack, out hit, 100, obstacleLayer)) {
+                Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.down * hit.distance, Color.red);
+
+                if (hit.collider.tag == "Wall" && Vector3.Distance(hit.collider.transform.position, transform.position) < 2.2f) {
+                    hit.collider.GetComponent<MovableObject>().resetAnimation();
+                    hit.collider.transform.GetChild(1).gameObject.SetActive(false);
+                }
+            }
+        }
+        
+        
+    }
 
 
     public void UpdatePlayerPath()
