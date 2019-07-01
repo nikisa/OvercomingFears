@@ -46,6 +46,14 @@ public class Mover : MonoBehaviour {
         //UpdateCurrentNode();
     }
 
+    IEnumerator ShadowCollision()
+    {
+        yield return new WaitForSeconds(rotateTime);
+        m_player.PlayerAnimatorController.SetInteger("PlayerState", 9);
+        yield return new WaitForSeconds(0.23f);
+        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
+    }
+
     public void Move(Vector3 destinationPos, float delayTime = 0f) {
         
         if (isMoving) {
@@ -63,12 +71,25 @@ public class Mover : MonoBehaviour {
                     {
                         StartCoroutine(MoveRoutine(destinationPos, delayTime));
                     }
+                    else
+                    {
+                            //rotate
+                            
+                        if (tag == "Player")
+                        {
+                            FaceDestination();
+                            StartCoroutine(ShadowCollision());
+                        }
+                            //play animation
+                    }
 
                 }
                 else
                 {
                     Debug.Log("CURRENT NODE NOT CONNECTED");
-                    
+
+
+
                 }
             }
             else
@@ -85,14 +106,7 @@ public class Mover : MonoBehaviour {
                 else
                 {
                     Debug.Log("CURRENT NODE NOT CONNECTED");
-
-                    if (targetNode.isAGate && !targetNode.gateOpen)
-                    {
-                        //rotate
-                        FaceDestination();
-
-                        //play animation
-                    }
+                    
                 }
             }
 

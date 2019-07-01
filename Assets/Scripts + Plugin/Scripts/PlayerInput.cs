@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerInput : MonoBehaviour {
 
+    
 
     float m_h;
     float m_hJ;

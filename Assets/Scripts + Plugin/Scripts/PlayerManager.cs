@@ -9,6 +9,7 @@ using DG.Tweening;
 
 public class PlayerManager : TurnManager
 {
+    bool isPressed;
 
     static int i = 0; //indice provvisorio per il cambio della scena
 
@@ -53,7 +54,7 @@ public class PlayerManager : TurnManager
     public float killDelay = 1f; //Maggiore è il valore , più tardi parte l'animazion e uccisione
     public float attackDelay = .7f;
 
-    public LineRenderer lr;
+    //public LineRenderer lr;
 
 
     Ray rayFront;
@@ -70,6 +71,8 @@ public class PlayerManager : TurnManager
 
     public void Setup()
     {
+        isPressed = false;
+
         base.Awake();
 
         usingController = false;
@@ -83,7 +86,7 @@ public class PlayerManager : TurnManager
         m_inputType inputDevice = m_inputType.Controller;
 
         //lr = Object.FindObjectOfType<LineRenderer>().GetComponent<LineRenderer>();
-        lr.gameObject.SetActive(false);
+        //lr.gameObject.SetActive(false);
 
         //enemyManager = GetComponent<EnemyManager>();
 
@@ -100,11 +103,11 @@ public class PlayerManager : TurnManager
 
     IEnumerator DisableLineRenderer()
     {
-        lr.SetPosition(0, transform.position);
+        //lr.SetPosition(0, transform.position);
         yield return new WaitForSeconds(.5f);
-        lr.gameObject.SetActive(false);
-        lr.SetPosition(0, transform.position);
-        lr.SetPosition(1, transform.position);
+        //lr.gameObject.SetActive(false);
+        //lr.SetPosition(0, transform.position);
+        //lr.SetPosition(1, transform.position);
 
     }
 
@@ -246,7 +249,7 @@ public class PlayerManager : TurnManager
                 transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                 hasFlashLight = false;
 
-                lr.transform.gameObject.SetActive(true);
+                //lr.transform.gameObject.SetActive(true);
                 m_gm.NextLevel();
             } //Switch livello successivo
             else if (Input.GetKeyDown(KeyCode.KeypadMinus))
@@ -254,7 +257,7 @@ public class PlayerManager : TurnManager
                 transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                 hasFlashLight = false;
 
-                lr.transform.gameObject.SetActive(true);
+                //lr.transform.gameObject.SetActive(true);
                 m_gm.PreviousLevel();
             } //Switch livello precedente
 
@@ -313,7 +316,7 @@ public class PlayerManager : TurnManager
                 if (playerInput.R)
                 {
                     //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                    lr.transform.gameObject.SetActive(true);
+                    //lr.transform.gameObject.SetActive(true);
                     m_gameManager.LoseLevel();
                 }
 
@@ -557,11 +560,11 @@ public class PlayerManager : TurnManager
 
                             transform.DORotate(Vector3.back , 0);
 
-                            lr.gameObject.SetActive(true);
+                            //lr.gameObject.SetActive(true);
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
+                            //lr.gameObject.SetActive(true);
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
                             if (Physics.Raycast(transform.position, Vector3.back, out hit, 100, obstacleLayer))
                             {
@@ -620,11 +623,11 @@ public class PlayerManager : TurnManager
 
                             transform.DORotate(Vector3.right, 0);
 
-                            lr.gameObject.SetActive(true);
+                            //lr.gameObject.SetActive(true);
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
+                            //lr.gameObject.SetActive(true);
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
                             if (Physics.Raycast(transform.position, Vector3.right, out hit, 100, obstacleLayer))
                             {
@@ -682,11 +685,11 @@ public class PlayerManager : TurnManager
 
                             transform.DORotate(Vector3.left, 0);
 
-                            lr.gameObject.SetActive(true);
+                            //lr.gameObject.SetActive(true);
                             RaycastHit hit;
-                            lr.gameObject.SetActive(true);
+                            //lr.gameObject.SetActive(true);
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
                             if (Physics.Raycast(transform.position, Vector3.left, out hit, 100, obstacleLayer))
                             {
@@ -755,46 +758,52 @@ public class PlayerManager : TurnManager
                     {
                         if (playerInput.V < 0)
                         {
-                            EnemyAnimationReset();
-                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
-                            { //Aggiunto AND per evtiare di entrare nei MO facendo la pull verso di essi
-                                playerMover.MoveLeft();
-                                foreach (var movableObject in m_gm.GetMovableObjects())
-                                {
-                                    movableObject.Pull(MovableObject.direction.left);
-                                    
-                                }
-                                PlayerAnimatorController.SetInteger("PlayerState", 5);
-                            }
-                            else
-                            {
-                                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0)))[0].leftBlocked)
-                                { //Se alla nostra Sx c'è un M.O e non è bloccato
-
+                            //if (isPressed == false)
+                            //{
+                                EnemyAnimationReset();
+                                if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
+                                { //Aggiunto AND per evtiare di entrare nei MO facendo la pull verso di essi
+                                    playerMover.MoveLeft();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
-                                        movableObject.Push(MovableObject.direction.left);
-                                        
+                                        movableObject.Pull(MovableObject.direction.left);
+
                                     }
-                                    PlayerAnimatorController.SetInteger("PlayerState", 4);
+                                    PlayerAnimatorController.SetInteger("PlayerState", 5);
+                                }
+                                else
+                                {
+                                    if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0)))[0].leftBlocked)
+                                    { //Se alla nostra Sx c'è un M.O e non è bloccato
 
-                                    if (m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
-                                    {
+                                        foreach (var movableObject in m_gm.GetMovableObjects())
+                                        {
+                                            movableObject.Push(MovableObject.direction.left);
 
+                                        }
+                                        PlayerAnimatorController.SetInteger("PlayerState", 4);
+
+                                        if (m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
+                                        {
+
+                                            playerMover.MoveLeft();
+                                        }
+
+
+                                    }
+                                    else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
+                                    { //Se non c'è nulla muovi solo il pg
                                         playerMover.MoveLeft();
                                     }
-
-
                                 }
-                                else if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0 && m_board.FindArmorsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0 && m_board.FindSwordsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2f, 0, 0))).Count == 0)
-                                { //Se non c'è nulla muovi solo il pg
-                                    playerMover.MoveLeft();
-                                }
-                            }
+                            //}
+
+                            
                             //END LEFT
                         }
                         else if (playerInput.V > 0)
                         {
+                            isPressed = true;
                             EnemyAnimationReset();
                             if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
                             {
@@ -825,6 +834,7 @@ public class PlayerManager : TurnManager
                             }
 
                         }
+                        isPressed = true;
 
                     }
                     else if (playerInput.V == 0 && !playerInput.F)
@@ -903,7 +913,7 @@ public class PlayerManager : TurnManager
 
                             RaycastHit hit;
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
                             
 
                             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100, obstacleLayer))
@@ -967,7 +977,7 @@ public class PlayerManager : TurnManager
                             RaycastHit hit;
 
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
                             if (Physics.Raycast(transform.position, Vector3.back, out hit, 100, obstacleLayer))
                             {
@@ -1024,7 +1034,7 @@ public class PlayerManager : TurnManager
 
                             RaycastHit hit;
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
                             if (Physics.Raycast(transform.position, Vector3.right, out hit, 100, obstacleLayer))
                             {
@@ -1082,7 +1092,7 @@ public class PlayerManager : TurnManager
                             
                             RaycastHit hit;
 
-                            lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
+                            //lr.SetPosition(0, transform.GetChild(3).gameObject.transform.position + new Vector3(0, 1, 0));
 
 
                             if (Physics.Raycast(transform.position, Vector3.left, out hit, 100, obstacleLayer))
@@ -1394,6 +1404,7 @@ public class PlayerManager : TurnManager
             if (enemy != null && m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen && enemy.GetEnemySensor.FoundPlayer)
             {
                 Debug.Log("LoseLevel");
+                playerInput.InputEnabled = false;
                 m_gameManager.LoseLevel();
             }
         }

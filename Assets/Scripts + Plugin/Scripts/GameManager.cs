@@ -475,7 +475,7 @@ public class GameManager : MonoBehaviour
         }
 
         m_isGameOver = false;
-        m_player.lr.transform.gameObject.SetActive(true);
+        //m_player.lr.transform.gameObject.SetActive(true);
         m_levelManager.SaveLevel();
         NextLevel();
         
@@ -846,6 +846,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayerDeathByCrackable()
     {
+        m_player.playerInput.InputEnabled = false;
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 8);
         yield return new WaitForSeconds(.2f);
         LoseLevel();
@@ -1164,7 +1165,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerInGate() {
         if (m_board.playerNode.isAGate && !m_board.playerNode.gateOpen) {
-            m_player.lr.transform.gameObject.SetActive(true);
+            //m_player.lr.transform.gameObject.SetActive(true);
             LoseLevel();
         }
     }

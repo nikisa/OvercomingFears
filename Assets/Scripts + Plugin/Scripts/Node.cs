@@ -728,7 +728,7 @@ public class Node : MonoBehaviour
     }
 
     IEnumerator Death() {
-        
+        m_player.playerInput.InputEnabled = false;
         yield return new WaitForSeconds(.35f);
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 7);

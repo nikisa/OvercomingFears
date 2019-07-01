@@ -78,10 +78,11 @@ public class EnemyManager : TurnManager {
             yield return new WaitForSeconds(0f);
 
             if (m_enemySensor.FoundPlayer && isOff == false) {
+                m_player.playerInput.InputEnabled = false;
                 //attack player
                 //notify the GM to lose the level
                 //lr.transform.gameObject.SetActive(true);
-                m_player.playerInput.InputEnabled = false;
+               
 
                 if (m_enemyMover.movementType == MovementType.Stationary) {
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
