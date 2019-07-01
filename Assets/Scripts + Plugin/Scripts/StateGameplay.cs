@@ -21,6 +21,8 @@ public class StateGameplay : StateBehaviourBase
         SceneManager.sceneLoaded += OnSceneLoaded;
         GameManager.stateMainMenu();
         //SceneManager.LoadScene("Level " + (ctx.id));
+
+        Cursor.visible = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

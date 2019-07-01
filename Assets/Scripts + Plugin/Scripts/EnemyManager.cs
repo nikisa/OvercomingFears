@@ -62,7 +62,7 @@ public class EnemyManager : TurnManager {
         }
         else if(this.gameObject.activeSelf == true)
         {
-            Debug.Log("PLAY TURN");
+            
             StartCoroutine(PlayTurnRoutine());
         }
             

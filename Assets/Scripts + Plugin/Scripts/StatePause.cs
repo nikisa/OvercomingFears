@@ -10,7 +10,7 @@ public class StatePause : StateBehaviourBase
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>().playerInput.InputEnabled = false;
-
+        Cursor.visible = true;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

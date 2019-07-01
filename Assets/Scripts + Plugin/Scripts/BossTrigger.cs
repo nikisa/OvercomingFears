@@ -15,4 +15,12 @@ public class BossTrigger : MonoBehaviour
             Boss.transform.DOMove(Boss.transform.position + new Vector3(0, 0, 4f) , time).SetEase(easeType);
         }
     }
+
+    private void OnTriggerExit(Collider other) { 
+        if (other.tag == "Player") {
+            Boss.transform.DOMove(Boss.transform.position + new Vector3(0, 0, 4f) , time).SetEase(easeType);
+        }
+    }
+
 }
+

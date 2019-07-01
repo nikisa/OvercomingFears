@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4859894813496017019}
   m_Layer: 10
   m_Name: Armor
-  m_TagString: Wall
+  m_TagString: Armor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,6 +903,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311896293651580642}
     m_Modifications:
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 455596425652302837, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -957,21 +972,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Name
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Sword
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302834, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}

@@ -29,7 +29,7 @@ public class StateMenu : StateBehaviourBase
 
         Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>().hasFlashLight = false;
         Object.FindObjectOfType<PlayerManager>().transform.GetChild(3).gameObject.SetActive(false);
-
+        Cursor.visible = true;
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

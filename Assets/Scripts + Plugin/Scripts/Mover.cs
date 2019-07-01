@@ -68,6 +68,7 @@ public class Mover : MonoBehaviour {
                 else
                 {
                     Debug.Log("CURRENT NODE NOT CONNECTED");
+                    
                 }
             }
             else
@@ -84,6 +85,14 @@ public class Mover : MonoBehaviour {
                 else
                 {
                     Debug.Log("CURRENT NODE NOT CONNECTED");
+
+                    if (targetNode.isAGate && !targetNode.gateOpen)
+                    {
+                        //rotate
+                        FaceDestination();
+
+                        //play animation
+                    }
                 }
             }
 

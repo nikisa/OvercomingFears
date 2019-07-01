@@ -502,7 +502,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Your swag has been turned off , m8");
         m_player.hasFlashLight = false;
-        m_player.transform.GetChild(3).gameObject.SetActive(false);
+        m_player.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
         RestartLevel();
 
     }
@@ -560,7 +560,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayLevel()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
         this.m_hasLevelStarted = true;
     }
 
@@ -1013,8 +1013,8 @@ public class GameManager : MonoBehaviour
             else if (!m_board.playerNode.isCrackable) {
                 m_board.playerNode.transform.GetChild(2).gameObject.SetActive(false);
             }
-            
-            m_player.transform.GetChild(3).gameObject.SetActive(true);
+
+            m_player.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(true);
             m_player.hasFlashLight = true;
         }
     }

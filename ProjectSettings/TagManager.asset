@@ -10,6 +10,7 @@ TagManager:
   - Sword
   - Slider
   - Crackable
+  - Armor
   layers:
   - Default
   - TransparentFX

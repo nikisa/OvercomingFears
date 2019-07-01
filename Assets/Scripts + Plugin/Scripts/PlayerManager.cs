@@ -93,7 +93,7 @@ public class PlayerManager : TurnManager
         playerPath = new ArrayList();
 
         if(SceneManager.GetActiveScene().buildIndex > 1) {
-            //show the porcodio wand
+            transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(true);
         }
 
     }
@@ -243,7 +243,7 @@ public class PlayerManager : TurnManager
 
             if (Input.GetKeyDown(KeyCode.KeypadPlus))
             {
-                transform.GetChild(3).gameObject.SetActive(false);
+                transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                 hasFlashLight = false;
 
                 lr.transform.gameObject.SetActive(true);
@@ -251,7 +251,7 @@ public class PlayerManager : TurnManager
             } //Switch livello successivo
             else if (Input.GetKeyDown(KeyCode.KeypadMinus))
             {
-                transform.GetChild(3).gameObject.SetActive(false);
+                transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                 hasFlashLight = false;
 
                 lr.transform.gameObject.SetActive(true);
@@ -511,7 +511,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
                                         break;
@@ -522,7 +522,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
                                         switch (index)
@@ -577,7 +577,7 @@ public class PlayerManager : TurnManager
                                         lightShaft.lightShaftScale((hit.collider.transform.position.z + transform.position.z) / 4);
                                         hit.collider.GetComponent<EnemyManager>().Die();
 
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
@@ -586,7 +586,7 @@ public class PlayerManager : TurnManager
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
                                         switch (index)
@@ -639,7 +639,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
@@ -648,7 +648,7 @@ public class PlayerManager : TurnManager
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
                                         switch (index)
@@ -701,7 +701,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
@@ -709,7 +709,7 @@ public class PlayerManager : TurnManager
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
 
                                         switch (index)
@@ -919,7 +919,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z)/2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
@@ -929,7 +929,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
                                         {
@@ -980,8 +980,8 @@ public class PlayerManager : TurnManager
                                         lightShaft.gameObject.SetActive(true);
                                         //lr.gameObject.SetActive(true);
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
-                                        lightShaft.lightShaftScale((hit.collider.transform.position.z + transform.position.z) / 4);                                        
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z + transform.position.z) / 4);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
@@ -989,8 +989,8 @@ public class PlayerManager : TurnManager
                                         //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);                                        
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.z - transform.position.z) / 2);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
                                         {
@@ -1039,7 +1039,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
                                     case "Mirror":
@@ -1048,7 +1048,7 @@ public class PlayerManager : TurnManager
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x - transform.position.x) / 2);
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
                                         {
@@ -1099,7 +1099,7 @@ public class PlayerManager : TurnManager
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
                                         hit.collider.GetComponent<EnemyManager>().Die();
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         break;
 
@@ -1108,8 +1108,8 @@ public class PlayerManager : TurnManager
                                         //lr.gameObject.SetActive(true);
                                         int index = (hit.collider.GetComponent<Mirror>().getIndex()) % 4;
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 0));
-                                        lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);    
-                                        transform.GetChild(3).gameObject.SetActive(false);
+                                        lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
+                                        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;
                                         switch (index)
                                         {
