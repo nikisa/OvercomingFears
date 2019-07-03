@@ -6471,6 +6471,11 @@ PrefabInstance:
       propertyPath: UiManager
       value: 
       objectReference: {fileID: 1904729086}
+    - target: {fileID: 109959340039508819, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: GodMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1306094876461508575, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_Enabled

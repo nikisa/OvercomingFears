@@ -312,14 +312,18 @@ public class Node : MonoBehaviour
 
     public bool UpdateTriggerToTrue()
     {
-        if (isATrigger && TriggerOrLogic() == false)
-        {
+        if (isATrigger && TriggerOrLogic() == false) {
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
             TrapActivation(trapID);
-            triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
+            //triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
             //PushingWallActivation(pushingWallID);
-            
+            foreach (Node trigger in m_board.TriggerNodes) {
+                if (trigger != null && m_board.PreviousPlayerNode.GetTriggerId(m_board.PreviousPlayerNode) == m_board.PreviousPlayerNode.GetTriggerId(trigger)) {
+                    trigger.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
+                }
+
+            }
         }
 
         return triggerState = true;
@@ -335,7 +339,7 @@ public class Node : MonoBehaviour
         {
             foreach (Node triggerNode in m_board.TriggerNodes)
             {
-                if (!TriggerOrLogic())
+                if (! TriggerOrLogic())
                 {
                     Debug.Log("OR: " + TriggerOrLogic());
                     //triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
@@ -343,6 +347,7 @@ public class Node : MonoBehaviour
                     UpdateGateToOpen(gateID);
                     TrapActivation(trapID);
                     triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+                    TriggerOrLogicByID(GetTriggerId(m_board.PreviousPlayerNode), false);
                 }
             }
            
@@ -715,10 +720,17 @@ public class Node : MonoBehaviour
                         if (m_board.FindNodeAt(enemy.transform.position).isATrigger)
                         {
                             result++;
+                            TriggerOrLogicByID(GetTriggerId(m_board.FindNodeAt(enemy.transform.position)) , true);
                         }
+                        //else if (m_board.PreviousPlayerNode != null && m_board.PreviousPlayerNode.isATrigger) {
+                        //    TriggerOrLogicByID(GetTriggerId(m_board.PreviousPlayerNode), false);
+                        //}
+
+
                     }
                     
                 }
+                
             }
             
         }
@@ -729,6 +741,89 @@ public class Node : MonoBehaviour
         Debug.Log(ris);
         return ris;
     }
+
+    public void CheckTriggerById(int id) {
+
+        foreach (Node triggerNode in m_board.TriggerNodes) {
+            if (m_board.FindNodeAt(triggerNode.transform.position).armorID == id || m_board.FindNodeAt(triggerNode.transform.position).trapID == id || m_board.FindNodeAt(triggerNode.transform.position).gateID == id) {
+                
+                foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
+                    if (enemy != null && m_board.FindNodeAt(enemy.transform.position) == triggerNode) {
+                        TriggerOrLogicByID(id, true);
+                    }
+                    else {
+                        TriggerOrLogicByID(id, false);
+                    }
+                }
+             }
+
+
+
+            
+
+        }
+
+      
+    }
+
+
+
+    public void TriggerOrLogicByID(int id, bool state) {
+        
+        if (id > 0 && id <= 6) {
+            foreach (Node triggerNode in m_board.TriggerNodes) {
+                Debug.Log(triggerNode);
+                Debug.Log(m_board.TriggerNodes.Count);
+                if (triggerNode.armorID == id || triggerNode.trapID == id || triggerNode.gateID == id) {
+                        triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(state);
+                    }
+                
+                
+            }
+
+        }
+    }
+
+    public void CheckTriggerId(Node n) {
+
+        int ris = 0;
+
+        if (n.isATrigger) {
+            if (n.armorID != 0 && n.trapID == 0 && n.gateID == 0) {
+                ris = n.armorID;
+            }
+            else if (n.armorID == 0 && n.trapID != 0 && n.gateID == 0) {
+                ris = n.trapID;
+            }
+            else if (n.armorID == 0 && n.trapID == 0 && n.gateID != 0) {
+                ris = n.gateID;
+            }
+        }
+
+        TriggerOrLogicByID(ris , TriggerOrLogic());
+    }
+
+    
+
+    public int GetTriggerId(Node n) {
+
+        int ris = 0;
+
+        if (n.isATrigger) {
+            if (n.armorID != 0 && n.trapID == 0 && n.gateID == 0) {
+                ris = n.armorID;
+            }
+            else if (n.armorID == 0 && n.trapID != 0 && n.gateID == 0) {
+                ris = n.trapID;
+            }
+            else if (n.armorID == 0 && n.trapID == 0 && n.gateID != 0) {
+                ris = n.gateID;
+            }
+        }
+
+        return ris;
+    }
+
 
     IEnumerator Death() {
         m_player.playerInput.InputEnabled = false;

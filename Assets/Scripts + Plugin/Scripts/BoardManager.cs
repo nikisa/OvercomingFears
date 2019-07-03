@@ -252,7 +252,6 @@ public class BoardManager : MonoBehaviour
 
     public void UpdateTriggerToFalse(Node n)
     {
-        
         n.triggerState = false;
         
         if (PreviousPlayerNode != null && n.TriggerOrLogic() == false)
@@ -260,25 +259,32 @@ public class BoardManager : MonoBehaviour
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
-            n.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(n.triggerState);
+            //n.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(n.triggerState);
+            //n.TriggerOrLogicByID(n.GetTriggerId(PreviousPlayerNode), false);
+            foreach (Node trigger in TriggerNodes) {
+                if (trigger != null && PreviousPlayerNode.GetTriggerId(PreviousPlayerNode) == PreviousPlayerNode.GetTriggerId(trigger)) {
+                    trigger.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+                }
+                
+            }
         }
         Debug.Log("CLOSE");
     }
 
-    public void UpdateTriggerToFalseLevel3(Node n)
-    {
+    public void UpdateTriggerToFalseLevel3(Node n) {
 
         //n.triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
         n.triggerState = false;
 
-        if (n.TriggerOrLogic() == true)
-        {
-            
+        if (n.TriggerOrLogic() == true) {
+
             n.UpdateGateToClose(PreviousPlayerNode.GetGateID());
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
             n.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(n.triggerState);
+
         }
+
         Debug.Log("CLOSE");
     }
 

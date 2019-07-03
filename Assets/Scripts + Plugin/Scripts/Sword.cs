@@ -59,6 +59,12 @@ public class Sword : MonoBehaviour {
     IEnumerator SwordKillWaitTime(Collider other) {
         yield return new WaitForSeconds(WaitTimeSwordKill);
         other.GetComponent<EnemyManager>().Die();
+
+        foreach (Node trigger in m_board.TriggerNodes) {
+            if (trigger != null && m_board.FindNodeAt(other.transform.position).GetTriggerId(m_board.FindNodeAt(other.transform.position)) == m_board.FindNodeAt(other.transform.position).GetTriggerId(trigger)) {
+                trigger.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+            }
+        }
     }
 
     IEnumerator WaitTriggerToFalse(Collider other) {

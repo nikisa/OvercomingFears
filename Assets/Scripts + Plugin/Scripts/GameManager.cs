@@ -551,9 +551,13 @@ public class GameManager : MonoBehaviour
     }
 
     void triggerSetup() {
+
         foreach (Node triggerNode in m_board.TriggerNodes) {
             if (triggerNode != null) {
                 triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
+                //triggerNode.GetTriggerId(triggerNode);
+                triggerNode.TriggerOrLogic();
+
             }
         }
     }
