@@ -35,6 +35,7 @@ public class Node : MonoBehaviour
     public GameObject flashlitePrefab;
 
     public GameObject crackablePrefab;
+    public GameObject crackableChoked;
 
     GameObject gateTemp;
     GameObject switchTemp;
@@ -278,7 +279,9 @@ public class Node : MonoBehaviour
     public void FromCrackableToNormal()
     {
         this.crackableState = -1;
-        transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableState);
+        //transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableState);
+        Destroy(crackableTemp);
+        crackableTemp = Instantiate(crackableChoked , transform.position , Quaternion.identity);
     }
 
 

@@ -267,7 +267,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 0d644e3d3b0abd7448489d802981108b, type: 3}
+  m_Mesh: {fileID: 4300000, guid: bdc821295d0be244e912c5f237829379, type: 3}
   m_Bones:
   - {fileID: 311896293651580614}
   - {fileID: 311896293651580638}
@@ -903,21 +903,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311896293651580642}
     m_Modifications:
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Name
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Sword
-      objectReference: {fileID: 0}
     - target: {fileID: 455596425652302837, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -972,6 +957,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302834, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}

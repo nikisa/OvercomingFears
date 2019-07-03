@@ -32,6 +32,7 @@ public class PlayerManager : TurnManager
 
     //public bool spottedPlayer = false;
 
+    public bool GodMode = false;
 
     public bool hasLightBulb = false;
     public bool hasFlashLight = false;
@@ -207,7 +208,7 @@ public class PlayerManager : TurnManager
                 {
                     reset = true;
 
-                    if (m_timer < .5f)
+                    if (m_timer < 1f)
                     {
 
                         speedUp = true;
@@ -244,7 +245,7 @@ public class PlayerManager : TurnManager
             //enemyInGateDetection();
 
 
-            if (Input.GetKeyDown(KeyCode.KeypadPlus))
+            if (Input.GetKeyDown(KeyCode.KeypadPlus)  && GodMode)
             {
                 transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                 hasFlashLight = false;
@@ -252,7 +253,7 @@ public class PlayerManager : TurnManager
                 //lr.transform.gameObject.SetActive(true);
                 m_gm.NextLevel();
             } //Switch livello successivo
-            else if (Input.GetKeyDown(KeyCode.KeypadMinus))
+            else if (Input.GetKeyDown(KeyCode.KeypadMinus) && GodMode)
             {
                 transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                 hasFlashLight = false;
@@ -342,7 +343,6 @@ public class PlayerManager : TurnManager
                                 foreach (var movableObject in m_gm.GetMovableObjects())
                                 {
                                     movableObject.Pull(MovableObject.direction.left);
-                                    
                                 }
                                 PlayerAnimatorController.SetInteger("PlayerState", 5);
                             }
@@ -805,7 +805,7 @@ public class PlayerManager : TurnManager
                         {
                             isPressed = true;
                             EnemyAnimationReset();
-                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
+                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
                             {
                                 playerMover.MoveRight();
                                 foreach (var movableObject in m_gm.GetMovableObjects())

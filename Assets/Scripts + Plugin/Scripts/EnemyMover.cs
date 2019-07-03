@@ -125,7 +125,6 @@ public class EnemyMover : Mover
         }
         
 
-
         if (m_board.playerNode == m_board.FindNodeAt(spottedDest) && !spottedPlayer && m_board.FindNodeAt(firstDest).LinkedNodes.Contains(m_board.FindNodeAt(spottedDest)))
         {
 
@@ -150,14 +149,22 @@ public class EnemyMover : Mover
 
             if (firstChaserMove == false)
             { // && CASELLA SUCCESSIVA NON è OCCUPATA (post armature)
-                Move(firstDest, 0f);
-                yield return new WaitForSeconds(iTweenDelay);
-                EnemyAnimatorController.SetInteger("ChaserState", 3);
-                                
-                firstChaserMove = true;
+                if (!m_board.FindNodeAt(firstDest).isAGate) {
+                    Move(firstDest, 0f);
+                    yield return new WaitForSeconds(iTweenDelay);
+                    EnemyAnimatorController.SetInteger("ChaserState", 3);
 
-                yield return new WaitForSeconds(chaserWaitRotation + moveTime);
-                EnemyAnimatorController.SetInteger("ChaserState", 2);
+                    firstChaserMove = true;
+
+                    yield return new WaitForSeconds(chaserWaitRotation + moveTime);
+                    EnemyAnimatorController.SetInteger("ChaserState", 2);
+                }
+                else {
+                    spottedPlayer = false;
+                    firstChaserMove = false;
+                    EnemyAnimatorController.Play("ChaserIdleSleep", 0, 0);
+                }
+                
             }
             else
             { // && CASELLA SUCCESSIVA NON è OCCUPATA (post armature)
@@ -180,21 +187,18 @@ public class EnemyMover : Mover
                     EnemyAnimatorController.SetInteger("ChaserState", 3);
 
                     destination = GetPlayerPath(index + 1).transform.position;
-
                     
 
-                    yield return new WaitForSeconds(chaserWaitRotation + moveTime); //
-
-
-                    FaceDestination();
-
-
+                    yield return new WaitForSeconds(chaserWaitRotation + moveTime);
+                    
+                        FaceDestination();
+                    
+                    
+                    
                     EnemyAnimatorController.SetInteger("ChaserState", 2);
                     
-
                 }
-                
-                
+
                 index++;
             }
       

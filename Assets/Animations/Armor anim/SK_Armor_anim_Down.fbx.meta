@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d644e3d3b0abd7448489d802981108b
+guid: bdc821295d0be244e912c5f237829379
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -24,9 +24,9 @@ ModelImporter:
     100036: _r_arm_grp
     100038: _r_arm_grp 1
     100040: _r_arm_jnt
-    100042: //RootNode
-    100044: ControlSystem
-    100046: SK_Armor
+    100042: ControlSystem
+    100044: SK_Armor
+    100046: //RootNode
     400000: _c_COG_ctrl
     400002: _c_COG_grp
     400004: _c_head_ctrl
@@ -48,12 +48,12 @@ ModelImporter:
     400036: _r_arm_grp
     400038: _r_arm_grp 1
     400040: _r_arm_jnt
-    400042: //RootNode
-    400044: ControlSystem
-    400046: SK_Armor
+    400042: ControlSystem
+    400044: SK_Armor
+    400046: //RootNode
     2100000: lambert4
     4300000: SK_Armor
-    7400000: Down
+    7400000: Take 001
     9500000: //RootNode
     13700000: SK_Armor
   externalObjects: {}

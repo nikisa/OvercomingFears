@@ -257,6 +257,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1321305549}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -439,6 +440,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2056718645}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -621,6 +623,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 293974265}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -969,6 +972,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1434723053}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1151,6 +1155,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 883191000}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1502,6 +1507,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 973151427}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -2574,6 +2580,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1038190118}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -3091,6 +3098,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 932910736}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -3610,6 +3618,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.04
       objectReference: {fileID: 0}
+    - target: {fileID: 5358435548620555609, guid: 8b37e64569e6a684ca3ab0c15a21fce9,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 9b98eaae64b95e04bb72decb09d7f2f4, type: 3}
     m_RemovedComponents:
     - {fileID: 7288078500191251078, guid: 8b37e64569e6a684ca3ab0c15a21fce9, type: 3}
     - {fileID: 7288078500841407126, guid: 8b37e64569e6a684ca3ab0c15a21fce9, type: 3}
@@ -4469,7 +4482,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -4963,6 +4976,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1725989277}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -6111,6 +6125,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1487687369}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -6401,6 +6416,16 @@ PrefabInstance:
       propertyPath: standTime
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 65559019812378994, guid: f0f94d3297ac7764895e4627d76bca18,
         type: 3}
       propertyPath: m_Size.x
@@ -6418,16 +6443,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1770964002, guid: f0f94d3297ac7764895e4627d76bca18, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
-        type: 3}
-      propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6810,6 +6825,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 533928287}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -6923,16 +6939,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -33.49524
       objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: armorID
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: isActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -6991,6 +6997,16 @@ PrefabInstance:
     - target: {fileID: 2775251454287485327, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: armorID
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: isActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2775251453132076689, guid: 225bc310c4af8934c9c819ebc7bc8d07,
@@ -7162,7 +7178,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604d3cc7a00599342b404bcef7f1e7e5, type: 3}
@@ -7604,7 +7620,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -8110,6 +8126,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 561173388}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -8316,7 +8333,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -8764,6 +8781,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 626895715}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -8946,6 +8964,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 255711728}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -9066,6 +9085,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2030802487}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -9606,6 +9626,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1716174127}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -9993,6 +10014,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 498516253}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10376,6 +10398,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2117963387}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -11325,6 +11348,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 655891852}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -11960,6 +11984,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 798465214}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12128,6 +12153,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1382126310}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12833,6 +12859,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 528863989}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13009,7 +13036,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7656459650545659017, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
@@ -13172,6 +13199,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1329316180}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13435,6 +13463,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 385890028}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13697,6 +13726,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 704219685}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14274,6 +14304,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1673719845}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14442,6 +14473,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2002629059}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14912,6 +14944,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 341943364}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16407,6 +16440,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2051987298}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16681,6 +16715,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1537025522}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17328,6 +17363,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 82926787}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17739,6 +17775,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1626002000}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17847,7 +17884,7 @@ PrefabInstance:
     - target: {fileID: 7656459650545659023, guid: 604d3cc7a00599342b404bcef7f1e7e5,
         type: 3}
       propertyPath: standTime
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604d3cc7a00599342b404bcef7f1e7e5, type: 3}
@@ -17963,16 +18000,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -33.49524
       objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: armorID
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: isActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -18031,6 +18058,16 @@ PrefabInstance:
     - target: {fileID: 2775251454287485327, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: armorID
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: isActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2775251453132076689, guid: 225bc310c4af8934c9c819ebc7bc8d07,
@@ -18296,6 +18333,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1441142155}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -19224,6 +19262,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 235738727}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -19700,6 +19739,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 344550998}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20081,6 +20121,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1711149354}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20715,6 +20756,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2050057447}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20973,6 +21015,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1937317572}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -21155,6 +21198,7 @@ MonoBehaviour:
     type: 3}
   crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 813297309}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}

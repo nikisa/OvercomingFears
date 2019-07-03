@@ -83,7 +83,7 @@ public class MovableObject : Mover {
                     }
                     break;
                 case direction.forward:
-                    if (movableObjectNode != null && m_player.playerInput && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode))
+                    if (movableObjectNode != null && m_player.playerInput.P && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x && Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z && m_board.playerNode.LinkedNodes.Contains(movableObjectNode))
                     {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
@@ -208,8 +208,9 @@ public class MovableObject : Mover {
             {
                 case direction.right:
                     if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
-                        Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 2.7f &&
                         m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x &&
+                        m_board.FindEnemiesAt(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0))).Count == 0 &&
                         //(m_board.FindNodeAt(m_player.transform.position + Vector3.right) != null && m_board.FindNodeAt(m_player.transform.position + Vector3.right).gateOpen == false) &&
                         m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0))))
                     {
@@ -223,6 +224,7 @@ public class MovableObject : Mover {
                 case direction.left:
                     if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
                         Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        m_board.FindEnemiesAt(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2, 0, 0))).Count == 0 &&
                         //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
                         m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x &&
                         m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2, 0, 0))))
@@ -237,6 +239,7 @@ public class MovableObject : Mover {
                 case direction.back:
                     if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x &&
                         Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        m_board.FindEnemiesAt(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, -2))).Count == 0 &&
                         //(m_board.FindNodeAt(m_player.transform.position)!=null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) && 
                         m_board.playerNode.transform.position.z < movableObjectNode.transform.position.z &&
                         m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, -2))))
@@ -251,6 +254,7 @@ public class MovableObject : Mover {
                 case direction.forward:
                     if (movableObjectNode != null && m_board.playerNode.transform.position.x == movableObjectNode.transform.position.x &&
                         Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
+                        m_board.FindEnemiesAt(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, 2))).Count == 0 &&
                         //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
                         m_board.playerNode.transform.position.z > movableObjectNode.transform.position.z &&
                         m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(0, 0, 2))))
@@ -275,7 +279,7 @@ public class MovableObject : Mover {
 
     //public void PullLeft() {
 
-    //    if (m_board != null || inScene){
+    //    if (m_board != null || inScene) {
 
     //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 2);
 
@@ -284,8 +288,8 @@ public class MovableObject : Mover {
     //        if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
     //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
     //            //(m_board.FindNodeAt(m_player.transform.position) != null && m_board.FindNodeAt(m_player.transform.position).gateOpen == false) &&
-    //            m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x  &&
-    //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2,0,0)))) {
+    //            m_board.playerNode.transform.position.x < movableObjectNode.transform.position.x &&
+    //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(-2, 0, 0)))) {
     //            m_player.transform.GetChild(2).gameObject.SetActive(false);
     //            m_player.hasLightBulb = false;
     //            this.MoveLeft();
@@ -304,8 +308,8 @@ public class MovableObject : Mover {
 
     //        Node movableObjectNode = m_board.FindNodeAt(transform.position);
 
-    //        if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z && 
-    //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f && 
+    //        if (movableObjectNode != null && m_board.playerNode.transform.position.z == movableObjectNode.transform.position.z &&
+    //            Vector3.Distance(movableObjectNode.transform.position, m_board.playerNode.transform.position) < 3f &&
     //            m_board.playerNode.transform.position.x > movableObjectNode.transform.position.x &&
     //            //(m_board.FindNodeAt(m_player.transform.position + Vector3.right) != null && m_board.FindNodeAt(m_player.transform.position + Vector3.right).gateOpen == false) &&
     //            m_board.playerNode.LinkedNodes.Contains(m_board.FindNodeAt(m_player.transform.position + new Vector3(2, 0, 0)))) {
@@ -364,7 +368,7 @@ public class MovableObject : Mover {
     //        m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
     //    }
     //}
-    
+
     //PULL___________________________________________
 
 
@@ -373,7 +377,14 @@ public class MovableObject : Mover {
     }
 
     public void fallingAnimation() {
+        StartCoroutine(fallingAnimationCoroutine());
+    }
+
+    IEnumerator fallingAnimationCoroutine() {
         MovableObjectController.SetBool("falling", true);
+        yield return new WaitForSeconds(0.3f);
+        gameObject.SetActive(false);
+        //transform.GetChild(0).gameObject.SetActive(false);
     }
 
     public void resetAnimation() {

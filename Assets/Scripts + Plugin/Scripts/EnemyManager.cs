@@ -32,6 +32,8 @@ public class EnemyManager : TurnManager {
     public bool wasScared = false;
     public bool isOff; // private 
 
+    public float EmptyTurnDelay;
+
     public bool isDead { get { return m_isDead; } }
 
     //[HideInInspector]
@@ -62,23 +64,26 @@ public class EnemyManager : TurnManager {
         }
         else if(this.gameObject.activeSelf == true)
         {
-            
+            m_player.playerInput.InputEnabled = false;
             StartCoroutine(PlayTurnRoutine());
-        }
             
+        }
+
         
+
     }
 
     IEnumerator PlayTurnRoutine() {
-     
+        
         if (m_gameManager != null && !m_gameManager.IsGameOver) {
             //detect player
             m_enemySensor.UpdateSensor(m_enemyMover.CurrentNode);
+            
 
             yield return new WaitForSeconds(0f);
 
             if (m_enemySensor.FoundPlayer && isOff == false) {
-                m_player.playerInput.InputEnabled = false;
+                
                 //attack player
                 //notify the GM to lose the level
                 //lr.transform.gameObject.SetActive(true);
@@ -88,7 +93,6 @@ public class EnemyManager : TurnManager {
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
                     yield return new WaitForSeconds(delayStaticKill);
                     m_player.PlayerAnimatorController.SetInteger("PlayerState" , 7);
-
                 }
 
                 else if(m_enemyMover.movementType == MovementType.Chaser) {
@@ -111,6 +115,7 @@ public class EnemyManager : TurnManager {
                 }
                 
             }
+            
         }        
     }
 
@@ -153,6 +158,12 @@ public class EnemyManager : TurnManager {
 
         StartCoroutine(WaitTimeForKill());
 
+    }
+
+    IEnumerator EmptyTurn() {
+        yield return new WaitForSeconds(EmptyTurnDelay);
+        m_enemyMover.EnemyAnimatorController.SetInteger("StaticState",4);
+        
     }
 
 

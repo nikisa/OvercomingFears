@@ -490,6 +490,13 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LoseLevelRoutine()
     {
+
+        if (m_player.PauseCanvas.gameObject.activeSelf) {
+            m_player.PauseCanvas.gameObject.SetActive(false);
+            GameManager.stateGameplay();
+        }
+        
+
         m_isGameOver = true;
         m_player.playerInput.InputEnabled = false;
         
@@ -594,10 +601,10 @@ public class GameManager : MonoBehaviour
         m_currentTurn = Turn.Enemy;
         m_player.hasWand = false;
 
-        foreach (MovableObject movable in m_board.AllMovableObjects) {
-            movable.resetAnimation();
-            movable.transform.GetChild(1).gameObject.SetActive(false);
-        }
+        //foreach (MovableObject movable in m_board.AllMovableObjects) {
+        //    movable.resetAnimation();
+        //    movable.transform.GetChild(1).gameObject.SetActive(false);
+        //}
 
         foreach (EnemyManager enemy in m_enemies)
         { //play each enemy's turn
@@ -685,30 +692,38 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-                if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count == 1)
-                {
-                    //enemy.SetMovementType(MovementType.Stationary);
-                    Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position)).Count);
-                    enemy.m_enemyMover.spottedPlayer = false;
-                }
-                else
-                {
-                    enemy.SetMovementType(enemy.GetFirstMovementType());
-                }
+                if (enemy.m_enemyMover.movementType == MovementType.Chaser && enemy.m_enemyMover.index > 0) {
 
+                    if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position)).Count == 1) {
+                        //enemy.SetMovementType(MovementType.Stationary);
+                        Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index - 1).transform.position)).Count);
+                        enemy.m_enemyMover.spottedPlayer = false;
+                        enemy.m_enemyMover.firstChaserMove = true;
+                    }
+                    else {
+                        enemy.SetMovementType(enemy.GetFirstMovementType());
+                    }
+
+                }
 
                 if (m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position) != null)
-                {
-                    if ((m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
-                    && !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen))
-                    {
-                        //enemy.SetMovementType(MovementType.Stationary);
+                { //forse sto if non serve
 
-                        enemy.m_enemyMover.spottedPlayer = false;
-                    }
-                    else
-                    {
-                        enemy.SetMovementType(enemy.GetFirstMovementType());
+                    //if ((m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
+                    //&& !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen)) {
+
+                    if (enemy.m_enemyMover.movementType == MovementType.Chaser && enemy.m_enemyMover.index > 0) {
+                        
+                        if (m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position).isAGate
+                            && !m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position).gateOpen) {
+                            //enemy.SetMovementType(MovementType.Stationary);
+                            enemy.m_enemyMover.spottedPlayer = false;
+                            enemy.m_enemyMover.firstChaserMove = false;
+                        }
+                        else {
+                            enemy.SetMovementType(enemy.GetFirstMovementType());
+                        }
+
                     }
                 }
 
@@ -728,7 +743,7 @@ public class GameManager : MonoBehaviour
 
             if (m_player.IsTurnComplete && !AreEnemiesAllDead())
             {
-                m_movableObjects = GetMovableObjects();
+                //m_movableObjects = GetMovableObjects();
                 PlayEnemyTurn();
             }
             else if (AreEnemiesAllDead())
@@ -748,6 +763,7 @@ public class GameManager : MonoBehaviour
             if (IsEnemyTurnComplete())
             {
                 crackNode();
+                m_player.playerInput.InputEnabled = true;
                 PlayPlayerTurn();
                 NotMovingMovable();
             }
@@ -803,9 +819,13 @@ public class GameManager : MonoBehaviour
 
                     //Destroy(movableObject);
                     movableObject.inScene = false;
-                    movableObject.transform.GetChild(0).gameObject.SetActive(false);
-                    movableObject.GetComponent<Collider>().gameObject.SetActive(false);
 
+                    movableObject.fallingAnimation();
+                    //movableObject.transform.GetChild(0).gameObject.SetActive(false);
+
+
+
+                    //movableObject.GetComponent<Collider>().gameObject.SetActive(false); HERE
 
                     //node.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = null;
                     node.FromCrackableToNormal();
@@ -840,6 +860,7 @@ public class GameManager : MonoBehaviour
 
         if (m_board.playerNode.GetCrackableState() == 2)
         {
+
             StartCoroutine(PlayerDeathByCrackable());
         }
     }
@@ -920,7 +941,7 @@ public class GameManager : MonoBehaviour
                     if (armor.FindSwordNode().isATrigger && armor.isActive)
                     {
                         Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * BoardManager.spacing)));
-                        armor.FindSwordNode().UpdateTriggerToTrue(); //COSì NON FUNZIONA MADONNA PORCONA 
+                        armor.FindSwordNode().UpdateTriggerToTrue();
                     }
                     else if (armor.FindSwordNode().isATrigger && !armor.isActive)
                     {
