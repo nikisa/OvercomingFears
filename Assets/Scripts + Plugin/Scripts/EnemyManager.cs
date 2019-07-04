@@ -19,6 +19,8 @@ public class EnemyManager : TurnManager {
 
     PlayerManager m_player;
 
+    public float delayedEmptyTurn;
+
     public float fadeDelay;
 
     public float delayStaticKill;
@@ -116,13 +118,22 @@ public class EnemyManager : TurnManager {
                 
             }
             
-        }        
+        }
+
+        //________________PROMEMORIA DEL CRISTO________________
+
+        StartCoroutine(EmptyTurn(delayedEmptyTurn));
+            delayedEmptyTurn = 0;
+
+
+        //________________PROMEMORIA DEL CRISTO________________
+
+        //StartCoroutine(EmptyTurn());
     }
 
 
-        
-    public void Die() {
 
+    public void Die() {
         if (gameObject!= null &&  m_enemyMover.movementType == MovementType.Stationary)
         {
             m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 3);
@@ -157,13 +168,12 @@ public class EnemyManager : TurnManager {
 
 
         StartCoroutine(WaitTimeForKill());
-
+        
     }
 
-    IEnumerator EmptyTurn() {
-        yield return new WaitForSeconds(EmptyTurnDelay);
+    IEnumerator EmptyTurn(float delay) {
+        yield return new WaitForSeconds(delay);
         m_enemyMover.EnemyAnimatorController.SetInteger("StaticState",4);
-        
     }
 
 

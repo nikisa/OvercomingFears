@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Node : MonoBehaviour
 {
+
+    public float puzzleActivationDelay;
+
     public Animator TriggerController;
 
     public Material[] materials;
@@ -310,12 +313,31 @@ public class Node : MonoBehaviour
 
     }
 
+    IEnumerator PuzzleActivation() {
+
+        UpdateGateToOpen(gateID);
+        ArmorActivation(armorID);
+        yield return new WaitForSeconds(puzzleActivationDelay);
+        TrapActivation(trapID);
+
+    }
+
     public bool UpdateTriggerToTrue()
     {
         if (isATrigger && TriggerOrLogic() == false) {
-            ArmorActivation(armorID);
-            UpdateGateToOpen(gateID);
-            TrapActivation(trapID);
+
+            //==============================================
+
+
+            StartCoroutine(PuzzleActivation());
+
+            //ArmorActivation(armorID);
+
+            //UpdateGateToOpen(gateID);
+            //TrapActivation(trapID);
+
+            //===============================================
+
             //triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
             //PushingWallActivation(pushingWallID);
             foreach (Node trigger in m_board.TriggerNodes) {
@@ -688,7 +710,7 @@ public class Node : MonoBehaviour
             //transform.GetChild(1).gameObject.transform.Rotate(90, 0, 0);
             //transform.GetChild(1).gameObject.transform.position += new Vector3(0, 0.1f, 0);
 
-            crackableTemp = Instantiate(crackablePrefab, transform.position + new Vector3(0, .3f, 0), Quaternion.identity);
+            crackableTemp = Instantiate(crackablePrefab, transform.position , Quaternion.identity);
             crackableTemp.transform.parent = transform;
 
         }

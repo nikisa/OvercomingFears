@@ -348,8 +348,90 @@ PrefabInstance:
       propertyPath: field of view
       value: 40
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2520416755346779650, guid: 9446529b37803b04d85dadcaea64a40c,
+        type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520416755346779650, guid: 9446529b37803b04d85dadcaea64a40c,
+        type: 3}
+      propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520416755346779650, guid: 9446529b37803b04d85dadcaea64a40c,
+        type: 3}
+      propertyPath: m_RenderingPath
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7863486730010462436, guid: 9446529b37803b04d85dadcaea64a40c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9446529b37803b04d85dadcaea64a40c, type: 3}
+--- !u!1 &13506388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2520416755346779676, guid: 9446529b37803b04d85dadcaea64a40c,
+    type: 3}
+  m_PrefabInstance: {fileID: 13506387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &13506389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13506388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 0}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!4 &25190187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 739228764, guid: dc6c9ceeb4ecc4449ab026e50d0c34df,
@@ -836,21 +918,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: isActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: brokenSword
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: armorID
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -910,6 +977,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: brokenSword
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: armorID
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2775251453132076689, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
@@ -1028,6 +1110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -1076,8 +1159,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2129939741}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1209,6 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -1257,8 +1342,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1527293855}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1473,6 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -1521,8 +1608,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 365385948}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -1731,6 +1819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -1779,8 +1868,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1715155581}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -2101,6 +2191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -2149,8 +2240,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 627213903}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -3792,6 +3884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -3840,8 +3933,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1408634518}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -4133,6 +4227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -4181,8 +4276,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1967504783}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -4327,13 +4423,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473226233}
-  m_LocalRotation: {x: 0.70637774, y: 1.8189894e-12, z: -0.0000041682333, w: 0.70783514}
-  m_LocalPosition: {x: 4.920014, y: 8.64, z: 2.3199716}
+  m_LocalRotation: {x: 0.9730513, y: 0.002081442, z: -0.0013376076, w: 0.2305753}
+  m_LocalPosition: {x: 4.650048, y: 10.05, z: 7.9599733}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035730445}
-  m_RootOrder: 191
-  m_LocalEulerAnglesHint: {x: 89.885, y: 0, z: -0.001}
+  m_RootOrder: 189
+  m_LocalEulerAnglesHint: {x: 153.338, y: 0.10499573, z: -0.2199707}
 --- !u!108 &473226235
 Light:
   m_ObjectHideFlags: 0
@@ -4466,6 +4562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -4514,8 +4611,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2022472724}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -5227,6 +5325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -5275,8 +5374,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 462786274}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -5408,6 +5508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -5456,8 +5557,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1183253337}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -6212,11 +6314,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2229032962324959030, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6271,6 +6368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9213724833309570427, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 570770096752591498, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
@@ -6873,6 +6975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -6921,8 +7024,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1481948593}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -7215,6 +7319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -7263,8 +7368,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 880194462}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -7396,6 +7502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -7444,8 +7551,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 402803406}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -8674,6 +8782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -8722,8 +8831,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1934879686}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -9463,6 +9573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -9511,8 +9622,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2101196707}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10119,6 +10231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -10167,8 +10280,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 515111913}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10422,6 +10536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -10470,8 +10585,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1364642004}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10687,6 +10803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -10735,8 +10852,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 498516253}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -10925,6 +11043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -10973,8 +11092,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 874898459}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -11106,6 +11226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -11154,8 +11275,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 665343274}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -11275,16 +11397,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: armorID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: isActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -11349,6 +11461,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: armorID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: isActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2775251453132076689, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
@@ -11725,6 +11847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -11773,8 +11896,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1817009398}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12062,6 +12186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -12110,8 +12235,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1850636131}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12528,6 +12654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -12576,8 +12703,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 511636079}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -12847,6 +12975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -12895,8 +13024,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1098604257}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13014,6 +13144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -13062,8 +13193,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 798465214}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -13273,6 +13405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -13321,8 +13454,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1382126310}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14016,6 +14150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -14064,8 +14199,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1264269848}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14366,6 +14502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -14414,8 +14551,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1641569826}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14639,6 +14777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -14687,8 +14826,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1345596680}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -14758,6 +14898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -14806,8 +14947,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 528863989}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -15706,6 +15848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -15754,8 +15897,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1891888277}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16083,16 +16227,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: armorID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
-        type: 3}
-      propertyPath: isActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2775251454287485323, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
       propertyPath: m_Name
@@ -16152,6 +16286,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: armorID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 311896293601926125, guid: 225bc310c4af8934c9c819ebc7bc8d07,
+        type: 3}
+      propertyPath: isActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2775251453132076689, guid: 225bc310c4af8934c9c819ebc7bc8d07,
         type: 3}
@@ -16377,6 +16521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -16425,8 +16570,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 902618419}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16606,6 +16752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -16654,8 +16801,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1720138701}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -16933,6 +17081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -16981,8 +17130,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1403838803}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17052,6 +17202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -17100,8 +17251,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1673719845}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17296,6 +17448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -17344,8 +17497,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 2002629059}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -17525,6 +17679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -17573,8 +17728,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 79645977}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -18038,6 +18194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -18086,8 +18243,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 763070478}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -18432,6 +18590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -18480,8 +18639,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 156327828}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -18721,6 +18881,54 @@ Transform:
   - {fileID: 939115202}
   m_Father: {fileID: 0}
   m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1661299116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661299118}
+  - component: {fileID: 1661299117}
+  m_Layer: 0
+  m_Name: PostProcessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1661299117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661299116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 8b5d0c475d6730a47afb4df86c757dc8, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1661299118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661299116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9633045, y: 3.4494214, z: 7.992306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1661676798
 PrefabInstance:
@@ -19360,6 +19568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -19408,8 +19617,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 618601973}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20111,6 +20321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -20159,8 +20370,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1562103460}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20463,6 +20675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -20511,8 +20724,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 1498580010427270864, guid: 9666f976d7356504fab01d09a3778aa2,
+  crackablePrefab: {fileID: 8432573038412501399, guid: a52f1669359a9b244a3ba713d22b1dda,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 133890567}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -20896,6 +21110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -20944,8 +21159,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 877611366}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -21926,6 +22142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -21974,8 +22191,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 203769818}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -22717,6 +22935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -22765,8 +22984,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 103940535}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -22876,6 +23096,21 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8797142679935528000, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.9200006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797142679935528000, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.26000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797142679935528000, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.800001
+      objectReference: {fileID: 0}
     - target: {fileID: 6166136515875160497, guid: 502949782baf35545806f3573696df39,
         type: 3}
       propertyPath: m_IsActive
@@ -22896,6 +23131,71 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e348dd53390268f4594f45d1e707b80f, type: 2}
+    - target: {fileID: 3756681531450039372, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -200.00009
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756681531450039372, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.019991398
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756681531450039372, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02720356
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096148471520353268, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096148471520353268, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00019979477
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096148471520353268, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0002720356
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171953616485810409, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485613345506279357, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8263812793760199890, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581246224194379179, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246754026595175991, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479791768914644215, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373196326556216559, guid: 502949782baf35545806f3573696df39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502949782baf35545806f3573696df39, type: 3}
 --- !u!4 &2035730445 stripped
@@ -23444,6 +23744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -23492,8 +23793,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 289472672}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -24083,6 +24385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -24131,8 +24434,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 357727014}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
@@ -24202,6 +24506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b906c8829cb1cdd4ba31474028adacaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleActivationDelay: 0
   TriggerController: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: e33ea4ab93eb7054fb0e4c2e6607573f, type: 2}
@@ -24250,8 +24555,9 @@ MonoBehaviour:
   lightBulbPrefab: {fileID: 100000, guid: 8f5f2099345735d4d90bf68a7e02edc9, type: 3}
   flashlitePrefab: {fileID: 3566916821496802097, guid: 0a3ac63dac32a934eb0b8d7c9b8b45fe,
     type: 3}
-  crackablePrefab: {fileID: 6320426063980200979, guid: c393059b69383354dae2472ec99d47e0,
+  crackablePrefab: {fileID: 2587020875044902444, guid: 167186d45ae0d204f90c3f69eca093cb,
     type: 3}
+  crackableChoked: {fileID: 0}
   triggerTemp: {fileID: 0}
   geometry: {fileID: 1895370128}
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
