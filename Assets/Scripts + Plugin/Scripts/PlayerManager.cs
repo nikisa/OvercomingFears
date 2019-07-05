@@ -212,12 +212,10 @@ public class PlayerManager : TurnManager
 
                     if (m_timer < 1f)
                     {
-
                         speedUp = true;
                     }
                     else
                     {
-                        
                         speedUp = false;
                     }
                     m_timer = 0;

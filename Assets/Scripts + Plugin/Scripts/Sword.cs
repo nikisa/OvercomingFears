@@ -48,6 +48,11 @@ public class Sword : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Enemy") {
+
+            foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
+                enemy.delayedEmptyTurn = .3f;
+            }
+
             if (m_board.FindNodeAt(other.transform.position).isATrigger)
             {
                 StartCoroutine(WaitTriggerToFalse(other));

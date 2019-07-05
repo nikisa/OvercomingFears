@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemyMover: {fileID: 0}
   m_enemySensor: {fileID: 0}
-  delayedEmptyTurn: 0
+  delayedEmptyTurn: 0.1
   fadeDelay: 0.25
   delayStaticKill: 0.35
   delayChaserKill: 0
@@ -288,10 +288,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 00c84ab31db93ae46ad3a0ef2991036d, type: 2}
     - target: {fileID: 400056, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -336,6 +332,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 00c84ab31db93ae46ad3a0ef2991036d, type: 2}
     - target: {fileID: 100058, guid: 7985ad2dfd539f140b5f018317f3e447, type: 3}
       propertyPath: m_Layer
       value: 10

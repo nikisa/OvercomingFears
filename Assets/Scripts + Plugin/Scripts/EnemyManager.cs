@@ -113,6 +113,7 @@ public class EnemyManager : TurnManager {
                 m_enemyMover.MoveOneTurn(); // --> finishMovementEvent.Invoke()
                 if (m_enemySensor.FoundPlayer)
                 {
+                    Debug.Log("DANGER");
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 1);
                 }
                 
@@ -120,10 +121,10 @@ public class EnemyManager : TurnManager {
 
             if (!m_enemySensor.FoundPlayer) {
                 StartCoroutine(EmptyTurn(delayedEmptyTurn));
-                delayedEmptyTurn = 0;
+                delayedEmptyTurn = 0.1f;
             }
 
-            m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 0);
+            
 
         }
 

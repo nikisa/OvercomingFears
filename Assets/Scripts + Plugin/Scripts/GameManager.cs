@@ -740,13 +740,20 @@ public class GameManager : MonoBehaviour
 
         if (m_currentTurn == Turn.Player && m_player != null)
         {
-            
+           
+
             triggerNodePlayerTurn();
             triggerNode();
             triggerNodeWithMovable();
 
             if (m_player.IsTurnComplete && !AreEnemiesAllDead())
             {
+                foreach (EnemyManager enemy in m_enemies) {
+                    if (enemy != null) {
+                        enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 0);
+                    }
+                    
+                }
                 //m_movableObjects = GetMovableObjects();
                 PlayEnemyTurn();
             }
@@ -978,9 +985,11 @@ public class GameManager : MonoBehaviour
 
                     if (!movableObject.FindMovableObjectNode().isATrigger && movableObject.GetPreviousMovableObjectNode() != null)
                     {
+                        
                         Debug.Log("PROVA");
                         Debug.Log(movableObject.GetPreviousMovableObjectNode());
                         movableObject.GetPreviousMovableObjectNode().UpdateTriggerToFalse();
+                        movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
                         movableObject.GetPreviousMovableObjectNode().mover = null;
                         movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                     }
@@ -991,6 +1000,7 @@ public class GameManager : MonoBehaviour
                         node.mover = movableObject;
                         movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                         movableObject.FindMovableObjectNode().UpdateTriggerToTrue();
+                        movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
                         Debug.Log("Node: " + movableObject.GetPreviousMovableObjectNode());
                     }
                 }

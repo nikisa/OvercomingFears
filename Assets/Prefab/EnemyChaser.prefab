@@ -101,7 +101,7 @@ MonoBehaviour:
   delayedEmptyTurn: 0
   fadeDelay: 0.25
   delayStaticKill: 0
-  delayChaserKill: 0.6
+  delayChaserKill: 0.5
   delay: 0.7
   blinkDelay: 0
   isScared: 0
