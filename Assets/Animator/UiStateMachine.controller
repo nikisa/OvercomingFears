@@ -100,6 +100,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea86d2958a235a42a8d184f957bb04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  qualityText: {fileID: 2047942439232902408, guid: f1eebb5eacc7b624b841a45da7ed0224,
+    type: 3}
+  resolutionText: {fileID: 8584556787332899910, guid: b24610830f4597642ac771f8ba4bcf89,
+    type: 3}
+  WindowedText: {fileID: 118035030744740157, guid: 13255fcc3464a1647bc5d0bbe3e48bdc,
+    type: 3}
+  VideoSettingsIndex: 0
+  qualityNamesIndex: 0
+  resolutionIndex: 0
+  windowed: 0
 --- !u!114 &114632360559451030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -583,13 +593,13 @@ AnimatorStateMachine:
     m_Position: {x: 684, y: 636, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102778337371246722}
-    m_Position: {x: 12, y: 504, z: 0}
+    m_Position: {x: 0, y: 504, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102583517461966808}
     m_Position: {x: 360, y: 372, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102742042824236484}
-    m_Position: {x: 12, y: 636, z: 0}
+    m_Position: {x: 0, y: 636, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102426206067896908}
     m_Position: {x: 360, y: 264, z: 0}

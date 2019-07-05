@@ -36,9 +36,10 @@ ModelImporter:
     100060: _r_wheelStart_grp
     100062: _r_wheelStart_jnt
     100064: ControlSystem
-    100066: JointSystem
-    100068: //RootNode
-    100070: SM_Chaser
+    100066: GeoSystem
+    100068: JointSystem
+    100070: //RootNode
+    100072: SM_Chaser
     400000: _c_COG_ctrl
     400002: _c_COG_grp
     400004: _c_pelvis_grp
@@ -72,12 +73,13 @@ ModelImporter:
     400060: _r_wheelStart_grp
     400062: _r_wheelStart_jnt
     400064: ControlSystem
-    400066: JointSystem
-    400068: //RootNode
-    400070: SM_Chaser
+    400066: GeoSystem
+    400068: JointSystem
+    400070: //RootNode
+    400072: SM_Chaser
     2100000: lambert1
     4300000: SM_Chaser
-    7400000: Attack
+    7400000: tmp
     9500000: //RootNode
     13700000: SM_Chaser
   externalObjects: {}

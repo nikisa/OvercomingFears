@@ -32,7 +32,7 @@ public class PlayerMover : Mover {
             m_playerCompass.ShowArrows(false);
         }
 
-        m_player.PlayerAnimatorController.SetInteger("PlayerState" , 0);
+        m_player.PlayerAnimatorController.SetInteger("PlayerState" , 10);
 
         //run the parent class MoveRoutine
         yield return StartCoroutine(base.MoveRoutine(destinationPos, playerMovementDelay));

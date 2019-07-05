@@ -7,6 +7,9 @@ public class BossSpawn : MonoBehaviour
 {
     public GameObject Boss;
 
+
+    public float delay;
+
     public float time;
     public Ease easeType = Ease.OutQuint;
 
@@ -14,14 +17,10 @@ public class BossSpawn : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Boss.transform.GetChild(0).gameObject.SetActive(true);
-            Boss.transform.GetChild(1).gameObject.SetActive(true);
+            StartCoroutine(BossSpawning(other));
         }
 
-        if (Boss.gameObject.activeSelf && other.tag == "Player")
-        {
-            Boss.transform.DOMove(Boss.transform.position + new Vector3(0, 0, 4f), time).SetEase(easeType);
-        }
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -30,5 +29,13 @@ public class BossSpawn : MonoBehaviour
         {
             Boss.transform.DOMove(Boss.transform.position + new Vector3(0, 0, 4f), time).SetEase(easeType);
         }
+    }
+
+    IEnumerator BossSpawning(Collider other) {
+        other.GetComponent<PlayerManager>().playerInput.InputEnabled = false;
+        yield return new WaitForSeconds(delay);
+        Boss.transform.GetChild(0).gameObject.SetActive(true);
+        Boss.transform.GetChild(1).gameObject.SetActive(true);
+        other.GetComponent<PlayerManager>().playerInput.InputEnabled = true;
     }
 }

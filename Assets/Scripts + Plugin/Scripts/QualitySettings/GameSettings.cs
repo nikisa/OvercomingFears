@@ -161,6 +161,8 @@ public class GameSettings : MonoBehaviour
     /// Apply quality and resolution settings for the game.
     /// </summary>
     /// <param name="settings">User options</param>
+    /// 
+
     void ApplySettings(UserGameOptions settings)
     {
         QualitySettings.SetQualityLevel(settings.quality);

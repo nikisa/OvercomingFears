@@ -117,13 +117,19 @@ public class EnemyManager : TurnManager {
                 }
                 
             }
-            
+
+            if (!m_enemySensor.FoundPlayer) {
+                StartCoroutine(EmptyTurn(delayedEmptyTurn));
+                delayedEmptyTurn = 0;
+            }
+
+            m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 0);
+
         }
 
         //________________PROMEMORIA DEL CRISTO________________
 
-        StartCoroutine(EmptyTurn(delayedEmptyTurn));
-            delayedEmptyTurn = 0;
+        
 
 
         //________________PROMEMORIA DEL CRISTO________________
@@ -174,6 +180,7 @@ public class EnemyManager : TurnManager {
     IEnumerator EmptyTurn(float delay) {
         yield return new WaitForSeconds(delay);
         m_enemyMover.EnemyAnimatorController.SetInteger("StaticState",4);
+        
     }
 
 

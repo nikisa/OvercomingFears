@@ -762,7 +762,10 @@ public class GameManager : MonoBehaviour
         else if (m_currentTurn == Turn.Enemy)
         {
 
-
+            foreach (MovableObject movableObject in m_board.AllMovableObjects) {
+                movableObject.resetAnimation();
+                movableObject.transform.GetChild(1).gameObject.SetActive(false);
+            }
 
             if (IsEnemyTurnComplete())
             {
@@ -1233,7 +1236,8 @@ public class GameManager : MonoBehaviour
 
                 break;
             case 4:
-                m_player.transform.position = new Vector3(6, 0, -2);
+                //m_player.transform.position = new Vector3(6, 0, -2);
+                m_player.transform.position = new Vector3(28, 0, -3);
 
                 break;
             case 5:

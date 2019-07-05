@@ -135,7 +135,9 @@ public class PlayerManager : TurnManager
     IEnumerable InputDelay()
     {
         playerMover.isMoving = true;
+        
         yield return new WaitForSeconds(1f);
+        PlayerAnimatorController.SetInteger("PlayerState", 0);
         playerMover.isMoving = false;
     }
 
@@ -144,13 +146,13 @@ public class PlayerManager : TurnManager
         if (playerInput.F && hasFlashLight)
         {
             PlayerAnimatorController.SetInteger("PlayerState", 6);
-            transform.GetChild(0).transform.GetChild(3).gameObject.SetActive(true);
+            
             transform.GetChild(3).gameObject.SetActive(false);
         }
         else if (playerInput.F_up)
         {
             PlayerAnimatorController.SetInteger("PlayerState", 0);
-            transform.GetChild(0).transform.GetChild(3).gameObject.SetActive(false);
+            //transform.GetChild(0).transform.GetChild(3).gameObject.SetActive(false);
             if (hasFlashLight) {
                 transform.GetChild(3).gameObject.SetActive(true);
             }
@@ -231,6 +233,7 @@ public class PlayerManager : TurnManager
 
             if (!playerMover.isMoving)
             {
+                PlayerAnimatorController.SetInteger("PlayerState", 0);
                 playerInput.GetKeyInput();
                 DrawWand();
                 DrawFlashlight();
@@ -322,8 +325,8 @@ public class PlayerManager : TurnManager
                 }
 
 
-                #region Setup input levels 1 , 2 , 3 , 10
-                if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 10)
+                #region Setup input levels 1 , 2 , 3 , 6 , 10
+                if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 10)
                 {
                     if (playerInput.V == 0 && !playerInput.F)
                     {
@@ -471,7 +474,7 @@ public class PlayerManager : TurnManager
                             {
                                 if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f))).Count != 0 && !m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f)))[0].upBlocked)
                                 { //Se sopra non c'è un M.O e non è bloccato
-
+                                    playerMover.MoveForward();
                                     foreach (var movableObject in m_gm.GetMovableObjects())
                                     {
                                         movableObject.Push(MovableObject.direction.forward);
@@ -751,8 +754,8 @@ public class PlayerManager : TurnManager
                 #endregion 
 
 
-                #region Setup input levels 4 , 5 , 6 , 7 , 8, 9
-                else if (SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7 || SceneManager.GetActiveScene().buildIndex == 8 || SceneManager.GetActiveScene().buildIndex == 9)
+                #region Setup input levels 4 , 5 , 7 , 8, 9
+                else if (SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 7 || SceneManager.GetActiveScene().buildIndex == 8 || SceneManager.GetActiveScene().buildIndex == 9)
                 {
                     if (playerInput.H == 0 && !playerInput.F)
                     {
@@ -1107,7 +1110,12 @@ public class PlayerManager : TurnManager
                                         lightShaft.gameObject.SetActive(true);
                                         //lr.gameObject.SetActive(true);
                                         //lr.SetPosition(1, hit.point + new Vector3(0, 1, 1));
+                                        //float conversion = (hit.collider.transform.position.x + transform.position.x) / 4;
+                                        //Mathf.Abs(conversion);
                                         lightShaft.lightShaftScale((hit.collider.transform.position.x + transform.position.x) / 4);
+                                        if (lightShaft) {
+
+                                        }
                                         hit.collider.GetComponent<EnemyManager>().Die();
                                         transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
                                         hasFlashLight = false;

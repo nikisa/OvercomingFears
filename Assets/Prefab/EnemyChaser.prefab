@@ -98,14 +98,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemyMover: {fileID: 0}
   m_enemySensor: {fileID: 0}
-  fadeDelay: 0
+  delayedEmptyTurn: 0
+  fadeDelay: 0.25
   delayStaticKill: 0
-  delayChaserKill: 0
+  delayChaserKill: 0.6
   delay: 0.7
   blinkDelay: 0
   isScared: 0
   wasScared: 0
   isOff: 0
+  EmptyTurnDelay: 0
   isDetected: 0
   deathEvent:
     m_PersistentCalls:
