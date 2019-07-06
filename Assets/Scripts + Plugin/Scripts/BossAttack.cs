@@ -15,6 +15,7 @@ public class BossAttack : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
             m_player.playerInput.InputEnabled = false;
+            m_player.playerInput.PauseInputEnabled = false;
             _gm.GetComponent<GameManager>().LoseLevel();
         }
     }

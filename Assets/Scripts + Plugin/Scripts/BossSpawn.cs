@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class BossSpawn : MonoBehaviour
 {
+    private int count = 0;
+
     public GameObject Boss;
 
 
@@ -18,6 +20,12 @@ public class BossSpawn : MonoBehaviour
         if (other.tag == "Player")
         {
             StartCoroutine(BossSpawning(other));
+
+            if (count > 0)
+            {
+                Boss.transform.DOMove(Boss.transform.position + new Vector3(0, 0, 4f), time).SetEase(easeType);
+            }
+            count++;
         }
 
         

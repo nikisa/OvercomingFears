@@ -460,6 +460,7 @@ public class GameManager : MonoBehaviour
         m_isGamePlaying = true;
         yield return new WaitForSeconds(delay);
         m_player.playerInput.InputEnabled = true;
+        m_player.playerInput.PauseInputEnabled = true;
 
         if (playLevelEvent != null)
         {
@@ -499,7 +500,9 @@ public class GameManager : MonoBehaviour
 
         m_isGameOver = true;
         m_player.playerInput.InputEnabled = false;
-        
+        m_player.playerInput.PauseInputEnabled = false;
+
+
         if (loseLevelEvent != null)
         {
             loseLevelEvent.Invoke();
@@ -674,7 +677,7 @@ public class GameManager : MonoBehaviour
         //LightBulbNode();
         //FearEnemies();
         FlashLightNode();
-        PlayerInGate();
+        
         
 
         foreach (var enemy in m_enemies)
@@ -711,7 +714,7 @@ public class GameManager : MonoBehaviour
                 }
 
                 if (m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position) != null)
-                { //forse sto if non serve
+                { //probably sto if non serve
 
                     //if ((m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
                     //&& !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen)) {
@@ -740,14 +743,15 @@ public class GameManager : MonoBehaviour
 
         if (m_currentTurn == Turn.Player && m_player != null)
         {
-           
 
+            
             triggerNodePlayerTurn();
             triggerNode();
             triggerNodeWithMovable();
 
             if (m_player.IsTurnComplete && !AreEnemiesAllDead())
             {
+                PlayerInGate();
                 foreach (EnemyManager enemy in m_enemies) {
                     if (enemy != null) {
                         enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 0);
@@ -760,6 +764,7 @@ public class GameManager : MonoBehaviour
             else if (AreEnemiesAllDead())
             {
                 m_board.m_gm.crackNode();
+                PlayerInGate();
             }
 
 
@@ -882,6 +887,7 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayerDeathByCrackable()
     {
         m_player.playerInput.InputEnabled = false;
+        m_player.playerInput.PauseInputEnabled = false;
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 8);
         yield return new WaitForSeconds(.2f);
         LoseLevel();

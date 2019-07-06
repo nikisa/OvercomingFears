@@ -47,6 +47,9 @@ public class PlayerInput : MonoBehaviour {
     [SerializeField]
     bool m_inputEnabled = false;
 
+    [SerializeField]
+    bool m_pauseInputEnabled = false;
+
     public bool InputEnabled {
         get {
             return m_inputEnabled;
@@ -54,6 +57,19 @@ public class PlayerInput : MonoBehaviour {
 
         set {
             m_inputEnabled = value;
+        }
+    }
+
+    public bool PauseInputEnabled
+    {
+        get
+        {
+            return m_pauseInputEnabled;
+        }
+
+        set
+        {
+            m_pauseInputEnabled = value;
         }
     }
 

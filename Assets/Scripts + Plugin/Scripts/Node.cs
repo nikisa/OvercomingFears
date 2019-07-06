@@ -850,6 +850,7 @@ public class Node : MonoBehaviour
 
     IEnumerator Death() {
         m_player.playerInput.InputEnabled = false;
+        m_player.playerInput.PauseInputEnabled = false;
         yield return new WaitForSeconds(.35f);
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 7);

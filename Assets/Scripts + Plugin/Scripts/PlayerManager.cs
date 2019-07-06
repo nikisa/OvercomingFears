@@ -299,7 +299,7 @@ public class PlayerManager : TurnManager
 
 
 
-                if (playerInput.ESC)
+                if (playerInput.ESC && playerInput.PauseInputEnabled)
                 {
                     if (PauseCanvas.gameObject.activeSelf)
                     {
@@ -1411,6 +1411,7 @@ public class PlayerManager : TurnManager
             {
                 Debug.Log("LoseLevel");
                 playerInput.InputEnabled = false;
+                playerInput.PauseInputEnabled = false;
                 m_gameManager.LoseLevel();
             }
         }
