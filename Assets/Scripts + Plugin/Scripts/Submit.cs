@@ -9,7 +9,7 @@ public class Submit : Button
     public int X;
     public override void OnSubmit(BaseEventData eventData)
     {
-        Debug.Log("submit");
+        //Debug.Log("submit");
         base.OnSubmit(eventData);
     }
 

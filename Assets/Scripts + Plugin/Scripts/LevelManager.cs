@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour {
 
     public void resetLevels() {
         PlayerPrefs.SetInt("LevelID" , 0);
-        Debug.Log("reset");
+        //Debug.Log("reset");
         LevelSelectionSetup();
         LevelSelectionDisable();
     }

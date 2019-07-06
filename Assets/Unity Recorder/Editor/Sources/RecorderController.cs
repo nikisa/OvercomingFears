@@ -52,13 +52,13 @@ namespace UnityEditor.Recorder
             if (IsRecording())
             {
                 if (Options.verboseMode)
-                    Debug.Log("Recording was already started.");
+                    //Debug.Log("Recording was already started.");
                 
                 return false;
             }
 
             if (Options.verboseMode)
-                Debug.Log("Start Recording.");
+                //Debug.Log("Start Recording.");
             
             SceneHook.PrepareSessionRoot();
             
@@ -69,7 +69,7 @@ namespace UnityEditor.Recorder
                 if (recorderSetting == null)
                 {
                     if (Options.verboseMode)
-                        Debug.Log("Ignoring unknown recorder.");
+                       Debug.Log("Ignoring unknown recorder.");
 
                     continue;
                 }
@@ -79,7 +79,7 @@ namespace UnityEditor.Recorder
                 if (recorderSetting.HasErrors())
                 {
                     if (Options.verboseMode)
-                        Debug.Log("Ignoring invalid recorder '" + recorderSetting.name + "'");
+                       Debug.Log("Ignoring invalid recorder '" + recorderSetting.name + "'");
 
                     continue;
                 }
@@ -142,7 +142,7 @@ namespace UnityEditor.Recorder
         public void StopRecording()
         {           
             if (Options.verboseMode)
-                Debug.Log("Stop Recording.");
+                //Debug.Log("Stop Recording.");
 
             if (m_RecordingSessions != null)
             {

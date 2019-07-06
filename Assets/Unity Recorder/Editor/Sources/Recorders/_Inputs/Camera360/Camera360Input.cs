@@ -49,13 +49,13 @@ namespace UnityEditor.Recorder.Input
                         {
                             var cams = GameObject.FindGameObjectsWithTag(tag);
                             if (cams.Length > 0)
-                                Debug.LogWarning("More than one camera has the requested target tag:" + tag);
+                                //Debug.LogWarning("More than one camera has the requested target tag:" + tag);
                             targetCamera = cams[0].transform.GetComponent<Camera>();
                             
                         }
                         catch (UnityException)
                         {
-                            Debug.LogWarning("No camera has the requested target tag:" + tag);
+                            //Debug.LogWarning("No camera has the requested target tag:" + tag);
                             targetCamera = null;
                         }
                     }

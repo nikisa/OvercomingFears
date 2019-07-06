@@ -86,7 +86,7 @@ namespace UnityEditor.Recorder.Input
                     samples[15] = new Vector2(-7.0f, -8.0f);
                     break;
                 default:
-                    Debug.LogError("Not expected sample count: " + sc);
+                    //Debug.LogError("Not expected sample count: " + sc);
                     return;
             }
             const float oneOverSixteen = 1.0f / 16.0f;
@@ -221,7 +221,7 @@ namespace UnityEditor.Recorder.Input
                     }
                     catch (UnityException)
                     {
-                        Debug.LogWarning("No camera has the requested target tag:" + tag);
+                        //Debug.LogWarning("No camera has the requested target tag:" + tag);
                         taggedObjs = new GameObject[0];
                     }
 

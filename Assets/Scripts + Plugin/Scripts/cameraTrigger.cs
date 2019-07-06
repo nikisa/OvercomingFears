@@ -48,7 +48,7 @@ public class cameraTrigger : MonoBehaviour
             }
         }
 
-        Debug.Log(m_LocalCameras);
+        //Debug.Log(m_LocalCameras);
     }
 
     
@@ -107,7 +107,7 @@ public class cameraTrigger : MonoBehaviour
 
     IEnumerator TwiningManager(){
         foreach (LocalCamera localCamera in m_LocalCameras) {
-            Debug.Log("TRIGGERED");
+            //Debug.Log("TRIGGERED");
             if (localCamera.localCameraID == CameraID) {
                 resetOtherCameras(CameraID);
                 m_cameraPathPosition.cameraBond = false;

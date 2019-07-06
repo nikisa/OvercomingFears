@@ -24,7 +24,7 @@ namespace UnityEditor.Recorder.Input
 
             if (gameView.GetType().GetField("m_MaximizeOnPlay", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(gameView)  as bool? == true)
             {
-                Debug.LogWarning("'Maximize on Play' not compatible wit recorder: disabling it!");
+                //Debug.LogWarning("'Maximize on Play' not compatible wit recorder: disabling it!");
                 gameView.GetType().GetField("m_MaximizeOnPlay", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(gameView, false);
             }
         }

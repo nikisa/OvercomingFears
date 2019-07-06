@@ -32,7 +32,7 @@ public class EnemyDeath : MonoBehaviour {
 
     public void Die() {
         Destroy(gameObject);
-        //Debug.Log("+1 kill");
+        ////Debug.Log("+1 kill");
     }
 
     //IEnumerator DieRoutine() {

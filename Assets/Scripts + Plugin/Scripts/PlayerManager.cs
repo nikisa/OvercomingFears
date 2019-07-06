@@ -179,7 +179,7 @@ public class PlayerManager : TurnManager
     {
 
         if (UiManager.isCover && Input.anyKeyDown) {
-            Debug.Log("ANY BUTTON");
+            //Debug.Log("ANY BUTTON");
             GameManager.stateMainMenu();
         }
 
@@ -269,7 +269,7 @@ public class PlayerManager : TurnManager
 
                 if (m_board.playerNode.isASwitch && playerInput.S)
                 {
-                    Debug.Log("S");
+                    //Debug.Log("S");
                     StartCoroutine("InputDelay");
                     PlayerAnimatorController.SetInteger("PlayerState", 2);
                     bool switchState = m_board.playerNode.GetSwitchState();
@@ -503,7 +503,7 @@ public class PlayerManager : TurnManager
 
                             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100, obstacleLayer))
                             {
-                                Debug.Log("Shoot up");
+                                //Debug.Log("Shoot up");
                                 
                                 Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.up * hit.distance, Color.red);
                                 PlayerAnimatorController.SetInteger("PlayerState", 9);
@@ -534,12 +534,12 @@ public class PlayerManager : TurnManager
 
                                             case 0:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                                                Debug.Log("case 0");
+                                                //Debug.Log("case 0");
                                                 break;
 
                                             case 1:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                                                Debug.Log("case 1");
+                                                //Debug.Log("case 1");
                                                 break;
 
                                         }
@@ -597,12 +597,12 @@ public class PlayerManager : TurnManager
 
                                             case 2:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                                                Debug.Log("case 2");
+                                                //Debug.Log("case 2");
                                                 break;
 
                                             case 3:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                                                Debug.Log("case 3");
+                                                //Debug.Log("case 3");
                                                 break;
 
                                         }
@@ -659,12 +659,12 @@ public class PlayerManager : TurnManager
 
                                             case 1:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                                                Debug.Log("case 1");
+                                                //Debug.Log("case 1");
                                                 break;
 
                                             case 2:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                                                Debug.Log("case 2");
+                                                //Debug.Log("case 2");
                                                 break;
 
                                         }
@@ -720,12 +720,12 @@ public class PlayerManager : TurnManager
 
                                             case 0:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                                                Debug.Log("case 0");
+                                                //Debug.Log("case 0");
                                                 break;
 
                                             case 3:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                                                Debug.Log("case 3");
+                                                //Debug.Log("case 3");
                                                 break;
 
                                         }
@@ -918,7 +918,7 @@ public class PlayerManager : TurnManager
 
                             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100, obstacleLayer))
                             {
-                                Debug.Log("Shoot up");
+                                //Debug.Log("Shoot up");
                                 Debug.DrawRay(GetComponent<PlayerManager>().transform.position + new Vector3(0, 0.5f), Vector3.up * hit.distance, Color.red);
                                 PlayerAnimatorController.SetInteger("PlayerState" , 9);
                                 switch (hit.collider.tag)
@@ -946,12 +946,12 @@ public class PlayerManager : TurnManager
 
                                             case 0:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                                                Debug.Log("case 0");
+                                                //Debug.Log("case 0");
                                                 break;
 
                                             case 1:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                                                Debug.Log("case 1");
+                                                //Debug.Log("case 1");
                                                 break;
 
                                         }
@@ -1007,12 +1007,12 @@ public class PlayerManager : TurnManager
 
                                             case 2:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                                                Debug.Log("case 2");
+                                                //Debug.Log("case 2");
                                                 break;
 
                                             case 3:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                                                Debug.Log("case 3");
+                                                //Debug.Log("case 3");
                                                 break;
 
                                         }
@@ -1065,12 +1065,12 @@ public class PlayerManager : TurnManager
 
                                             case 1:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                                                Debug.Log("case 1");
+                                                //Debug.Log("case 1");
                                                 break;
 
                                             case 2:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                                                Debug.Log("case 2");
+                                                //Debug.Log("case 2");
                                                 break;
 
                                         }
@@ -1131,12 +1131,12 @@ public class PlayerManager : TurnManager
 
                                             case 0:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                                                Debug.Log("case 0");
+                                                //Debug.Log("case 0");
                                                 break;
 
                                             case 3:
                                                 hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                                                Debug.Log("case 3");
+                                                //Debug.Log("case 3");
                                                 break;
 
                                         }
@@ -1405,10 +1405,10 @@ public class PlayerManager : TurnManager
 
         foreach (var enemy in m_gameManager.m_enemies)
         {
-            Debug.Log(m_board.FindNodeAt(enemy.transform.position).gateOpen);
+            //Debug.Log(m_board.FindNodeAt(enemy.transform.position).gateOpen);
             if (enemy != null && m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen && enemy.GetEnemySensor.FoundPlayer)
             {
-                Debug.Log("LoseLevel");
+                //Debug.Log("LoseLevel");
                 playerInput.InputEnabled = false;
                 playerInput.PauseInputEnabled = false;
                 m_gameManager.LoseLevel();

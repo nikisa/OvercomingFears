@@ -105,7 +105,7 @@ namespace UnityEditor.Recorder.Input
                         {
                             if (size != GameViewSize.currentSize)
                             {
-                                Debug.LogError("Requesting a resolution change while a recorder's input has already requested one! Undefined behaviour.");
+                                //Debug.LogError("Requesting a resolution change while a recorder's input has already requested one! Undefined behaviour.");
                             }
                         }
                         GameViewSize.modifiedResolutionCount++;
@@ -178,14 +178,14 @@ namespace UnityEditor.Recorder.Input
 
                             var cams = objs.Select(obj => obj.GetComponent<Camera>()).Where(c => c != null);
                             if (cams.Count() > 1)
-                                Debug.LogWarning("More than one camera has the requested target tag '" + tag + "'");
+                                //Debug.LogWarning("More than one camera has the requested target tag '" + tag + "'");
                             
                             targetCamera = cams.FirstOrDefault();
                             
                         }
                         catch (UnityException)
                         {
-                            Debug.LogWarning("No camera has the requested target tag '" + tag + "'");
+                            //Debug.LogWarning("No camera has the requested target tag '" + tag + "'");
                             targetCamera = null;
                         }
                     }

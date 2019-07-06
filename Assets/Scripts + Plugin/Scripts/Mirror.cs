@@ -89,7 +89,7 @@ public class Mirror : MovableObject {
 
         Vector3 temp = transform.position - new Vector3(.3f,0,0);
         if (Physics.Raycast(temp, Vector3.left, out hit, 100, obstacleLayer)) {
-            Debug.Log("ShootLeft");
+            //Debug.Log("ShootLeft");
             Debug.DrawRay(GetComponent<Mirror>().transform.position + new Vector3(0, 0.5f), Vector3.left * hit.distance, Color.red);
 
             switch (hit.collider.tag) {
@@ -105,19 +105,19 @@ public class Mirror : MovableObject {
 
                         case 3:
                             hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                            Debug.Log("case 3");
+                            //Debug.Log("case 3");
                             break;
 
                         case 0:
                             hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                            Debug.Log("case 0");
+                            //Debug.Log("case 0");
                             break;
                         
                     }
                 break;
                             
                 case "Wall":
-                    Debug.Log("WALL");
+                    //Debug.Log("WALL");
                     break;
             }
             
@@ -138,7 +138,7 @@ public class Mirror : MovableObject {
 
         Vector3 temp = transform.position + new Vector3(.3f, 0, 0);
         if (Physics.Raycast(temp, Vector3.right, out hit, 100, obstacleLayer)) {
-            Debug.Log("ShootRight");
+            //Debug.Log("ShootRight");
             Debug.DrawRay(GetComponent<Mirror>().transform.position + new Vector3(0, 0.5f), Vector3.right * hit.distance, Color.red);
 
             switch (hit.collider.tag) {
@@ -153,17 +153,17 @@ public class Mirror : MovableObject {
 
                         case 1:
                             hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                            Debug.Log("case 1");
+                            //Debug.Log("case 1");
                             break;
                         case 2:
                             hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                            Debug.Log("case 2");
+                            //Debug.Log("case 2");
                             break;
                     }
                     break;
 
                 case "Wall":
-                    Debug.Log("WALL");
+                    //Debug.Log("WALL");
                     break;
             }
             StartCoroutine(DisableLineRenderer());
@@ -181,7 +181,7 @@ public class Mirror : MovableObject {
 
         Vector3 temp = transform.position + new Vector3(0, 0, .3f);
         if (Physics.Raycast(temp, Vector3.forward, out hit, 1000, obstacleLayer)) {
-            Debug.Log("ShootUp");
+            //Debug.Log("ShootUp");
             Debug.DrawRay(GetComponent<Mirror>().transform.position + new Vector3(0, 0.5f), Vector3.forward * hit.distance, Color.red);
 
             switch (hit.collider.tag) {
@@ -197,18 +197,18 @@ public class Mirror : MovableObject {
 
                         case 0:
                             hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                            Debug.Log("case 0");
+                            //Debug.Log("case 0");
                             break;
                         case 1:
                             hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                            Debug.Log("case 1");
+                            //Debug.Log("case 1");
                             break;
                     }
 
                     break;
 
                 case "Wall":
-                    Debug.Log("WALL");
+                    //Debug.Log("WALL");
                     break;
             }
             StartCoroutine(DisableLineRenderer());
@@ -226,7 +226,7 @@ public class Mirror : MovableObject {
 
         Vector3 temp = transform.position - new Vector3(0, 0, .3f);
         if (Physics.Raycast(temp, Vector3.back, out hit, 100, obstacleLayer)) {
-            Debug.Log("ShootDown");
+            //Debug.Log("ShootDown");
             Debug.DrawRay(GetComponent<Mirror>().transform.position + new Vector3(0, 0.5f), Vector3.back * hit.distance, Color.red);
 
             switch (hit.collider.tag) {
@@ -243,18 +243,18 @@ public class Mirror : MovableObject {
 
                         case 2:
                             hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                            Debug.Log("case 2");
+                            //Debug.Log("case 2");
                             break;
                         case 3:
                             hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                            Debug.Log("case 3");
+                            //Debug.Log("case 3");
                             break;
                     }
 
                     break;
 
                 case "Wall":
-                    Debug.Log("WALL");
+                    //Debug.Log("WALL");
                     break;
             }
             StartCoroutine(DisableLineRenderer());

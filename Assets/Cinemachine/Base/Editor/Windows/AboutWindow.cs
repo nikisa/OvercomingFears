@@ -111,7 +111,7 @@ namespace Cinemachine.Editor
                     string filename = ScriptableObjectUtility.CinemachineInstallPath 
                         + "/CINEMACHINE_install.pdf";
                     if (!File.Exists(filename))
-                        Debug.LogError("Missing file " + filename);
+                        //Debug.LogError("Missing file " + filename);
                     Application.OpenURL("file://" + filename);
                 }
             }

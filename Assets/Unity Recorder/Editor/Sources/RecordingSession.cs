@@ -69,7 +69,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex);
+                //Debug.LogException(ex);
                 return false;
             }
         }
@@ -80,7 +80,7 @@ namespace UnityEditor.Recorder
             {
                 if (!settings.isPlatformSupported)
                 {
-                    Debug.LogError(string.Format("Recorder {0} does not support current platform", recorder.GetType().Name));
+                    //Debug.LogError(string.Format("Recorder {0} does not support current platform", recorder.GetType().Name));
                     return false;
                 }
 
@@ -98,7 +98,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex);
+                //Debug.LogException(ex);
                 return false;
             }
         }
@@ -115,7 +115,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex);
+                //Debug.LogException(ex);
             }
         }
 
@@ -135,7 +135,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex);
+                //Debug.LogException(ex);
             }
 
             // Note: This is not great when multiple recorders are simultaneously active...
@@ -151,13 +151,13 @@ namespace UnityEditor.Recorder
                 if (sleep > 2)
                 {
                     if (Options.verboseMode)
-                        Debug.Log(string.Format("Recording session info => dT: {0:F1}s, Target dT: {1:F1}s, Retarding: {2}ms, fps: {3:F1}", elapsed, target, sleep, frameCount / elapsed));
+                        //Debug.Log(string.Format("Recording session info => dT: {0:F1}s, Target dT: {1:F1}s, Retarding: {2}ms, fps: {3:F1}", elapsed, target, sleep, frameCount / elapsed));
                     System.Threading.Thread.Sleep(Math.Min(sleep, 1000));
                 }
                 else if (sleep < -frameLen)
                     m_InitialFrame--;
                 else if (Options.verboseMode)
-                    Debug.Log(string.Format("Recording session info => fps: {0:F1}", frameCount / elapsed));
+                    //Debug.Log(string.Format("Recording session info => fps: {0:F1}", frameCount / elapsed));
 
                 // reset every 30 frames
                 if (frameCount % 50 == 49)
@@ -186,7 +186,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex);
+                //Debug.LogException(ex);
             }
         }
 

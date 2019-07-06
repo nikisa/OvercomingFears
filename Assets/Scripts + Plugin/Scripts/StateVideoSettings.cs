@@ -84,7 +84,7 @@ public class StateVideoSettings : StateMachineBehaviour
                         }
 
                         qualityText.GetComponent<Text>().text = GameManager.Instance.SetVideoSettingString();
-                        Debug.Log(qualityNames[qualityNamesIndex].ToString());
+                        //Debug.Log(qualityNames[qualityNamesIndex].ToString());
                         
                         break;
                     case 1:
@@ -94,7 +94,7 @@ public class StateVideoSettings : StateMachineBehaviour
                         }
 
                         resolutionText.GetComponent<Text>().text = GameManager.Instance.SetVideoSettingString();
-                        Debug.Log(resolutions[resolutionIndex].ToString());
+                        //Debug.Log(resolutions[resolutionIndex].ToString());
                         break;
                     case 2:
                         windowed = !windowed;

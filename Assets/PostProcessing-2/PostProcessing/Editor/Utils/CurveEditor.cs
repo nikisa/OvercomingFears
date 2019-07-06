@@ -179,7 +179,7 @@ namespace UnityEditor.Rendering.PostProcessing
                 throw new ArgumentException("curve");
 
             if (m_Curves.ContainsKey(curve))
-                Debug.LogWarning("Curve has already been added to the editor");
+                //Debug.LogWarning("Curve has already been added to the editor");
 
             m_Curves.Add(curve, state);
         }

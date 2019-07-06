@@ -41,7 +41,7 @@ public class Armor : MonoBehaviour {
         isActive = !isActive;
         if (!brokenSword && isActive == true) {
             transform.GetChild(3).gameObject.SetActive(true);
-            Debug.Log("Sword at node " + m_board.FindNodeAt(transform.GetChild(3).transform.position) + " activated");
+            //Debug.Log("Sword at node " + m_board.FindNodeAt(transform.GetChild(3).transform.position) + " activated");
             this.AnimatorController.SetBool("ArmorState" , isActive);
         }
         else if (isActive == false) {

@@ -96,7 +96,7 @@ namespace Cinemachine.Editor
             T asset = ScriptableObject.CreateInstance<T>();
             if (asset == null)
             {
-                Debug.LogError("failed to create instance of " + typeof(T).Name);
+                //Debug.LogError("failed to create instance of " + typeof(T).Name);
                 return null;
             }
 
@@ -110,7 +110,7 @@ namespace Cinemachine.Editor
             ScriptableObject asset = ScriptableObject.CreateInstance(className);
             if (asset == null)
             {
-                Debug.LogError("failed to create instance of " + className);
+                //Debug.LogError("failed to create instance of " + className);
                 return null;
             }
 

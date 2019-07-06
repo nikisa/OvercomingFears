@@ -116,7 +116,7 @@ namespace Cinemachine.PostFX
 
         static void OnCameraCut(CinemachineBrain brain)
         {
-            // Debug.Log("Camera cut event");
+            // //Debug.Log("Camera cut event");
             PostProcessLayer postFX = brain.PostProcessingComponent as PostProcessLayer;
             if (postFX == null)
                 brain.PostProcessingComponent = null;   // object deleted

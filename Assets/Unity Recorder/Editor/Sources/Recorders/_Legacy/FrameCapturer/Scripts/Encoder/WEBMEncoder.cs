@@ -16,7 +16,7 @@ namespace UnityEditor.Recorder.FrameCapturer
         {
             if (!fcAPI.fcWebMIsSupported())
             {
-                Debug.LogError("WebM encoder is not available on this platform.");
+                //Debug.LogError("WebM encoder is not available on this platform.");
                 return;
             }
 
@@ -26,7 +26,7 @@ namespace UnityEditor.Recorder.FrameCapturer
                 var sampleRate = AudioSettings.outputSampleRate;
                 if (sampleRate != 8000 && sampleRate != 12000 && sampleRate != 16000 && sampleRate != 24000 && sampleRate != 48000)
                 {
-                    Debug.LogError("Current output sample rate is " + sampleRate + ". It must be 8000, 12000, 16000, 24000 or 48000 to use Opus audio encoder. Fallback to Vorbis.");
+                    //Debug.LogError("Current output sample rate is " + sampleRate + ". It must be 8000, 12000, 16000, 24000 or 48000 to use Opus audio encoder. Fallback to Vorbis.");
                     m_config.audioEncoder = fcAPI.fcWebMAudioEncoder.Vorbis;
                 }
             }

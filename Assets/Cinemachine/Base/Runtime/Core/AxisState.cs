@@ -118,7 +118,7 @@ namespace Cinemachine
                 }
                 catch (ArgumentException e)
                 {
-                    Debug.LogError(e.ToString());
+                    //Debug.LogError(e.ToString());
                 }
             }
 

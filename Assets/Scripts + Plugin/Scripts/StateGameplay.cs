@@ -8,7 +8,7 @@ public class StateGameplay : StateBehaviourBase
  
     
     private void OnSceneLoaded(Scene scene , LoadSceneMode mode) {
-        Debug.Log("STARTGAME");
+        //Debug.Log("STARTGAME");
         GameManager.Instance.StartGameLoop();
         GameManager.Instance.IsGameplay = true;
     }

@@ -129,7 +129,7 @@ namespace Cinemachine.PostFX
         {
             if (mPostProcessingBehaviour != null)
             {
-                //Debug.Log("CinemachinePostFX.OnCameraCut()");
+                ////Debug.Log("CinemachinePostFX.OnCameraCut()");
                 mPostProcessingBehaviour.ResetTemporalEffects();
             }
         }

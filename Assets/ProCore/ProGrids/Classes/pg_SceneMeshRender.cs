@@ -36,7 +36,7 @@ public class pg_SceneMeshRender : MonoBehaviour
 		{
 			
 			GameObject.DestroyImmediate(this.gameObject);
-			// Debug.Log("NULL MESH || MATERIAL");
+			// //Debug.Log("NULL MESH || MATERIAL");
 			return;
 		}
 

@@ -114,7 +114,7 @@ namespace UnityEditor.Recorder.Timeline
                 if (GUILayout.Button("Reset settings to default"))
                     ResetSettings();
 
-                Debug.LogException(ex);
+                //Debug.LogException(ex);
             }
         }
 

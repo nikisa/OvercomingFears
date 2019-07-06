@@ -257,7 +257,7 @@ public class Node : MonoBehaviour
 
         if (Physics.Raycast(transform.position, checkDirection, out raycastHit, BoardManager.spacing + 0.1f, obstacleLayer))
         {
-            //Debug.Log("Node FindObstacle: Ha colpito un ostacolo da " + this.name + " a " + targetNode.name);
+            ////Debug.Log("Node FindObstacle: Ha colpito un ostacolo da " + this.name + " a " + targetNode.name);
             return raycastHit.collider.GetComponent<Obstacle>();
         }
         return null;
@@ -351,7 +351,7 @@ public class Node : MonoBehaviour
             {
                 if (!TriggerOrLogic())
                 {
-                    Debug.Log("OR: " + TriggerOrLogic());
+                    //Debug.Log("OR: " + TriggerOrLogic());
                     //triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
                     ArmorDeactivation(armorID);
                     UpdateGateToOpen(gateID);
@@ -416,7 +416,7 @@ public class Node : MonoBehaviour
         //        if (enemy.m_enemySensor.FoundPlayer && enemy.isOff == false && m_board.FindNodeAt(enemy.transform.position).gateOpen == true) {
         //            //attack player
         //            //notify the GM to lose the level
-        //            Debug.Log(this.name + "MORTE");
+        //            //Debug.Log(this.name + "MORTE");
         //            m_board.m_gm.LoseLevel();
         //        }
         //    }
@@ -748,7 +748,7 @@ public class Node : MonoBehaviour
         if (result > 0)
             ris = true;
 
-        Debug.Log(ris);
+        //Debug.Log(ris);
         return ris;
     }
 
@@ -782,8 +782,8 @@ public class Node : MonoBehaviour
         
         if (id > 0 && id <= 6) {
             foreach (Node triggerNode in m_board.TriggerNodes) {
-                Debug.Log(triggerNode);
-                Debug.Log(m_board.TriggerNodes.Count);
+                //Debug.Log(triggerNode);
+                //Debug.Log(m_board.TriggerNodes.Count);
                 if (triggerNode.armorID == id || triggerNode.trapID == id || triggerNode.gateID == id) {
                         triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(state);
                     }
@@ -941,7 +941,7 @@ public class Node : MonoBehaviour
             //    if (enemy.m_enemySensor.FoundPlayer && enemy.isOff == false && m_board.FindNodeAt(enemy.transform.position).gateOpen == true) {
             //        //attack player
             //        //notify the GM to lose the level
-            //        Debug.Log(enemy.name + "MORTE");
+            //        //Debug.Log(enemy.name + "MORTE");
 
             //        m_board.m_gm.LoseLevel();
             //    }

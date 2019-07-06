@@ -116,7 +116,6 @@ public static class SoundManager
                 {
                     return true;
                 }
-                break;
                 
         }
     }

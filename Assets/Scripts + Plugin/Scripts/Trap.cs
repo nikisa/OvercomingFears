@@ -44,7 +44,7 @@ public class Trap : MonoBehaviour {
 
 
         if (Physics.Raycast(transform.GetChild(1).gameObject.transform.position, transform.GetChild(1).gameObject.transform.forward, out hit, 100, obstacleLayer)) {
-                Debug.Log("HIT");
+                //Debug.Log("HIT");
                 Debug.DrawRay(GetComponent<Trap>().transform.GetChild(1).gameObject.transform.position, transform.GetChild(1).gameObject.transform.forward * hit.distance, Color.red);
                 
                 switch (hit.collider.tag) {
@@ -59,23 +59,23 @@ public class Trap : MonoBehaviour {
 
                             case 0:
                                 hit.collider.GetComponent<Mirror>().MirrorShootRight();
-                                Debug.Log("case 0");
+                                //Debug.Log("case 0");
                                 break;
 
                             case 1:
                                 hit.collider.GetComponent<Mirror>().MirrorShootLeft();
-                                Debug.Log("case 1");
+                                //Debug.Log("case 1");
                                 break;
 
                             case 2:
                                 hit.collider.GetComponent<Mirror>().MirrorShootUp();
-                                Debug.Log("case 3");
+                                //Debug.Log("case 3");
                                 break;
                             
 
                             case 3:
                                 hit.collider.GetComponent<Mirror>().MirrorShootDown();
-                                Debug.Log("case 2");
+                                //Debug.Log("case 2");
                                 break;
 
                     }

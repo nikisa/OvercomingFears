@@ -27,7 +27,7 @@ public class Sword : MonoBehaviour {
     //public void CaptureEnemies() {
     //    if (m_board != null) {
     //        List<EnemyManager> enemies = m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position));
-    //        Debug.Log(m_board.FindNodeAt(transform.position));
+    //        //Debug.Log(m_board.FindNodeAt(transform.position));
 
     //        //Enemies rimane vuoto
 

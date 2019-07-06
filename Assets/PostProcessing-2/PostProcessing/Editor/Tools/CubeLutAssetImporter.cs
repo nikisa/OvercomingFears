@@ -58,7 +58,7 @@ namespace UnityEditor.Rendering.PostProcessing
                 if (i >= lines.Length)
                 {
                     if (table.Count != sizeCube)
-                        Debug.LogError("Premature end of file");
+                        //Debug.LogError("Premature end of file");
 
                     break;
                 }
@@ -78,13 +78,13 @@ namespace UnityEditor.Rendering.PostProcessing
 
                     if (!int.TryParse(sizeStr, out size))
                     {
-                        Debug.LogError("Invalid data on line " + i);
+                        //Debug.LogError("Invalid data on line " + i);
                         break;
                     }
 
                     if (size < 2 || size > 256)
                     {
-                        Debug.LogError("LUT size out of range");
+                        //Debug.LogError("LUT size out of range");
                         break;
                     }
 
@@ -109,7 +109,7 @@ namespace UnityEditor.Rendering.PostProcessing
 
                 if (row.Length != 3)
                 {
-                    Debug.LogError("Invalid data on line " + i);
+                    //Debug.LogError("Invalid data on line " + i);
                     break;
                 }
 
@@ -119,7 +119,7 @@ namespace UnityEditor.Rendering.PostProcessing
                     float d;
                     if (!float.TryParse(row[j], NumberStyles.Float, CultureInfo.InvariantCulture.NumberFormat, out d))
                     {
-                        Debug.LogError("Invalid data on line " + i);
+                        //Debug.LogError("Invalid data on line " + i);
                         break;
                     }
 
@@ -134,7 +134,7 @@ namespace UnityEditor.Rendering.PostProcessing
 
             if (sizeCube != table.Count)
             {
-                Debug.LogError("Wrong table size - Expected " + sizeCube + " elements, got " + table.Count);
+                //Debug.LogError("Wrong table size - Expected " + sizeCube + " elements, got " + table.Count);
                 return;
             }
 
@@ -196,7 +196,7 @@ namespace UnityEditor.Rendering.PostProcessing
 
             if (domainStrs.Length != 3)
             {
-                Debug.LogError("Invalid data on line " + i);
+                //Debug.LogError("Invalid data on line " + i);
                 return false;
             }
 
@@ -205,7 +205,7 @@ namespace UnityEditor.Rendering.PostProcessing
                 float d;
                 if (!float.TryParse(domainStrs[j], NumberStyles.Float, CultureInfo.InvariantCulture.NumberFormat, out d))
                 {
-                    Debug.LogError("Invalid data on line " + i);
+                    //Debug.LogError("Invalid data on line " + i);
                     return false;
                 }
 

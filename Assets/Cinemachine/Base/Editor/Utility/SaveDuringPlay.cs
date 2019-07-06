@@ -257,7 +257,7 @@ namespace SaveDuringPlay
                 {
                     // Save the value in the dictionary
                     mValues[fullName] = StringFromLeafObject(value);
-                    //Debug.Log(mObjectFullPath + "." + fullName + " = " + mValues[fullName]);
+                    ////Debug.Log(mObjectFullPath + "." + fullName + " = " + mValues[fullName]);
                     return false;
                 };
             scanner.ScanFields(go);
@@ -287,7 +287,7 @@ namespace SaveDuringPlay
                     if (mValues.TryGetValue(fullName, out savedValue)
                         && StringFromLeafObject(value) != savedValue)
                     {
-                        //Debug.Log(mObjectFullPath + "." + fullName + " = " + mValues[fullName]);
+                        ////Debug.Log(mObjectFullPath + "." + fullName + " = " + mValues[fullName]);
                         value = LeafObjectFromString(type, mValues[fullName].Trim(), roots);
                         return true; // changed
                     }
@@ -473,7 +473,7 @@ namespace SaveDuringPlay
                 {
                     if (attr.GetType().Name.Contains("SaveDuringPlay"))
                     {
-                        //Debug.Log("Found " + ObjectTreeUtil.GetFullName(b.gameObject) + " for hot-save"); 
+                        ////Debug.Log("Found " + ObjectTreeUtil.GetFullName(b.gameObject) + " for hot-save"); 
                         objects.Add(b.transform);
                         break;
                     }
@@ -486,7 +486,7 @@ namespace SaveDuringPlay
         static GameObject sSaveStatesGameObject;
         static void SaveAllInterestingStates()
         {
-            //Debug.Log("Exiting play mode: Saving state for all interesting objects");
+            ////Debug.Log("Exiting play mode: Saving state for all interesting objects");
             if (OnHotSave != null)
                 OnHotSave();
 
@@ -504,7 +504,7 @@ namespace SaveDuringPlay
 
         static void RestoreAllInterestingStates()
         {
-            //Debug.Log("Updating state for all interesting objects");
+            ////Debug.Log("Updating state for all interesting objects");
             bool dirty = false;
             GameObject[] roots = ObjectTreeUtil.FindAllRootObjectsInScene();
             foreach (ObjectStateSaver saver in sSavedStates)
@@ -515,7 +515,7 @@ namespace SaveDuringPlay
                     Undo.RegisterFullObjectHierarchyUndo(go, "SaveDuringPlay");
                     if (saver.PutFieldValues(go, roots))
                     {
-                        //Debug.Log("SaveDuringPlay: updated settings of " + saver.ObjetFullPath);
+                        ////Debug.Log("SaveDuringPlay: updated settings of " + saver.ObjetFullPath);
                         EditorUtility.SetDirty(go);
                         dirty = true;
                     }

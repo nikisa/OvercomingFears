@@ -35,7 +35,7 @@ public class PlayerCompass : MonoBehaviour {
 
     void SetupArrows() {
         if (arrowPrefab == null) {
-            Debug.LogWarning("MISSING ARROW PREFAB!!");
+            //Debug.LogWarning("MISSING ARROW PREFAB!!");
             return;
         }
         
@@ -67,12 +67,12 @@ public class PlayerCompass : MonoBehaviour {
     public void ShowArrows(bool state) {
 
         if (m_board == null) {
-            Debug.LogWarning("NO BOARD FOUND NIbbA!");
+            //Debug.LogWarning("NO BOARD FOUND NIbbA!");
             return;
         }
 
         if (m_arrows == null || m_arrows.Count != BoardManager.directions.Length) {
-            Debug.LogWarning("no Board found");
+            //Debug.LogWarning("no Board found");
             return;
         }
         if (m_board.playerNode != null) {

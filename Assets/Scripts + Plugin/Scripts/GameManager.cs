@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("out");
+            //Debug.Log("out");
         }
     }
 
@@ -140,7 +140,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("out");
+            //Debug.Log("out");
         }
     }
 
@@ -166,7 +166,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("out");
+            //Debug.Log("out");
         }
     }
 
@@ -174,12 +174,12 @@ public class GameManager : MonoBehaviour
     {
         if (statePlayMenu != null)
         {
-            Debug.Log("PlayMenu");
+            //Debug.Log("PlayMenu");
             UIController.SetTrigger("Play");
         }
         else
         {
-            Debug.Log("out");
+            //Debug.Log("out");
         }
     }
 
@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("out");
+            //Debug.Log("out");
         }
     }
 
@@ -398,7 +398,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("GameManager ERROR: no player or board found");
+            //Debug.LogWarning("GameManager ERROR: no player or board found");
         }
     }
 
@@ -414,14 +414,14 @@ public class GameManager : MonoBehaviour
 
         transform.GetChild(2).gameObject.SetActive(false);
 
-        Debug.Log("SETUP LEVEL");
+        //Debug.Log("SETUP LEVEL");
         if (setupEvent != null)
         {
             setupEvent.Invoke();
         }
 
 
-        Debug.Log("START LEVEL");
+        //Debug.Log("START LEVEL");
 
         m_player.playerInput.InputEnabled = false;
         while (!m_hasLevelStarted)
@@ -446,7 +446,7 @@ public class GameManager : MonoBehaviour
         //crackableSetup(); --> FUNZIONA MA DA NULL REFERENCE E NON CREA I NODI
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        Debug.Log("PLAY LEVEL");
+        //Debug.Log("PLAY LEVEL");
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
 
@@ -467,8 +467,8 @@ public class GameManager : MonoBehaviour
         }
 
         //foreach (Node node in m_board.playerNode.NeighborNodes) {
-        //    Debug.Log("ESKEREEE");
-        //    Debug.Log(node.ToString());
+        //    //Debug.Log("ESKEREEE");
+        //    //Debug.Log(node.ToString());
         //}
 
         m_isGamePlaying = true;
@@ -495,7 +495,7 @@ public class GameManager : MonoBehaviour
         NextLevel();
 
 
-        Debug.Log("U got what I call ... swag!");
+        //Debug.Log("U got what I call ... swag!");
     }
 
     public void LoseLevel()
@@ -525,7 +525,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        Debug.Log("Your swag has been turned off , m8");
+        //Debug.Log("Your swag has been turned off , m8");
         m_player.hasFlashLight = false;
         m_player.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
         RestartLevel();
@@ -535,7 +535,7 @@ public class GameManager : MonoBehaviour
     //IEnumerator EndLevelRoutine()
     //{
 
-    //    Debug.Log("END LEVEL");
+    //    //Debug.Log("END LEVEL");
 
     //    //m_player.playerInput.InputEnabled = false;
 
@@ -573,7 +573,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Node triggerNode in m_board.TriggerNodes)
         {
-            Debug.Log("a");
+            //Debug.Log("a");
             if (triggerNode != null)
             {
                 triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
@@ -725,7 +725,7 @@ public class GameManager : MonoBehaviour
                     if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position)).Count == 1)
                     {
                         //enemy.SetMovementType(MovementType.Stationary);
-                        Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index - 1).transform.position)).Count);
+                        //Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index - 1).transform.position)).Count);
                         enemy.m_enemyMover.spottedPlayer = false;
                         enemy.m_enemyMover.firstChaserMove = true;
                     }
@@ -854,7 +854,7 @@ public class GameManager : MonoBehaviour
                 {
 
                     node.UpdateCrackableState();
-                    Debug.Log(movableObjects.Count);
+                    //Debug.Log(movableObjects.Count);
                     node.UpdateCrackableTexture();
 
                 }
@@ -887,7 +887,7 @@ public class GameManager : MonoBehaviour
             foreach (Sword sword in swords)
             {
                 node.DestroyCrackableInOneHit();
-                Debug.Log("NODE DESTROYED");
+                //Debug.Log("NODE DESTROYED");
                 node.UpdateCrackableTexture();
             }
 
@@ -941,7 +941,7 @@ public class GameManager : MonoBehaviour
         else if (m_board.GetPreviousPlayerNode() != null && previousTempNode.isATrigger)
         {
             m_board.UpdateTriggerToFalse(m_board.GetPreviousPlayerNode());
-            Debug.Log("TRIGGER A FALSE");
+            //Debug.Log("TRIGGER A FALSE");
             m_board.SetPreviousPlayerNode(null);
         }
 
@@ -971,7 +971,7 @@ public class GameManager : MonoBehaviour
                     enemy.GetEnemySensor.SetPreviousEnemyNode(enemy.GetEnemySensor.FindEnemyNode());
                     enemy.GetEnemySensor.FindEnemyNode().UpdateTriggerToTrue();
 
-                    //Debug.Log(enemy.GetEnemySensor.GetPreviousEnemyNode());
+                    ////Debug.Log(enemy.GetEnemySensor.GetPreviousEnemyNode());
                     //}
                     /*else*/
                     if (enemy.GetEnemySensor.GetPreviousEnemyNode() != null)
@@ -990,7 +990,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (armor.FindSwordNode().isATrigger && armor.isActive)
                     {
-                        Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * BoardManager.spacing)));
+                        //Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * BoardManager.spacing)));
                         armor.FindSwordNode().UpdateTriggerToTrue();
                     }
                     else if (armor.FindSwordNode().isATrigger && !armor.isActive)
@@ -1022,8 +1022,8 @@ public class GameManager : MonoBehaviour
                     if (!movableObject.FindMovableObjectNode().isATrigger && movableObject.GetPreviousMovableObjectNode() != null)
                     {
 
-                        Debug.Log("PROVA");
-                        Debug.Log(movableObject.GetPreviousMovableObjectNode());
+                        //Debug.Log("PROVA");
+                        //Debug.Log(movableObject.GetPreviousMovableObjectNode());
                         movableObject.GetPreviousMovableObjectNode().UpdateTriggerToFalse();
                         movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
                         movableObject.GetPreviousMovableObjectNode().mover = null;
@@ -1037,7 +1037,7 @@ public class GameManager : MonoBehaviour
                         movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                         movableObject.FindMovableObjectNode().UpdateTriggerToTrue();
                         movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
-                        Debug.Log("Node: " + movableObject.GetPreviousMovableObjectNode());
+                        //Debug.Log("Node: " + movableObject.GetPreviousMovableObjectNode());
                     }
                 }
 
@@ -1110,7 +1110,7 @@ public class GameManager : MonoBehaviour
     //            startPos = new Vector3(m_board.FindNodeAt(enemy.transform.position).Coordinate.x, 0f, m_board.FindNodeAt(enemy.transform.position).Coordinate.y);
 
     //            if (enemy.GetMovementType() == MovementType.Chaser) {
-    //                Debug.Log(EnemyMover.index);
+    //                //Debug.Log(EnemyMover.index);
     //                frontalDest = m_player.GetPlayerPath(EnemyMover.index).transform.position;
     //            }
     //            else {
@@ -1194,7 +1194,7 @@ public class GameManager : MonoBehaviour
             {
                 armor.transform.GetChild(3).gameObject.SetActive(true);
                 armor.AnimatorController.SetBool("ArmorState", true);
-                Debug.Log(m_board.FindNodeAt(armor.transform.GetChild(3).gameObject.transform.position));
+                //Debug.Log(m_board.FindNodeAt(armor.transform.GetChild(3).gameObject.transform.position));
             }
         }
     }
@@ -1210,7 +1210,7 @@ public class GameManager : MonoBehaviour
             if (m_board.playerNode == m_board.FindNodeAt(enemy.m_enemyMover.spottedDest) && enemy.wasScared && m_board.FindNodeAt(enemy.m_enemyMover.firstDest).LinkedNodes.Contains(m_board.FindNodeAt(enemy.m_enemyMover.spottedDest)))
             {
 
-                Debug.Log("Spotted!");
+                //Debug.Log("Spotted!");
 
                 m_board.ChasingPreviousPlayerNode = m_board.playerNode;
                 //m_player.spottedPlayer = true;
@@ -1237,7 +1237,7 @@ public class GameManager : MonoBehaviour
         {
             n.triggerState = false;
             n.UpdateGateToClose(movableObject.FindMovableObjectNode().GetGateID()); // era con movableObject.PreviousMovableObjectNode.GetGateID()
-            Debug.Log("CLOSE");
+            //Debug.Log("CLOSE");
             n.ArmorDeactivation(movableObject.FindMovableObjectNode().GetArmorID());//  era con movableObject.PreviousMovableObjectNode.GetArmorID()
         }
 
@@ -1255,7 +1255,7 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        Debug.Log("NEXTLEVEL");
+        //Debug.Log("NEXTLEVEL");
         m_index = SceneManager.GetActiveScene().buildIndex % 10;
         m_index++;
         SceneManager.LoadScene(m_index);
@@ -1263,7 +1263,7 @@ public class GameManager : MonoBehaviour
 
     public void PreviousLevel()
     {
-        Debug.Log("PREVIOUSLEVEL");
+        //Debug.Log("PREVIOUSLEVEL");
         m_index = SceneManager.GetActiveScene().buildIndex;
         m_index--;
 

@@ -88,7 +88,7 @@ public class UiManager : MonoBehaviour
     }
 
     public void PlayGame() {
-        Debug.Log("PLAY GAME");
+        //Debug.Log("PLAY GAME");
         GameManager.statePlayMenu();
     }
 
@@ -118,7 +118,7 @@ public class UiManager : MonoBehaviour
 
         if (value)
         {
-            Debug.Log("true");
+            //Debug.Log("true");
             GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>().interactable = false;
             GameObject.FindGameObjectWithTag("Slider").transform.localScale = new Vector3(0, 0, 0);
 

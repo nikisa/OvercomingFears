@@ -100,7 +100,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception e)
             {
-                Debug.LogError("Unhandled exception while loading Recorder preferences: " + e);
+                //Debug.LogError("Unhandled exception while loading Recorder preferences: " + e);
                 prefs = null;
             }
 
@@ -178,7 +178,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception e)
             {
-                Debug.LogError("Unhandled exception while saving Recorder settings: " + e);
+                //Debug.LogError("Unhandled exception while saving Recorder settings: " + e);
             }
         }
 

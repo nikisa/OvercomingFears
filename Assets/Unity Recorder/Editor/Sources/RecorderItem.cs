@@ -83,7 +83,7 @@ namespace UnityEditor.Recorder
             }
             catch (Exception e)
             {
-                Debug.LogWarning("Exception when getting recorder state: " + e);
+                //Debug.LogWarning("Exception when getting recorder state: " + e);
             }
 
             state = State.Normal;

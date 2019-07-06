@@ -83,7 +83,7 @@ public class EnemyMover : Mover
                 Boss();
                 break;
             default:
-                Debug.Log("dumbass non hai messo il MoventType");
+                //Debug.Log("dumbass non hai messo il MoventType");
                 break;
         }
     }
@@ -128,7 +128,7 @@ public class EnemyMover : Mover
         if (m_board.playerNode == m_board.FindNodeAt(spottedDest) && !spottedPlayer && m_board.FindNodeAt(firstDest).LinkedNodes.Contains(m_board.FindNodeAt(spottedDest)))
         {
 
-            Debug.Log("Spotted!");
+            //Debug.Log("Spotted!");
             EnemyAnimatorController.SetInteger("ChaserState", 1);
             yield return new WaitForSeconds(0.2f);
             EnemyAnimatorController.SetInteger("ChaserState", 2);//CALL EVENT POST ACTIVATION
@@ -168,17 +168,17 @@ public class EnemyMover : Mover
             }
             else
             { // && CASELLA SUCCESSIVA NON è OCCUPATA (post armature)
-                Debug.Log("Chasing...");
+                //Debug.Log("Chasing...");
 
                 //m_board.ChaserNewDest = m_board.ChasingPreviousPlayerNode;
                 //m_board.ChasingPreviousPlayerNode = m_board.playerNode;
 
-                //Debug.Log(m_board.ChasingPreviousPlayerNode);
+                ////Debug.Log(m_board.ChasingPreviousPlayerNode);
 
                 if (m_player.transform.position != firstDest)
                 {
 
-                    //Debug.Log(m_player.GetPlayerPath(index));
+                    ////Debug.Log(m_player.GetPlayerPath(index));
                     
                     Move(GetPlayerPath(index).transform.position, 0f);
 
@@ -207,7 +207,7 @@ public class EnemyMover : Mover
         if (!spottedPlayer) {
             
             //yield return new WaitForSeconds(0.3f);
-            Debug.Log("Chasing stopped");
+            //Debug.Log("Chasing stopped");
             EnemyAnimatorController.SetInteger("ChaserState", 4);
             //yield return new WaitForSeconds(0.3f);
             EnemyAnimatorController.SetInteger("ChaserState", 0);

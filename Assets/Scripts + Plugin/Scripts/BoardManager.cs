@@ -268,7 +268,7 @@ public class BoardManager : MonoBehaviour
                 
             }
         }
-        Debug.Log("CLOSE");
+        //Debug.Log("CLOSE");
     }
 
     public void UpdateTriggerToFalseLevel3(Node n) {
@@ -285,7 +285,7 @@ public class BoardManager : MonoBehaviour
 
         }
 
-        Debug.Log("CLOSE");
+        //Debug.Log("CLOSE");
     }
 
 

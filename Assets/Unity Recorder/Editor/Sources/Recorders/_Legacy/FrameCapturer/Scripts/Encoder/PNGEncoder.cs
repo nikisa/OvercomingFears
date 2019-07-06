@@ -19,7 +19,7 @@ namespace UnityEditor.Recorder.FrameCapturer
         {
             if (!fcAPI.fcPngIsSupported())
             {
-                Debug.LogError("Png encoder is not available on this platform.");
+                //Debug.LogError("Png encoder is not available on this platform.");
                 return;
             }
 

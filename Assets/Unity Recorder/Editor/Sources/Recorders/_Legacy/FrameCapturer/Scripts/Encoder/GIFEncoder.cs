@@ -16,7 +16,7 @@ namespace UnityEditor.Recorder.FrameCapturer
         {
             if (!fcAPI.fcGifIsSupported())
             {
-                Debug.LogError("Gif encoder is not available on this platform.");
+                //Debug.LogError("Gif encoder is not available on this platform.");
                 return;
             }
 

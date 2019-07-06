@@ -22,8 +22,8 @@ public class PushingWall : MonoBehaviour {
     void Start() {
         //TargetNode = m_board.FindNodeAt(transform.GetChild(0).transform.position + new Vector3(2, 0, 0));
         //PushedByNode = m_board.FindNodeAt(transform.GetChild(0).transform.position);
-        //Debug.Log(transform.position);
-        //Debug.Log(transform.GetChild(0).transform.position);
+        ////Debug.Log(transform.position);
+        ////Debug.Log(transform.GetChild(0).transform.position);
     }
 
     public int GetID() {
@@ -31,7 +31,7 @@ public class PushingWall : MonoBehaviour {
     }
 
     public void Push() {
-        Debug.Log("PUSH");
+        //Debug.Log("PUSH");
         if (transform.position.x > transform.GetChild(0).transform.position.x) {
 
             TargetNode = m_board.FindNodeAt(transform.GetChild(0).transform.position + new Vector3(2, 0, 0));

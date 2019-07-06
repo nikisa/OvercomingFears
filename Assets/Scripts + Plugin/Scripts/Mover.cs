@@ -86,7 +86,7 @@ public class Mover : MonoBehaviour {
                 }
                 else
                 {
-                    Debug.Log("CURRENT NODE NOT CONNECTED");
+                    //Debug.Log("CURRENT NODE NOT CONNECTED");
 
 
 
@@ -98,14 +98,14 @@ public class Mover : MonoBehaviour {
                 {
                     if ((targetNode.isAGate && targetNode.GetGateState() == true) || !targetNode.isAGate)
                     {
-                        Debug.Log(this.name + " Move test");
+                        //Debug.Log(this.name + " Move test");
                         StartCoroutine(MoveRoutine(destinationPos, delayTime));
                     }
 
                 }
                 else
                 {
-                    Debug.Log("CURRENT NODE NOT CONNECTED");
+                    //Debug.Log("CURRENT NODE NOT CONNECTED");
                     
                 }
             }
@@ -125,7 +125,7 @@ public class Mover : MonoBehaviour {
                     StartCoroutine(MoveRoutine(destinationPos, delayTime));
             }
             else {
-                Debug.Log("DEAD");
+                //Debug.Log("DEAD");
                 StartCoroutine(MoveRoutine(destinationPos, delayTime));
             }
         }
