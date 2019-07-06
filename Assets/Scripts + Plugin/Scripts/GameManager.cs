@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
-    
+
     private bool _isGameplay;
     public bool IsGameplay { get { return _isGameplay; } set { _isGameplay = value; } }
 
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     public Animator UIController;
 
-    
+
     BoardManager m_board;
     PlayerManager m_player;
 
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
 
 
     Turn m_currentTurn = Turn.Player;
-    public Turn CurrentTurn { get { return m_currentTurn; }  set { m_currentTurn = value; } }
+    public Turn CurrentTurn { get { return m_currentTurn; } set { m_currentTurn = value; } }
 
     bool m_hasLevelStarted = false;
     public bool HasLevelStarted { get { return m_hasLevelStarted; } set { m_hasLevelStarted = value; } }
@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
         statePlayMenu += SetPlayMenuTrigger;
         stateCover += SetCoverTrigger;
         stateGameplay += SetGameplayTrigger;
-        statePause += SetPauseTrigger; 
+        statePause += SetPauseTrigger;
         stateMenu += SetMenuTrigger;
         stateOption += SetOptionTrigger;
         stateLevelSelection += SetLevelSelectionTrigger;
@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
         stateGameplayUI += SetGameplayUITrigger;
     }
 
-    
+
 
 
     void SetGameplayTrigger()
@@ -132,11 +132,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void SetPauseTrigger() {
-        if (statePause != null) {
+    void SetPauseTrigger()
+    {
+        if (statePause != null)
+        {
             SMController.SetTrigger("Pause");
         }
-        else {
+        else
+        {
             Debug.Log("out");
         }
     }
@@ -155,21 +158,27 @@ public class GameManager : MonoBehaviour
         UIController.SetTrigger("MainMenu");
     }
 
-    void SetCoverTrigger() {
-        if (stateCover != null) {
+    void SetCoverTrigger()
+    {
+        if (stateCover != null)
+        {
             SMController.SetTrigger("Cover");
         }
-        else {
+        else
+        {
             Debug.Log("out");
         }
     }
 
-    void SetPlayMenuTrigger() {
-        if (statePlayMenu != null) {
+    void SetPlayMenuTrigger()
+    {
+        if (statePlayMenu != null)
+        {
             Debug.Log("PlayMenu");
             UIController.SetTrigger("Play");
         }
-        else {
+        else
+        {
             Debug.Log("out");
         }
     }
@@ -245,7 +254,7 @@ public class GameManager : MonoBehaviour
         GetLevelManager();
         PositionPlayerSetup();
         TriggerInit();
-        
+
 
         SoundManager.Initialize();
         //GetUIManager();
@@ -316,8 +325,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void GetLevelManager() {
-        if (m_levelManager == null) {
+    void GetLevelManager()
+    {
+        if (m_levelManager == null)
+        {
             m_levelManager = FindObjectOfType<LevelManager>().GetComponent<LevelManager>();
         }
     }
@@ -333,11 +344,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Init();
-        
+
         #region StateMachine and Initialization
         if (SceneManager.GetActiveScene().name == "Menu")
         {
-            
+
             StateBehaviourBase.Context context = new StateBehaviourBase.Context()
             {
                 SetupDone = false,
@@ -382,7 +393,7 @@ public class GameManager : MonoBehaviour
         {
             InitSword();
             InitBoss();
-            
+
             StartCoroutine("RunGameLoop");
         }
         else
@@ -400,7 +411,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartLevelRoutine()
     {
-        
+
         transform.GetChild(2).gameObject.SetActive(false);
 
         Debug.Log("SETUP LEVEL");
@@ -411,19 +422,19 @@ public class GameManager : MonoBehaviour
 
 
         Debug.Log("START LEVEL");
-        
+
         m_player.playerInput.InputEnabled = false;
         while (!m_hasLevelStarted)
         {
             yield return null;
         }
 
-        
+
         if (startLevelEvent != null)
         {
             startLevelEvent.Invoke();
         }
-        
+
     }
 
     IEnumerator PlayLevelRoutine()
@@ -431,7 +442,7 @@ public class GameManager : MonoBehaviour
 
         triggerSetup();
 
-        
+
         //crackableSetup(); --> FUNZIONA MA DA NULL REFERENCE E NON CREA I NODI
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
@@ -439,14 +450,17 @@ public class GameManager : MonoBehaviour
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
 
-        
+
         //if che sceglie se pad o keyboard
 
-        if (SceneManager.GetActiveScene().buildIndex == 1) {
-            if (!m_player.usingController) {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            if (!m_player.usingController)
+            {
                 popup = Instantiate(TutorialsKeyboard[0]);
             }
-            else {
+            else
+            {
                 popup = Instantiate(TutorialsController[0]);
             }
             popup.transform.GetChild(0).GetComponent<ScreenFader>().FadeOn();
@@ -472,14 +486,14 @@ public class GameManager : MonoBehaviour
             yield return null;
             //todo: Check win(end reached)/lose(player dead)
             m_isGameOver = IsWinner();
-            
+
         }
 
         m_isGameOver = false;
         //m_player.lr.transform.gameObject.SetActive(true);
         m_levelManager.SaveLevel();
         NextLevel();
-        
+
 
         Debug.Log("U got what I call ... swag!");
     }
@@ -492,11 +506,12 @@ public class GameManager : MonoBehaviour
     IEnumerator LoseLevelRoutine()
     {
 
-        if (m_player.PauseCanvas.gameObject.activeSelf) {
+        if (m_player.PauseCanvas.gameObject.activeSelf)
+        {
             m_player.PauseCanvas.gameObject.SetActive(false);
             GameManager.stateGameplay();
         }
-        
+
 
         m_isGameOver = true;
         m_player.playerInput.InputEnabled = false;
@@ -548,15 +563,19 @@ public class GameManager : MonoBehaviour
         {
             if (crackableNode != null)
             {
-                crackableNode.transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState" , crackableNode.crackableState);
+                crackableNode.transform.GetChild(2).GetComponent<Crackable>().crackableAnimator.SetInteger("CrackableState", crackableNode.crackableState);
             }
         }
     }
 
-    void triggerSetup() {
+    void triggerSetup()
+    {
 
-        foreach (Node triggerNode in m_board.TriggerNodes) {
-            if (triggerNode != null) {
+        foreach (Node triggerNode in m_board.TriggerNodes)
+        {
+            Debug.Log("a");
+            if (triggerNode != null)
+            {
                 triggerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(triggerNode.triggerState);
                 //triggerNode.GetTriggerId(triggerNode);
                 triggerNode.TriggerOrLogic();
@@ -593,10 +612,11 @@ public class GameManager : MonoBehaviour
 
         m_currentTurn = Turn.Player;
 
-        if (SceneManager.GetActiveScene().buildIndex != 6) {
+        if (SceneManager.GetActiveScene().buildIndex != 6)
+        {
             StartCoroutine(CheckSpottedPosition());
         }
-        
+
 
 
         m_player.IsTurnComplete = false;
@@ -677,8 +697,8 @@ public class GameManager : MonoBehaviour
         //LightBulbNode();
         //FearEnemies();
         FlashLightNode();
-        
-        
+
+
 
         foreach (var enemy in m_enemies)
         {
@@ -699,15 +719,18 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-                if (enemy.m_enemyMover.movementType == MovementType.Chaser && enemy.m_enemyMover.index > 0) {
+                if (enemy.m_enemyMover.movementType == MovementType.Chaser && enemy.m_enemyMover.index > 0)
+                {
 
-                    if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position)).Count == 1) {
+                    if (m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position)).Count == 1)
+                    {
                         //enemy.SetMovementType(MovementType.Stationary);
                         Debug.Log(m_board.FindMovableObjectsAt(m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index - 1).transform.position)).Count);
                         enemy.m_enemyMover.spottedPlayer = false;
                         enemy.m_enemyMover.firstChaserMove = true;
                     }
-                    else {
+                    else
+                    {
                         enemy.SetMovementType(enemy.GetFirstMovementType());
                     }
 
@@ -719,15 +742,18 @@ public class GameManager : MonoBehaviour
                     //if ((m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).isAGate
                     //&& !m_board.FindNodeAt(enemy.transform.TransformVector(new Vector3(0, 0, 2f)) + enemy.transform.position).gateOpen)) {
 
-                    if (enemy.m_enemyMover.movementType == MovementType.Chaser && enemy.m_enemyMover.index > 0) {
-                        
+                    if (enemy.m_enemyMover.movementType == MovementType.Chaser && enemy.m_enemyMover.index > 0)
+                    {
+
                         if (m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position).isAGate
-                            && !m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position).gateOpen) {
+                            && !m_board.FindNodeAt(enemy.m_enemyMover.GetPlayerPath(enemy.m_enemyMover.index).transform.position).gateOpen)
+                        {
                             //enemy.SetMovementType(MovementType.Stationary);
                             enemy.m_enemyMover.spottedPlayer = false;
                             enemy.m_enemyMover.firstChaserMove = false;
                         }
-                        else {
+                        else
+                        {
                             enemy.SetMovementType(enemy.GetFirstMovementType());
                         }
 
@@ -739,12 +765,12 @@ public class GameManager : MonoBehaviour
 
             }
         }
-       
+
 
         if (m_currentTurn == Turn.Player && m_player != null)
         {
 
-            
+
             triggerNodePlayerTurn();
             triggerNode();
             triggerNodeWithMovable();
@@ -752,11 +778,13 @@ public class GameManager : MonoBehaviour
             if (m_player.IsTurnComplete && !AreEnemiesAllDead())
             {
                 PlayerInGate();
-                foreach (EnemyManager enemy in m_enemies) {
-                    if (enemy != null) {
+                foreach (EnemyManager enemy in m_enemies)
+                {
+                    if (enemy != null)
+                    {
                         enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 0);
                     }
-                    
+
                 }
                 //m_movableObjects = GetMovableObjects();
                 PlayEnemyTurn();
@@ -774,7 +802,8 @@ public class GameManager : MonoBehaviour
         else if (m_currentTurn == Turn.Enemy)
         {
 
-            foreach (MovableObject movableObject in m_board.AllMovableObjects) {
+            foreach (MovableObject movableObject in m_board.AllMovableObjects)
+            {
                 movableObject.resetAnimation();
                 movableObject.transform.GetChild(1).gameObject.SetActive(false);
             }
@@ -793,7 +822,7 @@ public class GameManager : MonoBehaviour
     public void crackNode()
     {
 
-        
+
 
         //______ENEMY ON CRACKNODE___________________
 
@@ -823,7 +852,7 @@ public class GameManager : MonoBehaviour
             {
                 if (movableObject.hasMoved)
                 {
-                    
+
                     node.UpdateCrackableState();
                     Debug.Log(movableObjects.Count);
                     node.UpdateCrackableTexture();
@@ -899,14 +928,15 @@ public class GameManager : MonoBehaviour
 
         Node previousTempNode = m_board.GetPreviousPlayerNode(); //serve per vedere se il previous è un trigger altrimenti mette a false ad ogni turno
 
-        if (m_board.playerNode.isATrigger) 
+        if (m_board.playerNode.isATrigger)
         {
             m_board.SetPreviousPlayerNode(m_board.playerNode);
 
-            if (!m_board.playerNode.triggerWithEnemy) {
+            if (!m_board.playerNode.triggerWithEnemy)
+            {
                 m_board.playerNode.UpdateTriggerToTrue();
             }
-            
+
         }
         else if (m_board.GetPreviousPlayerNode() != null && previousTempNode.isATrigger)
         {
@@ -915,7 +945,7 @@ public class GameManager : MonoBehaviour
             m_board.SetPreviousPlayerNode(null);
         }
 
-        
+
     }
 
     public void triggerNode()
@@ -991,7 +1021,7 @@ public class GameManager : MonoBehaviour
 
                     if (!movableObject.FindMovableObjectNode().isATrigger && movableObject.GetPreviousMovableObjectNode() != null)
                     {
-                        
+
                         Debug.Log("PROVA");
                         Debug.Log(movableObject.GetPreviousMovableObjectNode());
                         movableObject.GetPreviousMovableObjectNode().UpdateTriggerToFalse();
@@ -1033,7 +1063,11 @@ public class GameManager : MonoBehaviour
         return m_movableObjects;
     }
 
-
+    public string SetVideoSettingString()
+    {
+        
+        return null;
+    }
     //public void LightBulbNode()
     //{
     //    if (m_board.playerNode.hasLightBulb)
@@ -1052,10 +1086,12 @@ public class GameManager : MonoBehaviour
         {
             m_board.playerNode.hasFlashLight = false;
 
-            if (m_board.playerNode.isCrackable) {
+            if (m_board.playerNode.isCrackable)
+            {
                 m_board.playerNode.transform.GetChild(3).gameObject.SetActive(false);
             }
-            else if (!m_board.playerNode.isCrackable) {
+            else if (!m_board.playerNode.isCrackable)
+            {
                 m_board.playerNode.transform.GetChild(2).gameObject.SetActive(false);
             }
 
@@ -1111,7 +1147,7 @@ public class GameManager : MonoBehaviour
                 else if (m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen)
                 {
                     enemy.isOff = false;
-                    
+
                 }
             }
         }
@@ -1207,33 +1243,38 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void PlayerInGate() {
-        if (m_board.playerNode.isAGate && !m_board.playerNode.gateOpen) {
+    public void PlayerInGate()
+    {
+        if (m_board.playerNode.isAGate && !m_board.playerNode.gateOpen)
+        {
             //m_player.lr.transform.gameObject.SetActive(true);
             LoseLevel();
         }
     }
-    
 
-    public void NextLevel() {
+
+    public void NextLevel()
+    {
         Debug.Log("NEXTLEVEL");
         m_index = SceneManager.GetActiveScene().buildIndex % 10;
         m_index++;
         SceneManager.LoadScene(m_index);
     }
 
-    public void PreviousLevel() {
+    public void PreviousLevel()
+    {
         Debug.Log("PREVIOUSLEVEL");
         m_index = SceneManager.GetActiveScene().buildIndex;
         m_index--;
 
-        if (m_index < 1) {
+        if (m_index < 1)
+        {
             m_index = 10;
         }
 
         SceneManager.LoadScene(m_index);
     }
-    
+
 
     public void PositionPlayerSetup()
     {
@@ -1286,11 +1327,12 @@ public class GameManager : MonoBehaviour
 
     #region LevelSelection
 
-    public void startLevel() {
+    public void startLevel()
+    {
         GameManager.stateGameplay();
         SceneManager.LoadScene(EventSystem.current.currentSelectedGameObject.name);
     }
-    
+
 
     #endregion
 

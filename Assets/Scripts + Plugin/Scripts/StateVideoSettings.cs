@@ -83,8 +83,9 @@ public class StateVideoSettings : StateMachineBehaviour
                             qualityNamesIndex = 0;
                         }
 
-                        qualityText.GetComponent<Text>().text = qualityNames[qualityNamesIndex].ToString();
+                        qualityText.GetComponent<Text>().text = GameManager.Instance.SetVideoSettingString();
                         Debug.Log(qualityNames[qualityNamesIndex].ToString());
+                        
                         break;
                     case 1:
                         resolutionIndex++;
@@ -92,7 +93,7 @@ public class StateVideoSettings : StateMachineBehaviour
                             resolutionIndex = 0;
                         }
 
-                        resolutionText.GetComponent<Text>().text = resolutions[resolutionIndex].ToString();
+                        resolutionText.GetComponent<Text>().text = GameManager.Instance.SetVideoSettingString();
                         Debug.Log(resolutions[resolutionIndex].ToString());
                         break;
                     case 2:
@@ -110,6 +111,7 @@ public class StateVideoSettings : StateMachineBehaviour
                         if (qualityNamesIndex < 0) {
                             qualityNamesIndex = qualityNames.Length - 1;
                         }
+
 
                         qualityText.GetComponent<Text>().text = qualityNames[qualityNamesIndex].ToString();
                         break;

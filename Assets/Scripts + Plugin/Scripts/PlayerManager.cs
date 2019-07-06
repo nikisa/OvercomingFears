@@ -558,7 +558,6 @@ public class PlayerManager : TurnManager
 
                         if (playerInput.F && playerInput.V < 0)
                         {//sparo in basso
-
                             transform.DORotate(Vector3.back , 0);
 
                             //lr.gameObject.SetActive(true);

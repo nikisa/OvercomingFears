@@ -267,6 +267,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\StatePlayMenu.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateVideoSettings.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StaticCounter.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\Submit.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Sword.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\TestManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Trap.cs" />

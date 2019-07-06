@@ -313,14 +313,6 @@ public class Node : MonoBehaviour
 
     }
 
-    IEnumerator PuzzleActivation() {
-
-        UpdateGateToOpen(gateID);
-        ArmorActivation(armorID);
-        yield return new WaitForSeconds(puzzleActivationDelay);
-        TrapActivation(trapID);
-
-    }
 
     public bool UpdateTriggerToTrue()
     {
@@ -328,14 +320,9 @@ public class Node : MonoBehaviour
 
             //==============================================
 
-            
-
-            StartCoroutine(PuzzleActivation());
-
-            //ArmorActivation(armorID);
-
-            //UpdateGateToOpen(gateID);
-            //TrapActivation(trapID);
+            ArmorActivation(armorID);
+            UpdateGateToOpen(gateID);
+            TrapActivation(trapID);
 
             //===============================================
 
@@ -362,7 +349,7 @@ public class Node : MonoBehaviour
         {
             foreach (Node triggerNode in m_board.TriggerNodes)
             {
-                if (! TriggerOrLogic())
+                if (!TriggerOrLogic())
                 {
                     Debug.Log("OR: " + TriggerOrLogic());
                     //triggerTemp.transform.GetChild(1).transform.gameObject.SetActive(false);
@@ -494,7 +481,7 @@ public class Node : MonoBehaviour
 
         }
 
-        Level3Patch();
+        //Level3Patch();
     }
 
     public void SetGateClose()
@@ -863,20 +850,85 @@ public class Node : MonoBehaviour
     void Level3Patch() {
         if (SceneManager.GetActiveScene().buildIndex == 3) {
 
-            if (m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position)).Count != 0) {
-                foreach (EnemyManager enemy in m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position))) {
+            if (m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position)).Count != 0)
+            {
+                foreach (EnemyManager enemy in m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position)))
+                {
                     enemy.isOff = false;
 
-                    if (enemy.isOff == false && enemy.m_enemySensor.FoundPlayer) {
-                        enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState" , 2);
-                        StartCoroutine(Death()); 
+                    if (enemy.isOff == false && enemy.m_enemySensor.FoundPlayer)
+                    {
+                        enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+                        StartCoroutine(Death());
                     }
 
                     enemy.m_enemySensor.m_foundPlayer = false;
                 }
             }
 
-            
+
+            //if (m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2 , 0 , 0))).Count != 0 &&
+            //    m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2, 0, 0)).isAGate &&
+            //    m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2, 0, 0)).gateOpen)
+            //{
+            //    enemyTemp = m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2, 0, 0))).ToArray()[0];
+            //    enemyTemp.isOff = false;
+
+            //    if (enemyTemp.isOff == false && enemyTemp.m_enemySensor.FoundPlayer)
+            //    {
+            //        enemyTemp.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+            //        StartCoroutine(Death());
+            //    }
+
+            //    enemyTemp.m_enemySensor.m_foundPlayer = false;
+            //}
+            //    else if (m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2, 0, 0))).Count != 0 &&
+            //            m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2, 0, 0)).isAGate &&
+            //            m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2, 0, 0)).gateOpen){
+            //                enemyTemp = m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(-2, 0, 0))).ToArray()[0];
+            //                enemyTemp.isOff = false;
+
+            //        if (enemyTemp.isOff == false && enemyTemp.m_enemySensor.FoundPlayer)
+            //        {
+            //            enemyTemp.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+            //            StartCoroutine(Death());
+            //        }
+
+            //            enemyTemp.m_enemySensor.m_foundPlayer = false;
+            //            }
+
+
+            //        else if (m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2))).Count != 0 &&
+            //                m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2)).isAGate &&
+            //                m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2)).gateOpen){
+
+            //                    enemyTemp = m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2))).ToArray()[0];
+            //                    enemyTemp.isOff = false;
+
+            //            if (enemyTemp.isOff == false && enemyTemp.m_enemySensor.FoundPlayer)
+            //            {
+            //                enemyTemp.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+            //                StartCoroutine(Death());
+            //            }
+
+            //            enemyTemp.m_enemySensor.m_foundPlayer = false;
+            //            }
+            //            else if (m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2))).Count != 0 &&
+            //                    m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2)).isAGate &&
+            //                    m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2)).gateOpen){
+            //                        enemyTemp = m_board.FindEnemiesAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, -2))).ToArray()[0];
+            //                        enemyTemp.isOff = false;
+
+            //                if (enemyTemp.isOff == false && enemyTemp.m_enemySensor.FoundPlayer)
+            //                {
+            //                    enemyTemp.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+            //                    StartCoroutine(Death());
+            //                }
+
+            //                enemyTemp.m_enemySensor.m_foundPlayer = false;
+            //}
+
+
 
 
             //foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
@@ -890,7 +942,7 @@ public class Node : MonoBehaviour
             //        //attack player
             //        //notify the GM to lose the level
             //        Debug.Log(enemy.name + "MORTE");
-                    
+
             //        m_board.m_gm.LoseLevel();
             //    }
             //    enemy.m_enemySensor.FoundPlayer = false;
