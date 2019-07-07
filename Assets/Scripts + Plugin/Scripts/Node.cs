@@ -32,8 +32,6 @@ public class Node : MonoBehaviour
     PlayerManager m_player;
 
     public GameObject switchPrefab;
-    public GameObject gatePrefab;
-    public GameObject triggerPrefab;
     public GameObject lightBulbPrefab;
     public GameObject flashlitePrefab;
 

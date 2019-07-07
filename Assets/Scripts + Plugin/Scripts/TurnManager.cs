@@ -19,8 +19,6 @@ public class TurnManager : MonoBehaviour {
         //update the GameManager
         if (m_gameManager != null) {
             m_gameManager.UpdateTurn();
-            
-            
         }
     }
     

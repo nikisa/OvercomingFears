@@ -6,6 +6,14 @@ public class MovableObject : Mover {
 
     public enum direction { right , left , back , forward}
 
+    Node nextMovableObjectNodeLeft;
+    Node nextMovableObjectNodeRight;
+    Node nextMovableObjectNodeUp;
+    Node nextMovableObjectNodeDown;
+
+    [HideInInspector]
+    public bool isFloating;
+    
     public bool inScene = true;
     public bool hasMoved = false;
     public bool hasStopped = false;
@@ -373,6 +381,7 @@ public class MovableObject : Mover {
 
 
     public void floatingAnimation() {
+        isFloating = true;
         MovableObjectController.SetBool("floating" , true);
     }
 
@@ -389,6 +398,7 @@ public class MovableObject : Mover {
 
     public void resetAnimation() {
         MovableObjectController.SetBool("floating", false);
+        isFloating = false;
         MovableObjectController.SetBool("falling", false);
     }
 
@@ -402,14 +412,13 @@ public class MovableObject : Mover {
             upBlocked = false;
 
 
-            Node nextMovableObjectNodeLeft = m_board.FindNodeAt(transform.position + new Vector3(-2f, 0, 0));
+            nextMovableObjectNodeLeft = m_board.FindNodeAt(transform.position + new Vector3(-2f, 0, 0));
 
-            Node nextMovableObjectNodeRight = m_board.FindNodeAt(transform.position + new Vector3(2f, 0, 0));
+            nextMovableObjectNodeRight = m_board.FindNodeAt(transform.position + new Vector3(2f, 0, 0));
 
+            nextMovableObjectNodeUp = m_board.FindNodeAt(transform.position + new Vector3(0, 0, 2f));
 
-            Node nextMovableObjectNodeUp = m_board.FindNodeAt(transform.position + new Vector3(0, 0, 2f));
-
-            Node nextMovableObjectNodeDown = m_board.FindNodeAt(transform.position + new Vector3(0, 0, -2f));
+            nextMovableObjectNodeDown = m_board.FindNodeAt(transform.position + new Vector3(0, 0, -2f));
 
 
             if ((nextMovableObjectNodeLeft == null || m_board.FindMovableObjectsAt(nextMovableObjectNodeLeft).Count != 0 || m_board.FindEnemiesAt(nextMovableObjectNodeLeft).Count != 0 || !m_board.FindNodeAt(this.transform.position).LinkedNodes.Contains(nextMovableObjectNodeLeft) || (nextMovableObjectNodeLeft.isAGate && nextMovableObjectNodeLeft.GetGateState() == false)) && m_board.playerNode.transform.position == transform.position + new Vector3(2f, 0, 0)) {

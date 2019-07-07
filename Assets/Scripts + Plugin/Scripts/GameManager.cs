@@ -692,8 +692,9 @@ public class GameManager : MonoBehaviour
     public void UpdateTurn()
     {
 
-        // CheckSword();
         checkNodeForObstacles();
+
+        // CheckSword();
         //LightBulbNode();
         //FearEnemies();
         FlashLightNode();
@@ -882,19 +883,6 @@ public class GameManager : MonoBehaviour
             }
             //______M.O. ON CRACKNODE___________________
 
-            //______Swords ON CRACKNODE
-
-            foreach (Sword sword in swords)
-            {
-                node.DestroyCrackableInOneHit();
-                //Debug.Log("NODE DESTROYED");
-                node.UpdateCrackableTexture();
-            }
-
-
-            //______Swords ON CRACKNODE___________________
-
-
         }
 
         //______ENEMY ON CRACKNODE___________________
@@ -1021,11 +1009,14 @@ public class GameManager : MonoBehaviour
 
                     if (!movableObject.FindMovableObjectNode().isATrigger && movableObject.GetPreviousMovableObjectNode() != null)
                     {
+                        if (movableObject.GetPreviousMovableObjectNode().triggerTemp != null) {
+                            movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+                        }
 
                         //Debug.Log("PROVA");
                         //Debug.Log(movableObject.GetPreviousMovableObjectNode());
                         movableObject.GetPreviousMovableObjectNode().UpdateTriggerToFalse();
-                        movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+                        
                         movableObject.GetPreviousMovableObjectNode().mover = null;
                         movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                     }
@@ -1223,9 +1214,12 @@ public class GameManager : MonoBehaviour
 
     public void checkNodeForObstacles()
     {
-        foreach (var movableObject in m_movableObjects)
+        foreach (MovableObject movableObject in m_movableObjects)
         {
-            movableObject.checkNodeForObstacle();
+            if (movableObject.isFloating) {
+                movableObject.checkNodeForObstacle();
+            }
+            
         }
     }
 
