@@ -264,6 +264,7 @@ public class BoardManager : MonoBehaviour
             foreach (Node trigger in TriggerNodes) {
                 if (trigger != null && PreviousPlayerNode.GetTriggerId(PreviousPlayerNode) == PreviousPlayerNode.GetTriggerId(trigger)) {
                     trigger.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+                    trigger.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
                 }
                 
             }
@@ -282,7 +283,6 @@ public class BoardManager : MonoBehaviour
             n.ArmorDeactivation(PreviousPlayerNode.GetArmorID());
             n.TrapDeactivation(PreviousPlayerNode.GetTrapID());
             n.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(n.triggerState);
-
         }
 
         //Debug.Log("CLOSE");

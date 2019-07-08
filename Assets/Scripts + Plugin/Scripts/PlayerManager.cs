@@ -240,6 +240,7 @@ public class PlayerManager : TurnManager
             if (m_board.playerNode.isATrigger)
             {
                 m_board.playerNode.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
+                m_board.playerNode.triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
             }
 
 

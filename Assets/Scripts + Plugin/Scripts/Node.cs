@@ -665,8 +665,20 @@ public class Node : MonoBehaviour
         if (isAGate)
         {
 
+            Vector3 position;
+
+            if (SceneManager.GetActiveScene().buildIndex != 2)
+            {
+                position = transform.position;
+            }
+            else
+            {
+                position = new Vector3(transform.position.x, (transform.position.y + .1f), transform.position.z);
+            }
+
+
             //gateTemp = Instantiate(gatePrefab, transform.position, Quaternion.identity);
-            
+
 
             if (gateID <= 6 && gateID >= 1)
             {

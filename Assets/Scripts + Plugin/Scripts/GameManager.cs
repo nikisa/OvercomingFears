@@ -712,11 +712,16 @@ public class GameManager : MonoBehaviour
 
         foreach (var enemy in m_enemies)
         {
-
-            enemy.isDetected = false;
-
+            
             if (enemy != null)
             {
+
+                if (m_board.FindNodeAt(enemy.transform.position).isATrigger && m_board.FindNodeAt(enemy.transform.position).triggerState)
+                {
+                    m_board.FindNodeAt(enemy.transform.position).triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+                }
+
+                enemy.isDetected = false;
 
                 foreach (Sword sword in m_sword)
                 {
