@@ -18,6 +18,8 @@ public enum Turn
 public class GameManager : MonoBehaviour
 {
 
+    bool RunGameLoopStarted = false; 
+
     private static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
@@ -393,8 +395,14 @@ public class GameManager : MonoBehaviour
         {
             InitSword();
             InitBoss();
+            if (!RunGameLoopStarted)
+            {
+                StartCoroutine("RunGameLoop");
+                RunGameLoopStarted = true;
+            }
+            
+            
 
-            StartCoroutine("RunGameLoop");
         }
         else
         {
@@ -404,6 +412,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator RunGameLoop()
     {
+        
         yield return StartCoroutine("StartLevelRoutine");
         yield return StartCoroutine("PlayLevelRoutine");
         //yield return StartCoroutine("EndLevelRoutine");
@@ -411,17 +420,17 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartLevelRoutine()
     {
-
+        
         transform.GetChild(2).gameObject.SetActive(false);
 
-        //Debug.Log("SETUP LEVEL");
+        Debug.Log("SETUP LEVEL");
         if (setupEvent != null)
         {
             setupEvent.Invoke();
         }
 
 
-        //Debug.Log("START LEVEL");
+        Debug.Log("START LEVEL");
 
         m_player.playerInput.InputEnabled = false;
         while (!m_hasLevelStarted)
@@ -442,11 +451,10 @@ public class GameManager : MonoBehaviour
 
         triggerSetup();
 
-
         //crackableSetup(); --> FUNZIONA MA DA NULL REFERENCE E NON CREA I NODI
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
-        //Debug.Log("PLAY LEVEL");
+        Debug.Log("PLAY LEVEL");
 
         m_player.PlayerAnimatorController.SetInteger("PlayerState", 0);
 
@@ -486,6 +494,7 @@ public class GameManager : MonoBehaviour
             yield return null;
             //todo: Check win(end reached)/lose(player dead)
             m_isGameOver = IsWinner();
+            RunGameLoopStarted = false;
 
         }
 
@@ -974,18 +983,18 @@ public class GameManager : MonoBehaviour
                 }
 
                 armors = m_board.FindArmorsAt(node);
-                foreach (Armor armor in armors)
-                {
-                    if (armor.FindSwordNode().isATrigger && armor.isActive)
-                    {
-                        //Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * BoardManager.spacing)));
-                        armor.FindSwordNode().UpdateTriggerToTrue();
-                    }
-                    else if (armor.FindSwordNode().isATrigger && !armor.isActive)
-                    {
-                        armor.FindSwordNode().triggerState = false;
-                    }
-                }
+                //foreach (Armor armor in armors)
+                //{
+                //    if (armor.FindSwordNode().isATrigger && armor.isActive)
+                //    {
+                //        //Debug.Log(m_board.FindNodeAt(transform.position + (transform.forward * BoardManager.spacing)));
+                //        armor.FindSwordNode().UpdateTriggerToTrue();
+                //    }
+                //    else if (armor.FindSwordNode().isATrigger && !armor.isActive)
+                //    {
+                //        armor.FindSwordNode().triggerState = false;
+                //    }
+                //}
 
             }
 

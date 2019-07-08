@@ -9,11 +9,13 @@ public class PlayerInput : MonoBehaviour {
 
     float m_h;
     float m_hJ;
-    public float H { get { return m_h + m_hJ; } }
+    float m_hJAnalog;
+    public float H { get { return m_h + m_hJ + m_hJAnalog; } }
 
     float m_v;
     float m_vJ;
-    public float V { get { return m_v + m_vJ ; } }
+    float m_vJAnalog;
+    public float V { get { return m_v + m_vJ + m_vJAnalog; } }
 
 
     bool m_s;
@@ -82,9 +84,13 @@ public class PlayerInput : MonoBehaviour {
             
             m_h = Input.GetAxisRaw("Vertical");
             m_hJ = Input.GetAxisRaw("VerticalJ");
+            m_hJAnalog = Input.GetAxisRaw("VerticalJAnalog");
 
             m_v = Input.GetAxisRaw("Horizontal");
             m_vJ = Input.GetAxisRaw("HorizontalJ");
+            m_vJAnalog = Input.GetAxisRaw("HorizontalJAnalog");
+
+
 
             m_s = Input.GetKeyDown(KeyCode.Space);
             m_sJ = Input.GetKeyDown(KeyCode.Joystick1Button0);
@@ -110,11 +116,14 @@ public class PlayerInput : MonoBehaviour {
             m_v = 0f;
             m_hJ = 0f;
             m_vJ = 0f;
+            m_hJAnalog = 0f;
+            m_vJAnalog = 0f;
             m_s = false;
             m_p = false;
             m_f = false;
             m_e = false;
             m_r = false;
+            m_rJ = false;
         }
 
         m_e = Input.GetKeyDown(KeyCode.Escape);
