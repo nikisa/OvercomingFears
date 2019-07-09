@@ -6437,6 +6437,11 @@ PrefabInstance:
       propertyPath: WindowedText
       value: 
       objectReference: {fileID: 1063586975}
+    - target: {fileID: 2229032962324959031, guid: f86e2a7872e4ff24989b5d693a1f2940,
+        type: 3}
+      propertyPath: shadowKillDelay
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 357891303535853124, guid: f86e2a7872e4ff24989b5d693a1f2940,
         type: 3}
       propertyPath: m_Name

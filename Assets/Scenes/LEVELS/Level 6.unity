@@ -11161,6 +11161,7 @@ MonoBehaviour:
   popup: {fileID: 0}
   playerPopupID: 0
   delay: 0
+  shadowKillDelay: 0
   setupEvent:
     m_PersistentCalls:
       m_Calls:

@@ -316,6 +316,10 @@ public class Node : MonoBehaviour
     {
         if (isATrigger && TriggerOrLogic() == false) {
 
+            foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
+                enemy.m_enemySensor.m_foundPlayer = false;
+            }
+
             //==============================================
 
             ArmorActivation(armorID);
@@ -479,7 +483,7 @@ public class Node : MonoBehaviour
 
         }
 
-        //Level3Patch();
+        Level3Patch();
     }
 
     public void SetGateClose()
@@ -866,7 +870,7 @@ public class Node : MonoBehaviour
                 {
                     enemy.isOff = false;
 
-                    if (enemy.isOff == false && enemy.m_enemySensor.FoundPlayer)
+                    if (enemy.isOff == false && enemy.m_enemySensor.FoundPlayer && m_board.m_player.isMoving == false)
                     {
                         enemy.m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
                         StartCoroutine(Death());

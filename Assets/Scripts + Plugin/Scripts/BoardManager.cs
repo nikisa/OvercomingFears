@@ -77,6 +77,10 @@ public class BoardManager : MonoBehaviour
     public PlayerMover m_player;
 
     [HideInInspector]
+    public PlayerManager m_playerManager;
+
+
+    [HideInInspector]
     public GameManager m_gm;
 
     //---------------------------------------------------------------------
@@ -93,8 +97,9 @@ public class BoardManager : MonoBehaviour
     {
 
         m_gm = Object.FindObjectOfType<GameManager>().GetComponent<GameManager>();
-
+        m_playerManager = Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
         m_player = _playerMng.playerMover;
+
 
         m_AllMirrors = FindMirrors();
         m_AllmovableObjects = FindMovableObjects();
@@ -264,11 +269,14 @@ public class BoardManager : MonoBehaviour
             foreach (Node trigger in TriggerNodes) {
                 if (trigger != null && PreviousPlayerNode.GetTriggerId(PreviousPlayerNode) == PreviousPlayerNode.GetTriggerId(trigger)) {
                     trigger.triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
-                    trigger.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
                 }
                 
             }
         }
+        if (PreviousPlayerNode != null & PreviousPlayerNode.isATrigger) {
+            PreviousPlayerNode.triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+        }
+        
         //Debug.Log("CLOSE");
     }
 

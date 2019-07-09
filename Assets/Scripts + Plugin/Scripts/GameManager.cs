@@ -80,6 +80,8 @@ public class GameManager : MonoBehaviour
 
     public float delay = 0;
 
+    public float shadowKillDelay;
+
     private int m_index;
 
     #region UnityEvents
@@ -1025,14 +1027,12 @@ public class GameManager : MonoBehaviour
                     {
                         if (movableObject.GetPreviousMovableObjectNode().triggerTemp != null) {
                             movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(false);
+                            movableObject.GetPreviousMovableObjectNode().triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+                            movableObject.GetPreviousMovableObjectNode().UpdateTriggerToTrue();
+                            movableObject.GetPreviousMovableObjectNode().mover = null;
+                            movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                         }
-
-                        //Debug.Log("PROVA");
-                        //Debug.Log(movableObject.GetPreviousMovableObjectNode());
-                        movableObject.GetPreviousMovableObjectNode().UpdateTriggerToFalse();
                         
-                        movableObject.GetPreviousMovableObjectNode().mover = null;
-                        movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                     }
 
                     else if (movableObject.FindMovableObjectNode().isATrigger)
@@ -1042,7 +1042,7 @@ public class GameManager : MonoBehaviour
                         movableObject.SetPreviousMovableObjectNode(movableObject.FindMovableObjectNode());
                         movableObject.FindMovableObjectNode().UpdateTriggerToTrue();
                         movableObject.GetPreviousMovableObjectNode().triggerTemp.GetComponent<TriggerRotation>().StopTriggerRotation(true);
-                        //Debug.Log("Node: " + movableObject.GetPreviousMovableObjectNode());
+                        movableObject.FindMovableObjectNode().triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
                     }
                 }
 
@@ -1255,9 +1255,16 @@ public class GameManager : MonoBehaviour
     {
         if (m_board.playerNode.isAGate && !m_board.playerNode.gateOpen)
         {
-            //m_player.lr.transform.gameObject.SetActive(true);
-            LoseLevel();
+            m_player.playerInput.InputEnabled = false;
+            m_player.playerInput.PauseInputEnabled = false;
+            m_player.PlayerAnimatorController.SetInteger("PlayerState", 8);
+            StartCoroutine(ShadowDeathDelay(shadowKillDelay));
         }
+    }
+
+    public IEnumerator ShadowDeathDelay(float time) {
+        yield return new WaitForSeconds(time);
+        LoseLevel();
     }
 
 

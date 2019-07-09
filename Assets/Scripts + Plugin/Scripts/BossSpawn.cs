@@ -41,9 +41,11 @@ public class BossSpawn : MonoBehaviour
 
     IEnumerator BossSpawning(Collider other) {
         other.GetComponent<PlayerManager>().playerInput.InputEnabled = false;
+        other.GetComponent<PlayerManager>().gameObject.transform.GetChild(1).gameObject.SetActive(false);//Disattivo il PlayerCompass
         yield return new WaitForSeconds(delay);
         Boss.transform.GetChild(0).gameObject.SetActive(true);
         Boss.transform.GetChild(1).gameObject.SetActive(true);
         other.GetComponent<PlayerManager>().playerInput.InputEnabled = true;
+        other.GetComponent<PlayerManager>().gameObject.transform.GetChild(1).gameObject.SetActive(true);//Riattivo il PlayerCompass
     }
 }

@@ -279,13 +279,6 @@ public class PlayerManager : TurnManager
                     if (switchState)
                     {
                         m_board.playerNode.UpdateSwitchToFalse();
-                        if (SceneManager.GetActiveScene().buildIndex == 3)
-                        {
-                            m_gm.CurrentTurn = Turn.Enemy;
-                        }                        
-                        m_gm.CurrentTurn = Turn.Player;
-
-
                     }
                     else
                     {
@@ -1409,7 +1402,6 @@ public class PlayerManager : TurnManager
             //Debug.Log(m_board.FindNodeAt(enemy.transform.position).gateOpen);
             if (enemy != null && m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen && enemy.GetEnemySensor.FoundPlayer)
             {
-                //Debug.Log("LoseLevel");
                 playerInput.InputEnabled = false;
                 playerInput.PauseInputEnabled = false;
                 m_gameManager.LoseLevel();
