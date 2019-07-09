@@ -130,8 +130,6 @@ public class PlayerManager : TurnManager
 
     }
 
-   
-
     IEnumerable InputDelay()
     {
         playerMover.isMoving = true;
@@ -173,13 +171,23 @@ public class PlayerManager : TurnManager
             hasWand = false;
         }
     }
+
+    void skipCutscene() {
+        if (m_gm.Cutscene.activeSelf) {
+            if (Input.anyKeyDown || isControllerInput()) {
+                m_gm.firstCutscene.Stop();
+                m_gm.secondCutscene.Stop();
+                m_gm.Cutscene.SetActive(false);
+                playerInput.InputEnabled = true;
+            }
+        }
+    }
  
 
     void Update()
     {
-
+        
         if (UiManager.isCover && Input.anyKeyDown) {
-            //Debug.Log("ANY BUTTON");
             GameManager.stateMainMenu();
         }
 
@@ -204,6 +212,11 @@ public class PlayerManager : TurnManager
 
         if (GameManager.Instance.IsGameplay)
         {
+
+            
+            skipCutscene();
+            
+
             if (playerMover.isMoving || m_gameManager.CurrentTurn != Turn.Player)
             {
                 if (!reset)
@@ -1443,11 +1456,11 @@ public class PlayerManager : TurnManager
             return true;
         }
 
-        if (Input.GetAxisRaw("VerticalJ") > 0 || Input.GetAxisRaw("VerticalJ") < 0) {
+        if (Input.GetAxisRaw("VerticalJAnalog") > 0 || Input.GetAxisRaw("VerticalJAnalog") < 0) {
             return true;
         }
 
-        if (Input.GetAxisRaw("HorizontalJ") > 0 || Input.GetAxisRaw("HorizontalJ") < 0) {
+        if (Input.GetAxisRaw("HorizontalJAnalog") > 0 || Input.GetAxisRaw("HorizontalJAnalog") < 0) {
             return true;
         }
 

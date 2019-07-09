@@ -211,6 +211,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\CameraPathPosition.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\cameraTrigger.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Crackable.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\Cutscene.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EndScreen.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EnemyDeath.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EnemyManager.cs" />

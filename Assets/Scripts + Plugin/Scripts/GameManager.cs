@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.EventSystems;
+using UnityEngine.Video;
 
 [System.Serializable]
 public enum Turn
@@ -58,6 +59,12 @@ public class GameManager : MonoBehaviour
     //[HideInInspector]
     public int playerPopupID;
 
+    public RawImage rawImage;
+    public VideoPlayer firstCutscene;
+    public VideoPlayer secondCutscene;
+
+    public GameObject Cutscene;
+    //public GameObject secondCutscene;
 
 
     Turn m_currentTurn = Turn.Player;
@@ -422,7 +429,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartLevelRoutine()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2) {
+            Cutscene.SetActive(true);
+        }
+
         transform.GetChild(2).gameObject.SetActive(false);
 
         Debug.Log("SETUP LEVEL");
@@ -450,6 +460,16 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayLevelRoutine()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            Cutscene.SetActive(true);
+            StartCoroutine(PlayFirstCutscene());
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 2) {
+            Cutscene.SetActive(true);
+            StartCoroutine(PlaySecondCutscene());
+        }
+
 
         triggerSetup();
 
@@ -483,7 +503,9 @@ public class GameManager : MonoBehaviour
 
         m_isGamePlaying = true;
         yield return new WaitForSeconds(delay);
-        m_player.playerInput.InputEnabled = true;
+        if (SceneManager.GetActiveScene().buildIndex != 1 && SceneManager.GetActiveScene().buildIndex != 2) {
+            m_player.playerInput.InputEnabled = true;
+        }
         m_player.playerInput.PauseInputEnabled = true;
 
         if (playLevelEvent != null)
@@ -567,6 +589,36 @@ public class GameManager : MonoBehaviour
     //    RestartLevel();
 
     //}
+
+        IEnumerator PlayFirstCutscene() {
+        m_player.playerInput.InputEnabled = false;
+        firstCutscene.Prepare();
+            while (!firstCutscene.isPrepared) {
+                yield return new WaitForSeconds(1);
+                break;
+            }
+            rawImage.texture = firstCutscene.texture;
+            firstCutscene.Play();
+            yield return new WaitForSeconds(51);
+            firstCutscene.Stop();
+            Cutscene.SetActive(false);
+            m_player.playerInput.InputEnabled = true;
+    }
+
+    IEnumerator PlaySecondCutscene() {
+        m_player.playerInput.InputEnabled = false;
+        secondCutscene.Prepare();
+        while (!secondCutscene.isPrepared) {
+            yield return new WaitForSeconds(1);
+            break;
+        }
+        rawImage.texture = secondCutscene.texture;
+        secondCutscene.Play();
+        yield return new WaitForSeconds(16);
+        secondCutscene.Stop();
+        Cutscene.SetActive(false);
+        m_player.playerInput.InputEnabled = true;
+    }
 
     void crackableSetup()
     {
@@ -720,7 +772,7 @@ public class GameManager : MonoBehaviour
 
                 if (m_board.FindNodeAt(enemy.transform.position).isATrigger && m_board.FindNodeAt(enemy.transform.position).triggerState)
                 {
-                    m_board.FindNodeAt(enemy.transform.position).triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+                        m_board.FindNodeAt(enemy.transform.position).triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
                 }
 
                 enemy.isDetected = false;
