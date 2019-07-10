@@ -422,7 +422,7 @@ public class GameManager : MonoBehaviour
     IEnumerator RunGameLoop()
     {
         
-        yield return StartCoroutine("StartLevelRoutine");
+        //yield return StartCoroutine("StartLevelRoutine");
         yield return StartCoroutine("PlayLevelRoutine");
         //yield return StartCoroutine("EndLevelRoutine");
     }

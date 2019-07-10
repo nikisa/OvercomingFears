@@ -16,7 +16,7 @@ namespace UnityEditor.Recorder.FrameCapturer
         {
             if (!fcAPI.fcMP4OSIsSupported())
             {
-                //Debug.LogError("MP4 encoder is not available on this platform.");
+                Debug.LogError("MP4 encoder is not available on this platform.");
                 return;
             }
 

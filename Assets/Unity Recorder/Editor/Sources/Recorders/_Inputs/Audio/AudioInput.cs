@@ -21,7 +21,7 @@ namespace UnityEditor.Recorder.Input
             var audioRecorderType = Type.GetType(className + ", " + dllName);
             if (audioRecorderType == null)
             {
-                //Debug.Log("AudioInput could not find " + className + " type in " + dllName);
+                Debug.Log("AudioInput could not find " + className + " type in " + dllName);
                 return;
             }
             s_StartMethod = audioRecorderType.GetMethod("Start");

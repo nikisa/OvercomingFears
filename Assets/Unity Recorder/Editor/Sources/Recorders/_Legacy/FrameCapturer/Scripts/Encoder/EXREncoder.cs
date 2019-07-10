@@ -19,7 +19,7 @@ namespace UnityEditor.Recorder.FrameCapturer
         {
             if (!fcAPI.fcExrIsSupported())
             {
-                //Debug.LogError("Exr encoder is not available on this platform.");
+                Debug.LogError("Exr encoder is not available on this platform.");
                 return;
             }
 

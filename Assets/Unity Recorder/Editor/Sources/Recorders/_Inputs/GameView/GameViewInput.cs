@@ -37,7 +37,7 @@ namespace UnityEditor.Recorder.Input
                 {
                     if (size != GameViewSize.currentSize)
                     {
-                        //Debug.LogError("Requestion a resultion change while a recorder's input has already requested one! Undefined behaviour.");
+                        Debug.LogError("Requestion a resultion change while a recorder's input has already requested one! Undefined behaviour.");
                     }
                 }
                 GameViewSize.modifiedResolutionCount++;
