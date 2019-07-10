@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
@@ -14,6 +15,8 @@ public class PlayerManager : TurnManager
     static int i = 0; //indice provvisorio per il cambio della scena
 
     //public EnemyManager enemyManager;
+
+    public Button StartButton;
 
     public GameObject localCamera;
 
@@ -174,7 +177,7 @@ public class PlayerManager : TurnManager
 
     void skipCutscene() {
         if (m_gm.Cutscene.activeSelf) {
-            if (Input.anyKeyDown || isControllerInput()) {
+            if (Input.anyKeyDown || isControllerInputSkip()) {
                 m_gm.firstCutscene.Stop();
                 m_gm.secondCutscene.Stop();
                 m_gm.Cutscene.SetActive(false);
@@ -308,14 +311,14 @@ public class PlayerManager : TurnManager
 
                 if (playerInput.ESC && playerInput.PauseInputEnabled)
                 {
-                    if (PauseCanvas.gameObject.activeSelf)
+                    if (PauseCanvas.transform.GetChild(0).gameObject.activeSelf)
                     {
-                        PauseCanvas.gameObject.SetActive(false);
+                        PauseCanvas.transform.GetChild(0).gameObject.SetActive(false);
                         GameManager.stateGameplay();
                     }
                     else
                     {
-                        PauseCanvas.gameObject.SetActive(true);
+                        PauseCanvas.transform.GetChild(0).gameObject.SetActive(true);
                         GameManager.statePause();
                     }
 
@@ -1431,45 +1434,80 @@ public class PlayerManager : TurnManager
         return false;
     }
 
-    bool isControllerInput(){
+    public bool isControllerInput(){
         
-        if (Input.GetKey(KeyCode.Joystick1Button0) ||
-            Input.GetKey(KeyCode.Joystick1Button1) ||
-            Input.GetKey(KeyCode.Joystick1Button2) ||
-            Input.GetKey(KeyCode.Joystick1Button3) ||
-            Input.GetKey(KeyCode.Joystick1Button4) ||
-            Input.GetKey(KeyCode.Joystick1Button5) ||
-            Input.GetKey(KeyCode.Joystick1Button6) ||
-            Input.GetKey(KeyCode.Joystick1Button7) ||
-            Input.GetKey(KeyCode.Joystick1Button8) ||
-            Input.GetKey(KeyCode.Joystick1Button9) ||
-            Input.GetKey(KeyCode.Joystick1Button10) ||
-            Input.GetKey(KeyCode.Joystick1Button11) ||
-            Input.GetKey(KeyCode.Joystick1Button12) ||
-            Input.GetKey(KeyCode.Joystick1Button13) ||
-            Input.GetKey(KeyCode.Joystick1Button14) ||
-            Input.GetKey(KeyCode.Joystick1Button15) ||
-            Input.GetKey(KeyCode.Joystick1Button16) ||
-            Input.GetKey(KeyCode.Joystick1Button17) ||
-            Input.GetKey(KeyCode.Joystick1Button18) ||
-            Input.GetKey(KeyCode.Joystick1Button19)){
+        if (Input.GetKeyDown(KeyCode.Joystick1Button0) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button1) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button2) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button3) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button4) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button5) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button6) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button7) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button8) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button9) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button10) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button11) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button12) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button13) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button14) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button15) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button16) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button17) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button18) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button19)){
             return true;
         }
 
-        if (Input.GetAxisRaw("VerticalJAnalog") > 0 || Input.GetAxisRaw("VerticalJAnalog") < 0) {
+        if (Input.GetAxisRaw("VerticalJAnalog") > 0 || Input.GetAxisRaw("VerticalJ") < 0) {
             return true;
         }
 
-        if (Input.GetAxisRaw("HorizontalJAnalog") > 0 || Input.GetAxisRaw("HorizontalJAnalog") < 0) {
+        if (Input.GetAxisRaw("HorizontalJAnalog") > 0 || Input.GetAxisRaw("HorizontalJ") < 0) {
+            return true;
+        }
+
+        if (Input.GetAxisRaw("VerticalJ") > 0 || Input.GetAxisRaw("VerticalJ") < 0) {
+            return true;
+        }
+
+        if (Input.GetAxisRaw("HorizontalJ") > 0 || Input.GetAxisRaw("HorizontalJ") < 0) {
             return true;
         }
 
         return false;
     }
 
-    #region sceneChanger
+    public bool isControllerInputSkip() {
 
-    public void SceneChanger(int i)
+        if (Input.GetKeyDown(KeyCode.Joystick1Button0) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button1) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button2) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button3) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button4) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button5) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button6) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button7) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button8) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button9) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button10) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button11) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button12) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button13) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button14) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button15) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button16) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button17) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button18) ||
+            Input.GetKeyDown(KeyCode.Joystick1Button19)) {
+            return true;
+        }
+        return false;
+    }
+
+        #region sceneChanger
+
+        public void SceneChanger(int i)
     {
 
         switch (i)

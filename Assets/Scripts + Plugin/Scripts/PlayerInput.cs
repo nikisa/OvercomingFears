@@ -120,6 +120,7 @@ public class PlayerInput : MonoBehaviour {
             m_vJAnalog = 0f;
             m_s = false;
             m_p = false;
+            m_pJ = false;
             m_f = false;
             m_e = false;
             m_r = false;

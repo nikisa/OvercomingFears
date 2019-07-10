@@ -64,6 +64,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42131f3408a0eff4ca7140f55d6ae81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseCanvas: {fileID: 2454772575479289500, guid: 4301b83e17d89d24ab61178e2724d6be,
+    type: 3}
 --- !u!114 &114963065322072954
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StateMenu : StateBehaviourBase
 {
-
-
+    
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameManager.Instance.IsGameplay = false;
@@ -17,7 +16,7 @@ public class StateMenu : StateBehaviourBase
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene("Menu");
 
-        GameManager.Instance.transform.GetChild(4).gameObject.SetActive(true);
+        GameManager.Instance.transform.GetChild(4).gameObject.SetActive(false);//PauseCanvas
 
 
         //Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.MainMenu);
@@ -30,17 +29,20 @@ public class StateMenu : StateBehaviourBase
         Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>().hasFlashLight = false;
         Object.FindObjectOfType<PlayerManager>().transform.GetChild(3).gameObject.SetActive(false);
         Cursor.visible = true;
+
+        
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-
-    }
+    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //{
+        
+    //}
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        
         GameManager.Instance.transform.GetChild(4).gameObject.SetActive(false);
     }
 

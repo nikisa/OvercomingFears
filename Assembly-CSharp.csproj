@@ -248,6 +248,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\PlayerMover.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\PlayerToIdle.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\PlayLevelSubmit.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\PushingWall.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\QualitySettings\ButtonToNextScene.cs" />
@@ -256,7 +257,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\QualitySettings\OptionSceneController.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\QualitySettings\UserGameOptions.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\ScreenFader.cs" />
-    <Compile Include="Assets\Scripts + Plugin\Scripts\SelectoOnInput.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Spinner.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateBehaviourBase.cs" />

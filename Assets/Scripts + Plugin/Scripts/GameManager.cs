@@ -256,6 +256,8 @@ public class GameManager : MonoBehaviour
 
     void Setup()
     {
+
+
         playerPopupID = 1;
 
 
@@ -421,8 +423,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator RunGameLoop()
     {
-        
-        //yield return StartCoroutine("StartLevelRoutine");
+        yield return StartCoroutine("StartLevelRoutine");
         yield return StartCoroutine("PlayLevelRoutine");
         //yield return StartCoroutine("EndLevelRoutine");
     }
@@ -433,7 +434,8 @@ public class GameManager : MonoBehaviour
             Cutscene.SetActive(true);
         }
 
-        transform.GetChild(2).gameObject.SetActive(false);
+        transform.GetChild(2).gameObject.SetActive(false);//Music Manager
+        
 
         Debug.Log("SETUP LEVEL");
         if (setupEvent != null)
@@ -455,11 +457,14 @@ public class GameManager : MonoBehaviour
         {
             startLevelEvent.Invoke();
         }
-
+        
     }
 
     IEnumerator PlayLevelRoutine()
     {
+
+        m_player.PauseCanvas.gameObject.SetActive(true);
+
         if (SceneManager.GetActiveScene().buildIndex == 1) {
             Cutscene.SetActive(true);
             StartCoroutine(PlayFirstCutscene());
@@ -589,6 +594,12 @@ public class GameManager : MonoBehaviour
     //    RestartLevel();
 
     //}
+
+        IEnumerator StartPlay() {
+            yield return new WaitForSeconds(.3f);
+            Debug.Log("PLAY LEVEL");
+            PlayLevel();
+        }
 
         IEnumerator PlayFirstCutscene() {
         m_player.playerInput.InputEnabled = false;
@@ -770,7 +781,7 @@ public class GameManager : MonoBehaviour
             if (enemy != null)
             {
 
-                if (m_board.FindNodeAt(enemy.transform.position).isATrigger && m_board.FindNodeAt(enemy.transform.position).triggerState)
+                if (m_board.FindNodeAt(enemy.transform.position) != null && m_board.FindNodeAt(enemy.transform.position).isATrigger && m_board.FindNodeAt(enemy.transform.position).triggerState)
                 {
                         m_board.FindNodeAt(enemy.transform.position).triggerTemp.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
                 }

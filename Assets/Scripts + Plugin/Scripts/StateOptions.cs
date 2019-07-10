@@ -14,8 +14,12 @@ public class StateOptions : StateMachineBehaviour
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {        
-    //}
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button1)) {
+            Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().LoadMainMenu();
+            Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.Option);
+        }
+    }
 
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state

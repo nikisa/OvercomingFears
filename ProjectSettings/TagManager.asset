@@ -11,6 +11,7 @@ TagManager:
   - Slider
   - Crackable
   - Armor
+  - Pause
   layers:
   - Default
   - TransparentFX
