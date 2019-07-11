@@ -64,6 +64,17 @@ public class SelectOnInput : MonoBehaviour
                     case "Windowed":
                         windowed.GetComponent<Toggle>().isOn = !windowed.GetComponent<Toggle>().isOn;
                         break;
+                    case "Reset":
+                        
+                        SubmitAction.GetComponent<UiManager>().LoadPopup();
+                        break;
+                    case "YES":
+                        GameManager.Instance.transform.GetChild(0).GetChild(2).GetComponent<LevelManager>().resetLevels();
+                        SubmitAction.GetComponent<UiManager>().LoadMainMenu();
+                        break;
+                    case "NO":                        
+                        SubmitAction.GetComponent<UiManager>().LoadMainMenu();
+                        break;
                 }
             }
             OnDisable();

@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
     public static OnClick statePlayMenu;
     public static OnClick stateLevelSelection;
     public static OnClick stateMainMenu;
-    public static OnClick stateVideoSettings;
+    public static OnClick statePopup;
     public static OnClick stateGameplayUI;
 
 
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
         stateOption += SetOptionTrigger;
         stateLevelSelection += SetLevelSelectionTrigger;
         stateMainMenu += SetMainMenuTrigger;
-        stateVideoSettings += SetVideoTrigger;
+        statePopup += SetPopupTrigger;
         stateGameplayUI += SetGameplayUITrigger;
     }
 
@@ -207,11 +207,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void SetVideoTrigger()
+    void SetPopupTrigger()
     {
-        if (stateVideoSettings != null)
+        if (statePopup != null)
         {
-            UIController.SetTrigger("VideoSettings");
+            UIController.SetTrigger("Popup");
         }
     }
 
@@ -234,7 +234,7 @@ public class GameManager : MonoBehaviour
         stateOption -= SetOptionTrigger;
         stateLevelSelection -= SetLevelSelectionTrigger;
         stateMainMenu -= SetMainMenuTrigger;
-        stateVideoSettings -= SetVideoTrigger;
+        statePopup -= SetPopupTrigger;
         stateGameplayUI -= SetGameplayUITrigger;
     }
 
@@ -1131,11 +1131,7 @@ public class GameManager : MonoBehaviour
         return m_movableObjects;
     }
 
-    public string SetVideoSettingString()
-    {
-        
-        return null;
-    }
+    
     //public void LightBulbNode()
     //{
     //    if (m_board.playerNode.hasLightBulb)

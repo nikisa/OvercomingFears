@@ -286,6 +286,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\Window.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\XORDelay.cs" />
     <Compile Include="Assets\SettingsMenu.cs" />
+    <Compile Include="Assets\StatePopup.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FinalPass.shader" />
     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.compute" />

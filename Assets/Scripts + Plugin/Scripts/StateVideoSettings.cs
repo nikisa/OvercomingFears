@@ -60,7 +60,7 @@ public class StateVideoSettings : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
 
-    Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.VideoSettingsType);
+    Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.Popup);
         //qualityNames = gameSettings.GetComponent<GameSettings>().QualityNames.ToArray();
         //resolutions = gameSettings.GetComponent<GameSettings>().Resolutions.ToArray();
 
@@ -69,94 +69,14 @@ public class StateVideoSettings : StateMachineBehaviour
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        GetKeyInput();
-
-        if (H == 0) {
-            //DESTRA
-            if (V > 0) {
-                switch (VideoSettingsIndex) {
-                    case 0:
-
-                        qualityNamesIndex++;
-                        if (qualityNamesIndex >= qualityNames.Length) {
-                            qualityNamesIndex = 0;
-                        }
-
-                        qualityText.GetComponent<Text>().text = GameManager.Instance.SetVideoSettingString();
-                        //Debug.Log(qualityNames[qualityNamesIndex].ToString());
-                        
-                        break;
-                    case 1:
-                        resolutionIndex++;
-                        if (resolutionIndex >= resolutions.Length) {
-                            resolutionIndex = 0;
-                        }
-
-                        resolutionText.GetComponent<Text>().text = GameManager.Instance.SetVideoSettingString();
-                        //Debug.Log(resolutions[resolutionIndex].ToString());
-                        break;
-                    case 2:
-                        windowed = !windowed;
-                        break;
-                }
-
-            }
-            //SINISTRA
-            else if (V < 0) {
-
-                switch (VideoSettingsIndex) {
-                    case 0:
-                        qualityNamesIndex--;
-                        if (qualityNamesIndex < 0) {
-                            qualityNamesIndex = qualityNames.Length - 1;
-                        }
-
-
-                        qualityText.GetComponent<Text>().text = qualityNames[qualityNamesIndex].ToString();
-                        break;
-
-                    case 1:
-                        resolutionIndex--;
-                        if (resolutionIndex < 0) {
-                            resolutionIndex = resolutions.Length - 1;
-                        }
-
-                        resolutionText.GetComponent<Text>().text = resolutions[resolutionIndex].ToString();
-                        break;
-
-                    case 2:
-                        windowed = !windowed;
-                        break;
-                }
-            }
-        }
-
-
-        if (V == 0) {
-            //SOTTO
-            if (H < 0) {
-                VideoSettingsIndex++;
-                if (VideoSettingsIndex > 2) {
-                    VideoSettingsIndex = 0;
-                }
-
-            }
-            //SOPRA
-            else if (H > 0) {
-                VideoSettingsIndex--;
-                if (VideoSettingsIndex < 0) {
-                    VideoSettingsIndex = 2;
-                }
-
-            }
-        }
-    }
+    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+       
+    //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.VideoSettingsType );
+        Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.Popup);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

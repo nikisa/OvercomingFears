@@ -10,7 +10,7 @@ public class UiManager : MonoBehaviour
     public UiBase LevelSelectionState;
     public UiBase OptionState;
     public UiBase MainMenu;
-    public UiBase VideoSettingsState;
+    public UiBase Popup;
     public UiBase StateCover;
     public UiBase PlayMenu;
 
@@ -40,8 +40,8 @@ public class UiManager : MonoBehaviour
             case MenuType.Option:
                 OptionState.Setup();
                 break;
-            case MenuType.VideoSettingsType:
-                VideoSettingsState.Setup();
+            case MenuType.Popup:
+                Popup.Setup();
                 break;
             default:
                 break;
@@ -69,8 +69,8 @@ public class UiManager : MonoBehaviour
             case MenuType.Option:
                 OptionState.Disable();
                 break;
-            case MenuType.VideoSettingsType:
-                VideoSettingsState.Disable();
+            case MenuType.Popup:
+                Popup.Disable();
                 break;
             default:
                 break;
@@ -103,34 +103,15 @@ public class UiManager : MonoBehaviour
         GameManager.stateMainMenu();
 
     }
-    public void VideoSettings()
+    public void LoadPopup()
     {
-        GameManager.stateVideoSettings();
+        GameManager.statePopup();
     }
     public void GameplayUI()
     {
         GameManager.stateGameplayUI();
     }
 
-    public void SoundSlider()
-    {
-       
-
-        if (value)
-        {
-            //Debug.Log("true");
-            GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>().interactable = false;
-            GameObject.FindGameObjectWithTag("Slider").transform.localScale = new Vector3(0, 0, 0);
-
-            value = false;
-        }
-        else
-        {
-            GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>().interactable = true;
-            GameObject.FindGameObjectWithTag("Slider").transform.localScale = new Vector3(3, 3, 3);
-            value = true;
-        }
-    }
 
 }
 
@@ -141,7 +122,7 @@ public enum MenuType
     LevelSelection,
     nullo,
     Option,
-    VideoSettingsType,
+    Popup,
 
 }
 
