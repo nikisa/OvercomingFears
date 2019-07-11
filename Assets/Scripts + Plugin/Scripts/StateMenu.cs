@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StateMenu : StateBehaviourBase
 {
-    
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameManager.Instance.IsGameplay = false;
@@ -17,7 +17,7 @@ public class StateMenu : StateBehaviourBase
         SceneManager.LoadScene("Menu");
 
         GameManager.Instance.transform.GetChild(4).gameObject.SetActive(false);//PauseCanvas
-
+        GameManager.Instance.transform.GetChild(5).gameObject.SetActive(true);//UI
 
         //Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.MainMenu);
 

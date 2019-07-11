@@ -76,6 +76,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb666580ab9dce4b9287e4cd21aab16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StateOption: {fileID: 806161626650383099, guid: c761b63ed81d6c24ba955ccbffdb8373,
+    type: 3}
 --- !u!114 &114623417243988442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ce47daadbdc484bb283b2a370f1a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelSelection: {fileID: 6509705607236335501, guid: 186e4390389e3514c81c18800633a3db,
+    type: 3}
 --- !u!114 &114652337092318604
 MonoBehaviour:
   m_ObjectHideFlags: 1

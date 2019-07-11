@@ -5,19 +5,22 @@ using UnityEngine;
 
 public class StateOptions : StateMachineBehaviour
 {
-    
+
+    public GameObject StateOption;
+
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
         Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().ChangeMenu(MenuType.Option);
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button1)) {
-            Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().LoadMainMenu();
-            Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.Option);
+            if (StateOption.activeSelf) {
+                Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().LoadMainMenu();
+                Object.FindObjectOfType<UiManager>().GetComponent<UiManager>().DisableMenu(MenuType.Option);
+            }
         }
     }
 
