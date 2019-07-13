@@ -70,9 +70,6 @@ public class EnemyManager : TurnManager {
             StartCoroutine(PlayTurnRoutine());
             
         }
-
-        
-
     }
 
     IEnumerator PlayTurnRoutine() {
@@ -128,12 +125,6 @@ public class EnemyManager : TurnManager {
 
         }
 
-        //________________PROMEMORIA DEL CRISTO________________
-
-        
-
-
-        //________________PROMEMORIA DEL CRISTO________________
 
         //StartCoroutine(EmptyTurn());
     }

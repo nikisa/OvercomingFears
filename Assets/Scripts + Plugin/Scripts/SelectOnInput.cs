@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SelectOnInput : MonoBehaviour
 {
+    public Credits credits;
 
     public EventSystem eventSystem;
     public GameObject SubmitAction;
@@ -13,6 +14,8 @@ public class SelectOnInput : MonoBehaviour
     public GameObject windowed;
     public GameObject resolutionDropdown;
     public GameObject graphicsDropdown;
+
+    public GameObject Cutscene;
 
     public bool buttonSelected;
     
@@ -51,7 +54,11 @@ public class SelectOnInput : MonoBehaviour
                     case "Level 7":
                         GameManager.Instance.startLevel();
                         break;
-
+                    case "CREDITS":
+                        SubmitAction.GetComponent<UiManager>().Credits();
+                        Cutscene.SetActive(true);
+                        credits.PlayCredits();
+                        break;
                     case "SETTINGS":
                         SubmitAction.GetComponent<UiManager>().Option();
                         break;
@@ -65,7 +72,6 @@ public class SelectOnInput : MonoBehaviour
                         windowed.GetComponent<Toggle>().isOn = !windowed.GetComponent<Toggle>().isOn;
                         break;
                     case "Reset":
-                        
                         SubmitAction.GetComponent<UiManager>().LoadPopup();
                         break;
                     case "YES":

@@ -211,6 +211,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\CameraPathPosition.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\cameraTrigger.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Crackable.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Cutscene.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EndScreen.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\EnemyDeath.cs" />
@@ -258,6 +259,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\QualitySettings\UserGameOptions.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\ScreenFader.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\SelectOnInput.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Spinner.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateBehaviourBase.cs" />
@@ -269,6 +271,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateOptions.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StatePause.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StatePlayMenu.cs" />
+    <Compile Include="Assets\Scripts + Plugin\Scripts\StatePopup.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StateVideoSettings.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\StaticCounter.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Submit.cs" />
@@ -285,8 +288,7 @@
     <Compile Include="Assets\Scripts + Plugin\Scripts\VolumeValueChange.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\Window.cs" />
     <Compile Include="Assets\Scripts + Plugin\Scripts\XORDelay.cs" />
-    <Compile Include="Assets\SettingsMenu.cs" />
-    <Compile Include="Assets\StatePopup.cs" />
+    <Compile Include="Assets\StateCredits.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FinalPass.shader" />
     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.compute" />

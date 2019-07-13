@@ -9,13 +9,13 @@ public class UiManager : MonoBehaviour
 {
     public UiBase LevelSelectionState;
     public UiBase OptionState;
+    public UiBase CreditsState;
     public UiBase MainMenu;
     public UiBase Popup;
     public UiBase StateCover;
     public UiBase PlayMenu;
 
     bool value = false;
-
     public bool isCover;
 
     public void ChangeMenu(MenuType _menuType)
@@ -39,6 +39,9 @@ public class UiManager : MonoBehaviour
                 break;
             case MenuType.Option:
                 OptionState.Setup();
+                break;
+            case MenuType.Credits:
+                CreditsState.Setup();
                 break;
             case MenuType.Popup:
                 Popup.Setup();
@@ -68,6 +71,9 @@ public class UiManager : MonoBehaviour
                 break;
             case MenuType.Option:
                 OptionState.Disable();
+                break;
+            case MenuType.Credits:
+                CreditsState.Disable();
                 break;
             case MenuType.Popup:
                 Popup.Disable();
@@ -112,6 +118,10 @@ public class UiManager : MonoBehaviour
         GameManager.stateGameplayUI();
     }
 
+    public void Credits() {
+        GameManager.stateCredits();
+    }
+
 
 }
 
@@ -122,6 +132,7 @@ public enum MenuType
     LevelSelection,
     nullo,
     Option,
+    Credits,
     Popup,
 
 }

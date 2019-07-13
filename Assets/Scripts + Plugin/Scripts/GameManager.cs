@@ -106,6 +106,7 @@ public class GameManager : MonoBehaviour
     public static OnClick stateMenu;
     public static OnClick statePause;
     public static OnClick stateGameplay;
+    public static OnClick stateCredits;
     public static OnClick stateOption;
     public static OnClick statePlayMenu;
     public static OnClick stateLevelSelection;
@@ -126,6 +127,7 @@ public class GameManager : MonoBehaviour
         stateMainMenu += SetMainMenuTrigger;
         statePopup += SetPopupTrigger;
         stateGameplayUI += SetGameplayUITrigger;
+        stateCredits += SetCreditsTrigger;
     }
 
 
@@ -207,6 +209,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void SetCreditsTrigger() {
+        if (stateCredits != null) {
+            UIController.SetTrigger("Credits");
+        }
+        else {
+            //Debug.Log("out");
+        }
+    }
+
     void SetPopupTrigger()
     {
         if (statePopup != null)
@@ -236,6 +247,7 @@ public class GameManager : MonoBehaviour
         stateMainMenu -= SetMainMenuTrigger;
         statePopup -= SetPopupTrigger;
         stateGameplayUI -= SetGameplayUITrigger;
+        stateCredits -= SetCreditsTrigger;
     }
 
     #endregion
@@ -447,6 +459,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("START LEVEL");
 
         m_player.playerInput.InputEnabled = false;
+
+        m_hasLevelStarted = true;
         while (!m_hasLevelStarted)
         {
             yield return null;
