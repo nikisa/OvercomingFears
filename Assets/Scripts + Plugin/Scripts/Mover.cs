@@ -77,7 +77,7 @@ public class Mover : MonoBehaviour {
                             
                         if (tag == "Player")
                         {
-                            FaceDestination();
+                            FaceDestination(targetNode.transform.position);
                             StartCoroutine(ShadowCollision());
                         }
                             //play animation
@@ -195,6 +195,19 @@ public class Mover : MonoBehaviour {
 
     public void FaceDestination() {
         Vector3 relativePosition = destination - transform.position;
+        Quaternion newRotation = Quaternion.LookRotation(relativePosition, Vector3.up);
+        float newY = newRotation.eulerAngles.y;
+
+        iTween.RotateTo(gameObject, iTween.Hash(
+            "y", newY,
+            "delay", 0f,
+            "easetype", rotationEaseType,
+            "time", rotateTime
+            ));
+    }
+
+    public void FaceDestination(Vector3 _destination) {
+        Vector3 relativePosition = _destination - transform.position;
         Quaternion newRotation = Quaternion.LookRotation(relativePosition, Vector3.up);
         float newY = newRotation.eulerAngles.y;
 
