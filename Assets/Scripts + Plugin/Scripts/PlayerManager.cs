@@ -391,7 +391,7 @@ public class PlayerManager : TurnManager
                             //    enemy.m_enemySensor.m_foundPlayer = false;
                             //}
 
-                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0 && m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0)).gateOpen)
+                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
                             {
                                 playerMover.MoveRight();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
