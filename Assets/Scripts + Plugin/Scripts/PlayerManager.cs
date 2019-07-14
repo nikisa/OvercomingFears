@@ -187,6 +187,10 @@ public class PlayerManager : TurnManager
     }
  
 
+    public void setToStateGameplay() {
+        GameManager.stateGameplay();
+    }
+
     void Update()
     {
         

@@ -22,10 +22,14 @@ public class StatePause : StateBehaviourBase
         }
         else if (Input.GetKeyDown(KeyCode.Joystick1Button2)) {
             Object.FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>().PauseCanvas.transform.GetChild(0).gameObject.SetActive(false);
-            GameManager.stateMenu();
+            Application.Quit();
         }
         else if (Input.GetKeyDown(KeyCode.Joystick1Button3)) {
             GameManager.Instance.LoseLevel();
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Joystick1Button0)) {
+            GameManager.stateMenu();
         }
     }
 

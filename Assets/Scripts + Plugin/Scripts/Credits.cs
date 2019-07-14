@@ -51,7 +51,7 @@ public class Credits : MonoBehaviour {
             Input.GetKeyDown(KeyCode.Joystick1Button18) ||
             Input.GetKeyDown(KeyCode.Joystick1Button19))) {
             skipCutscene();
-            isPlaying = false;
+            //isPlaying = false;
         }
     }
 

@@ -8,7 +8,8 @@ public class BossSpawn : MonoBehaviour
     private int count = 0;
 
     public GameObject Boss;
-
+    public Animator bossAnimator;
+    public Animation anim;
 
     public float delay;
 
@@ -36,6 +37,7 @@ public class BossSpawn : MonoBehaviour
         if (other.tag == "Player")
         {
             Boss.transform.DOMove(Boss.transform.position + new Vector3(0, 0, 4f), time).SetEase(easeType);
+            StartCoroutine(ResetBoss());
         }
     }
 
@@ -48,4 +50,12 @@ public class BossSpawn : MonoBehaviour
         other.GetComponent<PlayerManager>().playerInput.InputEnabled = true;
         other.GetComponent<PlayerManager>().gameObject.transform.GetChild(1).gameObject.SetActive(true);//Riattivo il PlayerCompass
     }
+
+    public IEnumerator ResetBoss() {
+        Boss.transform.GetChild(0).GetComponent<EnemyMover>().EnemyAnimatorController.SetInteger("ChaserState", 3);
+        yield return new WaitForSeconds(.1f);
+        Boss.transform.GetChild(0).GetComponent<EnemyMover>().EnemyAnimatorController.SetInteger("ChaserState", 2);
+    }
+
+
 }
