@@ -43,10 +43,12 @@ public class Armor : MonoBehaviour {
             transform.GetChild(3).gameObject.SetActive(true);
             //Debug.Log("Sword at node " + m_board.FindNodeAt(transform.GetChild(3).transform.position) + " activated");
             this.AnimatorController.SetBool("ArmorState" , isActive);
+            SoundManager.PlaySound(SoundManager.Sound.Alabarda , transform.position);
         }
         else if (isActive == false) {
             transform.GetChild(3).gameObject.SetActive(false);
             this.AnimatorController.SetBool("ArmorState", isActive);
+            SoundManager.PlaySound(SoundManager.Sound.Alabarda , transform.position);
         }
         //m_board.CheckSword();
     }
@@ -56,10 +58,12 @@ public class Armor : MonoBehaviour {
         if (isActive == false) {
             transform.GetChild(3).gameObject.SetActive(false);
             this.AnimatorController.SetBool("ArmorState", false);
+            SoundManager.PlaySound(SoundManager.Sound.Alabarda , transform.position);
         }
         else if (isActive == true) {
             transform.GetChild(3).gameObject.SetActive(true);
             this.AnimatorController.SetBool("ArmorState", true);
+            SoundManager.PlaySound(SoundManager.Sound.Alabarda , transform.position);
         }
     }
 

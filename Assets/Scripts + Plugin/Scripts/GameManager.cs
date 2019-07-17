@@ -471,7 +471,8 @@ public class GameManager : MonoBehaviour
         {
             startLevelEvent.Invoke();
         }
-        
+
+
     }
 
     IEnumerator PlayLevelRoutine()
@@ -489,8 +490,10 @@ public class GameManager : MonoBehaviour
             StartCoroutine(PlaySecondCutscene());
         }
 
+        
 
         triggerSetup();
+        InitEnemyLight();
 
         //crackableSetup(); --> FUNZIONA MA DA NULL REFERENCE E NON CREA I NODI
 
@@ -643,6 +646,15 @@ public class GameManager : MonoBehaviour
         secondCutscene.Stop();
         Cutscene.SetActive(false);
         m_player.playerInput.InputEnabled = true;
+    }
+
+    void InitEnemyLight() {
+        foreach (EnemyManager enemy in m_enemies) {
+            if (!m_board.FindNodeAt(enemy.transform.position).isAGate) {
+                enemy.transform.GetChild(1).gameObject.SetActive(true);
+            }
+            
+        }
     }
 
     void crackableSetup()
@@ -991,6 +1003,7 @@ public class GameManager : MonoBehaviour
         {
 
             StartCoroutine(PlayerDeathByCrackable());
+            SoundManager.PlaySound(SoundManager.Sound.Crackable_Mangia);
         }
     }
 
@@ -1221,12 +1234,17 @@ public class GameManager : MonoBehaviour
                 if (m_board.FindNodeAt(enemy.transform.position).isAGate && !m_board.FindNodeAt(enemy.transform.position).gateOpen)
                 {
                     enemy.isOff = true;
+                    enemy.transform.GetChild(1).gameObject.SetActive(false);
                 }
                 else if (m_board.FindNodeAt(enemy.transform.position).isAGate && m_board.FindNodeAt(enemy.transform.position).gateOpen)
                 {
                     enemy.isOff = false;
+                    enemy.transform.GetChild(1).gameObject.SetActive(true);
 
                 }
+                //else if (!m_board.FindNodeAt(enemy.transform.position).isAGate) {
+                //    enemy.transform.GetChild(1).gameObject.SetActive(true);
+                //}
             }
         }
 

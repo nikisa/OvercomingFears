@@ -9,41 +9,23 @@ public static class SoundManager
     public enum Sound
     {
         PlayerMove,
-        PlayerWandAttack,
-        PlayerFlashlightAttack,
-        PlayerDeath,
-        PlayerDeathCrackable,
-
-        StaticIdle,
-        StaticDanger,
-        StaticAttack,
-        StaticDeath,
-
-        ChaserIdle,
-        ChaserIdleSleep,
-        ChaserActivation,
-        ChaserDeactivation,
-        ChaserMove,
-        ChaserAttack,
-        ChaserDeath,
-
-        ArmorDown,
-        ArmorUp,
-
-        SwitchOn,
-        SwitchOff,
-
-        TriggerOn,
-        TriggerOff,
-        
-        CrackableHalfOpen,
-        CrackableOpen,
-        CrackableChoked,
-
-        TrapShooting,
-        
         ButtonOver,
-        ButtonClick
+        ButtonClick,
+
+        Switch,
+        Trigger,
+        Flicker_Livello1,
+        Chaser_Attivato,
+        Static_Intrappolato,
+        Attacco_Static,
+        Attacco_Bacchetta,
+        Alabarda,
+        Crackable_Mangia,
+        Attacco_Torcia,
+        Movimento_Statua,
+        Attacco_Chaser,
+        Ambient1,
+        Ambient2
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;
@@ -85,6 +67,18 @@ public static class SoundManager
                 oneShotGameObject = new GameObject("One Shot Sound");
                 oneShotAudioSource = oneShotGameObject.AddComponent<AudioSource>();
             }
+            
+            oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
+        }
+    }
+
+    public static void PlaySoundLoop(Sound sound) {
+        if (CanPlaySound(sound)) {
+            if (oneShotGameObject == null) {
+                oneShotGameObject = new GameObject("One Shot Sound");
+                oneShotAudioSource = oneShotGameObject.AddComponent<AudioSource>();
+            }
+
             
             oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
         }

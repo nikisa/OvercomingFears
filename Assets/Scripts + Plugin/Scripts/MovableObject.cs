@@ -66,6 +66,7 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveRight();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }
@@ -76,6 +77,7 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveLeft();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }
@@ -86,6 +88,7 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveBackward();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }
@@ -96,6 +99,7 @@ public class MovableObject : Mover {
                         //m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveForward();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }
@@ -225,6 +229,7 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveRight();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }
@@ -240,6 +245,7 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveLeft();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }
@@ -270,6 +276,7 @@ public class MovableObject : Mover {
                         m_player.transform.GetChild(2).gameObject.SetActive(false);
                         m_player.hasLightBulb = false;
                         this.MoveForward();
+                        SoundManager.PlaySound(SoundManager.Sound.Movimento_Statua);
                         hasMoved = true;
                         hasStopped = false;
                     }

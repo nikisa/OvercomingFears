@@ -81,6 +81,9 @@ public class SelectOnInput : MonoBehaviour
                     case "NO":                        
                         SubmitAction.GetComponent<UiManager>().LoadMainMenu();
                         break;
+                    case "EXIT":
+                        Application.Quit();
+                        break;
                 }
             }
             OnDisable();

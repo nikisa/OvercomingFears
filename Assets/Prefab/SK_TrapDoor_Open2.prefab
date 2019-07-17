@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8432573038412336561}
   - component: {fileID: 8432573038424071323}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: SK_Trapdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432573038412336563}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _r_teeth_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8432573038412336567}
   - component: {fileID: 8432573038419796571}
   - component: {fileID: 2715570629288261139}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: SK_TrapDoor_Open2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432573038412336569}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _l_plank_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432573038412336571}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _c_COG_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432573038412336573}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _r_plank_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432573038412336575}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _l_teeth_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

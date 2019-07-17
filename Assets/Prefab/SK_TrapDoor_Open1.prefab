@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2587020875045128704}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _c_COG_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2587020875045128706}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _l_plank_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2587020875045128708}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _l_teeth_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2587020875045128710}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _r_plank_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2587020875045128712}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: _r_teeth_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2587020875045128714}
   - component: {fileID: 2587020875039693600}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: SK_Trapdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 2587020875045128716}
   - component: {fileID: 2587020875035518432}
   - component: {fileID: 1168123243639152931}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: SK_TrapDoor_Open1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ Transform:
   m_GameObject: {fileID: 2587020875044902444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.19, y: 0.141, z: 3.051}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 2587020875045128704}
   - {fileID: 2587020875045128714}

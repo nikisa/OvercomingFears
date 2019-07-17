@@ -90,12 +90,14 @@ public class EnemyManager : TurnManager {
 
                 if (m_enemyMover.movementType == MovementType.Stationary) {
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 2);
+                    SoundManager.PlaySound(SoundManager.Sound.Attacco_Static , transform.position);
                     yield return new WaitForSeconds(delayStaticKill);
                     m_player.PlayerAnimatorController.SetInteger("PlayerState" , 7);
                 }
 
                 else if(m_enemyMover.movementType == MovementType.Chaser) {
                     m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 5);
+                    SoundManager.PlaySound(SoundManager.Sound.Attacco_Chaser , transform.position);
                     yield return new WaitForSeconds(delayChaserKill);
                     m_player.PlayerAnimatorController.SetInteger("PlayerState", 7);
                 }
@@ -112,6 +114,7 @@ public class EnemyManager : TurnManager {
                 {
                     //Debug.Log("DANGER");
                     m_enemyMover.EnemyAnimatorController.SetInteger("StaticState", 1);
+                    SoundManager.PlaySound(SoundManager.Sound.Static_Intrappolato , transform.position);
                 }
                 
             }
@@ -157,6 +160,7 @@ public class EnemyManager : TurnManager {
     public void DieOnCrackable() {
         if (gameObject != null && m_enemyMover.movementType == MovementType.Chaser) {
             m_enemyMover.EnemyAnimatorController.SetInteger("ChaserState", 911);
+            SoundManager.PlaySound(SoundManager.Sound.Crackable_Mangia , transform.position);
         }
         if (m_isDead)
         {

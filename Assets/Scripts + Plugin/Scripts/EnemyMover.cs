@@ -130,6 +130,7 @@ public class EnemyMover : Mover
 
             //Debug.Log("Spotted!");
             EnemyAnimatorController.SetInteger("ChaserState", 1);
+            SoundManager.PlaySound(SoundManager.Sound.Chaser_Attivato , transform.position);
             yield return new WaitForSeconds(0.2f);
             EnemyAnimatorController.SetInteger("ChaserState", 2);//CALL EVENT POST ACTIVATION
 

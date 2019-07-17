@@ -315,13 +315,13 @@ public class Node : MonoBehaviour
     public bool UpdateTriggerToTrue()
     {
         if (isATrigger && TriggerOrLogic() == false) {
-
+            SoundManager.PlaySound(SoundManager.Sound.Trigger);
             foreach (EnemyManager enemy in m_board.m_gm.m_enemies) {
                 enemy.m_enemySensor.m_foundPlayer = false;
             }
 
             //==============================================
-
+            
             ArmorActivation(armorID);
             UpdateGateToOpen(gateID);
             TrapActivation(trapID);
@@ -376,7 +376,7 @@ public class Node : MonoBehaviour
 
     public bool UpdateSwitchToTrue()
     {
-        
+        SoundManager.PlaySound(SoundManager.Sound.Switch);
         switchTemp.transform.localScale = new Vector3(this.transform.localScale.x  , this.transform.localScale.y , this.transform.localScale.z * -1);
         SwitchAnimator.SetInteger("SwitchState" , 1);
         UpdateGateToOpen(gateID);
@@ -400,7 +400,7 @@ public class Node : MonoBehaviour
 
     public bool UpdateSwitchToFalse()
     {
-
+        SoundManager.PlaySound(SoundManager.Sound.Switch);
         switchTemp.transform.localScale = new Vector3(this.transform.localScale.x , this.transform.localScale.y , this.transform.localScale.z * 1);
         SwitchAnimator.SetInteger("SwitchState", 0);
         UpdateGateToClose(gateID);
@@ -712,8 +712,12 @@ public class Node : MonoBehaviour
             //transform.GetChild(1).gameObject.transform.Rotate(90, 0, 0);
             //transform.GetChild(1).gameObject.transform.position += new Vector3(0, 0.1f, 0);
 
-            crackableTemp = Instantiate(crackablePrefab, transform.position , Quaternion.identity);
+            crackableTemp = Instantiate(crackablePrefab, transform.position + new Vector3(0, -.065f ,0) , Quaternion.identity);
             crackableTemp.transform.parent = transform;
+
+            if (SceneManager.GetActiveScene().buildIndex == 7) {
+                crackableTemp.transform.localScale = new Vector3(1.05f, 1.05f, 1.05f);
+            }
 
         }
 
@@ -780,10 +784,7 @@ public class Node : MonoBehaviour
                     }
                 }
              }
-
-
-
-            
+ 
 
         }
 
@@ -869,6 +870,7 @@ public class Node : MonoBehaviour
                 foreach (EnemyManager enemy in m_board.FindEnemiesAt(m_board.FindNodeAt(transform.position)))
                 {
                     enemy.isOff = false;
+                    enemy.transform.GetChild(1).gameObject.SetActive(true);
 
                     if (enemy.isOff == false && enemy.m_enemySensor.FoundPlayer && m_board.m_player.isMoving == false)
                     {

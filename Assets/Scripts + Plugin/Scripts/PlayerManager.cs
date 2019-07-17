@@ -11,6 +11,7 @@ using DG.Tweening;
 public class PlayerManager : TurnManager
 {
     bool isPressed;
+    bool isPlayingAmbient = false;
 
     static int i = 0; //indice provvisorio per il cambio della scena
 
@@ -28,6 +29,7 @@ public class PlayerManager : TurnManager
     public Animator PlayerAnimatorController;
 
     public Canvas PauseCanvas;
+
 
     public UiManager UiManager;
 
@@ -191,6 +193,18 @@ public class PlayerManager : TurnManager
         GameManager.stateGameplay();
     }
 
+    IEnumerator LoopAmbiental1(){
+        SoundManager.PlaySoundLoop(SoundManager.Sound.Ambient1);
+        yield return new WaitForSeconds(19);
+        isPlayingAmbient = false;
+    }
+
+    IEnumerator LoopAmbiental2() {
+        SoundManager.PlaySoundLoop(SoundManager.Sound.Ambient2);
+        yield return new WaitForSeconds(134);
+        isPlayingAmbient = false;
+    }
+
     void Update()
     {
         
@@ -198,6 +212,15 @@ public class PlayerManager : TurnManager
             GameManager.stateMainMenu();
         }
 
+        if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex < 6 && m_gm.Cutscene.activeSelf == false && !isPlayingAmbient) {
+            isPlayingAmbient = true;
+            StartCoroutine(LoopAmbiental1());
+        }
+
+        else if (SceneManager.GetActiveScene().buildIndex >= 6 && SceneManager.GetActiveScene().buildIndex < 8 && m_gm.Cutscene.activeSelf == false && !isPlayingAmbient) {
+            isPlayingAmbient = true;
+            StartCoroutine(LoopAmbiental2());
+        }
 
 
         if (isKeyboardInput() && !isControllerInput()) {
@@ -334,6 +357,7 @@ public class PlayerManager : TurnManager
                     //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     //lr.transform.gameObject.SetActive(true);
                     m_gameManager.LoseLevel();
+                    isPlayingAmbient = false;
                 }
 
 
@@ -819,7 +843,7 @@ public class PlayerManager : TurnManager
                         {
                             isPressed = true;
                             EnemyAnimationReset();
-                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0)
+                            if (playerInput.P && m_board.FindMovableObjectsAt(m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(2f, 0, 0))).Count == 0) //  && !m_board.FindNodeAt(m_board.playerNode.transform.position + new Vector3(0, 0, 2f)).gateOpen
                             {
                                 playerMover.MoveRight();
                                 foreach (var movableObject in m_gm.GetMovableObjects())
@@ -1186,6 +1210,7 @@ public class PlayerManager : TurnManager
                 foreach (EnemyManager enemy in enemies) {
                     if (enemy != null && enemy.GetMovementType() != MovementType.Boss) {
                         PlayerAnimatorController.SetInteger("PlayerState", 1);
+                        SoundManager.PlaySound(SoundManager.Sound.Attacco_Bacchetta);
                         //WAND SETACTIVE FALSE
                         //HANDWAND SETACTIVE TRUE
                     }
@@ -1401,6 +1426,7 @@ public class PlayerManager : TurnManager
     public void PlayerDead()
     {
         m_gm.LoseLevel();
+        isPlayingAmbient = false;
     }
 
 
@@ -1425,6 +1451,7 @@ public class PlayerManager : TurnManager
                 playerInput.InputEnabled = false;
                 playerInput.PauseInputEnabled = false;
                 m_gameManager.LoseLevel();
+                isPlayingAmbient = false;
             }
         }
 

@@ -11,6 +11,7 @@ public class FlickeringManager : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
             AnimatorController.SetInteger("flickering",value);
+            SoundManager.PlaySound(SoundManager.Sound.Flicker_Livello1);
         }
     }
 

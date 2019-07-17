@@ -101,9 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materials:
   - {fileID: 2100000, guid: de65add3f8beb7e4d81c984f1f64b1b9, type: 2}
-  - {fileID: 2100000, guid: 75c0b728893773b4aa5a7719218c616c, type: 2}
   - {fileID: 2100000, guid: 774a4d2b2eb6ebf4cb92e31211c28f9e, type: 2}
   - {fileID: 2100000, guid: 06630e6b001bcad4993464cb924cc7b4, type: 2}
+  - {fileID: 2100000, guid: 75c0b728893773b4aa5a7719218c616c, type: 2}
   - {fileID: 2100000, guid: f5f854e74993dc4489acfd042afdfb78, type: 2}
   - {fileID: 2100000, guid: 90f74a0ae45d1294d922b9da61863f77, type: 2}
   AnimatorController: {fileID: 311896293642070312}
@@ -903,6 +903,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311896293651580642}
     m_Modifications:
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 455596425652302837, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -957,21 +972,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Name
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 455596425652302838, guid: a1404f9064753c74e8b8330d851b71a4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Sword
       objectReference: {fileID: 0}
     - target: {fileID: 455596425652302834, guid: a1404f9064753c74e8b8330d851b71a4,
         type: 3}

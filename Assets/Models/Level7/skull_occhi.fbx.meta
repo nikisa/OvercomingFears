@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb0c7a910b3f9cb42b220ca252f57aa5
+guid: af95f2c850af2dd49b4b9fddf0a21fba
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -11,7 +11,7 @@ ModelImporter:
     4300000: SM_Skull
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

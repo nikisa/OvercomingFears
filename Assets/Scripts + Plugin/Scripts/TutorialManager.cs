@@ -13,7 +13,10 @@ public class TutorialManager : MonoBehaviour {
 
     GameObject popup;
 
+    
     private void Awake() {
+        
+
         m_gm = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         m_player = FindObjectOfType<PlayerManager>().GetComponent<PlayerManager>();
         m_gm.playerPopupID = 1;
