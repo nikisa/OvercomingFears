@@ -261,7 +261,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -442,7 +442,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -623,7 +623,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -970,7 +970,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -1501,7 +1501,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -2672,7 +2672,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3188,7 +3188,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -5822,11 +5822,21 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: crackableState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: isATrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
+        type: 3}
+      propertyPath: triggerState
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6381,7 +6391,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -6978,7 +6988,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -8125,7 +8135,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -8410,6 +8420,16 @@ PrefabInstance:
       propertyPath: standTime
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1770964002, guid: f0f94d3297ac7764895e4627d76bca18, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -8428,16 +8448,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0.09004834
-      objectReference: {fileID: 0}
-    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7947039076485858571, guid: f0f94d3297ac7764895e4627d76bca18,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0f94d3297ac7764895e4627d76bca18, type: 3}
@@ -8636,7 +8646,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -8823,7 +8833,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -10122,7 +10132,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -10526,7 +10536,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -10775,7 +10785,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -11004,7 +11014,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -11123,7 +11133,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -11662,7 +11672,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -12048,7 +12058,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -12430,7 +12440,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -13388,7 +13398,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -13615,7 +13625,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
@@ -14022,7 +14032,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -14189,7 +14199,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -14893,7 +14903,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -15231,7 +15241,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -15493,7 +15503,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -15882,7 +15892,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -16458,7 +16468,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -16625,7 +16635,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -17094,7 +17104,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -17482,7 +17492,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -17938,7 +17948,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -18588,7 +18598,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -18861,7 +18871,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -19350,7 +19360,7 @@ PrefabInstance:
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
       propertyPath: delay
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114782162807892154, guid: 64842a6aac9ac3d42815036daf631562,
         type: 3}
@@ -19507,7 +19517,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -20007,7 +20017,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -20563,7 +20573,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -21490,7 +21500,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -21965,7 +21975,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -22345,7 +22355,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -22978,7 +22988,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -23235,7 +23245,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -23416,7 +23426,7 @@ MonoBehaviour:
   linkPrefab: {fileID: 1607990110883930, guid: e5a60ea9896f13f4ebdf2cf9771fc9bf, type: 3}
   scaleTime: 0.3
   easeType: 15
-  delay: 0.1
+  delay: 0.5
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256

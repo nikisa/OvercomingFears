@@ -314,7 +314,7 @@ public class GameManager : MonoBehaviour
             movable.UpdateCurrentNode();
         }
     }
-
+    
     void TriggerInit()
     {
         foreach (Node triggerNode in m_board.TriggerNodes)

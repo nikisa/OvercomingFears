@@ -14648,16 +14648,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8994426378495130885, guid: b0601cd0f68160944ad8d2682b1dc902,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6fa92e436dfa89940b5ac1348cf83a4a, type: 2}
     - target: {fileID: 8994426378495130887, guid: b0601cd0f68160944ad8d2682b1dc902,
         type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8994426378495130885, guid: b0601cd0f68160944ad8d2682b1dc902,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fa92e436dfa89940b5ac1348cf83a4a, type: 2}
     - target: {fileID: 8994426378495130882, guid: b0601cd0f68160944ad8d2682b1dc902,
         type: 3}
       propertyPath: TriggerModule.enabled

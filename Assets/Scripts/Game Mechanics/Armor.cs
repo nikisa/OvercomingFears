@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Armor : MonoBehaviour {
+
+    public int minKeyConnectionValue = 1;
+    public int maxKeyConnectionValue = 6;
 
     public Material[] materials;
 
@@ -24,7 +29,7 @@ public class Armor : MonoBehaviour {
         m_board = Object.FindObjectOfType<GameManager>().GetComponent<BoardManager>();
         
 
-        if (armorID <= 6 && armorID >= 1) {
+        if (armorID <= maxKeyConnectionValue && armorID >= minKeyConnectionValue) {
             transform.GetChild(2).gameObject.GetComponent<Renderer>().material = materials[armorID - 1];
         }
     }

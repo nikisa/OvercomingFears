@@ -59,18 +59,23 @@ public class Mirror : MovableObject {
         }
     }
 
+    private int _downRightMirror = 0;
+    private int _downLeftMirror = 1;
+    private int _upLeftMirror = 2;
+    private int _upRightMirror = 3;
+
     public void InitIndex() {
         if (downRight == true) {
-            i = 0;
+            i = _downRightMirror;
         }
         else if (downLeft == true) {
-            i = 1;
+            i = _downLeftMirror;
         }
         else if (upLeft == true) {
-            i = 2;
+            i = _upLeftMirror;
         }
         else if (upRight == true) {
-            i = 3;
+            i = _upRightMirror;
         }
     }
 
